@@ -126,32 +126,32 @@ locales.value.forEach((l) => {
     </div>
     <!-- 移动端导航菜单 -->
     <div
-      class="md:hidden bg-gradient-to-r from-red-700 via-green-700 to-blue-700 p-2 transition-all duration-300 ease-out"
+      class="md:hidden text-right bg-gradient-to-r from-red-700 via-green-700 to-blue-700 transition-all duration-300 ease-out"
       :class="
         isMobileNavOpen
           ? 'opacity-100 translate-y-0'
           : 'opacity-0 translate-y-full'
       "
     >
-      <nav class="flex flex-col px-4 py-2 space-y-2">
+      <nav class="flex flex-col">
         <NuxtLink
           :to="localePath('/resize')"
           @click="toggleMobileNav"
-          class="text-orange-400 hover:text-orange-300 transition duration-300"
+          class="text-orange-400 hover:text-orange-300 transition duration-300 px-4 py-2 bg-orange-300/20"
         >
           {{ $t("header.resize") }}
         </NuxtLink>
         <NuxtLink
           :to="localePath('/watermark')"
           @click="toggleMobileNav"
-          class="text-indigo-300 hover:text-indigo-200 transition duration-300"
+          class="text-indigo-300 hover:text-indigo-200 transition duration-300 px-4 py-2 bg-indigo-500/20"
         >
           {{ $t("header.watermark") }}
         </NuxtLink>
         <NuxtLink
           :to="localePath('/converter')"
           @click="toggleMobileNav"
-          class="text-pink-400 hover:text-pink-300 transition duration-300"
+          class="text-pink-400 hover:text-pink-300 transition duration-300 px-4 py-2 bg-pink-300/20"
         >
           {{ $t("header.converter") }}
         </NuxtLink>
