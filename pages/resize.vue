@@ -122,6 +122,7 @@ useHead({
     { property: "og:type", content: "website" },
     { property: "og:url", content: `https://imgpro.oldmoon.top${route.path}` },
     { property: "og:site_name", content: t("title") },
+    { name: "google-adsense-account", content: "ca-pub-8842635629279684" },
   ],
 });
 

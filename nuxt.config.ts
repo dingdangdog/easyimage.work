@@ -19,6 +19,14 @@ export default defineNuxtConfig({
           href: "/manifest.json",
         },
       ],
+      script: [
+        {
+          src: "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js",
+          async: true,
+          crossorigin: "anonymous",
+          "data-ad-client": "ca-pub-8842635629279684", // 注意：data-ad-client 需要使用 data- 前缀
+        },
+      ],
     },
   },
   devServer: {
