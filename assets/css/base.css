@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: rgb(219, 219, 219);
+}
+
+@font-face {
+  font-family: "SmileySans-Oblique";
+  src: url("@/assets/fonts/SmileySans-Oblique.ttf") format("truetype"),
+    url("@/assets/fonts/SmileySans-Oblique.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+::-webkit-scrollbar {
+  background-color: transparent;
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background-color: rgb(3 7 18);
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgb(107 114 128);
+  /* border-radius: 5px; */
+}
+
+.text-glow {
+  text-shadow: 0 0 5px #ffae00, 0 0 10px #ff0000, 0 0 20px #ff8c00,
+    0 0 30px #ff8c00, 0 0 40px #ffff00;
+}
