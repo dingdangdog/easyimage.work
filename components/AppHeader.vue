@@ -126,11 +126,11 @@ locales.value.forEach((l) => {
     </div>
     <!-- 移动端导航菜单 -->
     <div
-      class="md:hidden text-right bg-gradient-to-r from-red-700 via-green-700 to-blue-700 transition-all duration-300 ease-out"
+      class="md:hidden text-right bg-gradient-to-r from-red-700 via-green-700 to-blue-700 overflow-hidden transition-all duration-500 ease-out"
       :class="
         isMobileNavOpen
-          ? 'opacity-100 translate-y-0'
-          : 'opacity-0 translate-y-full'
+          ? 'opacity-100 translate-y-0 h-full'
+          : 'opacity-0 -translate-y-0 h-0'
       "
     >
       <nav class="flex flex-col">
