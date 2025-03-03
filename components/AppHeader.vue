@@ -51,7 +51,7 @@ locales.value.forEach((l) => {
   <header class="fixed top-0 left-0 w-full z-30">
     <!-- 顶部导航栏 -->
     <div
-      class="w-full h-16 bg-gradient-to-r from-red-700 via-green-700 to-blue-700 flex justify-between items-center px-4 md:px-8 transition-transform duration-500 ease-in-out transform"
+      class="w-full h-16 bg-gradient-to-r from-red-800 via-green-800 to-blue-800 flex justify-between items-center px-4 md:px-8 transition-transform duration-500 ease-in-out transform"
       :class="isMenuVisible ? 'translate-y-0' : '-translate-y-full'"
     >
       <!-- 左侧：标题和桌面端导航链接 -->
@@ -67,19 +67,19 @@ locales.value.forEach((l) => {
         <nav class="h-full hidden md:flex space-x-8">
           <NuxtLink
             :to="localePath('/resize')"
-            class="text-lg text-orange-500 hover:text-orange-300 transition duration-300"
+            class="text-lg text-orange-400 hover:text-orange-300 transition duration-300"
           >
             {{ $t("header.resize") }}
           </NuxtLink>
           <NuxtLink
             :to="localePath('/watermark')"
-            class="h-full text-lg text-indigo-300 hover:text-indigo-200 transition duration-300"
+            class="h-full text-lg text-indigo-200 hover:text-indigo-100 transition duration-300"
           >
             {{ $t("header.watermark") }}
           </NuxtLink>
           <NuxtLink
             :to="localePath('/converter')"
-            class="text-lg text-pink-500 hover:text-pink-300 transition duration-300"
+            class="text-lg text-pink-400 hover:text-pink-300 transition duration-300"
           >
             {{ $t("header.converter") }}
           </NuxtLink>
