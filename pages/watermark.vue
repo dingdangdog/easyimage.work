@@ -195,17 +195,17 @@ useHead({
     { name: "twitter:description", content: t("watermark.description") },
     {
       name: "twitter:image",
-      content: "https://imgpro.oldmoon.top/favicon.webp",
+      content: "https://easyimage.work/favicon.webp",
     },
     // Open Graph
     { property: "og:title", content: t("watermark.title") },
     { property: "og:description", content: t("watermark.description") },
     {
       property: "og:image",
-      content: "https://imgpro.oldmoon.top/favicon.webp",
+      content: "https://easyimage.work/favicon.webp",
     },
     { property: "og:type", content: "website" },
-    { property: "og:url", content: `https://imgpro.oldmoon.top${route.path}` },
+    { property: "og:url", content: `https://easyimage.work${route.path}` },
     { property: "og:site_name", content: t("title") },
     { name: "google-adsense-account", content: "ca-pub-8842635629279684" },
   ],
@@ -401,7 +401,7 @@ const downloadAll = () => {
   // processedImages.value.forEach((image) => downloadImage(image));
   downloadWatermarkAsZip(
     processedImages.value,
-    `imgpro.oldmoon.top_watermark-${new Date().toLocaleDateString()}.zip`
+    `easyimage.work_watermark-${new Date().toLocaleDateString()}.zip`
   );
 };
 

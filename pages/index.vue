@@ -53,17 +53,17 @@ useHead({
     { name: "twitter:description", content: t("keywords") }, // 原配置中这里使用了 keywords，保留一致
     {
       name: "twitter:image",
-      content: "https://imgpro.oldmoon.top/favicon.webp",
+      content: "https://easyimage.work/favicon.webp",
     }, // 修改为绝对路径，与工具页一致
     // Open Graph
     { property: "og:title", content: t("title") },
     { property: "og:description", content: t("description") },
     {
       property: "og:image",
-      content: "https://imgpro.oldmoon.top/favicon.webp",
+      content: "https://easyimage.work/favicon.webp",
     }, // 修改为绝对路径，与工具页一致
     { property: "og:type", content: "website" }, // 添加 og:type，与工具页一致
-    { property: "og:url", content: `https://imgpro.oldmoon.top${route.path}` }, // 添加动态 URL，与工具页一致
+    { property: "og:url", content: `https://easyimage.work${route.path}` }, // 添加动态 URL，与工具页一致
     { property: "og:site_name", content: t("title") }, // 添加 site_name，与工具页一致
   ],
 });
