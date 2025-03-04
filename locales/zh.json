@@ -26,8 +26,8 @@
     }
   },
   "watermark": {
-    "title": "免费图片裁剪工具 | EasyImage.work",
-    "description": "使用简单图片的免费裁剪工具，快速任意裁剪你的图片。",
+    "title": "免费图片水印工具 | EasyImage.work",
+    "description": "使用简单图片的免费在线水印工具，快速为图片添加文字或图像水印。无需上传，保护您的图片版权和隐私。",
     "keywords": "图片水印, 在线水印工具, 离线水银工具, 免费水印, 图片版权保护, 安全图片处理, 无需上传, BMP, JPG, PNG, WEBP",
     "name": "水印工具",
     "tips": "设置水印样式，上传图片，自动为图片添加水印",
@@ -82,14 +82,17 @@
     "ready": "已转换格式图片"
   },
   "crop": {
-    "title": "免费图片格式转换工具 | EasyImage.wrok",
-    "description": "使用简单图片的免费在线工具，快速将图片转换为BMP、JPG、PNG、WEBP等格式。本地处理，安全无忧。",
-    "keywords": "图片裁剪, 颠倒, 镜像, 在线图片裁剪工具, 离线图片裁剪工具, 免费图片转换, 安全图片处理",
+    "title": "免费在线图片裁剪工具 | EasyImage.work - 支持 BMP, ICO, JPG, JPEG, JFIF, PNG, WEBP",
+    "description": "EasyImage.work 提供免费的在线图片裁剪工具，支持 BMP, ICO, JPG, JPEG, JFIF, PNG, WEBP 等多种格式。快速、安全地裁剪、旋转、镜像和颠倒你的图片，无需下载软件。",
+    "keywords": "图片裁剪, 在线裁剪, 离线裁剪, 免费裁剪工具, 图片旋转, 图片镜像, 图片颠倒, BMP 裁剪, ICO 裁剪, JPG 裁剪, JPEG 裁剪, JFIF 裁剪, PNG 裁剪, WEBP 裁剪, 安全图片处理",
     "name": "裁剪工具",
-    "tips": "选择图片，开始裁剪",
+    "tips": "选择图片，开始自由裁剪",
+    "ratio": "裁剪比例",
     "image": {
-      "left": "逆时针旋转一度",
-      "right": "顺时针旋转一度",
+      "left": "L",
+      "left-title": "逆时针旋转1度",
+      "right": "R",
+      "right-title": "顺时针旋转1度",
       "mirror": "镜像",
       "reverse": "颠倒"
     },

@@ -1,5 +1,5 @@
 {
-  "title": "EasyImage - Free Online Image Editing Tools",
+  "title": "EasyImage.work - Free Online Image Editing Tools",
   "description": "EasyImage offers free, secure, and fast online image editing tools. No uploads needed—everything happens in your browser. Try watermarking, resizing, and format conversion now! PWA offline install!",
   "keywords": "image editing, online image tools, offline image tools, free image editor, watermark images, resize images, convert image formats, secure image processing, no upload, BMP, JPG, PNG, WEBP",
   "header": {
@@ -82,21 +82,26 @@
     "ready": "Converted Images"
   },
   "crop": {
-    "title": "Free Online Image Format Converter - EasyImage.work",
-    "description": "Convert your images to BMP, JPG, PNG, WEBP, and more with EasyImage's free online tool. Fast, secure, and no uploads needed.",
-    "keywords": "image format conversion, online converter, free image converter, BMP conversion, JPG conversion, PNG conversion, WEBP conversion, secure image processing",
-    "name": "Format Converter",
-    "tips": "Select the target format, upload the image, and automatically convert the image format",
-    "ratio-label": "Crop",
-    "ratio-placeholder": "Crop",
-    "ratio-set-button": "Crop",
-    "upload-tip": "Drag and drop images here or",
-    "upload-button": "Select Files",
+    "title": "Free Online Image Cropper | EasyImage.work - Supports BMP, ICO, JPG, JPEG, JFIF, PNG, WEBP",
+    "description": "EasyImage.work offers a free online image cropper that supports BMP, ICO, JPG, JPEG, JFIF, PNG, WEBP formats. Quickly and securely crop, rotate, mirror, and flip your images without downloading any software.",
+    "keywords": "image cropper, online cropper, free crop tool, image rotation, image mirror, image flip, BMP crop, ICO crop, JPG crop, JPEG crop, JFIF crop, PNG crop, WEBP crop, secure image processing",
+    "name": "Crop Tool",
+    "tips": "Select an image to start cropping",
+    "ratio": "Crop Ratio",
+    "image": {
+      "left": "L",
+      "left-title": "Rotate counterclockwise by 1 degree",
+      "right": "R",
+      "right-title": "Rotate clockwise by 1 degree",
+      "mirror": "Mirror",
+      "reverse": "Flip"
+    },
+    "upload-tip": "Drag and drop an image here or",
+    "upload-button": "Choose File",
     "upload-types": "Supported image formats: BMP, ICO, JPG, JPEG, JFIF, PNG, WEBP",
-    "rerun": "Reconvert Images Format",
-    "running": "Converting image format...",
-    "delete-all-button": "Delete All",
-    "download-button": "Download",
-    "preview": "Preview"
+    "remove": "Remove",
+    "reset": "Recover",
+    "preview": "Preview",
+    "download": "Download"
   }
 }

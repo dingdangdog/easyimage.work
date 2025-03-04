@@ -82,6 +82,28 @@
 
     <div
       v-if="cropperVisible"
+      class="flex md:justify-center items-center mt-2 w-full"
+    >
+      <div class="mr-2">{{ $t("crop.ratio") }}</div>
+      <div class="flex-1 flex space-x-2 overflow-x-auto p-1">
+        <button
+          v-for="ratio of selectionRatioOptions"
+          :key="ratio.value"
+          class="px-2 py-1 shadow-sm rounded-sm hover:bg-purple-500/80 duration-150 ease-in-out"
+          :class="
+            selection.aspectRatio == ratio.value
+              ? 'bg-purple-300/60 shadow-purple-500 text-purple-500'
+              : 'bg-gray-300/60 shadow-gray-500'
+          "
+          @click="setSelectionRatio(ratio.value)"
+        >
+          {{ ratio.label }}
+        </button>
+      </div>
+    </div>
+
+    <div
+      v-if="cropperVisible"
       class="flex justify-center items-center space-x-2 mt-2 w-full overflow-x-auto p-1"
     >
       <button
@@ -92,68 +114,42 @@
       </button>
 
       <button
-        class="px-2 py-1 shadow-sm rounded-sm bg-gray-300/60 shadow-gray-500 hover:bg-purple-500/80 duration-150 ease-in-out"
-        title="image.$rotate('-45deg')"
-        @click="rightRotateImage()"
-      >
-        <!-- <i class="bi-arrow-90deg-left"></i> -->
-        right
-      </button>
-      <button
-        class="px-2 py-1 shadow-sm rounded-sm bg-gray-300/60 shadow-gray-500 hover:bg-purple-500/80 duration-150 ease-in-out"
-        title="image.$rotate('45deg')"
+        class="px-4 py-1 shadow-sm rounded-sm bg-gray-300/60 shadow-gray-500 hover:bg-purple-500/80 duration-150 ease-in-out"
+        :title="$t('crop.image.left-title')"
         @click="leftRotateImage()"
       >
-        <!-- <i class="bi-arrow-90deg-right"></i> -->
-        left
+        {{ $t("crop.image.left") }}
+      </button>
+      <button
+        class="px-4 py-1 shadow-sm rounded-sm bg-gray-300/60 shadow-gray-500 hover:bg-purple-500/80 duration-150 ease-in-out"
+        :title="$t('crop.image.right-title')"
+        @click="rightRotateImage()"
+      >
+        {{ $t("crop.image.right") }}
       </button>
       <button
         class="px-2 py-1 shadow-sm rounded-sm bg-gray-300/60 shadow-gray-500 hover:bg-purple-500/80 duration-150 ease-in-out"
-        title="image.$rotate('45deg')"
         @click="mirrorImage()"
       >
-        <!-- <i class="bi-arrow-90deg-right"></i> -->
-        镜像
+        {{ $t("crop.image.mirror") }}
       </button>
       <button
         class="px-2 py-1 shadow-sm rounded-sm bg-gray-300/60 shadow-gray-500 hover:bg-purple-500/80 duration-150 ease-in-out"
-        title="image.$rotate('45deg')"
         @click="reverseImage()"
       >
-        <!-- <i class="bi-arrow-90deg-right"></i> -->
-        颠倒
+        {{ $t("crop.image.reverse") }}
       </button>
       <button
         class="bg-green-500 hover:bg-green-400 text-white font-bold py-1 px-2 rounded-md focus:outline-none focus:shadow-outline transition duration-300 ease-in-out"
         @click="resetCropper()"
       >
-        <!-- <i class="bi-arrow-90deg-right"></i> -->
-        重置
+        {{ $t("crop.reset") }}
       </button>
     </div>
 
     <div
       v-if="cropperVisible"
-      class="flex md:justify-center items-center space-x-2 mt-2 w-full overflow-x-auto p-1"
-    >
-      <button
-        v-for="ratio of selectionRatioOptions"
-        :key="ratio.value"
-        class="px-2 py-1 shadow-sm rounded-sm hover:bg-purple-500/80 duration-150 ease-in-out"
-        :class="
-          selection.aspectRatio == ratio.value
-            ? 'bg-purple-300/60 shadow-purple-500 text-purple-500'
-            : 'bg-gray-300/60 shadow-gray-500'
-        "
-        @click="setSelectionRatio(ratio.value)"
-      >
-        {{ ratio.label }}
-      </button>
-    </div>
-
-    <div
-      v-if="cropperVisible"
-      class="mt-2 md:mt-4 flex flex-col space-y-4 md:space-y-0 md:space-x-4 md:flex-row items-center justify-center"
+      class="mt-2 md:mt-4 flex flex-col space-y-4 items-center justify-center"
     >
       <div
         class="cursor-pointer w-full min-h-40 md:max-w-[50%] p-2 bg-purple-300/50 rounded-md overflow-hidden border border-purple-300 flex items-center justify-center"
@@ -165,9 +161,7 @@
           selection="#cropperSelection"
         />
       </div>
-      <div
-        class="flex flex-row md:flex-col space-x-4 md:space-y-4 md:space-x-0 justify-center"
-      >
+      <div class="flex flex-row space-x-4 justify-center">
         <button
           @click="previewCropping"
           class="bg-blue-500 hover:bg-blue-400 text-white font-bold py-3 px-6 rounded-lg focus:outline-none focus:shadow-outline transition duration-300 ease-in-out"
@@ -423,7 +417,7 @@ const getOriginSize = (image: string) => {
   img.src = image;
   originSize.value.width = img.naturalWidth;
   originSize.value.height = img.naturalHeight;
-  console.log(originSize.value);
+  // console.log(originSize.value);
 };
 
 // 重置裁剪元素
