@@ -236,8 +236,7 @@ import type { CropperCanvas, CropperViewer, CropperSelection, CropperImage } fro
 
 onMounted(async () => {
   // 动态导入 Cropper.js，确保只在客户端加载
-  const Cropper = (await import("cropperjs")).default;
-
+  // const Cropper = (await import("cropperjs")).default;
   await import("cropperjs");
 });
 

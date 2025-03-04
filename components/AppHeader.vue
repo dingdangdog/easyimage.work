@@ -161,6 +161,13 @@ locales.value.forEach((l) => {
         >
           {{ $t("header.converter") }}
         </NuxtLink>
+        <NuxtLink
+          :to="localePath('/cropping')"
+          @click="toggleMobileNav"
+          class="text-purple-400 hover:text-purple-300 transition duration-300 px-4 py-2 bg-purple-300/20"
+        >
+          {{ $t("header.cropping") }}
+        </NuxtLink>
         <!-- 如有其他子页面可在此添加 -->
       </nav>
     </div>
