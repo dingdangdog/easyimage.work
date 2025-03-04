@@ -60,6 +60,10 @@ export default defineNuxtConfig({
         code: "zh",
         name: "简中",
       },
+      {
+        code: "ja",
+        name: "日本語",
+      },
     ],
     vueI18n: "./i18n.config.ts",
     detectBrowserLanguage: {

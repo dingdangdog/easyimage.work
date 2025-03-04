@@ -98,7 +98,7 @@ const clickLang = (name: string | any) => {
     </button>
     <div
       v-if="isDropdownOpen"
-      class="absolute right-0 mt-2 w-16 rounded-md shadow-lg bg-gray-950/50"
+      class="absolute right-0 mt-2 w-20 rounded-md shadow-lg bg-gray-950/50"
     >
       <div class="py-1">
         <NuxtLink
