@@ -83,7 +83,7 @@
     <!-- 预览弹窗 -->
 
     <ImagePreview
-      :previewImageData="previewImageData"
+      :image="previewImageData"
       @close-preview="
         () => {
           previewImageData = undefined;
@@ -135,7 +135,7 @@ const upload = () => {
 const dragOver = ref(false); // 拖放状态
 const processing = ref(false); // 处理状态
 const processedImages = ref<ResizeImage[]>([]); // 处理后的图片数组
-const previewImageData = ref<ResizeImage | undefined>(undefined); // 预览图片
+const previewImageData = ref<string>(); // 预览图片
 
 // 处理文件选择
 const handleFileSelect = async (e: Event) => {
@@ -259,7 +259,7 @@ const downloadAll = () => {
 
 // 预览图片
 const previewImage = (image: ResizeImage) => {
-  previewImageData.value = image;
+  previewImageData.value = image.original;
 };
 
 // 监听ESC键关闭预览

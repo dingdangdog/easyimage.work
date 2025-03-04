@@ -169,7 +169,7 @@
     </div>
 
     <ImagePreview
-      :previewImageData="previewImageData"
+      :image="previewImageData"
       @close-preview="
         () => {
           previewImageData = undefined;
@@ -227,7 +227,7 @@ const processing = ref(false);
 const processedCount = ref(0);
 const totalFiles = ref(0);
 // 预览
-const previewImageData = ref<WatermarkImage>();
+const previewImageData = ref<string>();
 
 // 处理图片
 const processImage = async (file: File): Promise<WatermarkImage> => {
@@ -407,7 +407,7 @@ const downloadAll = () => {
 
 // 预览图片
 const previewImage = (image: WatermarkImage) => {
-  previewImageData.value = image;
+  previewImageData.value = image.original;
 };
 
 onMounted(() => {

@@ -1,13 +1,13 @@
 <template>
   <div
-    v-if="previewImageData"
+    v-if="image"
     class="fixed w-screen h-screen inset-0 bg-black bg-opacity-70 z-50"
     @keydown.esc="$emit('close-preview')"
     tabindex="0"
   >
     <div class="relative p-2 w-full h-full flex justify-center items-center">
       <img
-        :src="previewImageData.original"
+        :src="image"
         class="max-w-full max-h-full cursor-pointer"
         @click="$emit('close-preview')"
         alt="Fullscreen Overview"
@@ -30,7 +30,7 @@
 
 <script setup lang="ts">
 defineProps<{
-  previewImageData: BaseImage | undefined;
+  image: string | undefined;
 }>();
 
 const emit = defineEmits(["close-preview"]);

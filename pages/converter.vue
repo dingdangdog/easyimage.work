@@ -133,7 +133,7 @@
     </div>
 
     <ImagePreview
-      :previewImageData="previewImageData"
+      :image="previewImageData"
       @close-preview="
         () => {
           previewImageData = undefined;
@@ -350,8 +350,8 @@ const downloadAll = () => {
 };
 
 // 预览图片 (复用水印页面的)
-const previewImage = (image: any) => {
-  previewImageData.value = image;
+const previewImage = (image: ConverterImage) => {
+  previewImageData.value = image.original;
 };
 
 onMounted(() => {
