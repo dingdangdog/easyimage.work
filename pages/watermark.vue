@@ -184,7 +184,7 @@ import { downloadWatermarkAsZip } from "~/utils/zip";
 const route = useRoute();
 const { t } = useI18n(); // 显式获取 $t
 useHead({
-  title: `${t("watermark.title")} - ${t("title")}`,
+  title: t("watermark.title"),
   meta: [
     { name: "description", content: t("watermark.description") },
     { name: "keywords", content: t("watermark.keywords") },

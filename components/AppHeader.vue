@@ -85,7 +85,7 @@ locales.value.forEach((l) => {
           </NuxtLink>
           <NuxtLink
             :to="localePath('/cropping')"
-            class="text-lg text-pink-400 hover:text-pink-300 transition duration-300"
+            class="text-lg text-purple-400 hover:text-purple-300 transition duration-300"
           >
             {{ $t("header.cropping") }}
           </NuxtLink>

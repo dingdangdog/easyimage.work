@@ -99,7 +99,7 @@ import { downloadResizeAsZip } from "~/utils/zip"; // 假设你已有此工具�
 const route = useRoute();
 const { t } = useI18n(); // 显式获取 $t
 useHead({
-  title: `${t("resize.title")} - ${t("title")}`,
+  title: t("resize.title"),
   meta: [
     { name: "description", content: t("resize.description") },
     { name: "keywords", content: t("resize.keywords") },

@@ -24,7 +24,6 @@
     "converter": {
       "name": "Converter Tool",
       "description": "Easily convert your images format"
-    
     },
     "cropping": {
       "name": "Crop Tool",
@@ -32,7 +31,7 @@
     }
   },
   "watermark": {
-    "title": "Free Online Watermark Tool - EasyImage.work",
+    "title": "Free Online Watermark Tool | EasyImage.work - Supports BMP, ICO, JPG, JPEG, JFIF, PNG, WEBP",
     "description": "Add text or image watermarks to your photos quickly and securely with EasyImage's free online tool. No uploads required—protect your images easily.",
     "keywords": "watermark images, online watermark tool, offline watermark tool, free watermark, image copyright protection, secure image processing, no upload, BMP, JPG, PNG, WEBP",
     "name": "Watermark Tool",
@@ -58,7 +57,7 @@
     "ready": "Processed Images"
   },
   "resize": {
-    "title": "Free Online Image Resizing Tool - EasyImage.work",
+    "title": "Free Online Image Resizing Tool | EasyImage.work - Supports BMP, ICO, JPG, JPEG, JFIF, PNG, WEBP",
     "description": "Resize your images effortlessly with EasyImage's free online tool. Supports multiple formats and ensures secure, fast processing in your browser.",
     "keywords": "resize images, online resizing tool, offline resizing tool, free image editor, image size adjustment, secure image processing, BMP, JPG, PNG, WEBP",
     "name": "Resize Tool",
@@ -72,7 +71,7 @@
     "ready": "Processed Images"
   },
   "converter": {
-    "title": "Free Online Image Format Converter - EasyImage.work",
+    "title": "Free Online Image Format Converter | EasyImage.work - Supports BMP, ICO, JPG, JPEG, JFIF, PNG, WEBP",
     "description": "Convert your images to BMP, JPG, PNG, WEBP, and more with EasyImage's free online tool. Fast, secure, and no uploads needed.",
     "keywords": "image format conversion, online converter, offline converter, free image converter, BMP conversion, JPG conversion, PNG conversion, WEBP conversion, secure image processing",
     "name": "Format Converter",

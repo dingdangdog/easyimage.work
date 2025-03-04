@@ -244,7 +244,7 @@ import {
 const route = useRoute();
 const { t } = useI18n();
 useHead({
-  title: `${t("crop.title")} - ${t("title")}`,
+  title: t("crop.title"),
   meta: [
     { name: "description", content: t("crop.description") },
     { name: "keywords", content: t("crop.keywords") },

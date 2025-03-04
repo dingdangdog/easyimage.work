@@ -149,7 +149,7 @@ import { downloadConvertAsZip } from "~/utils/zip"; // 暂时复用 zip 工具
 const route = useRoute();
 const { t } = useI18n();
 useHead({
-  title: `${t("converter.title")} - ${t("title")}`,
+  title: t("converter.title"),
   meta: [
     { name: "description", content: t("converter.description") },
     { name: "keywords", content: t("converter.keywords") },

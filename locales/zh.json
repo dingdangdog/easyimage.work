@@ -1,5 +1,5 @@
 {
-  "title": "简单图片 - 免费在线图片编辑工具 | EasyImage",
+  "title": "简单图片 - 免费在线图片编辑工具 | EasyImage.work",
   "description": "简单图片提供免费、安全的在线图片编辑工具，无需上传，本地浏览器处理，快速便捷。立即体验加水印、压缩、格式转换等功能，轻松优化图片！PWA离线安装。",
   "keywords": "图片编辑, 在线图片工具, 离线图片工具, 免费图片编辑器, 图片水印, 图片压缩, 图片格式转换, 安全图片处理, 无需上传, BMP, JPG, PNG, WEBP",
   "header": {
@@ -31,7 +31,7 @@
     }
   },
   "watermark": {
-    "title": "免费图片水印工具 | EasyImage.work",
+    "title": "免费图片水印工具 | EasyImage.work - 支持 BMP, ICO, JPG, JPEG, JFIF, PNG, WEBP",
     "description": "使用简单图片的免费在线水印工具，快速为图片添加文字或图像水印。无需上传，保护您的图片版权和隐私。",
     "keywords": "图片水印, 在线水印工具, 离线水银工具, 免费水印, 图片版权保护, 安全图片处理, 无需上传, BMP, JPG, PNG, WEBP",
     "name": "水印工具",
@@ -57,7 +57,7 @@
     "ready": "已处理图片"
   },
   "resize": {
-    "title": "免费图片缩放工具 | EasyImage.work",
+    "title": "免费图片缩放工具 | EasyImage.work - 支持 BMP, ICO, JPG, JPEG, JFIF, PNG, WEBP",
     "description": "使用简单图片的免费在线缩放工具，轻松调整图片尺寸，支持多种图片格式。本地处理，安全快速。",
     "keywords": "图片缩放, 在线缩放工具, 离线缩放工具, 免费图片编辑, 图片尺寸调整, 安全图片处理, BMP, JPG, PNG, WEBP",
     "name": "缩放工具",
@@ -71,7 +71,7 @@
     "ready": "已处理图片"
   },
   "converter": {
-    "title": "免费图片格式转换工具 | EasyImage.wrok",
+    "title": "免费图片格式转换工具 | EasyImage.work - 支持 BMP, ICO, JPG, JPEG, JFIF, PNG, WEBP",
     "description": "使用简单图片的免费在线工具，快速将图片转换为BMP、JPG、PNG、WEBP等格式。本地处理，安全无忧。",
     "keywords": "图片格式转换, 在线转换工具, 离线转换工具, 免费图片转换, BMP转换, JPG转换, PNG转换, WEBP转换, 安全图片处理",
     "name": "格式转换",
