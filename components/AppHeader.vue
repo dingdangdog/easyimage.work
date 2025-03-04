@@ -83,6 +83,12 @@ locales.value.forEach((l) => {
           >
             {{ $t("header.converter") }}
           </NuxtLink>
+          <NuxtLink
+            :to="localePath('/cropping')"
+            class="text-lg text-pink-400 hover:text-pink-300 transition duration-300"
+          >
+            {{ $t("header.cropping") }}
+          </NuxtLink>
         </nav>
       </div>
       <!-- 右侧：语言切换组件 & 移动端导航按钮 -->

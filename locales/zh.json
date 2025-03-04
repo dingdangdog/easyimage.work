@@ -6,6 +6,7 @@
     "title": "简单图片",
     "watermark": "水印工具",
     "resize": "缩放工具",
+    "cropping": "裁剪工具",
     "converter": "格式转换"
   },
   "home": {
@@ -23,6 +24,10 @@
     "converter": {
       "name": "转换工具",
       "description": "轻松转换图片格式"
+    },
+    "cropping": {
+      "name": "裁剪工具",
+      "description": "轻松自由裁剪图片"
     }
   },
   "watermark": {

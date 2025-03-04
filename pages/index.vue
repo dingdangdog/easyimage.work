@@ -32,6 +32,13 @@
           path="converter"
           icon="converter"
         />
+        <HomeCard
+          :name="$t('home.cropping.name')"
+          :desc="$t('home.cropping.description')"
+          color="bg-purple-500/50 hover:bg-purple-500/80"
+          path="cropping"
+          icon="cropping"
+        />
       </div>
     </div>
   </div>

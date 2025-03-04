@@ -6,6 +6,7 @@
     "title": "EasyImage",
     "watermark": "Wateramrk",
     "converter": "Converter",
+    "cropping": "Cropping",
     "resize": "Resize"
   },
   "home": {
@@ -23,6 +24,11 @@
     "converter": {
       "name": "Converter Tool",
       "description": "Easily convert your images format"
+    
+    },
+    "cropping": {
+      "name": "Crop Tool",
+      "description": "Easily Free Cropping your images"
     }
   },
   "watermark": {

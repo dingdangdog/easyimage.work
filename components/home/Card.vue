@@ -2,6 +2,7 @@
 const IconWatermark = resolveComponent("IconWatermark");
 const IconResize = resolveComponent("IconResize");
 const IconConverter = resolveComponent("IconConverter");
+const IconCropping = resolveComponent("IconCropping");
 
 const localePath = useLocalePath();
 
@@ -21,6 +22,8 @@ const getIcon = () => {
       return IconResize;
     case "converter":
       return IconConverter;
+    case "cropping":
+      return IconCropping;
   }
 };
 </script>
