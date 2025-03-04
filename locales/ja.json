@@ -1,112 +1,112 @@
 {
-  "title": "简单图片 - 免费在线图片编辑工具 | EasyImage.work",
-  "description": "简单图片提供免费、安全的在线图片编辑工具，无需上传，本地浏览器处理，快速便捷。立即体验加水印、压缩、格式转换等功能，轻松优化图片！PWA离线安装。",
-  "keywords": "图片编辑, 在线图片工具, 离线图片工具, 免费图片编辑器, 图片水印, 图片压缩, 图片格式转换, 安全图片处理, 无需上传, BMP, JPG, PNG, WEBP",
+  "title": "EasyImage.work - 無料オンライン画像編集ツール",
+  "description": "EasyImageは無料で安全かつ高速なオンライン画像編集ツールを提供します。アップロード不要—すべてブラウザで完結します。透かし追加、リサイズ、フォーマット変換を今すぐお試しください！PWAオフラインインストール対応！",
+  "keywords": "画像編集, オンライン画像ツール, オフライン画像ツール, 無料画像エディタ, 画像透かし, 画像リサイズ, 画像フォーマット変換, 安全な画像処理, アップロード不要, BMP, JPG, PNG, WEBP",
   "header": {
-    "title": "简单图片",
-    "watermark": "水印工具",
-    "resize": "缩放工具",
-    "cropping": "裁剪工具",
-    "converter": "格式转换"
+    "title": "EasyImage",
+    "watermark": "透かし",
+    "converter": "変換",
+    "cropping": "切り抜き",
+    "resize": "リサイズ"
   },
   "home": {
-    "welcome": "欢迎来到 简单图片",
-    "tip": "选择你需要的工具，开始编辑图片吧！",
-    "start-button": "立即开始",
+    "welcome": "EasyImage.workへようこそ",
+    "tip": "必要なツールを選択して画像編集を始めましょう！",
+    "start-button": "始める",
     "watermark": {
-      "name": "水印工具",
-      "description": "轻松给图片添加水印"
+      "name": "透かしツール",
+      "description": "画像に簡単に透かしを追加"
     },
     "resize": {
-      "name": "缩放工具",
-      "description": "轻松缩小图片尺寸"
+      "name": "リサイズツール",
+      "description": "画像のサイズを簡単に調整"
     },
     "converter": {
-      "name": "转换工具",
-      "description": "轻松转换图片格式"
+      "name": "変換ツール",
+      "description": "画像のフォーマットを簡単に変換"
     },
     "cropping": {
-      "name": "裁剪工具",
-      "description": "轻松自由裁剪图片"
+      "name": "切り抜きツール",
+      "description": "画像を自由に切り抜き"
     }
   },
   "watermark": {
-    "title": "免费图片水印工具 | EasyImage.work - 支持 BMP, ICO, JPG, JPEG, JFIF, PNG, WEBP",
-    "description": "使用简单图片的免费在线水印工具，快速为图片添加文字或图像水印。无需上传，保护您的图片版权和隐私。",
-    "keywords": "图片水印, 在线水印工具, 离线水银工具, 免费水印, 图片版权保护, 安全图片处理, 无需上传, BMP, JPG, PNG, WEBP",
-    "name": "水印工具",
-    "tips": "设置水印样式，上传图片，自动为图片添加水印",
-    "mark-text": "水印文字",
-    "mark-size": "水印文字大小",
+    "title": "無料オンライン透かしツール | EasyImage.work - BMP, ICO, JPG, JPEG, JFIF, PNG, WEBP対応",
+    "description": "EasyImageの無料オンラインツールで、写真にテキストや画像の透かしを素早く安全に追加。アップロード不要—簡単に画像を保護。",
+    "keywords": "画像透かし, オンライン透かしツール, オフライン透かしツール, 無料透かし, 画像著作権保護, 安全な画像処理, アップロード不要, BMP, JPG, PNG, WEBP",
+    "name": "透かしツール",
+    "tips": "透かしのスタイルを設定し、画像をアップロードして自動的に透かしを追加",
+    "mark-text": "透かしテキスト",
+    "mark-size": "透かしテキストサイズ",
     "mark-size-option": {
-      "center": "居中",
+      "center": "中央",
       "top-left": "左上",
       "top-right": "右上",
       "bottom-left": "左下",
       "bottom-right": "右下"
     },
-    "mark-position": "水印位置",
-    "mark-font": "水印字体",
-    "upload-tip": "拖放图片到此区域或",
-    "upload-button": "选择文件",
-    "upload-types": "支持的图片格式：BMP, ICO, JPG, JPEG, JFIF, PNG, WEBP",
-    "delete-all-button": "删除全部",
-    "download-all-button": "下载全部",
-    "running": "处理中...",
-    "rerun": "重新处理图片",
-    "ready": "已处理图片"
+    "mark-position": "透かしの位置",
+    "mark-font": "透かしフォント",
+    "upload-tip": "画像をここにドラッグ＆ドロップするか",
+    "upload-button": "ファイルを選択",
+    "upload-types": "対応画像フォーマット：BMP, ICO, JPG, JPEG, JFIF, PNG, WEBP",
+    "delete-all-button": "すべて削除",
+    "download-all-button": "すべてダウンロード",
+    "running": "処理中...",
+    "rerun": "画像を再処理",
+    "ready": "処理済み画像"
   },
   "resize": {
-    "title": "免费图片缩放工具 | EasyImage.work - 支持 BMP, ICO, JPG, JPEG, JFIF, PNG, WEBP",
-    "description": "使用简单图片的免费在线缩放工具，轻松调整图片尺寸，支持多种图片格式。本地处理，安全快速。",
-    "keywords": "图片缩放, 在线缩放工具, 离线缩放工具, 免费图片编辑, 图片尺寸调整, 安全图片处理, BMP, JPG, PNG, WEBP",
-    "name": "缩放工具",
-    "tips": "上传图片，自动生成以 2 的倍数递减像素的图片，最小为64x64。",
-    "upload-tip": "拖放图片到此区域或",
-    "upload-button": "选择文件",
-    "upload-types": "支持的图片格式：BMP, ICO, JPG, JPEG, JFIF, PNG, WEBP",
-    "download-all-button": "下载全部",
-    "origin": "原图",
-    "running": "处理中...",
-    "ready": "已处理图片"
+    "title": "無料オンライン画像リサイズツール | EasyImage.work - BMP, ICO, JPG, JPEG, JFIF, PNG, WEBP対応",
+    "description": "EasyImageの無料オンラインツールで、画像を簡単にリサイズ。複数のフォーマットに対応し、ブラウザで安全かつ迅速に処理。",
+    "keywords": "画像リサイズ, オンラインツール, オフラインツール, 無料画像エディタ, 画像サイズ調整, 安全な画像処理, BMP, JPG, PNG, WEBP",
+    "name": "リサイズツール",
+    "tips": "画像をアップロードし、自動的に2の倍数でピクセルを減少させ、最小64x64の画像を生成。",
+    "upload-tip": "画像をこの領域にドラッグ＆ドロップするか",
+    "upload-button": "ファイルを選択",
+    "upload-types": "対応画像フォーマット：BMP, ICO, JPG, JPEG, JFIF, PNG, WEBP",
+    "download-all-button": "すべてダウンロード",
+    "origin": "オリジナル",
+    "running": "処理中...",
+    "ready": "処理済み画像"
   },
   "converter": {
-    "title": "免费图片格式转换工具 | EasyImage.work - 支持 BMP, ICO, JPG, JPEG, JFIF, PNG, WEBP",
-    "description": "使用简单图片的免费在线工具，快速将图片转换为BMP、JPG、PNG、WEBP等格式。本地处理，安全无忧。",
-    "keywords": "图片格式转换, 在线转换工具, 离线转换工具, 免费图片转换, BMP转换, JPG转换, PNG转换, WEBP转换, 安全图片处理",
-    "name": "格式转换",
-    "tips": "选择目标格式，上传图片，自动转换图片格式",
-    "target-formats": "目标格式",
-    "upload-tip": "拖放图片到此区域或",
-    "upload-button": "选择文件",
-    "upload-types": "支持的图片格式：BMP, ICO, JPG, JPEG, JFIF, PNG, WEBP",
-    "rerun": "重新转换图片格式",
-    "running": "正在转换图片格式...",
-    "delete-all-button": "删除全部",
-    "download-all-button": "下载全部",
-    "ready": "已转换格式图片"
+    "title": "無料オンライン画像フォーマット変換ツール | EasyImage.work - BMP, ICO, JPG, JPEG, JFIF, PNG, WEBP対応",
+    "description": "EasyImageの無料オンラインツールで、画像をBMP, JPG, PNG, WEBPなどに変換。高速、安全、アップロード不要。",
+    "keywords": "画像フォーマット変換, オンライン変換, オフライン変換, 無料画像変換, BMP変換, JPG変換, PNG変換, WEBP変換, 安全な画像処理",
+    "name": "フォーマット変換",
+    "tips": "ターゲットフォーマットを選択し、画像をアップロードして自動的にフォーマットを変換",
+    "target-formats": "ターゲットフォーマット",
+    "upload-tip": "画像をここにドラッグ＆ドロップするか",
+    "upload-button": "ファイルを選択",
+    "upload-types": "対応画像フォーマット：BMP, ICO, JPG, JPEG, JFIF, PNG, WEBP",
+    "rerun": "画像フォーマットを再変換",
+    "running": "画像フォーマットを変換中...",
+    "delete-all-button": "すべて削除",
+    "download-all-button": "すべてダウンロード",
+    "ready": "変換済み画像"
   },
   "crop": {
-    "title": "免费在线图片裁剪工具 | EasyImage.work - 支持 BMP, ICO, JPG, JPEG, JFIF, PNG, WEBP",
-    "description": "EasyImage.work 提供免费的在线图片裁剪工具，支持 BMP, ICO, JPG, JPEG, JFIF, PNG, WEBP 等多种格式。快速、安全地裁剪、旋转、镜像和颠倒你的图片，无需下载软件。",
-    "keywords": "图片裁剪, 在线裁剪, 离线裁剪, 免费裁剪工具, 图片旋转, 图片镜像, 图片颠倒, BMP 裁剪, ICO 裁剪, JPG 裁剪, JPEG 裁剪, JFIF 裁剪, PNG 裁剪, WEBP 裁剪, 安全图片处理",
-    "name": "裁剪工具",
-    "tips": "选择图片，开始自由裁剪",
-    "ratio": "裁剪比例",
+    "title": "無料オンライン画像切り抜きツール | EasyImage.work - BMP, ICO, JPG, JPEG, JFIF, PNG, WEBP対応",
+    "description": "EasyImage.workは、BMP, ICO, JPG, JPEG, JFIF, PNG, WEBPフォーマットに対応した無料オンライン画像切り抜きツールを提供します。ソフトウェアのダウンロード不要で、画像を素早く安全に切り抜き、回転、ミラー、反転できます。",
+    "keywords": "画像切り抜き, オンライン切り抜き, 無料切り抜きツール, 画像回転, 画像ミラー, 画像反転, BMP切り抜き, ICO切り抜き, JPG切り抜き, JPEG切り抜き, JFIF切り抜き, PNG切り抜き, WEBP切り抜き, 安全な画像処理",
+    "name": "切り抜きツール",
+    "tips": "画像を選択して切り抜きを開始",
+    "ratio": "切り抜き比率",
     "image": {
       "left": "L",
-      "left-title": "逆时针旋转1度",
+      "left-title": "反時計回りに1度回転",
       "right": "R",
-      "right-title": "顺时针旋转1度",
-      "mirror": "镜像",
-      "reverse": "颠倒"
+      "right-title": "時計回りに1度回転",
+      "mirror": "ミラー",
+      "reverse": "反転"
     },
-    "upload-tip": "拖放图片到此区域或",
-    "upload-button": "选择文件",
-    "upload-types": "支持的图片格式：BMP, ICO, JPG, JPEG, JFIF, PNG, WEBP",
-    "remove": "删除",
-    "reset": "重置",
-    "preview": "预览",
-    "download": "下载"
+    "upload-tip": "画像をここにドラッグ＆ドロップするか",
+    "upload-button": "ファイルを選択",
+    "upload-types": "対応画像フォーマット：BMP, ICO, JPG, JPEG, JFIF, PNG, WEBP",
+    "remove": "削除",
+    "reset": "リセット",
+    "preview": "プレビュー",
+    "download": "ダウンロード"
   }
 }

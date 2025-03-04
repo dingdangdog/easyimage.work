@@ -232,14 +232,14 @@
 </template>
 
 <script setup lang="ts">
-import "cropperjs";
-import Cropper from "cropperjs";
-import {
-  type CropperCanvas,
-  CropperSelection,
-  type CropperImage,
-  type CropperViewer,
-} from "cropperjs";
+import type { CropperCanvas, CropperViewer, CropperSelection, CropperImage } from 'cropperjs';
+
+onMounted(async () => {
+  // 动态导入 Cropper.js，确保只在客户端加载
+  const Cropper = (await import("cropperjs")).default;
+
+  await import("cropperjs");
+});
 
 const route = useRoute();
 const { t } = useI18n();
@@ -271,7 +271,7 @@ useHead({
   ],
 });
 
-const cropper = ref<Cropper>();
+// const cropper = ref<Cropper>();
 const cropperCanvas = ref<CropperCanvas>();
 const cropperViewer = ref<CropperViewer>();
 const cropperSelection = ref<CropperSelection>();
