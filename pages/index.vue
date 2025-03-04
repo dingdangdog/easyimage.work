@@ -1,7 +1,7 @@
 <template>
   <div class="">
     <div class="container mx-auto p-6">
-      <div class="text-center mb-12">
+      <div class="text-center mb-8 md:mb-12">
         <h1
           class="text-4xl sm:text-5xl font-extrabold leading-tight mb-4 text-glow"
         >
