@@ -29,6 +29,11 @@ export default defineNuxtConfig({
       ],
     },
   },
+  vue: {
+    compilerOptions: {
+      isCustomElement: (tag) => tag.startsWith("cropper-"),
+    },
+  },
   devServer: {
     port: 13175,
   },

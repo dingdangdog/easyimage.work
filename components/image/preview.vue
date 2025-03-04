@@ -8,7 +8,7 @@
     <div class="relative p-2 w-full h-full flex justify-center items-center">
       <img
         :src="image"
-        class="max-w-full max-h-full cursor-pointer bg-gray-300/50"
+        class="max-w-full max-h-full bg-gray-300/50"
         alt="Fullscreen Overview"
       />
       <button

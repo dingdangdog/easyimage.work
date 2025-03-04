@@ -1,7 +1,7 @@
 {
   "title": "EasyImage - Free Online Image Editing Tools",
-  "description": "EasyImage offers free, secure, and fast online image editing tools. No uploads needed—everything happens in your browser. Try watermarking, resizing, and format conversion now!",
-  "keywords": "image editing, online image tools, free image editor, watermark images, resize images, convert image formats, secure image processing, no upload, BMP, JPG, PNG, WEBP",
+  "description": "EasyImage offers free, secure, and fast online image editing tools. No uploads needed—everything happens in your browser. Try watermarking, resizing, and format conversion now! PWA offline install!",
+  "keywords": "image editing, online image tools, offline image tools, free image editor, watermark images, resize images, convert image formats, secure image processing, no upload, BMP, JPG, PNG, WEBP",
   "header": {
     "title": "EasyImage",
     "watermark": "Wateramrk",
@@ -28,7 +28,7 @@
   "watermark": {
     "title": "Free Online Watermark Tool - EasyImage.work",
     "description": "Add text or image watermarks to your photos quickly and securely with EasyImage's free online tool. No uploads required—protect your images easily.",
-    "keywords": "watermark images, online watermark tool, free watermark, image copyright protection, secure image processing, no upload, BMP, JPG, PNG, WEBP",
+    "keywords": "watermark images, online watermark tool, offline watermark tool, free watermark, image copyright protection, secure image processing, no upload, BMP, JPG, PNG, WEBP",
     "name": "Watermark Tool",
     "tips": "Set the watermark style, upload pictures, and automatically add watermarks to pictures",
     "mark-text": "Watermark Text",
@@ -54,7 +54,7 @@
   "resize": {
     "title": "Free Online Image Resizing Tool - EasyImage.work",
     "description": "Resize your images effortlessly with EasyImage's free online tool. Supports multiple formats and ensures secure, fast processing in your browser.",
-    "keywords": "resize images, online resizing tool, free image editor, image size adjustment, secure image processing, BMP, JPG, PNG, WEBP",
+    "keywords": "resize images, online resizing tool, offline resizing tool, free image editor, image size adjustment, secure image processing, BMP, JPG, PNG, WEBP",
     "name": "Resize Tool",
     "tips": "Upload an image and automatically generate an image with pixels decreasing by multiples of 2, with a minimum of 64x64.",
     "upload-tip": "Drag and drop the image to this area or",
@@ -68,7 +68,7 @@
   "converter": {
     "title": "Free Online Image Format Converter - EasyImage.work",
     "description": "Convert your images to BMP, JPG, PNG, WEBP, and more with EasyImage's free online tool. Fast, secure, and no uploads needed.",
-    "keywords": "image format conversion, online converter, free image converter, BMP conversion, JPG conversion, PNG conversion, WEBP conversion, secure image processing",
+    "keywords": "image format conversion, online converter, offline converter, free image converter, BMP conversion, JPG conversion, PNG conversion, WEBP conversion, secure image processing",
     "name": "Format Converter",
     "tips": "Select the target format, upload the image, and automatically convert the image format",
     "target-formats": "Target Formats",
@@ -80,5 +80,23 @@
     "delete-all-button": "Delete All",
     "download-all-button": "Download All",
     "ready": "Converted Images"
+  },
+  "crop": {
+    "title": "Free Online Image Format Converter - EasyImage.work",
+    "description": "Convert your images to BMP, JPG, PNG, WEBP, and more with EasyImage's free online tool. Fast, secure, and no uploads needed.",
+    "keywords": "image format conversion, online converter, free image converter, BMP conversion, JPG conversion, PNG conversion, WEBP conversion, secure image processing",
+    "name": "Format Converter",
+    "tips": "Select the target format, upload the image, and automatically convert the image format",
+    "ratio-label": "Crop",
+    "ratio-placeholder": "Crop",
+    "ratio-set-button": "Crop",
+    "upload-tip": "Drag and drop images here or",
+    "upload-button": "Select Files",
+    "upload-types": "Supported image formats: BMP, ICO, JPG, JPEG, JFIF, PNG, WEBP",
+    "rerun": "Reconvert Images Format",
+    "running": "Converting image format...",
+    "delete-all-button": "Delete All",
+    "download-button": "Download",
+    "preview": "Preview"
   }
 }
