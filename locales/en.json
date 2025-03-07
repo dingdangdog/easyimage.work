@@ -143,7 +143,9 @@
     "download": "Download"
   },
   "agreement": {
-    "title": "User Agreement",
+    "title": "User Agreement - EasyImage",
+    "description": "Learn about EasyImage's User Agreement. By using our image processing tools, you agree to these terms.",
+    "keywords": "User Agreement, EasyImage, Simple Image, Free Image Processing, Terms of Use",
     "sections": [
       {
         "heading": "Introduction",
@@ -250,7 +252,9 @@
     }
   },
   "terms": {
-    "title": "Terms of Service",
+    "title": "Terms of Service - EasyImage",
+    "description": "Read EasyImage's Terms of Service to learn about the rules and policies for using our free image processing tools.",
+    "keywords": "Terms of Service, EasyImage, EasyImage, Free Image Processing, Rules of Use",
     "sections": [
       {
         "heading": "Acceptance of Terms",
@@ -392,7 +396,9 @@
     }
   },
   "about": {
-    "title": "Welcome to EasyImage",
+    "title": "About us - EasyImage",
+    "description": "Learn the background of EasyImage, we provide free and efficient image processing tools, aiming to provide users with convenient image processing services.",
+    "keywords": "About us, EasyImage, simple pictures, image processing, free tools",
     "offer": {
       "heading": "What We Offer",
       "content": [

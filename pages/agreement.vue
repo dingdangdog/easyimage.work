@@ -58,9 +58,33 @@
 
 <script setup lang="ts">
 const { t } = useI18n();
+const route = useRoute();
 
-console.log(t("agreement"));
-const data = ref();
-data.value = t("agreement");
-console.log(data);
+useHead({
+  title: t("agreement.title"),
+  meta: [
+    { name: "description", content: t("agreement.description") },
+    { name: "keywords", content: t("agreement.keywords") },
+    // Twitter
+    { name: "twitter:card", content: "summary" },
+    { name: "twitter:site", content: "@oldmoontop" },
+    { name: "twitter:title", content: t("agreement.title") },
+    { name: "twitter:description", content: t("agreement.description") },
+    {
+      name: "twitter:image",
+      content: "https://easyimage.work/favicon.webp",
+    },
+    // Open Graph
+    { property: "og:title", content: t("agreement.title") },
+    { property: "og:description", content: t("agreement.description") },
+    {
+      property: "og:image",
+      content: "https://easyimage.work/favicon.webp",
+    },
+    { property: "og:type", content: "website" },
+    { property: "og:url", content: `https://easyimage.work${route.path}` },
+    { property: "og:site_name", content: t("title") },
+    { name: "google-adsense-account", content: "ca-pub-8842635629279684" },
+  ],
+});
 </script>

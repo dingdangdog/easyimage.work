@@ -143,7 +143,9 @@
     "download": "下载"
   },
   "agreement": {
-    "title": "用户协议",
+    "title": "用户协议 - EasyImage",
+    "description": "了解 EasyImage 的用户协议，使用我们的图像处理工具即表示您同意这些条款。",
+    "keywords": "用户协议, EasyImage, 简单图片, 免费图像处理, 使用条款",
     "sections": [
       {
         "heading": "介绍",
@@ -250,7 +252,9 @@
     }
   },
   "terms": {
-    "title": "服务条款",
+    "title": "服务条款 - EasyImage",
+    "description": "阅读 EasyImage 的服务条款，了解我们提供的免费图像处理工具的使用规则和政策。",
+    "keywords": "服务条款, EasyImage, 简单图片, 免费图像处理, 使用规则",
     "sections": [
       {
         "heading": "接受条款",
@@ -392,7 +396,9 @@
     }
   },
   "about": {
-    "title": "欢迎来到 EasyImage",
+    "title": "关于我们 - EasyImage",
+    "description": "了解 EasyImage 的背景，我们提供免费、高效的图像处理工具，旨在为用户提供便捷的图像处理服务。",
+    "keywords": "关于我们, EasyImage, 简单图片, 图像处理, 免费工具",
     "offer": {
       "heading": "我们提供的服务",
       "content": [

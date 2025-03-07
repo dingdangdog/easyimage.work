@@ -44,7 +44,7 @@
     </div>
 
     <div class="flex justify-between items-center mt-6">
-      <router-link to="agreement" class=" hover:underline text-white">
+      <router-link to="agreement" class="hover:underline text-white">
         &larr; {{ $t("common.viewAgreement") }}
       </router-link>
       <router-link to="/" class="hover:underline text-white">
@@ -55,7 +55,33 @@
 </template>
 
 <script setup>
-import { useI18n } from "vue-i18n";
-
 const { t } = useI18n();
+const route = useRoute();
+useHead({
+  title: t("terms.title"),
+  meta: [
+    { name: "description", content: t("terms.description") },
+    { name: "keywords", content: t("terms.keywords") },
+    // Twitter
+    { name: "twitter:card", content: "summary" },
+    { name: "twitter:site", content: "@oldmoontop" },
+    { name: "twitter:title", content: t("terms.title") },
+    { name: "twitter:description", content: t("terms.description") },
+    {
+      name: "twitter:image",
+      content: "https://easyimage.work/favicon.webp",
+    },
+    // Open Graph
+    { property: "og:title", content: t("terms.title") },
+    { property: "og:description", content: t("terms.description") },
+    {
+      property: "og:image",
+      content: "https://easyimage.work/favicon.webp",
+    },
+    { property: "og:type", content: "website" },
+    { property: "og:url", content: `https://easyimage.work${route.path}` },
+    { property: "og:site_name", content: t("title") },
+    { name: "google-adsense-account", content: "ca-pub-8842635629279684" },
+  ],
+});
 </script>

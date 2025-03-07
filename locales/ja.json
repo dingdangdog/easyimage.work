@@ -144,7 +144,9 @@
   },
 
   "agreement": {
-    "title": "利用規約",
+    "title": "ユーザー契約 - EasyImage",
+    "description": "EasyImage のユーザー契約についてご確認ください。当社の画像処理ツールを使用すると、これらの条件に同意したことになります。",
+    "keywords": "ユーザー契約、EasyImage、シンプルイメージ、無料画像処理、利用規約",
     "sections": [
       {
         "heading": "はじめに",
@@ -251,7 +253,9 @@
     }
   },
   "terms": {
-    "title": "利用規約",
+    "title": "利用規約 - EasyImage",
+    "description": "EasyImage の利用規約を読んで、無料の画像処理ツールの使用に関するルールとポリシーを確認してください。",
+    "keywords": "利用規約、EasyImage、シンプルイメージ、無料画像処理、利用規則",
     "sections": [
       {
         "heading": "規約への同意",
@@ -393,7 +397,9 @@
     }
   },
   "about": {
-    "title": "EasyImageへようこそ",
+    "title": "会社概要 - EasyImage",
+    "description": "EasyImage の背景を学びましょう。私たちは、ユーザーに便利な画像処理サービスを提供することを目的とした、無料で効率的な画像処理ツールを提供しています。",
+    "keywords": "当社について、EasyImage、シンプルな写真、画像処理、無料ツール",
     "offer": {
       "heading": "提供するサービス",
       "content": [

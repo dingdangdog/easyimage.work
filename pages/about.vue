@@ -157,6 +157,34 @@
 </template>
 
 <script setup lang="ts">
-import { useI18n } from "vue-i18n";
 const { t } = useI18n();
+const route = useRoute();
+
+useHead({
+  title: t("about.title"),
+  meta: [
+    { name: "description", content: t("about.description") },
+    { name: "keywords", content: t("about.keywords") },
+    // Twitter
+    { name: "twitter:card", content: "summary" },
+    { name: "twitter:site", content: "@oldmoontop" },
+    { name: "twitter:title", content: t("about.title") },
+    { name: "twitter:description", content: t("about.description") },
+    {
+      name: "twitter:image",
+      content: "https://easyimage.work/favicon.webp",
+    },
+    // Open Graph
+    { property: "og:title", content: t("about.title") },
+    { property: "og:description", content: t("about.description") },
+    {
+      property: "og:image",
+      content: "https://easyimage.work/favicon.webp",
+    },
+    { property: "og:type", content: "website" },
+    { property: "og:url", content: `https://easyimage.work${route.path}` },
+    { property: "og:site_name", content: t("title") },
+    { name: "google-adsense-account", content: "ca-pub-8842635629279684" },
+  ],
+});
 </script>
