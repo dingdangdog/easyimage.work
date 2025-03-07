@@ -1,0 +1,44 @@
+{
+  "title": "EasyImage.work - 無料オンライン画像編集ツール",
+  "description": "EasyImageは無料で安全かつ高速なオンライン画像編集ツールを提供します。アップロード不要—すべてブラウザで完結します。透かし追加、リサイズ、フォーマット変換を今すぐお試しください！PWAオフラインインストール対応！",
+  "keywords": "画像編集, オンライン画像ツール, オフライン画像ツール, 無料画像エディタ, 画像透かし, 画像リサイズ, 画像フォーマット変換, 安全な画像処理, アップロード不要, BMP, JPG, PNG, WEBP",
+  "header": {
+    "title": "EasyImage",
+    "watermark": "透かし",
+    "converter": "変換",
+    "cropping": "切り抜き",
+    "resize": "リサイズ"
+  },
+  "footer": {
+    "companyInfo": {
+      "title": "EasyImage",
+      "description": "2025年からプロフェッショナルな画像処理サービスを提供",
+      "poweredBy": "提供元",
+      "website": "easyimage.work"
+    },
+    "legal": {
+      "title": "法的情報",
+      "links": {
+        "userAgreement": "ユーザー契約",
+        "termsOfService": "利用規約",
+        "aboutUs": "私たちについて"
+      }
+    },
+    "contact": {
+      "title": "連絡先",
+      "emailLabel": "メールを送る"
+    },
+    "copyright": {
+      "text": "© 2025 EasyImage.work All rights reserved.",
+      "privacyPolicy": "プライバシーポリシー",
+      "cookies": "クッキー"
+    }
+  },
+  "common": {
+    "backToHome": "ホーム",
+    "contactUs": "今すぐお問い合わせください",
+    "viewAbout": "当社について",
+    "viewTerms": "利用規約",
+    "viewAgreement": "ユーザー契約"
+  }
+}

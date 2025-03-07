@@ -1,0 +1,44 @@
+{
+  "title": "简单图片 - 免费在线图片编辑工具 | EasyImage.work",
+  "description": "简单图片提供免费、安全的在线图片编辑工具，无需上传，本地浏览器处理，快速便捷。立即体验加水印、压缩、格式转换等功能，轻松优化图片！PWA离线安装。",
+  "keywords": "图片编辑, 在线图片工具, 离线图片工具, 免费图片编辑器, 图片水印, 图片压缩, 图片格式转换, 安全图片处理, 无需上传, BMP, JPG, PNG, WEBP",
+  "header": {
+    "title": "简单图片",
+    "watermark": "水印工具",
+    "resize": "缩放工具",
+    "cropping": "裁剪工具",
+    "converter": "格式转换"
+  },
+  "footer": {
+    "companyInfo": {
+      "title": "EasyImage",
+      "description": "自2025年起提供专业的图像处理服务",
+      "poweredBy": "由",
+      "website": "easyimage.work"
+    },
+    "legal": {
+      "title": "法律",
+      "links": {
+        "userAgreement": "用户协议",
+        "termsOfService": "服务条款",
+        "aboutUs": "关于我们"
+      }
+    },
+    "contact": {
+      "title": "联系方式",
+      "emailLabel": "发送邮件给我们"
+    },
+    "copyright": {
+      "text": "© 2025 EasyImage.work 保留所有权利。",
+      "privacyPolicy": "隐私政策",
+      "cookies": "Cookies"
+    }
+  },
+  "common": {
+    "backToHome": "首页",
+    "contactUs": "立即联系",
+    "viewAbout": "关于我们",
+    "viewTerms": "服务条款",
+    "viewAgreement": "用户协议"
+  }
+}

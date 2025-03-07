@@ -8,19 +8,9 @@
         <h2 class="text-2xl font-semibold mb-4 text-black">
           {{ $t("about.offer.heading") }}
         </h2>
-        <div
-          v-for="(content, contentIndex) in $t('about.offer.content')"
-          :key="contentIndex"
-        >
-          <p
-            class="text-gray-700 mb-3"
-            v-if="
-              !$t(`about.offer.content[${contentIndex}]`).startsWith(
-                'about.offer'
-              )
-            "
-          >
-            {{ $t(`about.offer.content[${contentIndex}]`) }}
+        <div v-for="index in Number($t('about.offer.contentNum'))" :key="index">
+          <p class="text-gray-700 mb-3">
+            {{ $t(`about.offer.content[${index - 1}]`) }}
           </p>
         </div>
       </div>
@@ -31,18 +21,11 @@
           {{ $t("about.privacy.heading") }}
         </h2>
         <div
-          v-for="(content, contentIndex) in $t('about.privacy.content')"
-          :key="contentIndex"
+          v-for="index in Number($t('about.privacy.contentNum'))"
+          :key="index"
         >
-          <p
-            class="text-gray-700 mb-3"
-            v-if="
-              !$t(`about.privacy.content[${contentIndex}]`).startsWith(
-                'about.privacy'
-              )
-            "
-          >
-            {{ $t(`about.privacy.content[${contentIndex}]`) }}
+          <p class="text-gray-700 mb-3">
+            {{ $t(`about.privacy.content[${index - 1}]`) }}
           </p>
         </div>
         <div class="text-right">
@@ -58,18 +41,11 @@
           {{ $t("about.functionality.heading") }}
         </h2>
         <div
-          v-for="(content, contentIndex) in $t('about.functionality.content')"
-          :key="contentIndex"
+          v-for="index in Number($t('about.functionality.contentNum'))"
+          :key="index"
         >
-          <p
-            class="text-gray-700 mb-3"
-            v-if="
-              !$t(`about.functionality.content[${contentIndex}]`).startsWith(
-                'about.functionality'
-              )
-            "
-          >
-            {{ $t(`about.functionality.content[${contentIndex}]`) }}
+          <p class="text-gray-700 mb-3">
+            {{ $t(`about.functionality.content[${index - 1}]`) }}
           </p>
         </div>
       </div>
@@ -80,18 +56,11 @@
           {{ $t("about.support.heading") }}
         </h2>
         <div
-          v-for="(content, contentIndex) in $t('about.support.content')"
-          :key="contentIndex"
+          v-for="index in Number($t('about.support.contentNum'))"
+          :key="index"
         >
-          <p
-            class="text-gray-700 mb-3"
-            v-if="
-              !$t(`about.support.content[${contentIndex}]`).startsWith(
-                'about.support'
-              )
-            "
-          >
-            {{ $t(`about.support.content[${contentIndex}]`) }}
+          <p class="text-gray-700 mb-3">
+            {{ $t(`about.support.content[${index - 1}]`) }}
           </p>
         </div>
         <div class="text-right">
@@ -107,18 +76,11 @@
           {{ $t("about.language.heading") }}
         </h2>
         <div
-          v-for="(content, contentIndex) in $t('about.language.content')"
-          :key="contentIndex"
+          v-for="index in Number($t('about.language.contentNum'))"
+          :key="index"
         >
-          <p
-            class="text-gray-700 mb-3"
-            v-if="
-              !$t(`about.language.content[${contentIndex}]`).startsWith(
-                'about.language'
-              )
-            "
-          >
-            {{ $t(`about.language.content[${contentIndex}]`) }}
+          <p class="text-gray-700 mb-3">
+            {{ $t(`about.language.content[${index - 1}]`) }}
           </p>
         </div>
       </div>
@@ -129,18 +91,11 @@
           {{ $t("about.contact.heading") }}
         </h2>
         <div
-          v-for="(content, contentIndex) in $t('about.contact.content')"
-          :key="contentIndex"
+          v-for="index in Number($t('about.contact.contentNum'))"
+          :key="index"
         >
-          <p
-            class="text-gray-700 mb-3"
-            v-if="
-              !$t(`about.contact.content[${contentIndex}]`).startsWith(
-                'about.contact'
-              )
-            "
-          >
-            {{ $t(`about.contact.content[${contentIndex}]`) }}
+          <p class="text-gray-700 mb-3">
+            {{ $t(`about.contact.content[${index - 1}]`) }}
           </p>
         </div>
         <div class="text-right">

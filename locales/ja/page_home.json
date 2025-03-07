@@ -1,0 +1,23 @@
+{
+  "home": {
+    "welcome": "EasyImage.workへようこそ",
+    "tip": "必要なツールを選択して画像編集を始めましょう！",
+    "start-button": "始める",
+    "watermark": {
+      "name": "透かしツール",
+      "description": "画像に簡単に透かしを追加"
+    },
+    "resize": {
+      "name": "リサイズツール",
+      "description": "画像のサイズを簡単に調整"
+    },
+    "converter": {
+      "name": "変換ツール",
+      "description": "画像のフォーマットを簡単に変換"
+    },
+    "cropping": {
+      "name": "切り抜きツール",
+      "description": "画像を自由に切り抜き"
+    }
+  }
+}

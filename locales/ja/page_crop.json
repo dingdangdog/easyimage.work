@@ -1,0 +1,25 @@
+{
+  "crop": {
+    "title": "無料オンライン画像切り抜きツール | EasyImage.work - BMP, ICO, JPG, JPEG, JFIF, PNG, WEBP対応",
+    "description": "EasyImage.workは、BMP, ICO, JPG, JPEG, JFIF, PNG, WEBPフォーマットに対応した無料オンライン画像切り抜きツールを提供します。ソフトウェアのダウンロード不要で、画像を素早く安全に切り抜き、回転、ミラー、反転できます。",
+    "keywords": "画像切り抜き, オンライン切り抜き, 無料切り抜きツール, 画像回転, 画像ミラー, 画像反転, BMP切り抜き, ICO切り抜き, JPG切り抜き, JPEG切り抜き, JFIF切り抜き, PNG切り抜き, WEBP切り抜き, 安全な画像処理",
+    "name": "切り抜きツール",
+    "tips": "画像を選択して切り抜きを開始",
+    "ratio": "切り抜き比率",
+    "image": {
+      "left": "L",
+      "left-title": "反時計回りに1度回転",
+      "right": "R",
+      "right-title": "時計回りに1度回転",
+      "mirror": "ミラー",
+      "reverse": "反転"
+    },
+    "upload-tip": "画像をここにドラッグ＆ドロップするか",
+    "upload-button": "ファイルを選択",
+    "upload-types": "対応画像フォーマット：BMP, ICO, JPG, JPEG, JFIF, PNG, WEBP",
+    "remove": "削除",
+    "reset": "リセット",
+    "preview": "プレビュー",
+    "download": "ダウンロード"
+  }
+}

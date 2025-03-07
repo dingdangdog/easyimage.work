@@ -1,0 +1,52 @@
+{
+  "about": {
+    "title": "About us - EasyImage",
+    "description": "Learn the background of EasyImage, we provide free and efficient image processing tools, aiming to provide users with convenient image processing services.",
+    "keywords": "About us, EasyImage, simple pictures, image processing, free tools",
+    "offer": {
+      "heading": "What We Offer",
+      "contentNum": "2",
+      "content": [
+        "EasyImage provides free online tools for image processing. We offer a variety of features to help you modify and optimize your images without any cost.",
+        "There are no paid features or subscriptions available on our website."
+      ]
+    },
+    "privacy": {
+      "heading": "Privacy and Security",
+      "contentNum": "2",
+      "content": [
+        "We respect your privacy. Our website does not store any personal information or account details.",
+        "All operations are performed directly in the browser, meaning no user files are uploaded to external servers."
+      ]
+    },
+    "functionality": {
+      "heading": "Functionality",
+      "contentNum": "2",
+      "content": [
+        "Since our tools are browser-based, the performance of the tools depends on your computer's capabilities.",
+        "We cannot guarantee the availability or performance of the tools, as their functionality is subject to the website’s configuration and your device."
+      ]
+    },
+    "support": {
+      "heading": "No Technical Support",
+      "contentNum": "1",
+      "content": [
+        "We do not provide technical support for the tools. However, all functions are available on the website, and they work as expected based on the browser environment."
+      ]
+    },
+    "contact": {
+      "heading": "Contact Us",
+      "contentNum": "1",
+      "content": [
+        "If you have any questions or need more information, feel free to reach out to us."
+      ]
+    },
+    "language": {
+      "heading": "Multi-Language Support",
+      "contentNum": "1",
+      "content": [
+        "EasyImage is available in multiple languages. However, please note that not all languages are guaranteed to be supported. Please refer to the website for the language options available."
+      ]
+    }
+  }
+}

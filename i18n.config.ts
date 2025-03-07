@@ -1,6 +1,6 @@
-import en from "./locales/en.json";
-import zh from "./locales/zh.json";
-import ja from "./locales/ja.json";
+import en from "./locales/en";
+import zh from "./locales/zh";
+import ja from "./locales/ja";
 
 // You can use `defineI18nConfig` to get type inferences for options to pass to vue-i18n.
 export default defineI18nConfig(() => {

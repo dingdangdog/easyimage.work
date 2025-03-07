@@ -1,0 +1,28 @@
+{
+  "watermark": {
+    "title": "Free Online Watermark Tool | EasyImage.work - Supports BMP, ICO, JPG, JPEG, JFIF, PNG, WEBP",
+    "description": "Add text or image watermarks to your photos quickly and securely with EasyImage's free online tool. No uploads required—protect your images easily.",
+    "keywords": "watermark images, online watermark tool, offline watermark tool, free watermark, image copyright protection, secure image processing, no upload, BMP, JPG, PNG, WEBP",
+    "name": "Watermark Tool",
+    "tips": "Set the watermark style, upload pictures, and automatically add watermarks to pictures",
+    "mark-text": "Watermark Text",
+    "mark-size": "Watermark Text Size",
+    "mark-size-option": {
+      "center": "Center",
+      "top-left": "Top Left",
+      "top-right": "Top Right",
+      "bottom-left": "Bottom Left",
+      "bottom-right": "Bottom Right"
+    },
+    "mark-position": "Watermark Position",
+    "mark-font": "Watermark Font",
+    "upload-tip": "Drag and drop images here or",
+    "upload-button": "Select Files",
+    "upload-types": "Supported image formats: BMP, ICO, JPG, JPEG, JFIF, PNG, WEBP",
+    "delete-all-button": "Delete All",
+    "download-all-button": "Download All",
+    "running": "Processing...",
+    "rerun": "Reprocess Images",
+    "ready": "Processed Images"
+  }
+}

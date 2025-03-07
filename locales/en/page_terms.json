@@ -1,0 +1,147 @@
+{
+  "terms": {
+    "title": "Terms of Service - EasyImage",
+    "description": "Read EasyImage's Terms of Service to learn about the rules and policies for using our free image processing tools.",
+    "keywords": "Terms of Service, EasyImage, EasyImage, Free Image Processing, Rules of Use",
+    "sectionsNum": "16",
+    "sections": [
+      {
+        "heading": "Acceptance of Terms",
+        "contentNum": "2",
+        "content": [
+          "Welcome to EasyImage. By accessing or using our website at easyimage.work, you agree to comply with and be bound by these Terms of Service ('Terms'). Please read these Terms carefully.",
+          "If you do not agree to these Terms, please do not use EasyImage."
+        ]
+      },
+      {
+        "heading": "Description of Service",
+        "contentNum": "3",
+        "content": [
+          "EasyImage provides free online tools for image processing that operate entirely within your web browser.",
+          "All services are provided free of charge, with no paid or premium features.",
+          "No user registration is required to use our services."
+        ]
+      },
+      {
+        "heading": "Service Limitations",
+        "contentNum": "3",
+        "content": [
+          "All image processing functions are executed entirely within your browser. The performance of these functions depends on your device's capabilities, including but not limited to processor speed, available memory, and browser specifications.",
+          "EasyImage does not guarantee continuous or uninterrupted access to our services.",
+          "We reserve the right to modify, suspend, or discontinue any part of the service without prior notice."
+        ]
+      },
+      {
+        "heading": "No Technical Support",
+        "contentNum": "2",
+        "content": [
+          "EasyImage does not provide technical support for the use of our tools.",
+          "We do not guarantee that our tools will meet your specific requirements or that they will be error-free, secure, or uninterrupted."
+        ]
+      },
+      {
+        "heading": "User Content and Privacy",
+        "contentNum": "3",
+        "content": [
+          "EasyImage does not collect, store, or process any user files. All image processing is performed locally in your browser.",
+          "We do not maintain user accounts and do not collect personal information from our users.",
+          "While using our service, you are responsible for ensuring that you have the right to process any images you use with our tools."
+        ]
+      },
+      {
+        "heading": "Prohibited Uses",
+        "contentNum": "5",
+        "content": [
+          "You agree not to use EasyImage for any illegal or unauthorized purpose, including but not limited to:",
+          "- Processing or creating content that violates any applicable laws or regulations;",
+          "- Attempting to interfere with the proper functioning of the website;",
+          "- Using the service to transmit any viruses, malware, or other malicious code;",
+          "- Engaging in any activity that could disable, overburden, or impair the service."
+        ]
+      },
+      {
+        "heading": "Intellectual Property Rights",
+        "contentNum": "3",
+        "content": [
+          "The EasyImage website, including its name, logo, design, text, graphics, and the selection and arrangement thereof, is the exclusive property of EasyImage and is protected by copyright, trademark, and other intellectual property laws.",
+          "You are granted a limited, non-exclusive right to access and use the website for personal, non-commercial purposes.",
+          "You may not reproduce, distribute, modify, create derivative works of, publicly display, publicly perform, republish, download, store, or transmit any of the material on our website without our express prior written permission."
+        ]
+      },
+      {
+        "heading": "Advertising",
+        "contentNum": "3",
+        "content": [
+          "EasyImage may display advertisements, including Google AdSense ads.",
+          "These advertisements are provided by third parties, and EasyImage is not responsible for the content, privacy policies, or practices of these third-party advertisers.",
+          "By using EasyImage, you acknowledge and agree that we may place such advertising on the website."
+        ]
+      },
+      {
+        "heading": "Disclaimer of Warranties",
+        "contentNum": "3",
+        "content": [
+          "EasyImage and all services provided through it are provided on an 'as is' and 'as available' basis, without any warranties of any kind, either express or implied.",
+          "We expressly disclaim all warranties, including but not limited to, implied warranties of merchantability, fitness for a particular purpose, and non-infringement.",
+          "We do not warrant that the website will be secure or available at any particular time or location, that any defects or errors will be corrected, or that the website is free of viruses or other harmful components."
+        ]
+      },
+      {
+        "heading": "Limitation of Liability",
+        "contentNum": "2",
+        "content": [
+          "To the fullest extent permitted by applicable law, in no event shall EasyImage be liable for any indirect, punitive, incidental, special, consequential, or exemplary damages, including without limitation damages for loss of profits, goodwill, use, data, or other intangible losses, arising out of or relating to your use of, or inability to use, the service.",
+          "This limitation applies whether the alleged liability is based on contract, tort, negligence, strict liability, or any other basis, even if we have been advised of the possibility of such damage."
+        ]
+      },
+      {
+        "heading": "Indemnification",
+        "contentNum": "1",
+        "content": [
+          "You agree to defend, indemnify, and hold harmless EasyImage, its affiliates, and their respective officers, directors, employees, and agents from and against any and all claims, damages, obligations, losses, liabilities, costs or debt, and expenses (including but not limited to attorney's fees) arising from your use of the website or your violation of these Terms."
+        ]
+      },
+      {
+        "heading": "Changes to Terms",
+        "contentNum": "2",
+        "content": [
+          "We reserve the right, at our sole discretion, to modify or replace these Terms at any time without prior notice.",
+          "It is your responsibility to review these Terms periodically for changes. Your continued use of EasyImage following the posting of any changes constitutes acceptance of those changes."
+        ]
+      },
+      {
+        "heading": "Language Availability",
+        "contentNum": "2",
+        "content": [
+          "These Terms may be available in multiple languages, but we do not guarantee availability in all languages.",
+          "In the event of any inconsistency between the English version and any translated version, the English version shall take precedence."
+        ]
+      },
+      {
+        "heading": "Governing Law",
+        "contentNum": "1",
+        "content": [
+          "These Terms shall be governed by and construed in accordance with the laws of the jurisdiction in which EasyImage operates, without regard to its conflict of law provisions."
+        ]
+      },
+      {
+        "heading": "Severability",
+        "contentNum": "1",
+        "content": [
+          "If any provision of these Terms is found to be unenforceable or invalid, that provision will be limited or eliminated to the minimum extent necessary so that the Terms will otherwise remain in full force and effect and enforceable."
+        ]
+      },
+      {
+        "heading": "Contact Information",
+        "contentNum": "1",
+        "content": [
+          "If you have any questions about these Terms of Service, please contact us."
+        ]
+      }
+    ],
+    "footer": {
+      "lastUpdated": "Last updated: 2025/3/6",
+      "companyInfo": "EasyImage"
+    }
+  }
+}

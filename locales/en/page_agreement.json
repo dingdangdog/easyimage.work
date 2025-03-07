@@ -1,0 +1,112 @@
+{
+  "agreement": {
+    "title": "User Agreement - EasyImage",
+    "description": "Learn about EasyImage's User Agreement. By using our image processing tools, you agree to these terms.",
+    "keywords": "User Agreement, EasyImage, Simple Image, Free Image Processing, Terms of Use",
+    "sectionsNum": "11",
+    "sections": [
+      {
+        "heading": "Introduction",
+        "contentNum": "2",
+        "content": [
+          "Welcome to EasyImage ('we', 'our', 'us', or 'the Website'). This User Agreement ('Agreement') governs your use of the EasyImage website, accessible at easyimage.work, and all associated services.",
+          "By accessing or using EasyImage, you agree to be bound by this Agreement. If you do not agree to all the terms and conditions of this Agreement, you must not access or use the Website."
+        ]
+      },
+      {
+        "heading": "Service Description",
+        "contentNum": "3",
+        "content": [
+          "EasyImage provides free browser-based tools for online image processing. All services are provided at no cost to the user.",
+          "All image processing functions are executed entirely within your browser. No user files are uploaded to our servers.",
+          "The performance and effectiveness of our tools are dependent on your device's capabilities, including hardware specifications, browser version, and available system resources."
+        ]
+      },
+      {
+        "heading": "User Responsibilities",
+        "contentNum": "6",
+        "content": [
+          "You agree to use EasyImage only for lawful purposes and in accordance with this Agreement.",
+          "You agree not to use the Website:",
+          "- In any way that violates any applicable local, national, or international law or regulation.",
+          "- To process or create any content that is illegal, harmful, threatening, abusive, harassing, defamatory, or otherwise objectionable.",
+          "- To attempt to interfere with, compromise the system integrity or security, or decipher any transmissions to or from the servers running the Website.",
+          "- To engage in any activity that could harm, disable, overburden, or impair the Website or interfere with any other party's use of the Website."
+        ]
+      },
+      {
+        "heading": "Intellectual Property",
+        "contentNum": "2",
+        "content": [
+          "EasyImage and its original content, features, and functionality are owned by us and are protected by international copyright, trademark, patent, trade secret, and other intellectual property or proprietary rights laws.",
+          "You may not modify, reproduce, distribute, create derivative works or adaptations of, publicly display or in any way exploit any of the content in whole or in part except as expressly authorized by us."
+        ]
+      },
+      {
+        "heading": "Privacy and Data Collection",
+        "contentNum": "3",
+        "content": [
+          "EasyImage does not require user accounts and does not collect or store personal user information.",
+          "Your images are processed entirely within your browser and are not uploaded to our servers.",
+          "We may use cookies or similar technologies to enhance your experience, but these are not used to collect personal information."
+        ]
+      },
+      {
+        "heading": "Disclaimer of Warranties",
+        "contentNum": "3",
+        "content": [
+          "EasyImage is provided on an 'as is' and 'as available' basis without any warranty or representation, express or implied.",
+          "We do not guarantee the availability, reliability, or functionality of any tools provided on the Website.",
+          "The performance of our tools is dependent on your device's capabilities, and we make no guarantees regarding the quality or effectiveness of the image processing results."
+        ]
+      },
+      {
+        "heading": "Limitation of Liability",
+        "contentNum": "5",
+        "content": [
+          "To the maximum extent permitted by law, we shall not be liable for any indirect, incidental, special, consequential, or punitive damages, or any loss of profits or revenues, whether incurred directly or indirectly, or any loss of data, use, goodwill, or other intangible losses resulting from:",
+          "- Your use or inability to use the Website and its tools;",
+          "- Any unauthorized access to or use of our servers (if any) and/or any personal information stored therein;",
+          "- Any interruption or cessation of transmission to or from the Website;",
+          "- Any bugs, viruses, trojan horses, or the like that may be transmitted to or through the Website by any third party."
+        ]
+      },
+      {
+        "heading": "Third-Party Services and Advertisements",
+        "contentNum": "3",
+        "content": [
+          "EasyImage may display advertisements provided by third parties, including Google AdSense.",
+          "We are not responsible for the content, privacy policies, or practices of any third-party services or advertisers.",
+          "Your interactions with these third parties are solely between you and such third parties."
+        ]
+      },
+      {
+        "heading": "Modifications to the Agreement",
+        "contentNum": "2",
+        "content": [
+          "We reserve the right to modify or replace this Agreement at any time at our sole discretion.",
+          "It is your responsibility to check this Agreement periodically for changes. Your continued use of the Website following the posting of any changes to this Agreement constitutes acceptance of those changes."
+        ]
+      },
+      {
+        "heading": "Language Availability",
+        "contentNum": "2",
+        "content": [
+          "EasyImage provides this Agreement in multiple languages, but we do not guarantee availability in all languages.",
+          "In case of any inconsistency between the English version and any translated version, the English version shall prevail."
+        ]
+      },
+      {
+        "heading": "Contact Information",
+        "contentNum": "1",
+        "content": [
+          "If you have any questions about this Agreement, please contact us."
+        ]
+      }
+    ],
+    "footer": {
+      "lastUpdated": "Last updated: 2025/3/6",
+      "companyInfo": "EasyImage"
+    }
+  }
+}

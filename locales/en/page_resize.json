@@ -1,0 +1,16 @@
+{
+  "resize": {
+    "title": "Free Online Image Resizing Tool | EasyImage.work - Supports BMP, ICO, JPG, JPEG, JFIF, PNG, WEBP",
+    "description": "Resize your images effortlessly with EasyImage's free online tool. Supports multiple formats and ensures secure, fast processing in your browser.",
+    "keywords": "resize images, online resizing tool, offline resizing tool, free image editor, image size adjustment, secure image processing, BMP, JPG, PNG, WEBP",
+    "name": "Resize Tool",
+    "tips": "Upload an image and automatically generate an image with pixels decreasing by multiples of 2, with a minimum of 64x64.",
+    "upload-tip": "Drag and drop the image to this area or",
+    "upload-button": "Select File",
+    "upload-types": "Supported image formats: BMP, ICO, JPG, JPEG, JFIF, PNG, WEBP",
+    "download-all-button": "Download All",
+    "origin": "Origin",
+    "running": "Processing...",
+    "ready": "Processed Images"
+  }
+}

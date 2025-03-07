@@ -1,0 +1,25 @@
+{
+  "crop": {
+    "title": "Free Online Image Cropper | EasyImage.work - Supports BMP, ICO, JPG, JPEG, JFIF, PNG, WEBP",
+    "description": "EasyImage.work offers a free online image cropper that supports BMP, ICO, JPG, JPEG, JFIF, PNG, WEBP formats. Quickly and securely crop, rotate, mirror, and flip your images without downloading any software.",
+    "keywords": "image cropper, online cropper, free crop tool, image rotation, image mirror, image flip, BMP crop, ICO crop, JPG crop, JPEG crop, JFIF crop, PNG crop, WEBP crop, secure image processing",
+    "name": "Crop Tool",
+    "tips": "Select an image to start cropping",
+    "ratio": "Crop Ratio",
+    "image": {
+      "left": "L",
+      "left-title": "Rotate counterclockwise by 1 degree",
+      "right": "R",
+      "right-title": "Rotate clockwise by 1 degree",
+      "mirror": "Mirror",
+      "reverse": "Flip"
+    },
+    "upload-tip": "Drag and drop an image here or",
+    "upload-button": "Choose File",
+    "upload-types": "Supported image formats: BMP, ICO, JPG, JPEG, JFIF, PNG, WEBP",
+    "remove": "Remove",
+    "reset": "Recover",
+    "preview": "Preview",
+    "download": "Download"
+  }
+}

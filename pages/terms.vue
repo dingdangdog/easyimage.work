@@ -3,7 +3,7 @@
     <h1 class="text-3xl font-bold mb-6">{{ $t("terms.title") }}</h1>
     <div class="bg-white/30 shadow-md rounded-lg p-6 mb-8">
       <div
-        v-for="(section, sectionIndex) in $t('terms.sections')"
+        v-for="(section, sectionIndex) in Number($t('terms.sectionsNum'))"
         :key="sectionIndex"
         class="mb-8"
       >
@@ -17,18 +17,14 @@
         >
           {{ $t(`terms.sections[${sectionIndex}].heading`) }}
           <!-- {{ $t(`terms.sections[${sectionIndex}].contentNum`) }} -->
-          <!-- {{ sectionIndex }} -->
-          <!-- {{ $t(`agreementagreement.sections.${sectionIndex}.heading`) }} -->
         </h2>
-        <div v-for="index in 10" :key="index">
-          <p
-            class="text-gray-700 mb-3"
-            v-if="
-              !$t(
-                `terms.sections[${sectionIndex}].content[${index - 1}]`
-              ).startsWith('terms.sections')
-            "
-          >
+        <div
+          v-for="index in Number(
+            $t(`terms.sections[${sectionIndex}].contentNum`)
+          )"
+          :key="index"
+        >
+          <p class="text-gray-700 mb-3">
             {{ $t(`terms.sections[${sectionIndex}].content[${index - 1}]`) }}
           </p>
         </div>

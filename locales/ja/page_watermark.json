@@ -1,0 +1,28 @@
+{
+  "watermark": {
+    "title": "無料オンライン透かしツール | EasyImage.work - BMP, ICO, JPG, JPEG, JFIF, PNG, WEBP対応",
+    "description": "EasyImageの無料オンラインツールで、写真にテキストや画像の透かしを素早く安全に追加。アップロード不要—簡単に画像を保護。",
+    "keywords": "画像透かし, オンライン透かしツール, オフライン透かしツール, 無料透かし, 画像著作権保護, 安全な画像処理, アップロード不要, BMP, JPG, PNG, WEBP",
+    "name": "透かしツール",
+    "tips": "透かしのスタイルを設定し、画像をアップロードして自動的に透かしを追加",
+    "mark-text": "透かしテキスト",
+    "mark-size": "透かしテキストサイズ",
+    "mark-size-option": {
+      "center": "中央",
+      "top-left": "左上",
+      "top-right": "右上",
+      "bottom-left": "左下",
+      "bottom-right": "右下"
+    },
+    "mark-position": "透かしの位置",
+    "mark-font": "透かしフォント",
+    "upload-tip": "画像をここにドラッグ＆ドロップするか",
+    "upload-button": "ファイルを選択",
+    "upload-types": "対応画像フォーマット：BMP, ICO, JPG, JPEG, JFIF, PNG, WEBP",
+    "delete-all-button": "すべて削除",
+    "download-all-button": "すべてダウンロード",
+    "running": "処理中...",
+    "rerun": "画像を再処理",
+    "ready": "処理済み画像"
+  }
+}

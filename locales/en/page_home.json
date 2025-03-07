@@ -1,0 +1,23 @@
+{
+  "home": {
+    "welcome": "Welcome to EasyImage.work",
+    "tip": "Select the tool you need and start editing images!",
+    "start-button": "Get Started",
+    "watermark": {
+      "name": "Watermark Tool",
+      "description": "Easily add watermarks to your images"
+    },
+    "resize": {
+      "name": "Resize Tool",
+      "description": "Easily zoom your images size"
+    },
+    "converter": {
+      "name": "Converter Tool",
+      "description": "Easily convert your images format"
+    },
+    "cropping": {
+      "name": "Crop Tool",
+      "description": "Easily Free Cropping your images"
+    }
+  }
+}
