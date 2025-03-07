@@ -29,6 +29,10 @@ export default defineNuxtConfig({
       ],
     },
   },
+  site: {
+    url: "https://easyimage.work",
+    name: "EasyImage",
+  },
   sitemap: {
     autoI18n: true,
   },
