@@ -145,7 +145,7 @@
         </div>
         <div class="text-right">
           <a
-            :href="'mailto:' + $t('footer.contact.email')"
+            href="mailto:contact@easyimage.work"
             class="hover:underline text-blue-300"
           >
             {{ $t("common.contactUs") }} &rarr;

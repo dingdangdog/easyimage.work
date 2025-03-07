@@ -26,7 +26,6 @@
     },
     "contact": {
       "title": "連絡先",
-      "email": "contact@easyimage.work",
       "emailLabel": "メールを送る"
     },
     "copyright": {
@@ -243,7 +242,7 @@
         "heading": "お問い合わせ",
         "contentNum": 1,
         "content": [
-          "本規約についてご不明な点がございましたら、contact@easyimage.work までお問い合わせください。"
+          "本規約についてご不明な点がございましたら、までお問い合わせください。"
         ]
       }
     ],
@@ -387,7 +386,7 @@
         "heading": "お問い合わせ",
         "contentNum": 1,
         "content": [
-          "本利用規約についてご不明な点がございましたら、contact@easyimage.work までお問い合わせください。"
+          "本利用規約についてご不明な点がございましたら、までお問い合わせください。"
         ]
       }
     ],
@@ -429,9 +428,7 @@
     },
     "contact": {
       "heading": "お問い合わせ",
-      "content": [
-        "質問や詳細な情報が必要な場合は、contact@easyimage.workまでご連絡ください。"
-      ]
+      "content": ["質問や詳細な情報が必要な場合は、までご連絡ください。"]
     },
     "language": {
       "heading": "多言語サポート",

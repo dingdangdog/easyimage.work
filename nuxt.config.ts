@@ -29,9 +29,12 @@ export default defineNuxtConfig({
       ],
     },
   },
-  // devServer: {
-  //   port: 13175,
-  // },
+  sitemap: {
+    autoI18n: true,
+  },
+  devServer: {
+    port: 7777,
+  },
   vue: {
     compilerOptions: {
       isCustomElement: (tag) => tag.startsWith("cropper-"),
@@ -46,7 +49,7 @@ export default defineNuxtConfig({
   runtimeConfig: {
     public: {},
   },
-  modules: ["@nuxtjs/i18n", "@nuxtjs/tailwindcss"],
+  modules: ["@nuxtjs/i18n", "@nuxtjs/tailwindcss", "@nuxtjs/sitemap"],
 
   i18n: {
     strategy: "prefix_except_default",

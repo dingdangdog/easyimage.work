@@ -26,7 +26,6 @@
     },
     "contact": {
       "title": "Contact",
-      "email": "contact@easyimage.work",
       "emailLabel": "Email us"
     },
     "copyright": {
@@ -242,7 +241,7 @@
         "heading": "Contact Information",
         "contentNum": 1,
         "content": [
-          "If you have any questions about this Agreement, please contact us at: contact@easyimage.work"
+          "If you have any questions about this Agreement, please contact us."
         ]
       }
     ],
@@ -386,7 +385,7 @@
         "heading": "Contact Information",
         "contentNum": 1,
         "content": [
-          "If you have any questions about these Terms of Service, please contact us at: contact@easyimage.work"
+          "If you have any questions about these Terms of Service, please contact us."
         ]
       }
     ],
@@ -429,7 +428,7 @@
     "contact": {
       "heading": "Contact Us",
       "content": [
-        "If you have any questions or need more information, feel free to reach out to us at contact@easyimage.work."
+        "If you have any questions or need more information, feel free to reach out to us."
       ]
     },
     "language": {

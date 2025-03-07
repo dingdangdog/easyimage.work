@@ -80,10 +80,10 @@
               />
             </svg>
             <a
-              :href="'mailto:' + $t('footer.contact.email')"
+              href="mailto:contact@easyimage.work"
               class="text-gray-400 hover:text-white transition duration-200"
             >
-              {{ $t("footer.contact.email") }}
+              contact@easyimage.work
             </a>
           </div>
         </div>
