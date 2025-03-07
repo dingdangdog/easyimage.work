@@ -29,13 +29,13 @@ export default defineNuxtConfig({
       ],
     },
   },
+  // devServer: {
+  //   port: 13175,
+  // },
   vue: {
     compilerOptions: {
       isCustomElement: (tag) => tag.startsWith("cropper-"),
     },
-  },
-  devServer: {
-    port: 13175,
   },
   nitro: {
     prerender: {
