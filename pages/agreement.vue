@@ -1,5 +1,5 @@
 <template>
-  <div class="container mx-auto px-4 py-8 max-w-4xl">
+  <div class="mx-auto px-4 py-8 max-w-4xl">
     <h1 class="text-3xl font-bold mb-6">{{ $t("agreement.title") }}</h1>
     <div class="bg-white/30 shadow-md rounded-lg p-6 mb-8">
       <div

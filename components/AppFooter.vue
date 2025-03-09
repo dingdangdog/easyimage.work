@@ -1,6 +1,6 @@
 <template>
   <footer class="bg-gray-950 text-gray-200 py-8 px-4">
-    <div class="container mx-auto">
+    <div class="mx-auto">
       <!-- Main Footer Content -->
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
         <!-- Company Info -->
