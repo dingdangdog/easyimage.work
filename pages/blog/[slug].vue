@@ -4,24 +4,29 @@
       <div class="mb-6">
         <router-link
           :to="localePath('/blog')"
-          class="text-blue-500 hover:text-blue-700"
+          class="text-blue-500 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 transition-colors duration-300"
         >
           ← {{ $t("blog.backToList") }}
         </router-link>
       </div>
 
-      <div class="bg-white/30 shadow-lg rounded-lg p-6 mb-8">
-        <h1 class="text-3xl font-bold mb-6">
+      <div
+        class="bg-white/30 dark:bg-slate-800/30 shadow-lg rounded-lg p-6 mb-8 transition-colors duration-300"
+      >
+        <h1 class="text-3xl font-bold mb-6 text-slate-800 dark:text-slate-100">
           {{ post.title || formatSlugToTitle(slug) }}
         </h1>
-        <div v-if="post.date" class="text-sm text-gray-500 mb-6">
+        <div
+          v-if="post.date"
+          class="text-sm text-gray-500 dark:text-gray-400 mb-6"
+        >
           {{ formatDate(post.date) }}
         </div>
 
         <ContentRenderer
           v-if="post"
           :value="post"
-          class="prose prose-lg max-w-none"
+          class="prose prose-lg max-w-none dark:prose-invert prose-headings:scroll-mt-20 prose-img:rounded-lg prose-img:shadow-md transition-colors duration-300"
         >
           <template #empty>
             <p>{{ $t("blog.noContent") }}</p>
@@ -30,10 +35,10 @@
       </div>
     </div>
     <div v-else class="text-center py-12">
-      <p>{{ $t("blog.postNotFound") }}</p>
+      <p class="dark:text-slate-300">{{ $t("blog.postNotFound") }}</p>
       <router-link
         :to="localePath('/blog')"
-        class="text-blue-500 hover:text-blue-700 mt-4 inline-block"
+        class="text-blue-500 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 mt-4 inline-block transition-colors duration-300"
       >
         {{ $t("blog.backToList") }}
       </router-link>
@@ -107,26 +112,69 @@ useHead({
 </script>
 
 <style>
+/* Light theme styles */
 .prose img {
   @apply mx-auto rounded-lg shadow-md;
 }
 
 .prose pre {
-  @apply bg-gray-100 p-4 rounded-lg overflow-x-auto;
+  @apply bg-gray-100 dark:bg-gray-800 p-4 rounded-lg overflow-x-auto transition-colors duration-300;
 }
 
 .prose code {
-  @apply text-sm;
+  @apply text-sm bg-gray-100 dark:bg-gray-800 px-1 py-0.5 rounded transition-colors duration-300;
 }
 
-.prose h1,
-.prose h2,
-.prose h3,
+.prose h1 {
+  @apply text-3xl font-bold text-gray-800 dark:text-gray-100 my-6 transition-colors duration-300;
+}
+
+.prose h2 {
+  @apply text-2xl font-semibold text-gray-800 dark:text-gray-100 mt-8 mb-4 pb-2 border-b border-gray-200 dark:border-gray-700 transition-colors duration-300;
+}
+
+.prose h3 {
+  @apply text-xl font-medium text-gray-800 dark:text-gray-100 mt-6 mb-3 transition-colors duration-300;
+}
+
 .prose h4 {
-  @apply text-gray-800;
+  @apply text-lg font-medium text-gray-800 dark:text-gray-100 mt-5 mb-2 transition-colors duration-300;
+}
+
+.prose p {
+  @apply text-gray-700 dark:text-gray-300 mb-4 leading-relaxed transition-colors duration-300;
 }
 
 .prose a {
-  @apply text-blue-600 hover:text-blue-800;
+  @apply text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 transition-colors duration-300;
+}
+
+.prose ul,
+.prose ol {
+  @apply my-4 ml-6 text-gray-700 dark:text-gray-300 transition-colors duration-300;
+}
+
+.prose li {
+  @apply mb-2 transition-colors duration-300;
+}
+
+.prose blockquote {
+  @apply pl-4 border-l-4 border-gray-300 dark:border-gray-600 italic text-gray-700 dark:text-gray-400 my-4 transition-colors duration-300;
+}
+
+.prose hr {
+  @apply my-8 border-gray-200 dark:border-gray-700 transition-colors duration-300;
+}
+
+.prose table {
+  @apply w-full my-6 border-collapse transition-colors duration-300;
+}
+
+.prose th {
+  @apply bg-gray-100 dark:bg-gray-800 text-left p-2 border border-gray-300 dark:border-gray-700 transition-colors duration-300;
+}
+
+.prose td {
+  @apply p-2 border border-gray-300 dark:border-gray-700 transition-colors duration-300;
 }
 </style>
