@@ -1,0 +1,23 @@
+{
+  "blog": {
+    "title": "ブログ",
+    "section": {
+      "heading": "最新の投稿"
+    },
+    "archive": {
+      "heading": "アーカイブ"
+    },
+    "about": {
+      "heading": "ブログについて",
+      "content": "これは個人ブログで、ウェブ開発に関する経験を共有しています。チュートリアル、記事、役立つリソースが見つかります。"
+    },
+    "common": {
+      "viewAgreement": "利用規約を見る",
+      "contactUs": "お問い合わせ"
+    },
+    "backToList": "ブログ一覧に戻る",
+    "noContent": "この投稿にはコンテンツがありません。",
+    "postNotFound": "お探しのブログ記事が見つかりませんでした。",
+    "noPosts": "現在利用可能なブログ記事はありません。"
+  }
+}

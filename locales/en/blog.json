@@ -1,0 +1,23 @@
+{
+  "blog": {
+    "title": "My Blog",
+    "section": {
+      "heading": "Latest Posts"
+    },
+    "archive": {
+      "heading": "Archives"
+    },
+    "about": {
+      "heading": "About",
+      "content": "This is a personal blog where I share my experiences with web development topics. You will find tutorials, articles, and useful resources here."
+    },
+    "common": {
+      "viewAgreement": "View Agreement",
+      "contactUs": "Contact Us"
+    },
+    "backToList": "Back to Blog List",
+    "noContent": "No content available for this post.",
+    "postNotFound": "The blog post you're looking for could not be found.",
+    "noPosts": "No blog posts available at the moment."
+  }
+}
