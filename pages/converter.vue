@@ -24,7 +24,7 @@
             id="format-checkbox"
             v-model="targetFormats"
             :value="format"
-            class="mr-2 rounded border-gray-300 text-purple-700 focus:ring-purple-500"
+            class="mr-2 rounded border-gray-300 text-pink-700 focus:ring-pink-500"
           />
           <label class="font-medium text-gray-300">{{
             format.toUpperCase()
@@ -38,9 +38,9 @@
       @dragleave="dragOver = false"
       @drop.prevent="handleDrop"
       @click.stop="upload()"
-      class="mt-6 border-2 border-dashed rounded-lg p-4 text-center cursor-pointer bg-gray-100/20 hover:bg-purple-300/50 hover:border-purple-700 transition duration-300 ease-in-out"
+      class="mt-6 border-2 border-dashed rounded-lg p-4 text-center cursor-pointer bg-gray-100/20 hover:bg-pink-300/50 hover:border-pink-700 transition duration-300 ease-in-out"
       :class="{
-        'border-purple-700 bg-blue-50': dragOver,
+        'border-pink-700 bg-blue-50': dragOver,
         'border-gray-300': !dragOver,
       }"
     >
@@ -64,7 +64,7 @@
           <button
             type="button"
             @click.stop="upload()"
-            class="text-purple-800 font-bold hover:text-purple-700 focus:outline-none"
+            class="text-pink-800 font-bold hover:text-pink-700 focus:outline-none"
           >
             {{ $t("converter.upload-button") }}
           </button>
@@ -81,7 +81,7 @@
           processedImages.length === 0 ||
           targetFormats.length === 0
         "
-        class="w-full py-3 bg-green-500 hover:bg-purple-500 text-white font-semibold rounded-lg transition duration-300 ease-in-out"
+        class="w-full py-3 bg-green-500 hover:bg-pink-500 text-white font-semibold rounded-lg transition duration-300 ease-in-out"
         :class="{
           'cursor-not-allowed': processing || targetFormats.length === 0,
         }"

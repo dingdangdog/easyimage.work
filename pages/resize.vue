@@ -15,9 +15,9 @@
       @dragleave="dragOver = false"
       @drop.prevent="handleDrop"
       @click.stop="upload()"
-      class="mt-6 border-2 border-dashed rounded-lg p-4 text-center cursor-pointer bg-gray-100/20 hover:bg-purple-300/50 hover:border-purple-700 transition duration-300 ease-in-out"
+      class="mt-6 border-2 border-dashed rounded-lg p-4 text-center cursor-pointer bg-gray-100/20 hover:bg-orange-300/50 hover:border-orange-700 transition duration-300 ease-in-out"
       :class="{
-        'border-purple-700 bg-blue-50': dragOver,
+        'border-orange-700 bg-blue-50': dragOver,
         'border-gray-300': !dragOver,
       }"
     >
@@ -40,7 +40,7 @@
           <button
             type="button"
             @click.stop="upload()"
-            class="text-purple-800 font-bold hover:text-purple-700 focus:outline-none"
+            class="text-orange-800 font-bold hover:text-orange-700 focus:outline-none"
           >
             {{ $t("resize.upload-button") }}
           </button>

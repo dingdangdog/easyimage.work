@@ -52,6 +52,11 @@ onUnmounted(() => {
   document.removeEventListener("click", handleClickOutside);
 });
 
+const clickLang = (name: string | any) => {
+  localName.value = name || "";
+  isDropdownOpen.value = false;
+};
+
 // 导出给 LocaleSelect 组件用的变量和方法
 const localeSelectData = {
   localName,
@@ -60,30 +65,38 @@ const localeSelectData = {
   isDropdownOpen,
   toggleDropdown,
 };
-
-const clickLang = (name: string | any) => {
-  localName.value = name || "";
-  isDropdownOpen.value = false;
-};
 </script>
 
 <!-- 语言切换组件 -->
-<template #LocaleSelect>
+<template>
   <div class="relative inline-block text-left" id="locale-dropdown">
     <button
-      class="flex items-center text-white hover:text-gray-300 focus:outline-none"
+      class="flex items-center p-2 rounded-full text-slate-700 hover:text-blue-600 dark:text-slate-300 dark:hover:text-blue-400 hover:bg-slate-100 dark:hover:bg-slate-800/60 transition duration-300"
       @click="toggleDropdown"
+      aria-label="Change language"
     >
       <!-- Globe 图标 -->
-      <!-- <svg class="w-5 h-5 mr-1" fill="currentColor" viewBox="0 0 20 20">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="h-5 w-5 mr-1 text-slate-700 dark:text-slate-300"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+      >
         <path
-          d="M10 20a10 10 0 100-20 10 10 0 000 20zm1-14V5a1 1 0 10-2 0v1H8a1 1 0 100 2h1v1a1 1 0 102 0V8h1a1 1 0 100-2h-1z"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
         />
-      </svg> -->
-      <span>{{ localName }}</span>
+      </svg>
+      <span
+        class="text-sm font-medium text-slate-700 dark:text-slate-300 transition duration-300"
+        >{{ localName }}</span
+      >
       <!-- 下拉箭头 -->
       <svg
-        class="w-4 h-4 ml-1"
+        class="w-4 h-4 ml-1 text-slate-700 dark:text-slate-300"
         fill="none"
         stroke="currentColor"
         viewBox="0 0 24 24"
@@ -96,21 +109,40 @@ const clickLang = (name: string | any) => {
         />
       </svg>
     </button>
-    <div
-      v-if="isDropdownOpen"
-      class="absolute right-0 mt-2 w-20 rounded-md shadow-lg bg-gray-950/50"
+
+    <!-- 下拉菜单 -->
+    <transition
+      enter-active-class="transition ease-out duration-100"
+      enter-from-class="transform opacity-0 scale-95"
+      enter-to-class="transform opacity-100 scale-100"
+      leave-active-class="transition ease-in duration-75"
+      leave-from-class="transform opacity-100 scale-100"
+      leave-to-class="transform opacity-0 scale-95"
     >
-      <div class="py-1">
-        <NuxtLink
-          v-for="l in locales"
-          :key="l.code"
-          :to="switchLocalePath(l.code)"
-          @click="clickLang(l.name)"
-          class="block px-4 py-2 text-sm text-white hover:bg-gray-800/50"
-        >
-          {{ l.name }}
-        </NuxtLink>
+      <div
+        v-if="isDropdownOpen"
+        class="absolute right-0 mt-2 w-36 rounded-md shadow-lg bg-white dark:bg-slate-800 ring-1 ring-black ring-opacity-5 focus:outline-none z-50"
+      >
+        <div class="py-1">
+          <NuxtLink
+            v-for="l in locales"
+            :key="l.code"
+            :to="switchLocalePath(l.code)"
+            @click="clickLang(l.name)"
+            class="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-100 hover:text-blue-600 dark:text-slate-300 dark:hover:bg-slate-700 dark:hover:text-blue-400 transition duration-150"
+          >
+            {{ l.name }}
+          </NuxtLink>
+        </div>
       </div>
-    </div>
+    </transition>
   </div>
 </template>
+
+<style scoped>
+/* Add any additional custom styles here */
+svg,
+span {
+  transition: color 0.3s ease;
+}
+</style>

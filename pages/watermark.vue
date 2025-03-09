@@ -19,7 +19,7 @@
         id="watermark-text"
         v-model="watermarkText"
         type="text"
-        class="mt-2 p-2 block w-full rounded-md bg-white text-gray-600 text-lg border-2 border-gray-300 shadow-sm focus:outline-none focus:border-purple-700 focus:ring-2 focus:ring-purple-700 transition duration-300 ease-in-out"
+        class="mt-2 p-2 block w-full rounded-md bg-white text-gray-600 text-lg border-2 border-gray-300 shadow-sm focus:outline-none focus:border-blue-700 focus:ring-2 focus:ring-blue-700 transition duration-300 ease-in-out"
       />
     </div>
 
@@ -35,7 +35,7 @@
           min="10"
           max="100"
           step="1"
-          class="mt-2 p-2 block w-full rounded-md bg-gray-400/60 text-white border-2 border-gray-300 shadow-sm focus:outline-none focus:border-purple-700 focus:ring-2 focus:ring-purple-700 transition duration-300 ease-in-out"
+          class="mt-2 p-2 block w-full rounded-md bg-gray-400/60 text-white border-2 border-gray-300 shadow-sm focus:outline-none focus:border-blue-700 focus:ring-2 focus:ring-blue-700 transition duration-300 ease-in-out"
         />
       </div>
       <div>
@@ -47,7 +47,7 @@
         <select
           id="watermark-position"
           v-model="watermarkPosition"
-          class="mt-2 p-2 block w-full rounded-md bg-gray-400/60 text-white border-2 border-gray-300 shadow-sm focus:outline-none focus:border-purple-700 focus:ring-2 focus:ring-purple-700 transition duration-300 ease-in-out"
+          class="mt-2 p-2 block w-full rounded-md bg-gray-400/60 text-white border-2 border-gray-300 shadow-sm focus:outline-none focus:border-blue-700 focus:ring-2 focus:ring-blue-700 transition duration-300 ease-in-out"
         >
           <option value="center">
             {{ $t("watermark.mark-size-option.center") }}
@@ -73,7 +73,7 @@
         <select
           id="watermark-font"
           v-model="watermarkFont"
-          class="mt-2 p-2 block w-full rounded-md bg-gray-400/60 text-white border-2 border-gray-300 shadow-sm focus:outline-none focus:border-purple-700 focus:ring-2 focus:ring-purple-700 transition duration-300 ease-in-out"
+          class="mt-2 p-2 block w-full rounded-md bg-gray-400/60 text-white border-2 border-gray-300 shadow-sm focus:outline-none focus:border-blue-700 focus:ring-2 focus:ring-blue-700 transition duration-300 ease-in-out"
         >
           <option value="SmileySans-Oblique">SmileySans-Oblique</option>
           <option value="Arial">Arial</option>
@@ -87,9 +87,9 @@
       @dragleave="dragOver = false"
       @drop.prevent="handleDrop"
       @click.stop="upload()"
-      class="mt-6 border-2 border-dashed rounded-lg p-4 text-center cursor-pointer bg-gray-100/20 hover:bg-purple-300/50 hover:border-purple-700 transition duration-300 ease-in-out"
+      class="mt-6 border-2 border-dashed rounded-lg p-4 text-center cursor-pointer bg-gray-100/20 hover:bg-blue-300/50 hover:border-blue-700 transition duration-300 ease-in-out"
       :class="{
-        'border-purple-700 bg-blue-50': dragOver,
+        'border-blue-700 bg-blue-50': dragOver,
         'border-gray-300': !dragOver,
       }"
     >
@@ -113,7 +113,7 @@
           <button
             type="button"
             @click.stop="upload()"
-            class="text-purple-800 font-bold hover:text-purple-700 focus:outline-none"
+            class="text-blue-800 font-bold hover:text-blue-700 focus:outline-none"
           >
             {{ $t("watermark.upload-button") }}
           </button>
@@ -126,7 +126,7 @@
       <button
         @click="reprocessImages"
         :disabled="processing || processedImages.length === 0"
-        class="w-full py-3 bg-green-500 hover:bg-purple-500 text-white font-semibold rounded-lg transition duration-300 ease-in-out"
+        class="w-full py-3 bg-green-500 hover:bg-blue-500 text-white font-semibold rounded-lg transition duration-300 ease-in-out"
         :class="{
           'cursor-not-allowed': processing,
         }"

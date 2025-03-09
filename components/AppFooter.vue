@@ -1,14 +1,16 @@
 <template>
-  <footer class="bg-gray-950 text-gray-200 py-8 px-4">
-    <div class="mx-auto">
+  <footer
+    class="bg-white dark:bg-slate-900 text-slate-700 dark:text-slate-300 py-8 px-4 border-t border-slate-200 dark:border-slate-800"
+  >
+    <div class="mx-auto max-w-7xl">
       <!-- Main Footer Content -->
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
         <!-- Company Info -->
         <div class="flex flex-col space-y-3">
-          <h3 class="text-xl font-semibold mb-2 text-white">
+          <h3 class="text-xl font-semibold mb-2 text-slate-900 dark:text-white">
             {{ $t("footer.companyInfo.title") }}
           </h3>
-          <p class="text-sm text-gray-400">
+          <p class="text-sm text-slate-600 dark:text-slate-400">
             {{ $t("footer.companyInfo.description") }}
           </p>
           <div class="flex items-center mt-2">
@@ -17,7 +19,7 @@
             }}</span>
             <a
               href="https://easyimage.work"
-              class="ml-2 text-blue-400 hover:text-blue-300 transition duration-200"
+              class="ml-2 text-blue-600 hover:text-blue-500 dark:text-blue-400 dark:hover:text-blue-300 transition duration-200"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -28,14 +30,14 @@
 
         <!-- Quick Links -->
         <div class="flex flex-col space-y-3">
-          <h3 class="text-xl font-semibold mb-2 text-white">
+          <h3 class="text-xl font-semibold mb-2 text-slate-900 dark:text-white">
             {{ $t("footer.legal.title") }}
           </h3>
           <ul class="space-y-2">
             <li>
               <router-link
                 :to="localePath('/agreement')"
-                class="text-gray-400 hover:text-white transition duration-200"
+                class="text-slate-600 hover:text-blue-600 dark:text-slate-400 dark:hover:text-blue-400 transition duration-200"
               >
                 {{ $t("footer.legal.links.userAgreement") }}
               </router-link>
@@ -43,7 +45,7 @@
             <li>
               <router-link
                 :to="localePath('/terms')"
-                class="text-gray-400 hover:text-white transition duration-200"
+                class="text-slate-600 hover:text-blue-600 dark:text-slate-400 dark:hover:text-blue-400 transition duration-200"
               >
                 {{ $t("footer.legal.links.termsOfService") }}
               </router-link>
@@ -51,7 +53,7 @@
             <li>
               <router-link
                 :to="localePath('/about')"
-                class="text-gray-400 hover:text-white transition duration-200"
+                class="text-slate-600 hover:text-blue-600 dark:text-slate-400 dark:hover:text-blue-400 transition duration-200"
               >
                 {{ $t("footer.legal.links.aboutUs") }}
               </router-link>
@@ -61,13 +63,13 @@
 
         <!-- Contact -->
         <div class="flex flex-col space-y-3">
-          <h3 class="text-xl font-semibold mb-2 text-white">
+          <h3 class="text-xl font-semibold mb-2 text-slate-900 dark:text-white">
             {{ $t("footer.contact.title") }}
           </h3>
           <div class="flex items-center space-x-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="h-5 w-5 text-gray-400"
+              class="h-5 w-5 text-slate-500 dark:text-slate-400"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -81,7 +83,7 @@
             </svg>
             <a
               href="mailto:contact@easyimage.work"
-              class="text-gray-400 hover:text-white transition duration-200"
+              class="text-slate-600 hover:text-blue-600 dark:text-slate-400 dark:hover:text-blue-400 transition duration-200"
             >
               contact@easyimage.work
             </a>
@@ -90,11 +92,11 @@
       </div>
 
       <!-- Divider -->
-      <div class="border-t border-gray-800 my-6"></div>
+      <div class="border-t border-slate-200 dark:border-slate-800 my-6"></div>
 
       <!-- Copyright -->
       <div
-        class="flex flex-col md:flex-row justify-between items-center text-sm text-gray-500"
+        class="flex flex-col md:flex-row justify-between items-center text-sm text-slate-500 dark:text-slate-500"
       >
         <p>
           {{ $t("footer.copyright.text", { year: new Date().getFullYear() }) }}
@@ -102,13 +104,13 @@
         <div class="mt-4 md:mt-0 flex space-x-4">
           <router-link
             :to="localePath('/about')"
-            class="hover:text-gray-300 transition duration-200"
+            class="text-slate-500 hover:text-blue-600 dark:text-slate-500 dark:hover:text-blue-400 transition duration-200"
           >
             {{ $t("footer.copyright.privacyPolicy") }}
           </router-link>
           <router-link
             :to="localePath('/about')"
-            class="hover:text-gray-300 transition duration-200"
+            class="text-slate-500 hover:text-blue-600 dark:text-slate-500 dark:hover:text-blue-400 transition duration-200"
           >
             {{ $t("footer.copyright.cookies") }}
           </router-link>

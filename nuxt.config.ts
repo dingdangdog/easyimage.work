@@ -18,6 +18,11 @@ export default defineNuxtConfig({
           rel: "manifest",
           href: "/manifest.json",
         },
+        // Add Material Symbols font for icons
+        {
+          rel: "stylesheet",
+          href: "https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200",
+        },
       ],
       script: [
         {
@@ -26,6 +31,11 @@ export default defineNuxtConfig({
           crossorigin: "anonymous",
           "data-ad-client": "ca-pub-8842635629279684", // 注意：data-ad-client 需要使用 data- 前缀
         },
+      ],
+      // Add meta tags for theme color and viewport
+      meta: [
+        { name: "theme-color", content: "#1e40af" },
+        { name: "viewport", content: "width=device-width, initial-scale=1" },
       ],
     },
   },
@@ -37,7 +47,7 @@ export default defineNuxtConfig({
     autoI18n: true,
   },
   devServer: {
-    port: 7777,
+    port: 13175,
   },
   vue: {
     compilerOptions: {
@@ -49,12 +59,15 @@ export default defineNuxtConfig({
       ignore: ["/manifest.json"],
     },
   },
-  css: ["~/assets/css/base.css"],
+  css: [
+    "~/assets/css/base.css",
+    "~/assets/css/theme.css", // Add our theme CSS file
+  ],
   runtimeConfig: {
     public: {},
   },
   modules: ["@nuxtjs/i18n", "@nuxtjs/tailwindcss", "@nuxtjs/sitemap"],
-
+  content: {},
   i18n: {
     strategy: "prefix_except_default",
     defaultLocale: "en",
@@ -77,6 +90,12 @@ export default defineNuxtConfig({
       useCookie: true,
       cookieKey: "i18n_redirected",
       redirectOn: "root", // recommended
+    },
+  },
+  // Add Tailwind configuration for dark mode
+  tailwindcss: {
+    config: {
+      darkMode: "class",
     },
   },
 });
