@@ -66,7 +66,12 @@ export default defineNuxtConfig({
   runtimeConfig: {
     public: {},
   },
-  modules: ["@nuxtjs/i18n", "@nuxtjs/tailwindcss", "@nuxtjs/sitemap"],
+  modules: [
+    "@nuxtjs/i18n",
+    "@nuxtjs/tailwindcss",
+    "@nuxtjs/sitemap",
+    "@nuxt/content",
+  ],
   content: {},
   i18n: {
     strategy: "prefix_except_default",
