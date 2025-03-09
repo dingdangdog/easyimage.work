@@ -37,6 +37,13 @@ const toggleTheme = () => {
   // Save preference to localStorage
   if (typeof window !== "undefined") {
     localStorage.setItem("theme", isDarkMode.value ? "dark" : "light");
+
+    // 同步更新 document.documentElement 上的 dark 类
+    if (isDarkMode.value) {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
   }
 };
 </script>
