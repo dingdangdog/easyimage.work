@@ -26,6 +26,14 @@
               {{ $t("footer.companyInfo.website") }}
             </a>
           </div>
+          <div>
+            <a
+              :href="localePath('/blog')"
+              class="text-base font-semibold mb-2 text-slate-900 dark:text-white hover:text-blue-600"
+            >
+              {{ $t("common.blog") }}
+            </a>
+          </div>
         </div>
 
         <!-- Quick Links -->

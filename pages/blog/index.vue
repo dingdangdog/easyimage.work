@@ -1,41 +1,54 @@
 <template>
   <div class="mx-auto px-4 py-8 max-w-4xl">
-    <h1 class="text-3xl font-bold mb-6 text-center">{{ $t("blog.title") }}</h1>
+    <h1
+      class="text-3xl font-bold mb-6 text-center text-gray-900 dark:text-white"
+    >
+      {{ $t("blog.title") }}
+    </h1>
 
-    <div class="bg-white/30 shadow-lg rounded-lg p-6 mb-8">
-      <!-- Blog Section -->
+    <div class="bg-white/30 dark:bg-gray-800/30 shadow-md rounded-lg p-6 mb-8">
+      <!-- Blog Posts List -->
       <div class="mb-8">
-        <h2 class="text-2xl font-semibold mb-4 text-black">
-          {{ $t("blog.section.heading") }}
-        </h2>
-        <div v-if="posts.length > 0">
-          <div
-            v-for="post in posts"
-            :key="post._path"
-            class="text-gray-700 mb-3"
+        <div
+          v-for="(post, index) in Number($t('blog.listNum'))"
+          :key="index"
+          class="text-gray-700 dark:text-gray-300 mb-4"
+        >
+          <router-link
+            :to="localePath(`/blog/${$t(`blog.list[${index}].key`)}`)"
+            class="text-blue-500 hover:text-blue-700 dark:hover:text-blue-300"
           >
-            <router-link
-              :to="localePath(`/blog/${encodeURIComponent(post.slug)}`)"
-              class="text-blue-500 hover:text-blue-300"
-            >
-              {{ post.title || formatSlugToTitle(post.slug) }}
-            </router-link>
-            <span v-if="post.date" class="text-sm text-gray-500 ml-2">
-              ({{ formatDate(post.date) }})
-            </span>
-          </div>
+            {{ $t(`blog.list[${index}].title`) }}
+          </router-link>
+          <span class="text-sm text-gray-500 dark:text-gray-400 ml-2">
+            ({{ formatDate($t(`blog.list[${index}].date`)) }})
+          </span>
         </div>
-        <div v-else class="text-gray-600">
+        <div
+          v-if="Number($t('blog.listNum')) === 0"
+          class="text-gray-600 dark:text-gray-400"
+        >
           {{ $t("blog.noPosts") }}
         </div>
       </div>
+    </div>
+
+    <div class="flex justify-between items-center mt-6">
+      <router-link
+        to="/"
+        class="text-gray-500 dark:text-gray-200 hover:underline"
+      >
+        &larr; {{ $t("common.backToHome") }}
+      </router-link>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
+const localePath = useLocalePath();
 const { t } = useI18n();
 const { locale } = useI18n();
+const route = useRoute();
 
 // Function to format date
 const formatDate = (dateString: string) => {
@@ -51,58 +64,32 @@ const formatDate = (dateString: string) => {
   }
 };
 
-// Function to format slug to title if title is not available
-const formatSlugToTitle = (slug: string) => {
-  return slug.replace(/-/g, " ").replace(/\b\w/g, (char) => char.toUpperCase());
-};
-
-// Fetch blog posts for the current locale
-const { data: localePosts } = await useAsyncData(
-  `blog-posts-${locale.value}`,
-  () => {
-    // Use queryContent to fetch blog posts from the root blog directory
-    return queryContent(`/blog/${locale.value}`).sort({ date: -1 }).find();
-  }
-);
-
-// Fetch English blog posts as fallback
-const { data: enPosts } = await useAsyncData("blog-posts-en", () => {
-  if (locale.value === "en") return [];
-  // Fetch English posts as fallback
-  return queryContent("/blog/en").sort({ date: -1 }).find();
-});
-
-// Combine and deduplicate posts
-const posts = computed(() => {
-  const allPosts = [...(localePosts.value || [])];
-
-  // Add English posts that don't exist in the current locale
-  if (locale.value !== "en" && enPosts.value) {
-    enPosts.value.forEach((enPost) => {
-      const slug = enPost._path.split("/").pop();
-      const exists = allPosts.some((p) => p._path.split("/").pop() === slug);
-      if (!exists) {
-        allPosts.push(enPost);
-      }
-    });
-  }
-
-  // Sort by date (newest first)
-  return allPosts
-    .sort((a, b) => {
-      if (!a.date) return 1;
-      if (!b.date) return -1;
-      return new Date(b.date).getTime() - new Date(a.date).getTime();
-    })
-    .map((post) => {
-      // Extract slug from path
-      const pathParts = (post._path || "").split("/");
-      const slug = pathParts[pathParts.length - 1];
-      return {
-        ...post,
-        slug,
-      };
-    });
+useHead({
+  title: t("blog.title"),
+  meta: [
+    { name: "description", content: t("blog.description") },
+    { name: "keywords", content: t("blog.keywords") },
+    // Twitter
+    { name: "twitter:card", content: "summary" },
+    { name: "twitter:site", content: "@oldmoontop" },
+    { name: "twitter:title", content: t("blog.title") },
+    { name: "twitter:description", content: t("blog.description") },
+    {
+      name: "twitter:image",
+      content: "https://easyimage.work/favicon.webp",
+    },
+    // Open Graph
+    { property: "og:title", content: t("blog.title") },
+    { property: "og:description", content: t("blog.description") },
+    {
+      property: "og:image",
+      content: "https://easyimage.work/favicon.webp",
+    },
+    { property: "og:type", content: "website" },
+    { property: "og:url", content: `https://easyimage.work${route.path}` },
+    { property: "og:site_name", content: t("title") },
+    { name: "google-adsense-account", content: "ca-pub-8842635629279684" },
+  ],
 });
 </script>
 

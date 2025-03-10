@@ -1,23 +1,15 @@
 {
   "blog": {
-    "title": "我的博客",
-    "section": {
-      "heading": "最新文章"
-    },
-    "archive": {
-      "heading": "归档"
-    },
-    "about": {
-      "heading": "关于",
-      "content": "这是一个个人博客，我在这里分享我的网络开发经验。你会找到教程、文章和有用的资源。"
-    },
-    "common": {
-      "viewAgreement": "查看协议",
-      "contactUs": "联系我们"
-    },
-    "backToList": "返回博客列表",
-    "noContent": "该文章暂无内容。",
-    "postNotFound": "找不到您要查找的博客文章。",
-    "noPosts": "目前没有可用的博客文章。"
+    "title": "简单图片的博客 - EasyImage.work",
+    "description": "简单图片提供免费、安全的在线图片编辑工具，无需上传，本地浏览器处理，快速便捷。立即体验加水印、压缩、格式转换等功能，轻松优化图片！PWA离线安装。",
+    "keywords": "图像编辑、图像处理、在线图像工具、离线图像工具、免费图像编辑器、水印图像、调整图像大小、转换图像格式、裁剪图片，安全图像处理、无需上传、BMP、JPG、PNG、WEBP",
+    "listNum": "1",
+    "list": [
+      {
+        "title": "如何使用JavaScript将文件打包成压缩包（.zip）",
+        "date": "2025-03-09",
+        "key": "how-to-use-javascript-to-zip-files"
+      }
+    ]
   }
 }

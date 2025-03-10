@@ -3,8 +3,6 @@ date: 2025-03-09
 title: How to use JavaScript to package files into a compressed package (.zip)
 ---
 
-# How to use JavaScript to package files into a compressed package (.zip)
-
 In modern web development, compressing files is a common requirement. Users may need to combine multiple files into a compressed package for download, or generate files through a web application and export them as a `.zip` file. This blog post will provide a detailed guide on how to implement file packaging and compression operations in the browser using JavaScript. We will accomplish this by using the popular JavaScript library JSZip and leveraging FileSaver.js for file downloads.
 
 ## Preparation
