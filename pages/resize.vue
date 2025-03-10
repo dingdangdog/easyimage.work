@@ -1,11 +1,11 @@
 <template>
   <div class="p-4 max-w-3xl mx-auto">
     <h1
-      class="text-3xl sm:text-4xl font-extrabold mb-6 text-center text-orange-400"
+      class="text-3xl sm:text-4xl font-extrabold mb-6 text-center text-orange-400 dark:text-orange-300"
     >
       {{ $t("resize.name") }}
     </h1>
-    <p class="my-2 text-center text-orange-300">
+    <p class="my-2 text-center text-orange-300 dark:text-orange-200">
       {{ $t("resize.tips") }}
     </p>
 
@@ -15,10 +15,9 @@
       @dragleave="dragOver = false"
       @drop.prevent="handleDrop"
       @click.stop="upload()"
-      class="mt-6 border-2 border-dashed rounded-lg p-4 text-center cursor-pointer bg-gray-100/20 hover:bg-orange-300/50 hover:border-orange-700 transition duration-300 ease-in-out"
+      class="mt-6 border-2 border-dashed rounded-lg p-4 text-center cursor-pointer bg-gray-100/20 hover:bg-orange-300/50 border-orange-300 hover:border-orange-700 transition duration-300 ease-in-out"
       :class="{
         'border-orange-700 bg-blue-50': dragOver,
-        'border-gray-300': !dragOver,
       }"
     >
       <input
@@ -29,34 +28,41 @@
         ref="fileInput"
       />
       <div
-        class="text-gray-300 duration-100 ease-in-out"
+        class="duration-100 ease-in-out"
         :class="{
           'my-0': processedImages.length > 0,
           'my-16': processedImages.length === 0,
         }"
       >
-        <p>
+        <p class="text-gray-500 dark:text-gray-200">
           {{ $t("resize.upload-tip") }}
           <button
             type="button"
             @click.stop="upload()"
-            class="text-orange-800 font-bold hover:text-orange-700 focus:outline-none"
+            class="text-orange-800 dark:text-orange-400 font-bold hover:text-orange-700 dark:hover:text-orange-300 focus:outline-none"
           >
             {{ $t("resize.upload-button") }}
           </button>
         </p>
-        <p class="text-sm mt-2">{{ $t("resize.upload-types") }}</p>
+        <p class="text-sm mt-2 text-gray-500 dark:text-gray-200">
+          {{ $t("resize.upload-types") }}
+        </p>
       </div>
     </div>
 
     <!-- 处理中提示 -->
-    <div v-if="processing" class="mt-6 text-center text-gray-600">
+    <div
+      v-if="processing"
+      class="mt-6 text-center text-gray-600 dark:text-gray-300"
+    >
       {{ $t("resize.running") }}
     </div>
 
     <!-- 处理结果 -->
     <div v-if="processedImages.length > 0" class="mt-6">
-      <h3 class="text-xl font-semibold mb-4">{{ $t("resize.ready") }}</h3>
+      <h3 class="text-xl font-semibold mb-4 text-gray-800 dark:text-gray-100">
+        {{ $t("resize.ready") }}
+      </h3>
       <div class="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 gap-6">
         <div v-for="(image, index) in processedImages" :key="index">
           <ImageCard
@@ -66,7 +72,7 @@
             @remove="removeImage(index)"
             @download="downloadImage(image)"
           />
-          <p class="text-center text-gray-300">
+          <p class="text-center text-gray-300 dark:text-gray-400">
             {{ image.width }}x{{ image.height
             }}{{ index === 0 ? `(${t("resize.origin")})` : "" }}
           </p>

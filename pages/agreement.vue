@@ -1,14 +1,16 @@
 <template>
   <div class="mx-auto px-4 py-8 max-w-4xl">
-    <h1 class="text-3xl font-bold mb-6">{{ $t("agreement.title") }}</h1>
-    <div class="bg-white/30 shadow-md rounded-lg p-6 mb-8">
+    <h1 class="text-3xl font-bold mb-6 text-gray-900 dark:text-white">
+      {{ $t("agreement.title") }}
+    </h1>
+    <div class="bg-white/30 dark:bg-gray-800/30 shadow-md rounded-lg p-6 mb-8">
       <div
         v-for="(section, sectionIndex) in Number($t('agreement.sectionsNum'))"
         :key="sectionIndex"
         class="mb-8"
       >
         <h2
-          class="text-xl font-semibold mb-3 text-black"
+          class="text-xl font-semibold mb-3 text-gray-900 dark:text-gray-100"
           v-if="
             !$t(`agreement.sections[${sectionIndex}].heading`).startsWith(
               'agreement.sections'
@@ -24,7 +26,7 @@
           )"
           :key="index"
         >
-          <p class="text-gray-700 mb-3">
+          <p class="text-gray-700 dark:text-gray-300 mb-3">
             {{
               $t(`agreement.sections[${sectionIndex}].content[${index - 1}]`)
             }}
@@ -32,20 +34,26 @@
         </div>
       </div>
       <div class="mb-6">
-        <p class="text-sm text-gray-500 mb-4">
+        <p class="text-sm text-gray-500 dark:text-gray-400 mb-4">
           {{ $t("agreement.footer.lastUpdated") }}
         </p>
       </div>
-      <div class="mt-4 text-sm text-gray-500">
+      <div class="mt-4 text-sm text-gray-500 dark:text-gray-400">
         {{ $t("agreement.footer.companyInfo") }}
       </div>
     </div>
 
     <div class="flex justify-between items-center mt-6">
-      <router-link to="/" class="hover:underline text-white">
+      <router-link
+        to="/"
+        class="text-gray-500 dark:text-gray-200 hover:underline"
+      >
         &larr; {{ $t("common.backToHome") }}
       </router-link>
-      <router-link to="terms" class="hover:underline text-white">
+      <router-link
+        to="terms"
+        class="text-gray-500 dark:text-gray-200 hover:underline"
+      >
         {{ $t("common.viewTerms") }} &rarr;
       </router-link>
     </div>

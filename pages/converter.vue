@@ -1,18 +1,19 @@
 <template>
   <div class="p-4 max-w-3xl mx-auto">
     <h1
-      class="text-3xl sm:text-4xl font-extrabold mb-6 text-center text-pink-400"
+      class="text-3xl sm:text-4xl font-extrabold mb-6 text-center text-pink-400 dark:text-pink-300"
     >
       {{ $t("converter.name") }}
     </h1>
-    <p class="text-pink-300 my-2 text-center">
+    <p class="text-pink-300 dark:text-pink-200 my-2 text-center">
       {{ $t("converter.tips") }}
     </p>
 
     <div class="mb-4">
-      <label class="block text-lg font-medium text-pink-400">{{
-        $t("converter.target-formats")
-      }}</label>
+      <label
+        class="block text-lg font-medium text-pink-400 dark:text-pink-300"
+        >{{ $t("converter.target-formats") }}</label
+      >
       <div class="mt-2 flex flex-wrap gap-4">
         <div
           v-for="format in availableFormats"
@@ -26,7 +27,7 @@
             :value="format"
             class="mr-2 rounded border-gray-300 text-pink-700 focus:ring-pink-500"
           />
-          <label class="font-medium text-gray-300">{{
+          <label class="font-medium text-gray-700 dark:text-gray-300">{{
             format.toUpperCase()
           }}</label>
         </div>
@@ -38,10 +39,10 @@
       @dragleave="dragOver = false"
       @drop.prevent="handleDrop"
       @click.stop="upload()"
-      class="mt-6 border-2 border-dashed rounded-lg p-4 text-center cursor-pointer bg-gray-100/20 hover:bg-pink-300/50 hover:border-pink-700 transition duration-300 ease-in-out"
+      class="mt-6 border-2 border-dashed rounded-lg p-4 text-center cursor-pointer bg-gray-100/20 dark:bg-gray-800/30 hover:bg-pink-300/50 dark:hover:bg-pink-800/30 border-pink-400 hover:border-pink-700 dark:hover:border-pink-500 transition duration-300 ease-in-out"
       :class="{
-        'border-pink-700 bg-blue-50': dragOver,
-        'border-gray-300': !dragOver,
+        'border-pink-700 dark:border-pink-500 bg-blue-50 dark:bg-pink-900/20':
+          dragOver,
       }"
     >
       <input
@@ -53,23 +54,25 @@
         ref="fileInput"
       />
       <div
-        class="text-gray-300 duration-100 ease-in-out"
+        class="duration-100 ease-in-out"
         :class="{
           'my-0': processedImages.length > 0,
           'my-16': processedImages.length === 0,
         }"
       >
-        <p>
+        <p class="text-gray-500 dark:text-gray-300">
           {{ $t("converter.upload-tip") }}
           <button
             type="button"
             @click.stop="upload()"
-            class="text-pink-800 font-bold hover:text-pink-700 focus:outline-none"
+            class="text-pink-800 dark:text-pink-400 font-bold hover:text-pink-700 dark:hover:text-pink-300 focus:outline-none"
           >
             {{ $t("converter.upload-button") }}
           </button>
         </p>
-        <p class="text-sm mt-2">{{ $t("converter.upload-types") }}</p>
+        <p class="text-sm mt-2 text-gray-500 dark:text-gray-300">
+          {{ $t("converter.upload-types") }}
+        </p>
       </div>
     </div>
 
@@ -90,7 +93,10 @@
       </button>
     </div>
 
-    <div v-if="processing" class="mt-6 text-center text-gray-600">
+    <div
+      v-if="processing"
+      class="mt-6 text-center text-gray-600 dark:text-gray-300"
+    >
       {{ $t("converter.running") }} ({{ processedCount }}/{{ totalFiles }})
     </div>
 
@@ -114,7 +120,7 @@
     </div>
 
     <div v-if="processedImages.length > 0" class="mt-6">
-      <h3 class="text-xl font-semibold mb-4">
+      <h3 class="text-xl font-semibold mb-4 text-gray-800 dark:text-gray-200">
         {{ $t("converter.ready") }}
       </h3>
       <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6">
@@ -125,7 +131,7 @@
             @remove="removeImage(index)"
             @download="downloadImage(image)"
           />
-          <p class="text-center text-gray-300">
+          <p class="text-center text-gray-600 dark:text-gray-300">
             {{ image.type }}
           </p>
         </div>

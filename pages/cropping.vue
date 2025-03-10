@@ -1,7 +1,7 @@
 <template>
   <div class="p-4 max-w-3xl mx-auto">
     <h1
-      class="text-3xl sm:text-4xl font-extrabold mb-6 text-center text-purple-400"
+      class="text-3xl sm:text-4xl font-extrabold mb-6 text-center text-purple-400 dark:text-purple-300"
     >
       {{ $t("crop.name") }}
     </h1>
@@ -84,7 +84,9 @@
       v-if="cropperVisible"
       class="flex md:justify-center items-center mt-2 w-full"
     >
-      <div class="mr-2">{{ $t("crop.ratio") }}</div>
+      <div class="mr-2 text-gray-700 dark:text-gray-200">
+        {{ $t("crop.ratio") }}
+      </div>
       <div class="flex-1 flex space-x-2 overflow-x-auto p-1">
         <button
           v-for="ratio of selectionRatioOptions"
@@ -92,8 +94,8 @@
           class="px-2 py-1 shadow-sm rounded-sm hover:bg-purple-500/80 duration-150 ease-in-out"
           :class="
             selection.aspectRatio == ratio.value
-              ? 'bg-purple-300/60 shadow-purple-500 text-purple-500'
-              : 'bg-gray-300/60 shadow-gray-500'
+              ? 'bg-purple-300/60 shadow-purple-500 text-purple-800 dark:text-purple-100'
+              : 'bg-gray-300/60 shadow-gray-500 text-gray-800 dark:text-gray-100'
           "
           @click="setSelectionRatio(ratio.value)"
         >
@@ -114,27 +116,27 @@
       </button>
 
       <button
-        class="px-4 py-1 shadow-sm rounded-sm bg-gray-300/60 shadow-gray-500 hover:bg-purple-500/80 duration-150 ease-in-out"
+        class="px-4 py-1 shadow-sm rounded-sm bg-gray-300/60 shadow-gray-500 hover:bg-purple-500/80 duration-150 ease-in-out text-gray-800 dark:text-gray-100"
         :title="$t('crop.image.left-title')"
         @click="leftRotateImage()"
       >
         {{ $t("crop.image.left") }}
       </button>
       <button
-        class="px-4 py-1 shadow-sm rounded-sm bg-gray-300/60 shadow-gray-500 hover:bg-purple-500/80 duration-150 ease-in-out"
+        class="px-4 py-1 shadow-sm rounded-sm bg-gray-300/60 shadow-gray-500 hover:bg-purple-500/80 duration-150 ease-in-out text-gray-800 dark:text-gray-100"
         :title="$t('crop.image.right-title')"
         @click="rightRotateImage()"
       >
         {{ $t("crop.image.right") }}
       </button>
       <button
-        class="px-2 py-1 shadow-sm rounded-sm bg-gray-300/60 shadow-gray-500 hover:bg-purple-500/80 duration-150 ease-in-out"
+        class="px-2 py-1 shadow-sm rounded-sm bg-gray-300/60 shadow-gray-500 hover:bg-purple-500/80 duration-150 ease-in-out text-gray-800 dark:text-gray-100"
         @click="mirrorImage()"
       >
         {{ $t("crop.image.mirror") }}
       </button>
       <button
-        class="px-2 py-1 shadow-sm rounded-sm bg-gray-300/60 shadow-gray-500 hover:bg-purple-500/80 duration-150 ease-in-out"
+        class="px-2 py-1 shadow-sm rounded-sm bg-gray-300/60 shadow-gray-500 hover:bg-purple-500/80 duration-150 ease-in-out text-gray-800 dark:text-gray-100"
         @click="reverseImage()"
       >
         {{ $t("crop.image.reverse") }}
@@ -152,12 +154,12 @@
       class="mt-2 md:mt-4 flex flex-col space-y-4 items-center justify-center"
     >
       <div
-        class="cursor-pointer w-full min-h-40 md:max-w-[50%] p-2 bg-purple-300/50 rounded-md overflow-hidden border border-purple-300 flex items-center justify-center"
+        class="cursor-pointer w-full min-h-40 md:max-w-[50%] p-2 bg-purple-300/50 dark:bg-purple-800/30 rounded-md overflow-hidden border border-purple-300 dark:border-purple-700 flex items-center justify-center"
         @click="previewCropping"
       >
         <cropper-viewer
           ref="cropperViewer"
-          class="bg-white/50"
+          class="bg-white/50 dark:bg-black/30"
           selection="#cropperSelection"
         />
       </div>
@@ -177,15 +179,15 @@
       </div>
     </div>
 
-    <p class="mt-2 md:mt-6 text-center text-purple-300">
+    <p class="mt-2 md:mt-6 text-center text-purple-500 dark:text-purple-300">
       {{ $t("crop.tips") }}
     </p>
 
     <div
-      class="mt-2 md:mt-4 border-2 border-dashed rounded-lg p-4 text-center cursor-pointer bg-gray-100/20 hover:bg-purple-300/50 hover:border-purple-700 transition duration-300 ease-in-out"
+      class="mt-2 md:mt-4 border-2 border-dashed rounded-lg p-4 text-center cursor-pointer bg-gray-100/20 dark:bg-gray-800/30 hover:bg-purple-300/50 dark:hover:bg-purple-800/30 border-purple-400 hover:border-purple-700 dark:hover:border-purple-500 transition duration-300 ease-in-out"
       :class="{
-        'border-purple-700 bg-blue-50': dragOver,
-        'border-gray-300': !dragOver,
+        'border-purple-700 dark:border-purple-500 bg-blue-50 dark:bg-purple-900/20':
+          dragOver,
       }"
       @dragover.prevent="dragOver = true"
       @dragleave="dragOver = false"
@@ -200,23 +202,25 @@
         ref="fileInput"
       />
       <div
-        class="text-gray-400 duration-100 ease-in-out"
+        class="duration-100 ease-in-out"
         :class="{
           'my-0': cropperVisible,
           'my-16': !cropperVisible,
         }"
       >
-        <p>
+        <p class="text-gray-500 dark:text-gray-300">
           {{ $t("crop.upload-tip") }}
           <button
             type="button"
-            class="text-purple-800 font-bold hover:text-purple-700 focus:outline-none"
+            class="text-purple-800 dark:text-purple-400 font-bold hover:text-purple-700 dark:hover:text-purple-300 focus:outline-none"
             @click.stop="uploadImage"
           >
             {{ $t("crop.upload-button") }}
           </button>
         </p>
-        <p class="text-sm mt-2">{{ $t("crop.upload-types") }}</p>
+        <p class="text-sm mt-2 text-gray-500 dark:text-gray-300">
+          {{ $t("crop.upload-types") }}
+        </p>
       </div>
     </div>
 
@@ -232,7 +236,12 @@
 </template>
 
 <script setup lang="ts">
-import type { CropperCanvas, CropperViewer, CropperSelection, CropperImage } from 'cropperjs';
+import type {
+  CropperCanvas,
+  CropperViewer,
+  CropperSelection,
+  CropperImage,
+} from "cropperjs";
 
 onMounted(async () => {
   // 动态导入 Cropper.js，确保只在客户端加载

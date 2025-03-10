@@ -14,7 +14,7 @@
             {{ $t("footer.companyInfo.description") }}
           </p>
           <div class="flex items-center mt-2">
-            <span class="text-sm">{{
+            <span class="text-sm text-slate-500 dark:text-slate-400">{{
               $t("footer.companyInfo.poweredBy")
             }}</span>
             <a
@@ -96,21 +96,21 @@
 
       <!-- Copyright -->
       <div
-        class="flex flex-col md:flex-row justify-between items-center text-sm text-slate-500 dark:text-slate-500"
+        class="flex flex-col md:flex-row justify-between items-center text-sm"
       >
-        <p>
+        <p class="text-slate-500 dark:text-slate-400">
           {{ $t("footer.copyright.text", { year: new Date().getFullYear() }) }}
         </p>
         <div class="mt-4 md:mt-0 flex space-x-4">
           <router-link
             :to="localePath('/about')"
-            class="text-slate-500 hover:text-blue-600 dark:text-slate-500 dark:hover:text-blue-400 transition duration-200"
+            class="text-slate-500 hover:text-blue-600 dark:text-slate-400 dark:hover:text-blue-400 transition duration-200"
           >
             {{ $t("footer.copyright.privacyPolicy") }}
           </router-link>
           <router-link
             :to="localePath('/about')"
-            class="text-slate-500 hover:text-blue-600 dark:text-slate-500 dark:hover:text-blue-400 transition duration-200"
+            class="text-slate-500 hover:text-blue-600 dark:text-slate-400 dark:hover:text-blue-400 transition duration-200"
           >
             {{ $t("footer.copyright.cookies") }}
           </router-link>

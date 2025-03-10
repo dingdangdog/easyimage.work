@@ -67,7 +67,7 @@ const toggleTheme = () => {
   <header class="fixed top-0 left-0 w-full z-30">
     <!-- 顶部导航栏 -->
     <div
-      class="w-full h-16 bg-white/90 dark:bg-slate-900/90 backdrop-blur-sm border-b border-slate-200 dark:border-slate-700 flex justify-between items-center px-4 md:px-8 transition-transform duration-500 ease-in-out transform shadow-sm"
+      class="w-full h-16 bg-white/90 dark:bg-slate-900/90 backdrop-blur-sm border-b border-slate-200 dark:border-slate-700 flex justify-between items-center px-2 md:px-8 transition-transform duration-500 ease-in-out transform shadow-sm"
       :class="isMenuVisible ? 'translate-y-0' : '-translate-y-full'"
     >
       <!-- 左侧：标题和桌面端导航链接 -->
@@ -125,17 +125,17 @@ const toggleTheme = () => {
       </nav>
 
       <!-- 右侧：主题切换、语言切换组件 & 移动端导航按钮 -->
-      <div class="flex items-center space-x-4">
+      <div class="flex items-center space-x-2 md:space-x-4">
         <!-- 主题切换按钮 -->
         <button
           @click="toggleTheme"
-          class="p-2 rounded-full text-slate-700 hover:text-blue-600 dark:text-slate-300 dark:hover:text-blue-400 hover:bg-slate-100 dark:hover:bg-slate-800/60 transition duration-300"
+          class="p-2 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800/60 transition duration-300"
           aria-label="Toggle theme"
         >
           <svg
             v-if="props.isDarkMode"
             xmlns="http://www.w3.org/2000/svg"
-            class="h-5 w-5 text-slate-700 dark:text-slate-300 transition-colors duration-300"
+            class="h-5 w-5 text-slate-300 transition-colors duration-300"
             fill="currentColor"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -150,10 +150,10 @@ const toggleTheme = () => {
           <svg
             v-else
             xmlns="http://www.w3.org/2000/svg"
-            class="h-5 w-5 text-slate-700 dark:text-slate-300 transition-colors duration-300"
-            fill="currentColor"
+            class="h-5 w-5 transition-colors duration-300"
+            fill="rgb(51 65 85 / var(--tw-text-opacity, 1))"
             viewBox="0 0 24 24"
-            stroke="currentColor"
+            stroke="rgb(51 65 85 / var(--tw-text-opacity, 1))"
           >
             <path
               stroke-linecap="round"

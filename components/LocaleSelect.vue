@@ -56,32 +56,23 @@ const clickLang = (name: string | any) => {
   localName.value = name || "";
   isDropdownOpen.value = false;
 };
-
-// 导出给 LocaleSelect 组件用的变量和方法
-const localeSelectData = {
-  localName,
-  locales,
-  switchLocalePath,
-  isDropdownOpen,
-  toggleDropdown,
-};
 </script>
 
 <!-- 语言切换组件 -->
 <template>
   <div class="relative inline-block text-left" id="locale-dropdown">
     <button
-      class="flex items-center p-2 rounded-full text-slate-700 hover:text-blue-600 dark:text-slate-300 dark:hover:text-blue-400 hover:bg-slate-100 dark:hover:bg-slate-800/60 transition duration-300"
+      class="flex items-center p-2 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800/60 transition duration-300"
       @click="toggleDropdown"
       aria-label="Change language"
     >
       <!-- Globe 图标 -->
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        class="h-5 w-5 mr-1 text-slate-700 dark:text-slate-300"
+        class="h-5 w-5 mr-1 text-blue-400"
         fill="none"
         viewBox="0 0 24 24"
-        stroke="currentColor"
+        stroke="rgb(96 165 250/ var(--tw-text-opacity, 1))"
       >
         <path
           stroke-linecap="round"
@@ -90,15 +81,13 @@ const localeSelectData = {
           d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
         />
       </svg>
-      <span
-        class="text-sm font-medium text-slate-700 dark:text-slate-300 transition duration-300"
-        >{{ localName }}</span
-      >
-      <!-- 下拉箭头 -->
+      <span class="text-sm font-medium text-blue-400 transition duration-300">{{
+        localName
+      }}</span>
       <svg
-        class="w-4 h-4 ml-1 text-slate-700 dark:text-slate-300"
-        fill="none"
-        stroke="currentColor"
+        class="w-4 h-4 ml-1"
+        fill="rgb(96 165 250/ var(--tw-text-opacity, 1))"
+        stroke="rgb(96 165 250/ var(--tw-text-opacity, 1))"
         viewBox="0 0 24 24"
       >
         <path

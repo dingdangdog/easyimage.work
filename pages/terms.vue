@@ -1,14 +1,16 @@
 <template>
   <div class="mx-auto px-4 py-8 max-w-4xl">
-    <h1 class="text-3xl font-bold mb-6">{{ $t("terms.title") }}</h1>
-    <div class="bg-white/30 shadow-md rounded-lg p-6 mb-8">
+    <h1 class="text-3xl font-bold mb-6 text-gray-900 dark:text-white">
+      {{ $t("terms.title") }}
+    </h1>
+    <div class="bg-white/30 dark:bg-gray-800/30 shadow-md rounded-lg p-6 mb-8">
       <div
         v-for="(section, sectionIndex) in Number($t('terms.sectionsNum'))"
         :key="sectionIndex"
         class="mb-8"
       >
         <h2
-          class="text-xl font-semibold mb-3 text-black"
+          class="text-xl font-semibold mb-3 text-gray-900 dark:text-gray-100"
           v-if="
             !$t(`terms.sections[${sectionIndex}].heading`).startsWith(
               'terms.sections'
@@ -24,26 +26,32 @@
           )"
           :key="index"
         >
-          <p class="text-gray-700 mb-3">
+          <p class="text-gray-700 dark:text-gray-300 mb-3">
             {{ $t(`terms.sections[${sectionIndex}].content[${index - 1}]`) }}
           </p>
         </div>
       </div>
       <div class="mb-6">
-        <p class="text-sm text-gray-500 mb-4">
+        <p class="text-sm text-gray-500 dark:text-gray-400 mb-4">
           {{ $t("terms.footer.lastUpdated") }}
         </p>
       </div>
-      <div class="mt-4 text-sm text-gray-500">
+      <div class="mt-4 text-sm text-gray-500 dark:text-gray-400">
         {{ $t("terms.footer.companyInfo") }}
       </div>
     </div>
 
     <div class="flex justify-between items-center mt-6">
-      <router-link to="agreement" class="hover:underline text-white">
+      <router-link
+        to="agreement"
+        class="text-gray-500 dark:text-gray-200 hover:underline"
+      >
         &larr; {{ $t("common.viewAgreement") }}
       </router-link>
-      <router-link to="/" class="hover:underline text-white">
+      <router-link
+        to="/"
+        class="text-gray-500 dark:text-gray-200 hover:underline"
+      >
         {{ $t("common.backToHome") }} &rarr;
       </router-link>
     </div>

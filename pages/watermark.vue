@@ -1,31 +1,33 @@
 <template>
   <div class="p-4 max-w-3xl mx-auto">
     <h1
-      class="text-3xl sm:text-4xl font-extrabold mb-6 text-center text-indigo-300"
+      class="text-3xl sm:text-4xl font-extrabold mb-6 text-center text-indigo-400 dark:text-indigo-300"
     >
       {{ $t("watermark.name") }}
     </h1>
-    <p class="my-2 text-center text-indigo-200">
+    <p class="my-2 text-center text-indigo-600 dark:text-indigo-200">
       {{ $t("watermark.tips") }}
     </p>
 
     <div class="mb-4">
       <label
         for="watermark-text"
-        class="block text-lg font-medium text-indigo-200"
+        class="block text-lg font-medium text-blue-700 dark:text-blue-300"
         >{{ $t("watermark.mark-text") }}</label
       >
       <input
         id="watermark-text"
         v-model="watermarkText"
         type="text"
-        class="mt-2 p-2 block w-full rounded-md bg-white text-gray-600 text-lg border-2 border-gray-300 shadow-sm focus:outline-none focus:border-blue-700 focus:ring-2 focus:ring-blue-700 transition duration-300 ease-in-out"
+        class="mt-2 p-2 block w-full rounded-md bg-white dark:bg-gray-700 text-gray-700 dark:text-gray-200 text-lg border-2 border-gray-300 dark:border-gray-600 shadow-sm focus:outline-none focus:border-blue-700 focus:ring-2 focus:ring-blue-700 transition duration-300 ease-in-out"
       />
     </div>
 
     <div class="mb-4 grid grid-cols-1 sm:grid-cols-3 gap-6">
       <div>
-        <label for="watermark-size" class="block font-medium text-indigo-200"
+        <label
+          for="watermark-size"
+          class="block font-medium text-blue-700 dark:text-blue-300"
           >{{ $t("watermark.mark-size") }}(px)</label
         >
         <input
@@ -35,19 +37,19 @@
           min="10"
           max="100"
           step="1"
-          class="mt-2 p-2 block w-full rounded-md bg-gray-400/60 text-white border-2 border-gray-300 shadow-sm focus:outline-none focus:border-blue-700 focus:ring-2 focus:ring-blue-700 transition duration-300 ease-in-out"
+          class="mt-2 p-2 block w-full rounded-md bg-white dark:bg-gray-700 text-gray-700 dark:text-white border-2 border-gray-300 dark:border-gray-600 shadow-sm focus:outline-none focus:border-blue-700 focus:ring-2 focus:ring-blue-700 transition duration-300 ease-in-out"
         />
       </div>
       <div>
         <label
           for="watermark-position"
-          class="block font-medium text-indigo-200"
+          class="block font-medium text-blue-700 dark:text-blue-300"
           >{{ $t("watermark.mark-position") }}</label
         >
         <select
           id="watermark-position"
           v-model="watermarkPosition"
-          class="mt-2 p-2 block w-full rounded-md bg-gray-400/60 text-white border-2 border-gray-300 shadow-sm focus:outline-none focus:border-blue-700 focus:ring-2 focus:ring-blue-700 transition duration-300 ease-in-out"
+          class="mt-2 p-2 block w-full rounded-md bg-white dark:bg-gray-700 text-gray-700 dark:text-white border-2 border-gray-300 dark:border-gray-600 shadow-sm focus:outline-none focus:border-blue-700 focus:ring-2 focus:ring-blue-700 transition duration-300 ease-in-out"
         >
           <option value="center">
             {{ $t("watermark.mark-size-option.center") }}
@@ -67,13 +69,15 @@
         </select>
       </div>
       <div>
-        <label for="watermark-font" class="block font-medium text-indigo-200">{{
-          $t("watermark.mark-font")
-        }}</label>
+        <label
+          for="watermark-font"
+          class="block font-medium text-blue-700 dark:text-blue-300"
+          >{{ $t("watermark.mark-font") }}</label
+        >
         <select
           id="watermark-font"
           v-model="watermarkFont"
-          class="mt-2 p-2 block w-full rounded-md bg-gray-400/60 text-white border-2 border-gray-300 shadow-sm focus:outline-none focus:border-blue-700 focus:ring-2 focus:ring-blue-700 transition duration-300 ease-in-out"
+          class="mt-2 p-2 block w-full rounded-md bg-white dark:bg-gray-700 text-gray-700 dark:text-white border-2 border-gray-300 dark:border-gray-600 shadow-sm focus:outline-none focus:border-blue-700 focus:ring-2 focus:ring-blue-700 transition duration-300 ease-in-out"
         >
           <option value="SmileySans-Oblique">SmileySans-Oblique</option>
           <option value="Arial">Arial</option>
@@ -87,10 +91,9 @@
       @dragleave="dragOver = false"
       @drop.prevent="handleDrop"
       @click.stop="upload()"
-      class="mt-6 border-2 border-dashed rounded-lg p-4 text-center cursor-pointer bg-gray-100/20 hover:bg-blue-300/50 hover:border-blue-700 transition duration-300 ease-in-out"
+      class="mt-6 border-2 border-dashed rounded-lg p-4 text-center cursor-pointer bg-gray-100/20 dark:bg-gray-800/30 hover:bg-blue-300/50 dark:hover:bg-blue-900/30 border-blue-300 hover:border-blue-700 dark:hover:border-blue-500 transition duration-300 ease-in-out"
       :class="{
-        'border-blue-700 bg-blue-50': dragOver,
-        'border-gray-300': !dragOver,
+        'border-blue-700 bg-blue-50 dark:bg-blue-900/20': dragOver,
       }"
     >
       <input
@@ -102,23 +105,25 @@
         ref="fileInput"
       />
       <div
-        class="text-gray-300 duration-100 ease-in-out"
+        class="text-gray-600 dark:text-gray-300 duration-100 ease-in-out"
         :class="{
           'my-0': processedImages.length > 0,
           'my-16': processedImages.length === 0,
         }"
       >
-        <p>
+        <p class="text-gray-500 dark:text-gray-200">
           {{ $t("watermark.upload-tip") }}
           <button
             type="button"
             @click.stop="upload()"
-            class="text-blue-800 font-bold hover:text-blue-700 focus:outline-none"
+            class="text-blue-600 dark:text-blue-400 font-bold hover:text-blue-700 dark:hover:text-blue-300 focus:outline-none"
           >
             {{ $t("watermark.upload-button") }}
           </button>
         </p>
-        <p class="text-sm mt-2">{{ $t("watermark.upload-types") }}</p>
+        <p class="text-sm mt-2 text-gray-500 dark:text-gray-200">
+          {{ $t("watermark.upload-types") }}
+        </p>
       </div>
     </div>
 
@@ -135,7 +140,10 @@
       </button>
     </div>
 
-    <div v-if="processing" class="mt-6 text-center text-gray-600">
+    <div
+      v-if="processing"
+      class="mt-6 text-center text-gray-600 dark:text-gray-400"
+    >
       {{ $t("watermark.running") }} ({{ processedCount }}/{{ totalFiles }})
     </div>
 
@@ -155,7 +163,9 @@
     </div>
 
     <div v-if="processedImages.length > 0" class="mt-6">
-      <h3 class="text-xl font-semibold mb-4">{{ $t("watermark.ready") }}</h3>
+      <h3 class="text-xl font-semibold mb-4 text-gray-800 dark:text-gray-100">
+        {{ $t("watermark.ready") }}
+      </h3>
       <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6">
         <ImageCard
           v-for="(image, index) in processedImages"
