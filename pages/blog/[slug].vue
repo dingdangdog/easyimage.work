@@ -47,6 +47,7 @@
 </template>
 
 <script setup lang="ts">
+const localePath = useLocalePath();
 const { t } = useI18n();
 const route = useRoute();
 const { locale } = useI18n();

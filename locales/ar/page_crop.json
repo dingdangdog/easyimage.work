@@ -1,0 +1,25 @@
+{
+  "crop": {
+    "title": "أداة قص الصور المجانية عبر الإنترنت | EasyImage.work - يدعم BMP، ICO، JPG، JPEG، JFIF، PNG، WEBP",
+    "description": "يقدم EasyImage.work أداة قص صور مجانية عبر الإنترنت تدعم تنسيقات BMP، ICO، JPG، JPEG، JFIF، PNG، WEBP. قم بقص وتدوير وعكس وقلب صورك بسرعة وأمان دون الحاجة إلى تنزيل أي برنامج.",
+    "keywords": "أداة قص الصور، أداة قص عبر الإنترنت، أداة قص مجانية، تدوير الصور، عكس الصور، قلب الصور، قص BMP، قص ICO، قص JPG، قص JPEG، قص JFIF، قص PNG، قص WEBP، معالجة صور آمنة",
+    "name": "أداة القص",
+    "tips": "اختر صورة لبدء القص",
+    "ratio": "نسبة القص",
+    "image": {
+      "left": "ي",
+      "left-title": "تدوير عكس اتجاه عقارب الساعة بمقدار 1 درجة",
+      "right": "م",
+      "right-title": "تدوير باتجاه عقارب الساعة بمقدار 1 درجة",
+      "mirror": "عكس",
+      "reverse": "قلب"
+    },
+    "upload-tip": "اسحب وأفلت صورة هنا أو",
+    "upload-button": "اختر ملفًا",
+    "upload-types": "تنسيقات الصور المدعومة: BMP، ICO، JPG، JPEG، JFIF، PNG، WEBP",
+    "remove": "إزالة",
+    "reset": "استعادة",
+    "preview": "معاينة",
+    "download": "تنزيل"
+  }
+}

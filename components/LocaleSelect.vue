@@ -121,7 +121,7 @@ const localeSelectData = {
     >
       <div
         v-if="isDropdownOpen"
-        class="absolute right-0 mt-2 w-36 rounded-md shadow-lg bg-white dark:bg-slate-800 ring-1 ring-black ring-opacity-5 focus:outline-none z-50"
+        class="absolute right-0 mt-2 w-32 rounded-md shadow-lg bg-white dark:bg-slate-800 ring-1 ring-black ring-opacity-5 focus:outline-none z-50"
       >
         <div class="py-1">
           <NuxtLink

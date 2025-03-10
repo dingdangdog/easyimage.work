@@ -79,15 +79,35 @@ export default defineNuxtConfig({
     locales: [
       {
         code: "en",
-        name: "En",
+        name: "English",
       },
       {
-        code: "zh",
-        name: "简中",
+        code: "es",
+        name: "Español",
       },
       {
         code: "ja",
         name: "日本語",
+      },
+      {
+        code: "zh",
+        name: "简体中文",
+      },
+      {
+        code: "zh_Hant",
+        name: "繁体中文",
+      },
+      {
+        code: "hi",
+        name: "हिन्दी",
+      },
+      {
+        code: "pt_br",
+        name: "Português (Brasil)",
+      },
+      {
+        code: "ar",
+        name: "العربية",
       },
     ],
     vueI18n: "./i18n.config.ts",

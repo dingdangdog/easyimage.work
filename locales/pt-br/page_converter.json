@@ -1,0 +1,18 @@
+{
+  "converter": {
+    "title": "Conversor de Formato de Imagem Online Gratuito | EasyImage.work - Suporta BMP, ICO, JPG, JPEG, JFIF, PNG, WEBP",
+    "description": "Converta suas imagens para BMP, JPG, PNG, WEBP e mais com a ferramenta online gratuita do EasyImage. Rápido, seguro e sem necessidade de uploads.",
+    "keywords": "conversão de formato de imagem, conversor online, conversor offline, conversor de imagem gratuito, conversão BMP, conversão JPG, conversão PNG, conversão WEBP, processamento seguro de imagens",
+    "name": "Conversor de Formato",
+    "tips": "Selecione o formato de destino, carregue a imagem e converta automaticamente o formato da imagem",
+    "target-formats": "Formatos de Destino",
+    "upload-tip": "Arraste e solte imagens aqui ou",
+    "upload-button": "Selecionar Arquivos",
+    "upload-types": "Formatos de imagem suportados: BMP, ICO, JPG, JPEG, JFIF, PNG, WEBP",
+    "rerun": "Reconverter Formato das Imagens",
+    "running": "Convertendo formato de imagem...",
+    "delete-all-button": "Excluir Todos",
+    "download-all-button": "Baixar Todos",
+    "ready": "Imagens Convertidas"
+  }
+}

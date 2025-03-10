@@ -1,0 +1,16 @@
+{
+  "resize": {
+    "title": "Ferramenta de Redimensionamento de Imagens Online Gratuita | EasyImage.work - Suporta BMP, ICO, JPG, JPEG, JFIF, PNG, WEBP",
+    "description": "Redimensione suas imagens sem esforço com a ferramenta online gratuita do EasyImage. Suporta múltiplos formatos e garante processamento seguro e rápido no seu navegador.",
+    "keywords": "redimensionar imagens, ferramenta de redimensionamento online, ferramenta de redimensionamento offline, editor de imagens gratuito, ajuste de tamanho de imagem, processamento seguro de imagens, BMP, JPG, PNG, WEBP",
+    "name": "Ferramenta de Redimensionamento",
+    "tips": "Carregue uma imagem e gere automaticamente uma imagem com pixels diminuindo em múltiplos de 2, com um mínimo de 64x64.",
+    "upload-tip": "Arraste e solte a imagem nesta área ou",
+    "upload-button": "Selecionar Arquivo",
+    "upload-types": "Formatos de imagem suportados: BMP, ICO, JPG, JPEG, JFIF, PNG, WEBP",
+    "download-all-button": "Baixar Todos",
+    "origin": "Original",
+    "running": "Processando...",
+    "ready": "Imagens Processadas"
+  }
+}

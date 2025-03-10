@@ -1,0 +1,44 @@
+{
+  "title": "簡單圖片 - 免費在線圖片編輯工具 | EasyImage.work",
+  "description": "簡單圖片提供免費、安全的在線圖片編輯工具，無需上傳，本地瀏覽器處理，快速便捷。立即體驗加水印、壓縮、格式轉換等功能，輕鬆優化圖片！PWA離線安裝。",
+  "keywords": "圖像編輯、圖像處理、在線圖像工具、離線圖像工具、免費圖像編輯器、水印圖像、調整圖像大小、轉換圖像格式、裁剪圖片，安全圖像處理、無需上傳、BMP、JPG、PNG、WEBP",
+  "header": {
+    "title": "簡單圖片",
+    "watermark": "水印工具",
+    "resize": "縮放工具",
+    "cropping": "裁剪工具",
+    "converter": "格式轉換"
+  },
+  "footer": {
+    "companyInfo": {
+      "title": "EasyImage",
+      "description": "自2025年起提供專業的圖像處理服務",
+      "poweredBy": "由",
+      "website": "easyimage.work"
+    },
+    "legal": {
+      "title": "法律",
+      "links": {
+        "userAgreement": "用戶協議",
+        "termsOfService": "服務條款",
+        "aboutUs": "關於我們"
+      }
+    },
+    "contact": {
+      "title": "聯繫方式",
+      "emailLabel": "發送郵件給我們"
+    },
+    "copyright": {
+      "text": "© 2025 EasyImage.work 保留所有權利。",
+      "privacyPolicy": "隱私政策",
+      "cookies": "Cookies"
+    }
+  },
+  "common": {
+    "backToHome": "首頁",
+    "contactUs": "立即聯繫",
+    "viewAbout": "關於我們",
+    "viewTerms": "服務條款",
+    "viewAgreement": "用戶協議"
+  }
+}

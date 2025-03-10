@@ -1,0 +1,44 @@
+{
+  "title": "EasyImage.work - Herramientas gratuitas de edición de imágenes en línea",
+  "description": "EasyImage ofrece herramientas de edición de imágenes en línea gratuitas, seguras y rápidas. No es necesario cargar archivos, todo sucede en su navegador. Pruebe ahora mismo la creación de marcas de agua, el cambio de tamaño y la conversión de formatos. ¡Instalación sin conexión de PWA!",
+  "keywords": "Edición de imágenes, procesamiento de imágenes, herramientas de imágenes en línea, herramientas de imágenes sin conexión, editor de imágenes gratuito, marcas de agua en imágenes, cambio de tamaño de imágenes, conversión de formatos de imágenes, recorte de imágenes, procesamiento seguro de imágenes, no es necesario cargar archivos, BMP, JPG, PNG, WEBP",
+  "header": {
+    "title": "EasyImage",
+    "watermark": "Filigrana",
+    "converter": "Conversor",
+    "cropping": "Recorte",
+    "resize": "Redimensión"
+  },
+  "footer": {
+    "companyInfo": {
+      "title": "EasyImage",
+      "description": "Ofrecemos servicios profesionales de procesamiento de imágenes desde 2025",
+      "poweredBy": "Desarrollado por",
+      "website": "easyimage.work"
+    },
+    "legal": {
+      "title": "Legal",
+      "links": {
+        "userAgreement": "Acuerdo de usuario",
+        "termsOfService": "Condiciones de servicio",
+        "aboutUs": "Acerca de nosotros"
+      }
+    },
+    "contact": {
+      "title": "Contacto",
+      "emailLabel": "Envíenos un correo electrónico"
+    },
+    "copyright": {
+      "text": "© 2025 EasyImage. Todos los derechos reservados.",
+      "privacyPolicy": "Política de privacidad",
+      "cookies": "Cookies"
+    }
+  },
+  "common": {
+    "backToHome": "Inicio",
+    "contactUs": "Contacto ahora",
+    "viewAbout": "Acerca de nosotros",
+    "viewTerms": "Condiciones de servicio",
+    "viewAgreement": "Acuerdo de usuario"
+  }
+}

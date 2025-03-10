@@ -1,0 +1,23 @@
+{
+  "home": {
+    "welcome": "歡迎來到 簡單圖片",
+    "tip": "選擇你需要的工具，開始編輯圖片吧！",
+    "start-button": "立即開始",
+    "watermark": {
+      "name": "水印工具",
+      "description": "輕鬆給圖片添加水印"
+    },
+    "resize": {
+      "name": "縮放工具",
+      "description": "輕鬆縮小圖片尺寸"
+    },
+    "converter": {
+      "name": "轉換工具",
+      "description": "輕鬆轉換圖片格式"
+    },
+    "cropping": {
+      "name": "裁剪工具",
+      "description": "輕鬆自由裁剪圖片"
+    }
+  }
+}

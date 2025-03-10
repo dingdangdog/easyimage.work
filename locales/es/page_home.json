@@ -1,0 +1,23 @@
+{
+  "home": {
+    "welcome": "Bienvenido a EasyImage.work",
+    "tip": "¡Selecciona la herramienta que necesitas y comienza a editar imágenes!",
+    "start-button": "Comenzar",
+    "watermark": {
+      "name": "Filigrana",
+      "description": "Añade marcas de agua a tus imágenes fácilmente"
+    },
+    "resize": {
+      "name": "Redimensión",
+      "description": "Cambia el tamaño de tus imágenes fácilmente"
+    },
+    "converter": {
+      "name": "Conversión",
+      "description": "Convierte el formato de tus imágenes fácilmente"
+    },
+    "cropping": {
+      "name": "Recorte",
+      "description": "Recorta tus imágenes libremente con facilidad"
+    }
+  }
+}

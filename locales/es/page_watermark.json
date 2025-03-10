@@ -1,0 +1,28 @@
+{
+  "watermark": {
+    "title": "Herramienta Gratuita de Filigrana en Línea | EasyImage.work - Compatible con BMP, ICO, JPG, JPEG, JFIF, PNG, WEBP",
+    "description": "Añade marcas de agua de texto o imagen a tus fotos de forma rápida y segura con la herramienta gratuita en línea de EasyImage. No se requieren cargas—protege tus imágenes fácilmente.",
+    "keywords": "marcas de agua en imágenes, herramienta de Filigrana en línea, herramienta de Filigrana sin conexión, Filigrana gratuita, protección de derechos de autor de imágenes, procesamiento seguro de imágenes, sin carga, BMP, JPG, PNG, WEBP",
+    "name": "Herramienta de Filigrana",
+    "tips": "Establece el estilo de la Filigrana, sube imágenes y añade automáticamente marcas de agua a las imágenes",
+    "mark-text": "Texto de Filigrana",
+    "mark-size": "Tamaño de Filigrana",
+    "mark-size-option": {
+      "center": "Centro",
+      "top-left": "Sup. Izq.",
+      "top-right": "Sup. Der.",
+      "bottom-left": "Inf. Izq.",
+      "bottom-right": "Inf. Der."
+    },
+    "mark-position": "Posición de la Filigrana",
+    "mark-font": "Fuente de la Filigrana",
+    "upload-tip": "Arrastra y suelta imágenes aquí o",
+    "upload-button": "Seleccionar Archivos",
+    "upload-types": "Formatos de imagen compatibles: BMP, ICO, JPG, JPEG, JFIF, PNG, WEBP",
+    "delete-all-button": "Eliminar Todo",
+    "download-all-button": "Descargar Todo",
+    "running": "Procesando...",
+    "rerun": "Reprocesar Imágenes",
+    "ready": "Imágenes Procesadas"
+  }
+}

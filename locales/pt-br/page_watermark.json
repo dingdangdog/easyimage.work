@@ -1,0 +1,28 @@
+{
+  "watermark": {
+    "title": "Ferramenta de Marca d'água Online Gratuita | EasyImage.work - Suporta BMP, ICO, JPG, JPEG, JFIF, PNG, WEBP",
+    "description": "Adicione marcas d'água de texto ou imagem às suas fotos de forma rápida e segura com a ferramenta online gratuita do EasyImage. Sem necessidade de uploads—proteja suas imagens facilmente.",
+    "keywords": "marca d'água em imagens, ferramenta de marca d'água online, ferramenta de marca d'água offline, marca d'água gratuita, proteção de direitos autorais de imagem, processamento seguro de imagens, sem upload, BMP, JPG, PNG, WEBP",
+    "name": "Ferramenta de Marca d'água",
+    "tips": "Defina o estilo da marca d'água, carregue imagens e adicione marcas d'água automaticamente às imagens",
+    "mark-text": "Texto da Marca d'água",
+    "mark-size": "Tamanho do Texto da Marca d'água",
+    "mark-size-option": {
+      "center": "Centro",
+      "top-left": "Superior Esquerdo",
+      "top-right": "Superior Direito",
+      "bottom-left": "Inferior Esquerdo",
+      "bottom-right": "Inferior Direito"
+    },
+    "mark-position": "Posição da Marca d'água",
+    "mark-font": "Fonte da Marca d'água",
+    "upload-tip": "Arraste e solte imagens aqui ou",
+    "upload-button": "Selecionar Arquivos",
+    "upload-types": "Formatos de imagem suportados: BMP, ICO, JPG, JPEG, JFIF, PNG, WEBP",
+    "delete-all-button": "Excluir Todos",
+    "download-all-button": "Baixar Todos",
+    "running": "Processando...",
+    "rerun": "Reprocessar Imagens",
+    "ready": "Imagens Processadas"
+  }
+}

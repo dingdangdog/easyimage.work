@@ -1,0 +1,25 @@
+{
+  "crop": {
+    "title": "Cortador de Imagens Online Gratuito | EasyImage.work - Suporta BMP, ICO, JPG, JPEG, JFIF, PNG, WEBP",
+    "description": "EasyImage.work oferece um cortador de imagens online gratuito que suporta formatos BMP, ICO, JPG, JPEG, JFIF, PNG, WEBP. Corte, gire, espelhe e inverta suas imagens de forma rápida e segura sem baixar nenhum software.",
+    "keywords": "cortador de imagens, cortador online, ferramenta de corte gratuita, rotação de imagem, espelhamento de imagem, inversão de imagem, corte BMP, corte ICO, corte JPG, corte JPEG, corte JFIF, corte PNG, corte WEBP, processamento seguro de imagens",
+    "name": "Ferramenta de Corte",
+    "tips": "Selecione uma imagem para começar a cortar",
+    "ratio": "Proporção de Corte",
+    "image": {
+      "left": "E",
+      "left-title": "Girar no sentido anti-horário em 1 grau",
+      "right": "D",
+      "right-title": "Girar no sentido horário em 1 grau",
+      "mirror": "Espelhar",
+      "reverse": "Inverter"
+    },
+    "upload-tip": "Arraste e solte uma imagem aqui ou",
+    "upload-button": "Escolher Arquivo",
+    "upload-types": "Formatos de imagem suportados: BMP, ICO, JPG, JPEG, JFIF, PNG, WEBP",
+    "remove": "Remover",
+    "reset": "Recuperar",
+    "preview": "Visualizar",
+    "download": "Baixar"
+  }
+}

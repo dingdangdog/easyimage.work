@@ -1,0 +1,112 @@
+{
+  "agreement": {
+    "title": "Contrato do Usuário - EasyImage",
+    "description": "Conheça o Contrato do Usuário do EasyImage. Ao usar nossas ferramentas de processamento de imagens, você concorda com estes termos.",
+    "keywords": "Contrato do Usuário, EasyImage, Imagem Simples, Processamento Gratuito de Imagens, Termos de Uso",
+    "sectionsNum": "11",
+    "sections": [
+      {
+        "heading": "Introdução",
+        "contentNum": "2",
+        "content": [
+          "Bem-vindo ao EasyImage ('nós', 'nosso', 'nos' ou 'o Site'). Este Contrato do Usuário ('Contrato') rege o seu uso do site EasyImage, acessível em easyimage.work, e todos os serviços associados.",
+          "Ao acessar ou usar o EasyImage, você concorda em estar vinculado a este Contrato. Se você não concordar com todos os termos e condições deste Contrato, você não deve acessar ou usar o Site."
+        ]
+      },
+      {
+        "heading": "Descrição do Serviço",
+        "contentNum": "3",
+        "content": [
+          "O EasyImage fornece ferramentas gratuitas baseadas em navegador para processamento de imagens online. Todos os serviços são fornecidos sem custo para o usuário.",
+          "Todas as funções de processamento de imagem são executadas inteiramente dentro do seu navegador. Nenhum arquivo do usuário é enviado para nossos servidores.",
+          "O desempenho e a eficácia de nossas ferramentas dependem das capacidades do seu dispositivo, incluindo especificações de hardware, versão do navegador e recursos do sistema disponíveis."
+        ]
+      },
+      {
+        "heading": "Responsabilidades do Usuário",
+        "contentNum": "6",
+        "content": [
+          "Você concorda em usar o EasyImage apenas para fins legais e de acordo com este Contrato.",
+          "Você concorda em não usar o Site:",
+          "- De qualquer forma que viole qualquer lei ou regulamento local, nacional ou internacional aplicável.",
+          "- Para processar ou criar qualquer conteúdo que seja ilegal, prejudicial, ameaçador, abusivo, assediador, difamatório ou de outra forma censurável.",
+          "- Para tentar interferir, comprometer a integridade ou segurança do sistema, ou decifrar quaisquer transmissões de ou para os servidores que executam o Site.",
+          "- Para se envolver em qualquer atividade que possa prejudicar, desativar, sobrecarregar ou prejudicar o Site ou interferir no uso do Site por qualquer outra parte."
+        ]
+      },
+      {
+        "heading": "Propriedade Intelectual",
+        "contentNum": "2",
+        "content": [
+          "O EasyImage e seu conteúdo original, recursos e funcionalidades são de nossa propriedade e estão protegidos por leis internacionais de direitos autorais, marcas registradas, patentes, segredos comerciais e outros direitos de propriedade intelectual ou proprietários.",
+          "Você não pode modificar, reproduzir, distribuir, criar trabalhos derivados ou adaptações, exibir publicamente ou de qualquer forma explorar qualquer conteúdo, no todo ou em parte, exceto conforme expressamente autorizado por nós."
+        ]
+      },
+      {
+        "heading": "Privacidade e Coleta de Dados",
+        "contentNum": "3",
+        "content": [
+          "O EasyImage não requer contas de usuário e não coleta ou armazena informações pessoais do usuário.",
+          "Suas imagens são processadas inteiramente dentro do seu navegador e não são enviadas para nossos servidores.",
+          "Podemos usar cookies ou tecnologias semelhantes para melhorar sua experiência, mas estes não são usados para coletar informações pessoais."
+        ]
+      },
+      {
+        "heading": "Isenção de Garantias",
+        "contentNum": "3",
+        "content": [
+          "O EasyImage é fornecido 'como está' e 'conforme disponível' sem qualquer garantia ou representação, expressa ou implícita.",
+          "Não garantimos a disponibilidade, confiabilidade ou funcionalidade de quaisquer ferramentas fornecidas no Site.",
+          "O desempenho de nossas ferramentas depende das capacidades do seu dispositivo, e não fazemos garantias quanto à qualidade ou eficácia dos resultados do processamento de imagem."
+        ]
+      },
+      {
+        "heading": "Limitação de Responsabilidade",
+        "contentNum": "5",
+        "content": [
+          "Na máxima extensão permitida por lei, não seremos responsáveis por quaisquer danos indiretos, incidentais, especiais, consequenciais ou punitivos, ou qualquer perda de lucros ou receitas, seja incorrida direta ou indiretamente, ou qualquer perda de dados, uso, boa vontade ou outras perdas intangíveis resultantes de:",
+          "- Seu uso ou incapacidade de usar o Site e suas ferramentas;",
+          "- Qualquer acesso não autorizado ou uso de nossos servidores (se houver) e/ou quaisquer informações pessoais armazenadas neles;",
+          "- Qualquer interrupção ou cessação de transmissão de ou para o Site;",
+          "- Quaisquer bugs, vírus, cavalos de troia ou similares que possam ser transmitidos para ou através do Site por qualquer terceiro."
+        ]
+      },
+      {
+        "heading": "Serviços de Terceiros e Anúncios",
+        "contentNum": "3",
+        "content": [
+          "O EasyImage pode exibir anúncios fornecidos por terceiros, incluindo o Google AdSense.",
+          "Não somos responsáveis pelo conteúdo, políticas de privacidade ou práticas de quaisquer serviços ou anunciantes de terceiros.",
+          "Suas interações com esses terceiros são exclusivamente entre você e tais terceiros."
+        ]
+      },
+      {
+        "heading": "Modificações no Contrato",
+        "contentNum": "2",
+        "content": [
+          "Reservamo-nos o direito de modificar ou substituir este Contrato a qualquer momento a nosso exclusivo critério.",
+          "É sua responsabilidade verificar este Contrato periodicamente para alterações. Seu uso continuado do Site após a publicação de quaisquer alterações a este Contrato constitui aceitação dessas alterações."
+        ]
+      },
+      {
+        "heading": "Disponibilidade de Idiomas",
+        "contentNum": "2",
+        "content": [
+          "O EasyImage fornece este Contrato em vários idiomas, mas não garantimos disponibilidade em todos os idiomas.",
+          "Em caso de qualquer inconsistência entre a versão em inglês e qualquer versão traduzida, a versão em inglês prevalecerá."
+        ]
+      },
+      {
+        "heading": "Informações de Contato",
+        "contentNum": "1",
+        "content": [
+          "Se você tiver alguma dúvida sobre este Contrato, entre em contato conosco."
+        ]
+      }
+    ],
+    "footer": {
+      "lastUpdated": "Última atualização: 2025/3/6",
+      "companyInfo": "EasyImage"
+    }
+  }
+}

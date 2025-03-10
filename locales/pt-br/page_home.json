@@ -1,0 +1,23 @@
+{
+  "home": {
+    "welcome": "Bem-vindo ao EasyImage.work",
+    "tip": "Selecione a ferramenta que você precisa e comece a editar imagens!",
+    "start-button": "Começar",
+    "watermark": {
+      "name": "Ferramenta de Marca d'água",
+      "description": "Adicione marcas d'água às suas imagens facilmente"
+    },
+    "resize": {
+      "name": "Ferramenta de Redimensionamento",
+      "description": "Redimensione suas imagens facilmente"
+    },
+    "converter": {
+      "name": "Ferramenta de Conversão",
+      "description": "Converta facilmente o formato das suas imagens"
+    },
+    "cropping": {
+      "name": "Ferramenta de Corte",
+      "description": "Corte suas imagens livremente com facilidade"
+    }
+  }
+}

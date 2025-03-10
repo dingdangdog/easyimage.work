@@ -1,0 +1,52 @@
+{
+  "about": {
+    "title": "Acerca de nosotros - EasyImage",
+    "description": "Conoce los antecedentes de EasyImage, proporcionamos herramientas gratuitas y eficientes de procesamiento de imágenes, con el objetivo de ofrecer a los usuarios servicios convenientes de procesamiento de imágenes.",
+    "keywords": "Acerca de nosotros, EasyImage, imágenes simples, procesamiento de imágenes, herramientas gratuitas",
+    "offer": {
+      "heading": "Lo que ofrecemos",
+      "contentNum": "2",
+      "content": [
+        "EasyImage proporciona herramientas gratuitas en línea para el procesamiento de imágenes. Ofrecemos una variedad de funciones para ayudarte a modificar y optimizar tus imágenes sin ningún costo.",
+        "No hay funciones de pago ni suscripciones disponibles en nuestro sitio web."
+      ]
+    },
+    "privacy": {
+      "heading": "Privacidad y Seguridad",
+      "contentNum": "2",
+      "content": [
+        "Respetamos tu privacidad. Nuestro sitio web no almacena ninguna información personal ni detalles de cuenta.",
+        "Todas las operaciones se realizan directamente en el navegador, lo que significa que no se cargan archivos de usuario en servidores externos."
+      ]
+    },
+    "functionality": {
+      "heading": "Funcionalidad",
+      "contentNum": "2",
+      "content": [
+        "Dado que nuestras herramientas están basadas en el navegador, el rendimiento de las herramientas depende de las capacidades de tu computadora.",
+        "No podemos garantizar la disponibilidad o el rendimiento de las herramientas, ya que su funcionalidad está sujeta a la configuración del sitio web y a tu dispositivo."
+      ]
+    },
+    "support": {
+      "heading": "Sin Soporte Técnico",
+      "contentNum": "1",
+      "content": [
+        "No proporcionamos soporte técnico para las herramientas. Sin embargo, todas las funciones están disponibles en el sitio web y funcionan según lo esperado en función del entorno del navegador."
+      ]
+    },
+    "contact": {
+      "heading": "Contáctanos",
+      "contentNum": "1",
+      "content": [
+        "Si tienes alguna pregunta o necesitas más información, no dudes en ponerte en contacto con nosotros."
+      ]
+    },
+    "language": {
+      "heading": "Soporte Multilingüe",
+      "contentNum": "1",
+      "content": [
+        "EasyImage está disponible en varios idiomas. Sin embargo, ten en cuenta que no se garantiza que todos los idiomas sean compatibles. Consulta el sitio web para conocer las opciones de idioma disponibles."
+      ]
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "watermark": {
+    "title": "免費圖片水印工具 | EasyImage.work - 支持 BMP, ICO, JPG, JPEG, JFIF, PNG, WEBP",
+    "description": "使用簡單圖片的免費在線水印工具，快速為圖片添加文字或圖像水印。無需上傳，保護您的圖片版權和隱私。",
+    "keywords": "圖片水印, 在線水印工具, 離線水銀工具, 免費水印, 圖片版權保護, 安全圖片處理, 無需上傳, BMP, JPG, PNG, WEBP",
+    "name": "水印工具",
+    "tips": "設置水印樣式，上傳圖片，自動為圖片添加水印",
+    "mark-text": "水印文字",
+    "mark-size": "水印文字大小",
+    "mark-size-option": {
+      "center": "居中",
+      "top-left": "左上",
+      "top-right": "右上",
+      "bottom-left": "左下",
+      "bottom-right": "右下"
+    },
+    "mark-position": "水印位置",
+    "mark-font": "水印字體",
+    "upload-tip": "拖放圖片到此區域或",
+    "upload-button": "選擇文件",
+    "upload-types": "支持的圖片格式：BMP, ICO, JPG, JPEG, JFIF, PNG, WEBP",
+    "delete-all-button": "刪除全部",
+    "download-all-button": "下載全部",
+    "running": "處理中...",
+    "rerun": "重新處理圖片",
+    "ready": "已處理圖片"
+  }
+}

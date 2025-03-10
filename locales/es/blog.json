@@ -1,0 +1,23 @@
+{
+  "blog": {
+    "title": "Mi Blog",
+    "section": {
+      "heading": "Últimas Publicaciones"
+    },
+    "archive": {
+      "heading": "Archivos"
+    },
+    "about": {
+      "heading": "Acerca de",
+      "content": "Este es un blog personal donde comparto mis experiencias con temas de desarrollo web. Aquí encontrarás tutoriales, artículos y recursos útiles."
+    },
+    "common": {
+      "viewAgreement": "Ver Acuerdo",
+      "contactUs": "Contáctanos"
+    },
+    "backToList": "Volver a la Lista del Blog",
+    "noContent": "No hay contenido disponible para esta publicación.",
+    "postNotFound": "La publicación del blog que estás buscando no se pudo encontrar.",
+    "noPosts": "No hay publicaciones de blog disponibles en este momento."
+  }
+}

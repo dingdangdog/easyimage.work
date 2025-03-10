@@ -1,0 +1,25 @@
+{
+  "crop": {
+    "title": "免費在線圖片裁剪工具 | EasyImage.work - 支持 BMP, ICO, JPG, JPEG, JFIF, PNG, WEBP",
+    "description": "EasyImage.work 提供免費的在線圖片裁剪工具，支持 BMP, ICO, JPG, JPEG, JFIF, PNG, WEBP 等多種格式。快速、安全地裁剪、旋轉、鏡像和顛倒你的圖片，無需下載軟件。",
+    "keywords": "圖片裁剪, 在線裁剪, 離線裁剪, 免費裁剪工具, 圖片旋轉, 圖片鏡像, 圖片顛倒, BMP 裁剪, ICO 裁剪, JPG 裁剪, JPEG 裁剪, JFIF 裁剪, PNG 裁剪, WEBP 裁剪, 安全圖片處理",
+    "name": "裁剪工具",
+    "tips": "選擇圖片，開始自由裁剪",
+    "ratio": "裁剪比例",
+    "image": {
+      "left": "L",
+      "left-title": "逆時針旋轉1度",
+      "right": "R",
+      "right-title": "順時針旋轉1度",
+      "mirror": "鏡像",
+      "reverse": "顛倒"
+    },
+    "upload-tip": "拖放圖片到此區域或",
+    "upload-button": "選擇文件",
+    "upload-types": "支持的圖片格式：BMP, ICO, JPG, JPEG, JFIF, PNG, WEBP",
+    "remove": "刪除",
+    "reset": "重置",
+    "preview": "預覽",
+    "download": "下載"
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "title": "EasyImage.work - Ferramentas gratuitas de edição de imagens online",
+  "description": "O EasyImage oferece ferramentas de edição de imagens online gratuitas, seguras e rápidas. Não há necessidade de uploads — tudo acontece no seu navegador. Experimente marca d'água, redimensionamento e conversão de formato agora! Instalação offline do PWA!",
+  "keywords": "Edição de imagens, processamento de imagens, ferramentas de imagem online, ferramentas de imagem offline, editor de imagens gratuito, imagens com marca d'água, redimensionamento de imagens, conversão de formatos de imagem, corte de imagens, processamento seguro de imagens, sem necessidade de upload, BMP, JPG, PNG, WEBP",
+  "header": {
+    "title": "EasyImage",
+    "watermark": "Marca d'água",
+    "converter": "Conversor",
+    "cropping": "Cortar",
+    "resize": "Redimensionar"
+  },
+  "footer": {
+    "companyInfo": {
+      "title": "EasyImage",
+      "description": "Fornecendo serviços profissionais de processamento de imagens desde 2025",
+      "poweredBy": "Desenvolvido por",
+      "website": "easyimage.work"
+    },
+    "legal": {
+      "title": "Legal",
+      "links": {
+        "userAgreement": "Contrato do Usuário",
+        "termsOfService": "Termos de Serviço",
+        "aboutUs": "Sobre Nós"
+      }
+    },
+    "contact": {
+      "title": "Contato",
+      "emailLabel": "Envie-nos um e-mail"
+    },
+    "copyright": {
+      "text": "© 2025 EasyImage. Todos os direitos reservados.",
+      "privacyPolicy": "Política de Privacidade",
+      "cookies": "Cookies"
+    }
+  },
+  "common": {
+    "backToHome": "Página Inicial",
+    "contactUs": "Entre em Contato Agora",
+    "viewAbout": "Sobre Nós",
+    "viewTerms": "Termos de Serviço",
+    "viewAgreement": "Contrato do Usuário"
+  }
+}
