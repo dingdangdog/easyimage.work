@@ -122,8 +122,12 @@ useHead({
   @apply bg-gray-100 dark:bg-gray-800 p-4 rounded-lg overflow-x-auto transition-colors duration-300;
 }
 
+.prose pre code {
+  @apply text-sm bg-transparent px-1 py-0.5 rounded transition-colors duration-300 text-gray-700 dark:text-gray-300;
+}
+
 .prose code {
-  @apply text-sm bg-gray-100 dark:bg-gray-800 px-1 py-0.5 rounded transition-colors duration-300;
+  @apply text-sm bg-blue-200 dark:bg-blue-900 px-1 py-0.5 rounded transition-colors duration-300 text-gray-700 dark:text-gray-300;
 }
 
 .prose h1 {
@@ -150,13 +154,16 @@ useHead({
   @apply text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 transition-colors duration-300;
 }
 
+.prose strong {
+  @apply text-gray-900 dark:text-gray-100;
+}
 .prose ul,
 .prose ol {
-  @apply my-4 ml-6 text-gray-700 dark:text-gray-300 transition-colors duration-300;
+  @apply my-4 ml-6 text-gray-700 dark:text-gray-300 transition-colors duration-300 bg-gray-200 dark:bg-gray-800 p-4 rounded-lg;
 }
 
 .prose li {
-  @apply mb-2 transition-colors duration-300;
+  @apply mb-2 transition-colors duration-300 text-gray-700 dark:text-gray-300;
 }
 
 .prose blockquote {
