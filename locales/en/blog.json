@@ -1,14 +1,19 @@
 {
   "blog": {
-    "title": "简单图片的博客 - EasyImage.work",
-    "description": "简单图片提供免费、安全的在线图片编辑工具，无需上传，本地浏览器处理，快速便捷。立即体验加水印、压缩、格式转换等功能，轻松优化图片！PWA离线安装。",
-    "keywords": "图像编辑、图像处理、在线图像工具、离线图像工具、免费图像编辑器、水印图像、调整图像大小、转换图像格式、裁剪图片，安全图像处理、无需上传、BMP、JPG、PNG、WEBP",
-    "listNum": "1",
+    "title": "EasyImage.work Blog",
+    "description": "EasyImage.work provides free, secure online image editing tools that process locally in your browser without uploading. Experience watermarking, compression, format conversion, and more to easily optimize your images! Available as a PWA for offline use.",
+    "keywords": "image editing, image processing, online image tools, offline image tools, free image editor, watermark images, resize images, convert image formats, crop images, secure image processing, no upload, BMP, JPG, PNG, WEBP",
+    "listNum": "2",
     "list": [
       {
-        "title": "如何使用JavaScript将文件打包成压缩包（.zip）",
+        "title": "How to Use JavaScript to Zip Files",
         "date": "2025-03-09",
         "key": "how-to-use-javascript-to-zip-files"
+      },
+      {
+        "title": "How to Implement Image Scaling on the Web with EasyImage.work",
+        "date": "2025-03-16",
+        "key": "how-resize-image-on-web"
       }
     ]
   }
