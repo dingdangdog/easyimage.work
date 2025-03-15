@@ -86,40 +86,40 @@ const toggleTheme = () => {
           :to="localePath('/resize')"
           class="flex items-center px-3 py-2 text-orange-700 hover:text-orange-600 dark:text-orange-300 dark:hover:text-orange-400 transition duration-300 rounded-md hover:bg-slate-100 dark:hover:bg-slate-800/60"
         >
-          <span
-            class="material-symbols-outlined mr-1 text-sm text-orange-700 hover:text-orange-600 dark:text-orange-300 dark:hover:text-orange-400"
-            >photo_size_select_large</span
-          >
+          <IconResize
+            class="w-6 h-6 mr-2"
+            color="rgb(194 65 12 / var(--tw-text-opacity, 1))"
+          />
           {{ $t("header.resize") }}
         </NuxtLink>
         <NuxtLink
           :to="localePath('/watermark')"
           class="flex items-center px-3 py-2 text-blue-700 hover:text-blue-600 dark:text-blue-300 dark:hover:text-blue-400 transition duration-300 rounded-md hover:bg-slate-100 dark:hover:bg-slate-800/60"
         >
-          <span
-            class="material-symbols-outlined mr-1 text-sm text-blue-700 hover:text-blue-600 dark:text-blue-300 dark:hover:text-blue-400"
-            >water_drop</span
-          >
+          <IconWatermark
+            class="w-6 h-6 mr-2"
+            color="rgb(29 78 216 / var(--tw-text-opacity, 1))"
+          />
           {{ $t("header.watermark") }}
         </NuxtLink>
         <NuxtLink
           :to="localePath('/converter')"
           class="flex items-center px-3 py-2 text-pink-700 hover:text-pink-600 dark:text-pink-300 dark:hover:text-pink-400 transition duration-300 rounded-md hover:bg-slate-100 dark:hover:bg-slate-800/60"
         >
-          <span
-            class="material-symbols-outlined mr-1 text-sm text-pink-700 hover:text-pink-600 dark:text-pink-300 dark:hover:text-pink-400"
-            >swap_horiz</span
-          >
+          <IconConverter
+            class="w-6 h-6 mr-2"
+            color="rgb(190 24 93 / var(--tw-text-opacity, 1))"
+          />
           {{ $t("header.converter") }}
         </NuxtLink>
         <NuxtLink
           :to="localePath('/cropping')"
           class="flex items-center px-3 py-2 text-purple-700 hover:text-purple-600 dark:text-purple-300 dark:hover:text-purple-400 transition duration-300 rounded-md hover:bg-slate-100 dark:hover:bg-slate-800/60"
         >
-          <span
-            class="material-symbols-outlined mr-1 text-sm text-purple-700 hover:text-purple-600 dark:text-purple-300 dark:hover:text-purple-400"
-            >crop</span
-          >
+          <IconCropping
+            class="w-6 h-6 mr-2"
+            color="rgb(126 34 206 / var(--tw-text-opacity, 1))"
+          />
           {{ $t("header.cropping") }}
         </NuxtLink>
       </nav>
@@ -218,10 +218,10 @@ const toggleTheme = () => {
           @click="toggleMobileNav"
           class="flex items-center px-4 py-3 text-orange-700 hover:text-orange-600 dark:text-orange-300 dark:hover:text-orange-400 transition duration-300 rounded-md hover:bg-slate-100 dark:hover:bg-slate-800/60"
         >
-          <span
-            class="material-symbols-outlined mr-2 text-orange-700 hover:text-orange-600 dark:text-orange-300 dark:hover:text-orange-400"
-            >photo_size_select_large</span
-          >
+          <IconResize
+            class="w-6 h-6 mr-2"
+            color="rgb(194 65 12 / var(--tw-text-opacity, 1))"
+          />
           {{ $t("header.resize") }}
         </NuxtLink>
         <NuxtLink
@@ -229,10 +229,10 @@ const toggleTheme = () => {
           @click="toggleMobileNav"
           class="flex items-center px-4 py-3 text-blue-700 hover:text-blue-600 dark:text-blue-300 dark:hover:text-blue-400 transition duration-300 rounded-md hover:bg-slate-100 dark:hover:bg-slate-800/60"
         >
-          <span
-            class="material-symbols-outlined mr-2 text-blue-700 hover:text-blue-600 dark:text-blue-300 dark:hover:text-blue-400"
-            >water_drop</span
-          >
+          <IconWatermark
+            class="w-6 h-6 mr-2"
+            color="rgb(29 78 216 / var(--tw-text-opacity, 1))"
+          />
           {{ $t("header.watermark") }}
         </NuxtLink>
         <NuxtLink
@@ -240,10 +240,10 @@ const toggleTheme = () => {
           @click="toggleMobileNav"
           class="flex items-center px-4 py-3 text-pink-700 hover:text-pink-600 dark:text-pink-300 dark:hover:text-pink-400 transition duration-300 rounded-md hover:bg-slate-100 dark:hover:bg-slate-800/60"
         >
-          <span
-            class="material-symbols-outlined mr-2 text-pink-700 hover:text-pink-600 dark:text-pink-300 dark:hover:text-pink-400"
-            >swap_horiz</span
-          >
+          <IconConverter
+            class="w-6 h-6 mr-2"
+            color="rgb(190 24 93 / var(--tw-text-opacity, 1))"
+          />
           {{ $t("header.converter") }}
         </NuxtLink>
         <NuxtLink
@@ -251,10 +251,10 @@ const toggleTheme = () => {
           @click="toggleMobileNav"
           class="flex items-center px-4 py-3 text-purple-700 hover:text-purple-600 dark:text-purple-300 dark:hover:text-purple-400 transition duration-300 rounded-md hover:bg-slate-100 dark:hover:bg-slate-800/60"
         >
-          <span
-            class="material-symbols-outlined mr-2 text-purple-700 hover:text-purple-600 dark:text-purple-300 dark:hover:text-purple-400"
-            >crop</span
-          >
+          <IconCropping
+            class="w-6 h-6 mr-2"
+            color="rgb(126 34 206 / var(--tw-text-opacity, 1))"
+          />
           {{ $t("header.cropping") }}
         </NuxtLink>
       </nav>

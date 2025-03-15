@@ -6,11 +6,11 @@ const { color } = defineProps(["color"]);
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
     <path
       :fill="color ? color : 'currentColor'"
-      stroke="currentColor"
+      :stroke="color ? color : 'currentColor'"
       stroke-linecap="round"
       stroke-linejoin="round"
       stroke-width="2"
-      d="M3 6a3 3 0 1 0 6 0a3 3 0 0 0-6 0m18 5V8a2 2 0 0 0-2-2h-6l3 3m0-6l-3 3M3 13v3a2 2 0 0 0 2 2h6l-3-3m0 6l3-3m4 0a3 3 0 1 0 6 0a3 3 0 0 0-6 0"
+      d="M8 3L4 7l4 4M4 7h16m-4 14l4-4l-4-4m4 4H4"
     />
   </svg>
 </template>

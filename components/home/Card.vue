@@ -1,4 +1,9 @@
 <script setup lang="ts">
+import IconWatermark from "../icon/watermark.vue";
+import IconResize from "../icon/resize.vue";
+import IconConverter from "../icon/converter.vue";
+import IconCropping from "../icon/cropping.vue";
+
 const localePath = useLocalePath();
 
 const { name, path, color, icon, desc } = defineProps([
@@ -9,16 +14,16 @@ const { name, path, color, icon, desc } = defineProps([
   "desc",
 ]);
 
-const getIconName = () => {
+const getIcon = (icon: string) => {
   switch (icon) {
     case "watermark":
-      return "water_drop";
+      return IconWatermark;
     case "resize":
-      return "photo_size_select_large";
+      return IconResize;
     case "converter":
-      return "swap_horiz";
+      return IconConverter;
     case "cropping":
-      return "crop";
+      return IconCropping;
     default:
       return "";
   }
@@ -35,9 +40,7 @@ const getIconName = () => {
       <div
         class="h-12 w-12 md:h-16 md:w-16 mx-auto mb-2 md:mb-4 flex items-center justify-center"
       >
-        <span class="material-symbols-outlined text-4xl md:text-5xl">{{
-          getIconName()
-        }}</span>
+        <component :is="getIcon(icon)" />
       </div>
       <h3 class="text-2xl font-semibold dark:text-white text-slate-800">
         {{ name }}
