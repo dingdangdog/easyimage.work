@@ -4,6 +4,7 @@
     "description": "O EasyImage.work oferece ferramentas gratuitas e seguras para edição de imagens online, sem necessidade de upload, com processamento local no navegador, rápido e conveniente. Experimente agora recursos como adicionar marca d'água, compressão, conversão de formatos e muito mais para otimizar suas imagens facilmente! Disponível como PWA para instalação offline.",
     "keywords": "edição de imagens, processamento de imagens, ferramentas de imagem online, ferramentas de imagem offline, editor de imagens gratuito, imagens com marca d'água, redimensionamento de imagens, conversão de formatos de imagem, recorte de imagens, processamento seguro de imagens, sem upload, BMP, JPG, PNG, WEBP",
     "listNum": "2",
+    "postNotFound": "Desculpe, o blog não existe ou foi excluído.",
     "list": [
       {
         "title": "Como usar JavaScript para compactar arquivos em formato ZIP",

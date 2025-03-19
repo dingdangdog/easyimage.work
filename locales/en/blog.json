@@ -4,6 +4,7 @@
     "description": "EasyImage.work provides free, secure online image editing tools that process locally in your browser without uploading. Experience watermarking, compression, format conversion, and more to easily optimize your images! Available as a PWA for offline use.",
     "keywords": "image editing, image processing, online image tools, offline image tools, free image editor, watermark images, resize images, convert image formats, crop images, secure image processing, no upload, BMP, JPG, PNG, WEBP",
     "listNum": "2",
+    "postNotFound": "Sorry, the blog does not exist or has been deleted.",
     "list": [
       {
         "title": "How to Use JavaScript to Zip Files",

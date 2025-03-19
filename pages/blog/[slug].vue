@@ -40,7 +40,7 @@
         :to="localePath('/blog')"
         class="text-blue-500 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 mt-4 inline-block transition-colors duration-300"
       >
-        {{ $t("blog.backToList") }}
+        {{ $t("common.backToList") }}
       </router-link>
     </div>
   </div>
