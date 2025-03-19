@@ -15,7 +15,7 @@
       @dragleave="dragOver = false"
       @drop.prevent="handleDrop"
       @click.stop="upload()"
-      class="mt-6 border-2 border-dashed rounded-lg p-4 text-center cursor-pointer bg-gray-100/20 hover:bg-orange-300/50 border-orange-300 hover:border-orange-700 transition duration-300 ease-in-out"
+      class="mt-6 border-2 border-dashed rounded-lg p-4 text-center cursor-pointer bg-gray-300/50 dark:bg-gray-100/20 hover:bg-orange-300/50 dark:hover:bg-orange-300/30 border-orange-300 hover:border-orange-500 transition duration-300 ease-in-out"
       :class="{
         'border-orange-700 bg-blue-50': dragOver,
       }"

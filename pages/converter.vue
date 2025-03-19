@@ -39,7 +39,7 @@
       @dragleave="dragOver = false"
       @drop.prevent="handleDrop"
       @click.stop="upload()"
-      class="mt-6 border-2 border-dashed rounded-lg p-4 text-center cursor-pointer bg-gray-100/20 hover:bg-pink-300/50 border-pink-300 hover:border-pink-700 transition duration-300 ease-in-out"
+      class="mt-6 border-2 border-dashed rounded-lg p-4 text-center cursor-pointer bg-gray-300/50 dark:bg-gray-100/20 hover:bg-pink-300/50 dark:hover:bg-pink-300/30 border-pink-300 hover:border-pink-500 transition duration-300 ease-in-out"
       :class="{
         'border-pink-700 bg-blue-50': dragOver,
       }"

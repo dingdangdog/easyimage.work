@@ -100,7 +100,7 @@
       @dragleave="dragOver = false"
       @drop.prevent="handleDrop"
       @click.stop="upload()"
-      class="mt-6 border-2 border-dashed rounded-lg p-4 text-center cursor-pointer bg-gray-100/20 hover:bg-indigo-300/50 border-indigo-300 hover:border-indigo-700 transition duration-300 ease-in-out"
+      class="mt-6 border-2 border-dashed rounded-lg p-4 text-center cursor-pointer bg-gray-300/50 dark:bg-gray-100/20 hover:bg-indigo-300/50 dark:hover:bg-indigo-300/30 border-indigo-300 hover:border-indigo-500 transition duration-300 ease-in-out"
       :class="{
         'border-indigo-700 bg-blue-50': dragOver,
       }"
