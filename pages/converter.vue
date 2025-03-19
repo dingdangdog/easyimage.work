@@ -39,10 +39,9 @@
       @dragleave="dragOver = false"
       @drop.prevent="handleDrop"
       @click.stop="upload()"
-      class="mt-6 border-2 border-dashed rounded-lg p-4 text-center cursor-pointer bg-gray-100/20 dark:bg-gray-800/30 hover:bg-pink-300/50 dark:hover:bg-pink-800/30 border-pink-400 hover:border-pink-700 dark:hover:border-pink-500 transition duration-300 ease-in-out"
+      class="mt-6 border-2 border-dashed rounded-lg p-4 text-center cursor-pointer bg-gray-100/20 hover:bg-pink-300/50 border-pink-300 hover:border-pink-700 transition duration-300 ease-in-out"
       :class="{
-        'border-pink-700 dark:border-pink-500 bg-blue-50 dark:bg-pink-900/20':
-          dragOver,
+        'border-pink-700 bg-blue-50': dragOver,
       }"
     >
       <input
@@ -60,7 +59,7 @@
           'my-16': processedImages.length === 0,
         }"
       >
-        <p class="text-gray-500 dark:text-gray-300">
+        <p class="text-gray-500 dark:text-gray-200">
           {{ $t("converter.upload-tip") }}
           <button
             type="button"
@@ -70,7 +69,7 @@
             {{ $t("converter.upload-button") }}
           </button>
         </p>
-        <p class="text-sm mt-2 text-gray-500 dark:text-gray-300">
+        <p class="text-sm mt-2 text-gray-500 dark:text-gray-200">
           {{ $t("converter.upload-types") }}
         </p>
       </div>

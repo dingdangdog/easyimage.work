@@ -184,10 +184,9 @@
     </p>
 
     <div
-      class="mt-2 md:mt-4 border-2 border-dashed rounded-lg p-4 text-center cursor-pointer bg-gray-100/20 dark:bg-gray-800/30 hover:bg-purple-300/50 dark:hover:bg-purple-800/30 border-purple-400 hover:border-purple-700 dark:hover:border-purple-500 transition duration-300 ease-in-out"
+      class="mt-2 md:mt-4 border-2 border-dashed rounded-lg p-4 text-center cursor-pointer bg-gray-100/20 hover:bg-purple-300/50 border-purple-300 hover:border-purple-700 transition duration-300 ease-in-out"
       :class="{
-        'border-purple-700 dark:border-purple-500 bg-blue-50 dark:bg-purple-900/20':
-          dragOver,
+        'border-purple-700 bg-blue-50': dragOver,
       }"
       @dragover.prevent="dragOver = true"
       @dragleave="dragOver = false"
@@ -208,7 +207,7 @@
           'my-16': !cropperVisible,
         }"
       >
-        <p class="text-gray-500 dark:text-gray-300">
+        <p class="text-gray-500 dark:text-gray-200">
           {{ $t("crop.upload-tip") }}
           <button
             type="button"
@@ -218,7 +217,7 @@
             {{ $t("crop.upload-button") }}
           </button>
         </p>
-        <p class="text-sm mt-2 text-gray-500 dark:text-gray-300">
+        <p class="text-sm mt-2 text-gray-500 dark:text-gray-200">
           {{ $t("crop.upload-types") }}
         </p>
       </div>

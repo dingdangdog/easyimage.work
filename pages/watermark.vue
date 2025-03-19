@@ -91,9 +91,9 @@
       @dragleave="dragOver = false"
       @drop.prevent="handleDrop"
       @click.stop="upload()"
-      class="mt-6 border-2 border-dashed rounded-lg p-4 text-center cursor-pointer bg-gray-100/20 dark:bg-gray-800/30 hover:bg-blue-300/50 dark:hover:bg-blue-900/30 border-blue-300 hover:border-blue-700 dark:hover:border-blue-500 transition duration-300 ease-in-out"
+      class="mt-6 border-2 border-dashed rounded-lg p-4 text-center cursor-pointer bg-gray-100/20 hover:bg-indigo-300/50 border-indigo-300 hover:border-indigo-700 transition duration-300 ease-in-out"
       :class="{
-        'border-blue-700 bg-blue-50 dark:bg-blue-900/20': dragOver,
+        'border-indigo-700 bg-blue-50': dragOver,
       }"
     >
       <input
@@ -105,7 +105,7 @@
         ref="fileInput"
       />
       <div
-        class="text-gray-600 dark:text-gray-300 duration-100 ease-in-out"
+        class="duration-100 ease-in-out"
         :class="{
           'my-0': processedImages.length > 0,
           'my-16': processedImages.length === 0,
@@ -116,7 +116,7 @@
           <button
             type="button"
             @click.stop="upload()"
-            class="text-blue-600 dark:text-blue-400 font-bold hover:text-blue-700 dark:hover:text-blue-300 focus:outline-none"
+            class="text-indigo-800 dark:text-indigo-400 font-bold hover:text-indigo-700 dark:hover:text-indigo-300 focus:outline-none"
           >
             {{ $t("watermark.upload-button") }}
           </button>
