@@ -625,7 +625,7 @@ onMounted(() => {
 
 @font-face {
   font-family: "MapleMono-Medium";
-  src: url("@/assets/font/MapleMono-NF-Medium.ttf") format("truetype");
+  src: url("@/assets/fonts/MapleMono-NF-Medium.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
