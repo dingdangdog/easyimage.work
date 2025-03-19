@@ -51,19 +51,19 @@
           v-model="watermarkPosition"
           class="mt-2 p-2 block w-full rounded-md bg-white dark:bg-gray-700 text-gray-700 dark:text-white border-2 border-gray-300 dark:border-gray-600 shadow-sm focus:outline-none focus:border-blue-700 focus:ring-2 focus:ring-blue-700 transition duration-300 ease-in-out"
         >
-          <option value="center">
+          <option value="center" class="text-gray-600 dark:text-gray-400">
             {{ $t("watermark.mark-size-option.center") }}
           </option>
-          <option value="top-left">
+          <option value="top-left" class="text-gray-600 dark:text-gray-400">
             {{ $t("watermark.mark-size-option.top-left") }}
           </option>
-          <option value="top-right">
+          <option value="top-right" class="text-gray-600 dark:text-gray-400">
             {{ $t("watermark.mark-size-option.top-right") }}
           </option>
-          <option value="bottom-left">
+          <option value="bottom-left" class="text-gray-600 dark:text-gray-400">
             {{ $t("watermark.mark-size-option.bottom-left") }}
           </option>
-          <option value="bottom-right">
+          <option value="bottom-right" class="text-gray-600 dark:text-gray-400">
             {{ $t("watermark.mark-size-option.bottom-right") }}
           </option>
         </select>
@@ -79,9 +79,18 @@
           v-model="watermarkFont"
           class="mt-2 p-2 block w-full rounded-md bg-white dark:bg-gray-700 text-gray-700 dark:text-white border-2 border-gray-300 dark:border-gray-600 shadow-sm focus:outline-none focus:border-blue-700 focus:ring-2 focus:ring-blue-700 transition duration-300 ease-in-out"
         >
-          <option value="SmileySans-Oblique">SmileySans-Oblique</option>
-          <option value="Arial">Arial</option>
-          <option value="Courier">Courier</option>
+          <option
+            value="SmileySans-Oblique"
+            class="text-gray-600 dark:text-gray-400"
+          >
+            SmileySans-Oblique
+          </option>
+          <option value="Arial" class="text-gray-600 dark:text-gray-400">
+            Arial
+          </option>
+          <option value="Courier" class="text-gray-600 dark:text-gray-400">
+            Courier
+          </option>
         </select>
       </div>
     </div>

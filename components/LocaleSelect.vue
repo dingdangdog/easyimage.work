@@ -118,7 +118,7 @@ const clickLang = (name: string | any) => {
             :key="l.code"
             :to="switchLocalePath(l.code)"
             @click="clickLang(l.name)"
-            class="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-100 hover:text-blue-600 dark:text-slate-300 dark:hover:bg-slate-700 dark:hover:text-blue-400 transition duration-150"
+            class="block px-4 py-2 text-sm hover:font-bold text-slate-700 hover:bg-slate-100 hover:text-blue-600 dark:text-slate-300 dark:hover:bg-slate-700 dark:hover:text-blue-50 transition duration-150"
           >
             {{ l.name }}
           </NuxtLink>
