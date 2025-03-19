@@ -53,9 +53,9 @@
     </div>
 
     <!-- Key Features Section -->
-    <div class="py-8 flex flex-col justify-center text-center">
+    <div class="mt-16 flex flex-col justify-center text-center">
       <div
-        class="flex flex-col items-center p-8 transition-all duration-300 bg-gray-50 dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700 border border-gray-200 dark:border-gray-700 shadow-md hover:shadow-lg"
+        class="flex flex-col items-center p-8 ease-in-out duration-300 bg-gray-50 dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700 hover:shadow-md"
       >
         <div class="p-3 rounded-full bg-blue-600 dark:bg-blue-500">
           <svg
@@ -78,7 +78,7 @@
         </h3>
       </div>
       <div
-        class="flex flex-col items-center p-8 transition-all duration-300 bg-gray-50 dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700 border border-gray-200 dark:border-gray-700 shadow-md hover:shadow-lg"
+        class="flex flex-col items-center p-8 ease-in-out duration-300 bg-gray-50 dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700 hover:shadow-md"
       >
         <div class="p-3 rounded-full bg-green-500 dark:bg-green-600">
           <svg
@@ -101,7 +101,7 @@
         </h3>
       </div>
       <div
-        class="flex flex-col items-center p-8 transition-all duration-300 bg-gray-50 dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700 border border-gray-200 dark:border-gray-700 shadow-md hover:shadow-lg"
+        class="flex flex-col items-center p-8 ease-in-out duration-300 bg-gray-50 dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700 hover:shadow-md"
       >
         <div class="p-3 rounded-full bg-purple-500 dark:bg-purple-600">
           <svg
