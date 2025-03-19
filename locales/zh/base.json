@@ -9,6 +9,11 @@
     "cropping": "裁剪工具",
     "converter": "格式转换"
   },
+  "body": {
+    "tip1": "纯浏览器处理，极速且安全",
+    "tip2": "所有功能永久免费使用",
+    "tip3": "PWA安装，随时随地离线可用"
+  },
   "footer": {
     "companyInfo": {
       "title": "EasyImage",

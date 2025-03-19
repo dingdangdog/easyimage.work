@@ -9,6 +9,11 @@
     "cropping": "Cortar",
     "resize": "Redimensionar"
   },
+  "body": {
+    "tip1": "Processamento apenas no navegador, rápido e seguro",
+    "tip2": "Todas as funcionalidades permanentemente gratuitas",
+    "tip3": "Instalável como PWA, disponível offline em qualquer lugar"
+  },
   "footer": {
     "companyInfo": {
       "title": "EasyImage",
