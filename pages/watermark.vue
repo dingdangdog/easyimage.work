@@ -51,8 +51,29 @@
           v-model="watermarkPosition"
           class="mt-2 p-2 block w-full rounded-md bg-white dark:bg-gray-700 text-gray-700 dark:text-white border-2 border-gray-300 dark:border-gray-600 shadow-sm focus:outline-none focus:border-blue-700 focus:ring-2 focus:ring-blue-700 transition duration-300 ease-in-out"
         >
-          <option value="center" class="text-gray-600 dark:text-gray-400">
-            {{ $t("watermark.mark-size-option.center") }}
+          <option value="random" class="text-gray-600 dark:text-gray-400">
+            {{ $t("watermark.mark-size-option.random") }}
+          </option>
+          <option
+            value="center-center"
+            class="text-gray-600 dark:text-gray-400"
+          >
+            {{ $t("watermark.mark-size-option.center-center") }}
+          </option>
+          <option value="center-top" class="text-gray-600 dark:text-gray-400">
+            {{ $t("watermark.mark-size-option.center-top") }}
+          </option>
+          <option
+            value="center-bottom"
+            class="text-gray-600 dark:text-gray-400"
+          >
+            {{ $t("watermark.mark-size-option.center-bottom") }}
+          </option>
+          <option value="left-center" class="text-gray-600 dark:text-gray-400">
+            {{ $t("watermark.mark-size-option.left-center") }}
+          </option>
+          <option value="right-center" class="text-gray-600 dark:text-gray-400">
+            {{ $t("watermark.mark-size-option.right-center") }}
           </option>
           <option value="top-left" class="text-gray-600 dark:text-gray-400">
             {{ $t("watermark.mark-size-option.top-left") }}
@@ -351,7 +372,7 @@ const upload = () => {
 
 const watermarkText = ref("WaterMark Text");
 const watermarkSize = ref(40);
-const watermarkPosition = ref("center");
+const watermarkPosition = ref("random");
 const watermarkFont = ref("SmileySans-Oblique");
 const originalImages = ref<File[]>([]); // 用于存储原图
 const processedImages = ref<WatermarkImage[]>([]);
@@ -391,33 +412,67 @@ const processImage = async (file: File): Promise<WatermarkImage> => {
       if (watermarkText.value) {
         ctx.font = `${watermarkSize.value}px ${watermarkFont.value}`;
         ctx.fillStyle = "rgba(128, 128, 128, 0.8)";
+
+        // 获取实际位置 - 处理随机选项
+        let actualPosition = watermarkPosition.value;
+        if (actualPosition === "random") {
+          // 定义所有可能的位置选项
+          const positions = [
+            "center-center",
+            "center-top",
+            "center-bottom",
+            "left-center",
+            "right-center",
+            "top-left",
+            "top-right",
+            "bottom-left",
+            "bottom-right",
+          ];
+          // 随机选择一个位置
+          const randomIndex = Math.floor(Math.random() * positions.length);
+          actualPosition = positions[randomIndex];
+        }
+
+        // 设置文本对齐方式
         ctx.textAlign = "center";
-        if (watermarkPosition.value.includes("left")) {
+        if (actualPosition.includes("left")) {
           ctx.textAlign = "left";
-        } else if (watermarkPosition.value.includes("right")) {
-          // 修正: 判断 right
+        } else if (actualPosition.includes("right")) {
           ctx.textAlign = "right";
+        } else if (actualPosition.startsWith("center-")) {
+          ctx.textAlign = "center";
         }
         ctx.textBaseline = "middle";
 
-        // 默认居中
+        // 默认正中
         let x = canvas.width / 2;
         let y = canvas.height / 2;
 
-        // const textWidth = ctx.measureText(watermarkText.value).width;
-        // console.log(textWidth);
-        if (watermarkPosition.value === "top-left") {
+        // 根据位置设置坐标
+        if (actualPosition === "top-left") {
           x = 10;
           y = watermarkSize.value;
-        } else if (watermarkPosition.value === "top-right") {
+        } else if (actualPosition === "top-right") {
           x = canvas.width - 10; // 右对齐，需要减去文字宽度和一些边距
           y = watermarkSize.value;
-        } else if (watermarkPosition.value === "bottom-left") {
+        } else if (actualPosition === "bottom-left") {
           x = 10;
           y = canvas.height - watermarkSize.value; // 下对齐，需要减去文字大小和一些边距
-        } else if (watermarkPosition.value === "bottom-right") {
+        } else if (actualPosition === "bottom-right") {
           x = canvas.width - 10; // 右下对齐
           y = canvas.height - watermarkSize.value; // 右下对齐
+        } else if (actualPosition === "center-top") {
+          x = canvas.width / 2;
+          y = watermarkSize.value;
+        } else if (actualPosition === "center-bottom") {
+          x = canvas.width / 2;
+          y = canvas.height - watermarkSize.value;
+        } else if (actualPosition === "left-center") {
+          x = 10;
+          y = canvas.height / 2;
+        } else if (actualPosition === "right-center") {
+          x = canvas.width - 10;
+          y = canvas.height / 2;
         }
         // console.log(x, y);
         // console.log(canvas.width, canvas.height);

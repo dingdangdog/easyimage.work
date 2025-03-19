@@ -8,7 +8,12 @@
     "mark-text": "透かしテキスト",
     "mark-size": "透かしテキストサイズ",
     "mark-size-option": {
-      "center": "中央",
+      "random": "ランダム",
+      "center-center": "中央",
+      "center-top": "上中央",
+      "center-bottom": "下中央",
+      "left-center": "左中央",
+      "right-center": "右中央",
       "top-left": "左上",
       "top-right": "右上",
       "bottom-left": "左下",

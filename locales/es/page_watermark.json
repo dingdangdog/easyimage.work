@@ -8,7 +8,12 @@
     "mark-text": "Texto de Filigrana",
     "mark-size": "Tamaño de Filigrana",
     "mark-size-option": {
-      "center": "Centro",
+      "random": "Aleatorio",
+      "center-center": "Centro",
+      "center-top": "Centro Sup.",
+      "center-bottom": "Centro Inf.",
+      "left-center": "Izq. Centro",
+      "right-center": "Der. Centro",
       "top-left": "Sup. Izq.",
       "top-right": "Sup. Der.",
       "bottom-left": "Inf. Izq.",

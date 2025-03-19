@@ -8,7 +8,12 @@
     "mark-text": "वॉटरमार्क टेक्स्ट",
     "mark-size": "वॉटरमार्क टेक्स्ट साइज़",
     "mark-size-option": {
-      "center": "मध्य",
+      "random": "यादृच्छिक",
+      "center-center": "बिल्कुल मध्य",
+      "center-top": "ऊपर मध्य",
+      "center-bottom": "नीचे मध्य",
+      "left-center": "बाएँ मध्य",
+      "right-center": "दाएँ मध्य",
       "top-left": "ऊपर बाएँ",
       "top-right": "ऊपर दाएँ",
       "bottom-left": "नीचे बाएँ",

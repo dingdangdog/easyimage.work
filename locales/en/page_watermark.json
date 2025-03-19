@@ -8,7 +8,12 @@
     "mark-text": "Watermark Text",
     "mark-size": "Watermark Text Size",
     "mark-size-option": {
-      "center": "Center",
+      "random": "Random",
+      "center-center": "Center",
+      "center-top": "Top Center",
+      "center-bottom": "Bottom Center",
+      "left-center": "Left Center",
+      "right-center": "Right Center",
       "top-left": "Top Left",
       "top-right": "Top Right",
       "bottom-left": "Bottom Left",

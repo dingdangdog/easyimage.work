@@ -8,7 +8,12 @@
     "mark-text": "水印文字",
     "mark-size": "水印文字大小",
     "mark-size-option": {
-      "center": "居中",
+      "random": "隨機",
+      "center-center": "正中",
+      "center-top": "中上",
+      "center-bottom": "中下",
+      "left-center": "左中",
+      "right-center": "右中",
       "top-left": "左上",
       "top-right": "右上",
       "bottom-left": "左下",

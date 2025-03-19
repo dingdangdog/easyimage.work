@@ -8,7 +8,12 @@
     "mark-text": "Texto da Marca d'água",
     "mark-size": "Tamanho do Texto da Marca d'água",
     "mark-size-option": {
-      "center": "Centro",
+      "random": "Aleatório",
+      "center-center": "Centro",
+      "center-top": "Centro Superior",
+      "center-bottom": "Centro Inferior",
+      "left-center": "Esquerda Centro",
+      "right-center": "Direita Centro",
       "top-left": "Superior Esquerdo",
       "top-right": "Superior Direito",
       "bottom-left": "Inferior Esquerdo",

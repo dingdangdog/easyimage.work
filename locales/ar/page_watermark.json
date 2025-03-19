@@ -8,7 +8,12 @@
     "mark-text": "نص العلامة المائية",
     "mark-size": "حجم نص العلامة المائية",
     "mark-size-option": {
-      "center": "الوسط",
+      "random": "عشوائي",
+      "center-center": "الوسط",
+      "center-top": "الوسط الأعلى",
+      "center-bottom": "الوسط الأسفل",
+      "left-center": "اليسار الوسط",
+      "right-center": "اليمين الوسط",
       "top-left": "أعلى اليسار",
       "top-right": "أعلى اليمين",
       "bottom-left": "أسفل اليسار",
