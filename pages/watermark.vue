@@ -80,16 +80,130 @@
           class="mt-2 p-2 block w-full rounded-md bg-white dark:bg-gray-700 text-gray-700 dark:text-white border-2 border-gray-300 dark:border-gray-600 shadow-sm focus:outline-none focus:border-blue-700 focus:ring-2 focus:ring-blue-700 transition duration-300 ease-in-out"
         >
           <option
+            value="Arial"
+            class="text-gray-600 dark:text-gray-400"
+            style="font-family: Arial"
+          >
+            Arial
+          </option>
+          <option
+            value="Arial Black"
+            class="text-gray-600 dark:text-gray-400"
+            style="font-family: 'Arial Black'"
+          >
+            Arial Black
+          </option>
+          <option
+            value="Bookman"
+            class="text-gray-600 dark:text-gray-400"
+            style="font-family: Bookman"
+          >
+            Bookman
+          </option>
+          <option
+            value="Comic Sans MS"
+            class="text-gray-600 dark:text-gray-400"
+            style="font-family: 'Comic Sans MS'"
+          >
+            Comic Sans MS
+          </option>
+          <option
+            value="Courier"
+            class="text-gray-600 dark:text-gray-400"
+            style="font-family: Courier"
+          >
+            Courier
+          </option>
+          <option
+            value="Courier New"
+            class="text-gray-600 dark:text-gray-400"
+            style="font-family: 'Courier New'"
+          >
+            Courier New
+          </option>
+          <option
+            value="Garamond"
+            class="text-gray-600 dark:text-gray-400"
+            style="font-family: Garamond"
+          >
+            Garamond
+          </option>
+          <option
+            value="Georgia"
+            class="text-gray-600 dark:text-gray-400"
+            style="font-family: Georgia"
+          >
+            Georgia
+          </option>
+          <option
+            value="Helvetica"
+            class="text-gray-600 dark:text-gray-400"
+            style="font-family: Helvetica"
+          >
+            Helvetica
+          </option>
+          <option
+            value="Impact"
+            class="text-gray-600 dark:text-gray-400"
+            style="font-family: Impact"
+          >
+            Impact
+          </option>
+          <option
+            value="MapleMono-Medium"
+            class="text-gray-600 dark:text-gray-400"
+            style="font-family: 'MapleMono-Medium'"
+          >
+            MapleMono-Medium
+          </option>
+          <option
+            value="Palatino"
+            class="text-gray-600 dark:text-gray-400"
+            style="font-family: Palatino"
+          >
+            Palatino
+          </option>
+          <option
             value="SmileySans-Oblique"
             class="text-gray-600 dark:text-gray-400"
+            style="font-family: 'SmileySans-Oblique'"
           >
             SmileySans-Oblique
           </option>
-          <option value="Arial" class="text-gray-600 dark:text-gray-400">
-            Arial
+          <option
+            value="Tahoma"
+            class="text-gray-600 dark:text-gray-400"
+            style="font-family: Tahoma"
+          >
+            Tahoma
           </option>
-          <option value="Courier" class="text-gray-600 dark:text-gray-400">
-            Courier
+          <option
+            value="Times"
+            class="text-gray-600 dark:text-gray-400"
+            style="font-family: Times"
+          >
+            Times
+          </option>
+          <option
+            value="Times New Roman"
+            class="text-gray-600 dark:text-gray-400"
+            style="font-family: 'Times New Roman'"
+          >
+            Times New Roman
+          </option>
+          <option
+            value="Trebuchet MS"
+            class="text-gray-600 dark:text-gray-400"
+            style="font-family: 'Trebuchet MS'"
+          >
+            Trebuchet MS
+          </option>
+          <option
+            value="Verdana"
+            class="text-gray-600 dark:text-gray-400"
+            style="font-family: Verdana"
+          >
+            Verdana
           </option>
         </select>
       </div>
@@ -444,6 +558,24 @@ onMounted(() => {
 </script>
 
 <style scoped>
+/* Dynamic font loading - only loaded when needed */
+@font-face {
+  font-family: "SmileySans-Oblique";
+  src: url("@/assets/fonts/SmileySans-Oblique.ttf") format("truetype"),
+    url("@/assets/fonts/SmileySans-Oblique.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "MapleMono-Medium";
+  src: url("@/assets/font/MapleMono-NF-Medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 /* 图片hover 预览层 */
 .preview-overlay {
   opacity: 0; /* 初始状态隐藏 */

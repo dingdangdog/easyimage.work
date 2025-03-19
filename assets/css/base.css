@@ -4,14 +4,6 @@
   color: rgb(219, 219, 219);
 }
 
-@font-face {
-  font-family: "SmileySans-Oblique";
-  src: url("@/assets/fonts/SmileySans-Oblique.ttf") format("truetype"),
-    url("@/assets/fonts/SmileySans-Oblique.otf") format("opentype");
-  font-weight: normal;
-  font-style: normal;
-}
-
 ::-webkit-scrollbar {
   background-color: transparent;
   width: 8px;
