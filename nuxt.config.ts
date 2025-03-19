@@ -73,6 +73,14 @@ export default defineNuxtConfig({
     defaultLocale: "en",
     locales: [
       {
+        code: "ar",
+        name: "العربية",
+      },
+      {
+        code: "bn",
+        name: "বাংলা",
+      },
+      {
         code: "en",
         name: "English",
       },
@@ -81,8 +89,16 @@ export default defineNuxtConfig({
         name: "Español",
       },
       {
+        code: "hi",
+        name: "हिन्दी",
+      },
+      {
         code: "ja",
         name: "日本語",
+      },
+      {
+        code: "pt_br",
+        name: "Português (Brasil)",
       },
       {
         code: "zh",
@@ -91,18 +107,6 @@ export default defineNuxtConfig({
       {
         code: "zh_Hant",
         name: "繁体中文",
-      },
-      {
-        code: "hi",
-        name: "हिन्दी",
-      },
-      {
-        code: "pt_br",
-        name: "Português (Brasil)",
-      },
-      {
-        code: "ar",
-        name: "العربية",
       },
     ],
     vueI18n: "./i18n.config.ts",
