@@ -321,9 +321,14 @@ const setSelectionRatio = (ratio: number | undefined) => {
   selection.value.height = undefined;
   selection.value.x = undefined;
   selection.value.y = undefined;
+  cropperSelection.value?.$clear();
   selection.value.aspectRatio = ratio;
-  selection.value.initialAspectRatio = ratio;
-  cropperSelection.value?.$reset();
+  nextTick(() => {
+    cropperSelection.value?.$center();
+  });
+  // selection.value.aspectRatio = ratio;
+  // selection.value.initialAspectRatio = ratio;
+  // cropperSelection.value?.$reset();
   // cropperSelection.value?.$render();
   // cropperSelection.value?.$center();
 };
@@ -437,6 +442,9 @@ const resetCropper = () => {
   if (cropperSelection.value) {
     // cropperSelection.value?.$render();
     cropperSelection.value?.$reset();
+    nextTick(() => {
+      cropperSelection.value?.$center();
+    });
   }
 };
 // 移出裁剪元素
