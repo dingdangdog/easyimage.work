@@ -2,7 +2,7 @@
   "resize": {
     "title": "免费图片缩放工具 | EasyImage.work - 支持 BMP, ICO, JPG, JPEG, JFIF, PNG, WEBP",
     "description": "使用简单图片的免费在线缩放工具，轻松调整图片尺寸，支持多种图片格式。本地处理，安全快速。",
-    "keywords": "图片缩放, 在线缩放工具, 离线缩放工具, 免费图片编辑, 图片尺寸调整, 安全图片处理, BMP, JPG, PNG, WEBP",
+    "keywords": "图片缩放, 在线缩放工具, 离线缩放工具, 免费图片处理, 图片尺寸调整, 安全图片处理, BMP, JPG, PNG, WEBP",
     "name": "缩放工具",
     "tips": "上传图片，自动生成以 2 的倍数递减像素的图片，最小为64x64。",
     "upload-tip": "拖放图片到此区域或",

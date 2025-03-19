@@ -1,7 +1,7 @@
 {
-  "title": "EasyImage.work - Free Online Image Editing Tools",
-  "description": "EasyImage offers free, secure, and fast online image editing tools. No uploads needed—everything happens in your browser. Try watermarking, resizing, and format conversion now! PWA offline install!",
-  "keywords": "Image editing, image processing, online image tools, offline image tools, free image editor, watermark images, resize images, convert image formats, crop images, secure image processing, no uploading required, BMP, JPG, PNG, WEBP",
+  "title": "EasyImage - Free Online Image Editing Tools | Cropping, Resizing, Watermarking, Format Conversion | Offline Support | EasyImage.work",
+  "description": "EasyImage provides completely free online image editing tools with support for cropping, resizing, watermarking, and format conversion. No uploading needed, processing happens in your local browser, ensuring privacy and security. Supports PWA offline installation, multi-language interface, process your images anytime, anywhere!",
+  "keywords": "free image editing,online image processing,offline image tools,image cropping,image resizing,watermark adding,format conversion,PWA application,multi-language website,no upload required,local processing,BMP,JPG,PNG,WEBP,secure image processing",
   "header": {
     "title": "EasyImage",
     "watermark": "Wateramrk",

@@ -1,7 +1,7 @@
 {
-  "title": "EasyImage.work - Herramientas gratuitas de edición de imágenes en línea",
-  "description": "EasyImage ofrece herramientas de edición de imágenes en línea gratuitas, seguras y rápidas. No es necesario cargar archivos, todo sucede en su navegador. Pruebe ahora mismo la creación de marcas de agua, el cambio de tamaño y la conversión de formatos. ¡Instalación sin conexión de PWA!",
-  "keywords": "Edición de imágenes, procesamiento de imágenes, herramientas de imágenes en línea, herramientas de imágenes sin conexión, editor de imágenes gratuito, marcas de agua en imágenes, cambio de tamaño de imágenes, conversión de formatos de imágenes, recorte de imágenes, procesamiento seguro de imágenes, no es necesario cargar archivos, BMP, JPG, PNG, WEBP",
+  "title": "EasyImage - Herramientas gratuitas de edición de imágenes en línea | Recortar, Redimensionar, Marcas de agua, Conversión de formato | Soporte sin conexión | EasyImage.work",
+  "description": "EasyImage ofrece herramientas de edición de imágenes en línea completamente gratuitas, con soporte para recortar, redimensionar, añadir marcas de agua y convertir formatos. Sin necesidad de cargar archivos, el procesamiento se realiza en su navegador local, garantizando privacidad y seguridad. Compatible con instalación PWA sin conexión, interfaz multilingüe, ¡procese sus imágenes en cualquier momento y lugar!",
+  "keywords": "edición gratuita de imágenes,procesamiento de imágenes en línea,herramientas de imágenes sin conexión,recorte de imágenes,redimensionamiento de imágenes,adición de marcas de agua,conversión de formato,aplicación PWA,sitio web multilingüe,sin necesidad de cargar,procesamiento local,BMP,JPG,PNG,WEBP,procesamiento seguro de imágenes",
   "header": {
     "title": "EasyImage",
     "watermark": "Filigrana",
