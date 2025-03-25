@@ -1,18 +1,18 @@
 {
   "converter": {
-    "title": "Free Online Image Format Converter | EasyImage.work - Supports BMP, ICO, JPG, JPEG, JFIF, PNG, WEBP",
-    "description": "Convert your images to BMP, JPG, PNG, WEBP, and more with EasyImage's free online tool. Fast, secure, and no uploads needed.",
-    "keywords": "image format conversion, online converter, offline converter, free image converter, BMP conversion, JPG conversion, PNG conversion, WEBP conversion, secure image processing",
-    "name": "Format Converter",
-    "tips": "Select the target format, upload the image, and automatically convert the image format",
-    "target-formats": "Target Formats",
-    "upload-tip": "Drag and drop images here or",
-    "upload-button": "Select Files",
-    "upload-types": "Supported image formats: BMP, ICO, JPG, JPEG, JFIF, PNG, WEBP",
-    "rerun": "Reconvert Images Format",
-    "running": "Converting image format...",
-    "delete-all-button": "Delete All",
-    "download-all-button": "Download All",
+    "title": "Free Online Image Format Converter | EasyImage.work - Supports BMP, ICO, JPG, JPEG, JFIF, PNG, WEBP", 
+    "description": "Convert your images to BMP, JPG, PNG, WEBP, and more with EasyImage's free online tool. Fast, secure, and no uploads needed.", 
+    "keywords": "image format conversion, easy image converter, photo converter, web image converter, online converter, offline converter, free image converter, BMP conversion, JPG conversion, PNG conversion, WEBP conversion, secure image processing", 
+    "name": "Format Converter", 
+    "tips": "Select the target format, upload the image, and automatically convert the image format", 
+    "target-formats": "Target Formats", 
+    "upload-tip": "Drag and drop images here or", 
+    "upload-button": "Select Files", 
+    "upload-types": "Supported image formats: BMP, ICO, JPG, JPEG, JFIF, PNG, WEBP", 
+    "rerun": "Reconvert Images Format", 
+    "running": "Converting image format...", 
+    "delete-all-button": "Delete All", 
+    "download-all-button": "Download All", 
     "ready": "Converted Images"
   }
 }
