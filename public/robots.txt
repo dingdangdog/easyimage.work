@@ -1,2 +1,4 @@
 User-agent: *
-Disallow:
+Allow: /
+Disallow: /_nuxt/
+Disallow: /cdn-cgi/

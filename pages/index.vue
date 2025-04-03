@@ -135,12 +135,12 @@ useHead({
   title: t("title"), // 首页仅使用 title，无需拼接
   meta: [
     { name: "description", content: t("description") },
-    { name: "keywords", content: t("description") }, // 原配置中这里使用了 description，保留一致
+    { name: "keywords", content: t("keywords") },
     // Twitter Card data
     { name: "twitter:card", content: "summary" },
     { name: "twitter:site", content: "@oldmoontop" },
     { name: "twitter:title", content: t("title") },
-    { name: "twitter:description", content: t("keywords") }, // 原配置中这里使用了 keywords，保留一致
+    { name: "twitter:description", content: t("description") },
     {
       name: "twitter:image",
       content: "https://easyimage.work/favicon.webp",
