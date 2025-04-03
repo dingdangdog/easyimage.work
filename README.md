@@ -14,6 +14,6 @@ A collection of some image processing tools
 ```sh
 npm i
 npm run dev
-
+# 打包
 npm run generate
 ```
