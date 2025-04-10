@@ -6,9 +6,13 @@
     "name": "Format Converter", 
     "tips": "Select the target format, upload the image, and automatically convert the image format", 
     "target-formats": "Target Formats", 
+    "format-groups": {
+      "common": "Common Formats",
+      "other": "Other Formats"
+    },
     "upload-tip": "Drag and drop images here or", 
     "upload-button": "Select Files", 
-    "upload-types": "Supported image formats: BMP, ICO, JPG, JPEG, JFIF, PNG, WEBP", 
+    "upload-types": "Supported image formats: BMP, GIF, ICO, JPG, JPEG, JFIF, PNG, SVG, TIF, TIFF, WEBP", 
     "rerun": "Reconvert Images Format", 
     "running": "Converting image format...", 
     "delete-all-button": "Delete All", 

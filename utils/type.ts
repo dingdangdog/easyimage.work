@@ -9,6 +9,7 @@ export interface WatermarkImage extends BaseImage {}
 export interface ResizeImage extends BaseImage {
   width: number;
   height: number;
+  isOriginal?: boolean;
 }
 
 export interface ConverterImage extends BaseImage {

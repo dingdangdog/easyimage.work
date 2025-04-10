@@ -6,6 +6,10 @@
     "name": "格式转换",
     "tips": "选择目标格式，上传图片，自动转换图片格式",
     "target-formats": "目标格式",
+    "format-groups": {
+      "common": "常见格式",
+      "other": "其他格式"
+    },
     "upload-tip": "拖放图片到此区域或",
     "upload-button": "选择文件",
     "upload-types": "支持的图片格式：BMP, ICO, JPG, JPEG, JFIF, PNG, WEBP",

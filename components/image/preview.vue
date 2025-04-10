@@ -13,25 +13,25 @@
       />
       <button
         @click="$emit('close-preview')"
-        class="text-white bg-red-600/60 hover:bg-red-500/60 px-2 py-1 md:px-4 md:py-2 rounded-lg absolute top-2 left-2 md:top-4 md:left-4"
+        class="text-white bg-red-600/60 hover:bg-red-500/60 p-2 rounded-full absolute top-2 left-2 md:top-4 md:left-4"
       >
         <IconClose class="w-4 h-4 md:w-6 md:h-6" color="rgb(243 244 246)" />
       </button>
       <button
         @click="$emit('close-preview')"
-        class="text-white bg-red-600/60 hover:bg-red-500/60 px-2 py-1 md:px-4 md:py-2 rounded-lg absolute bottom-2 left-2 md:bottom-4 md:left-4"
+        class="text-white bg-red-600/60 hover:bg-red-500/60 p-2 rounded-full absolute bottom-2 left-2 md:bottom-4 md:left-4"
       >
         <IconClose class="w-4 h-4 md:w-6 md:h-6" color="rgb(243 244 246)" />
       </button>
       <button
         @click="$emit('close-preview')"
-        class="text-white bg-red-600/60 hover:bg-red-500/60 px-2 py-1 md:px-4 md:py-2 rounded-lg absolute top-2 right-2 md:top-4 md:right-4"
+        class="text-white bg-red-600/60 hover:bg-red-500/60 p-2 rounded-full absolute top-2 right-2 md:top-4 md:right-4"
       >
         <IconClose class="w-4 h-4 md:w-6 md:h-6" color="rgb(243 244 246)" />
       </button>
       <button
         @click="$emit('close-preview')"
-        class="text-white bg-red-600/60 hover:bg-red-500/60 px-2 py-1 md:px-4 md:py-2 rounded-lg absolute bottom-4 right-2 md:right-4"
+        class="text-white bg-red-600/60 hover:bg-red-500/60 p-2 rounded-full absolute bottom-4 right-2 md:right-4"
       >
         <IconClose class="w-4 h-4 md:w-6 md:h-6" color="rgb(243 244 246)" />
       </button>

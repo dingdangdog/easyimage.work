@@ -6,6 +6,7 @@
     "name": "Crop Tool",
     "tips": "Select an image to start cropping",
     "ratio": "Crop Ratio",
+    "operate": "Image Operation",
     "image": {
       "left": "L",
       "left-title": "Rotate counterclockwise by 1 degree",

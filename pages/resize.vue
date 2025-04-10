@@ -179,57 +179,38 @@ const processImage = async (file: File) => {
       const originalHeight = img.naturalHeight;
       const mimeType = file.type;
 
+      // 添加原图
+      addImageToResults(
+        originalWidth,
+        originalHeight,
+        img,
+        mimeType,
+        file.name,
+        true
+      );
+
+      // 缩小图片尺寸（以2的倍数递减，直到宽度或高度小于64）
       let width = originalWidth;
       let height = originalHeight;
-      let n = 0;
+      let n = 1;
 
-      // 以2的倍数递减，直到宽度或高度小于64
-      while (width >= 64 && height >= 64) {
-        const canvas = document.createElement("canvas");
-        canvas.width = width;
-        canvas.height = height;
-        const ctx = canvas.getContext("2d");
-        if (!ctx) break;
-
-        ctx.drawImage(img, 0, 0, width, height);
-        const dataUrl = canvas.toDataURL(mimeType);
-
-        // 生成缩略图
-        const thumbCanvas = document.createElement("canvas");
-        const thumbCtx = thumbCanvas.getContext("2d");
-        if (!thumbCtx) break;
-
-        const maxWidth = 250;
-        const maxHeight = 200;
-        let thumbWidth = width;
-        let thumbHeight = height;
-
-        if (thumbWidth > maxWidth || thumbHeight > maxHeight) {
-          const ratio = Math.min(
-            maxWidth / thumbWidth,
-            maxHeight / thumbHeight
-          );
-          thumbWidth = thumbWidth * ratio;
-          thumbHeight = thumbHeight * ratio;
-        }
-
-        thumbCanvas.width = thumbWidth;
-        thumbCanvas.height = thumbHeight;
-        thumbCtx.drawImage(canvas, 0, 0, thumbWidth, thumbHeight);
-
-        processedImages.value.push({
-          width,
-          height,
-          original: dataUrl,
-          thumbnail: thumbCanvas.toDataURL(mimeType),
-          name: `${file.name.split(".")[0]}_${width}x${height}.${file.name
-            .split(".")
-            .pop()}`,
-        });
-
-        n++;
+      while (width / 2 >= 64 && height / 2 >= 64) {
         width = Math.floor(originalWidth / Math.pow(2, n));
         height = Math.floor(originalHeight / Math.pow(2, n));
+        addImageToResults(width, height, img, mimeType, file.name);
+        n++;
+      }
+
+      // 放大图片尺寸（以2的倍数增加，直到宽度或高度达到4096）
+      width = originalWidth;
+      height = originalHeight;
+      n = 1;
+
+      while (width * 2 <= 4096 && height * 2 <= 4096) {
+        width = Math.floor(originalWidth * Math.pow(2, n));
+        height = Math.floor(originalHeight * Math.pow(2, n));
+        addImageToResults(width, height, img, mimeType, file.name);
+        n++;
       }
 
       processing.value = false;
@@ -237,6 +218,66 @@ const processImage = async (file: File) => {
     };
 
     reader.readAsDataURL(file);
+  });
+};
+
+// 添加图片到结果数组中
+const addImageToResults = (
+  width: number,
+  height: number,
+  img: HTMLImageElement,
+  mimeType: string,
+  fileName: string,
+  isOriginal = false
+) => {
+  const canvas = document.createElement("canvas");
+  canvas.width = width;
+  canvas.height = height;
+  const ctx = canvas.getContext("2d");
+  if (!ctx) return;
+
+  ctx.drawImage(img, 0, 0, width, height);
+  const dataUrl = canvas.toDataURL(mimeType);
+
+  // 生成缩略图
+  const thumbCanvas = document.createElement("canvas");
+  const thumbCtx = thumbCanvas.getContext("2d");
+  if (!thumbCtx) return;
+
+  const maxWidth = 250;
+  const maxHeight = 200;
+  let thumbWidth = width;
+  let thumbHeight = height;
+
+  if (thumbWidth > maxWidth || thumbHeight > maxHeight) {
+    const ratio = Math.min(maxWidth / thumbWidth, maxHeight / thumbHeight);
+    thumbWidth = thumbWidth * ratio;
+    thumbHeight = thumbHeight * ratio;
+  }
+
+  thumbCanvas.width = thumbWidth;
+  thumbCanvas.height = thumbHeight;
+  thumbCtx.drawImage(canvas, 0, 0, thumbWidth, thumbHeight);
+
+  processedImages.value.push({
+    width,
+    height,
+    original: dataUrl,
+    thumbnail: thumbCanvas.toDataURL(mimeType),
+    name: `${fileName.split(".")[0]}_${width}x${height}.${fileName
+      .split(".")
+      .pop()}`,
+    isOriginal: isOriginal,
+  });
+
+  // 按尺寸排序
+  processedImages.value.sort((a, b) => {
+    // 确保原图始终在第一位
+    if (a.isOriginal) return -1;
+    if (b.isOriginal) return 1;
+
+    // 其他按面积大小排序
+    return b.width * b.height - a.width * a.height;
   });
 };
 

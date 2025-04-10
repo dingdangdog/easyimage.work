@@ -6,6 +6,10 @@
     "name": "フォーマット変換",
     "tips": "ターゲットフォーマットを選択し、画像をアップロードして自動的にフォーマットを変換",
     "target-formats": "ターゲットフォーマット",
+    "format-groups": {
+      "common": "一般的なフォーマット",
+      "other": "その他のフォーマット"
+    },
     "upload-tip": "画像をここにドラッグ＆ドロップするか",
     "upload-button": "ファイルを選択",
     "upload-types": "対応画像フォーマット：BMP, ICO, JPG, JPEG, JFIF, PNG, WEBP",

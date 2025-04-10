@@ -6,6 +6,7 @@
     "name": "Herramienta de Recorte",
     "tips": "Selecciona una imagen para comenzar a recortar",
     "ratio": "Proporción de Recorte",
+    "operate": "Operación de Imagen",
     "image": {
       "left": "I",
       "left-title": "Rotar en sentido antihorario 1 grado",

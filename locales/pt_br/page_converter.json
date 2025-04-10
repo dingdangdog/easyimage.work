@@ -6,6 +6,10 @@
     "name": "Conversor de Formato",
     "tips": "Selecione o formato de destino, carregue a imagem e converta automaticamente o formato da imagem",
     "target-formats": "Formatos de Destino",
+    "format-groups": {
+      "common": "Formatos Comuns",
+      "other": "Outros Formatos"
+    },
     "upload-tip": "Arraste e solte imagens aqui ou",
     "upload-button": "Selecionar Arquivos",
     "upload-types": "Formatos de imagem suportados: BMP, ICO, JPG, JPEG, JFIF, PNG, WEBP",

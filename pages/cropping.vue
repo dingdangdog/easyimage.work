@@ -80,106 +80,138 @@
       </cropper-canvas>
     </div>
 
-    <div
-      v-if="cropperVisible"
-      class="flex md:justify-center items-center mt-2 w-full"
-    >
-      <div class="mr-2 text-gray-700 dark:text-gray-200">
-        {{ $t("crop.ratio") }}
-      </div>
-      <div class="flex-1 flex space-x-2 overflow-x-auto p-1">
-        <button
-          v-for="ratio of selectionRatioOptions"
-          :key="ratio.value"
-          class="px-2 py-1 shadow-sm rounded-sm hover:bg-purple-500/80 duration-150 ease-in-out"
-          :class="
-            selection.aspectRatio == ratio.value
-              ? 'bg-purple-300/60 shadow-purple-500 text-purple-800 dark:text-purple-100'
-              : 'bg-gray-300/60 shadow-gray-500 text-gray-800 dark:text-gray-100'
-          "
-          @click="setSelectionRatio(ratio.value)"
+    <div v-if="cropperVisible" class="mt-2 grid grid-cols-1 gap-4">
+      <!-- 左侧：裁剪比例选择 -->
+      <div class="bg-purple-100/20 dark:bg-purple-900/20 p-3 rounded-lg">
+        <h3
+          class="text-sm font-medium text-purple-700 dark:text-purple-300 mb-2"
         >
-          {{ ratio.label }}
-        </button>
+          {{ $t("crop.ratio") }}
+        </h3>
+        <div class="flex flex-wrap gap-2">
+          <button
+            v-for="ratio of selectionRatioOptions"
+            :key="ratio.value"
+            class="px-2 py-1 text-sm shadow-sm rounded-md transition-all duration-150 ease-in-out"
+            :class="
+              selection.aspectRatio == ratio.value
+                ? 'bg-purple-500 shadow-purple-500/50 text-white'
+                : 'bg-gray-300/60 hover:bg-purple-300 shadow-gray-500/30 text-gray-800 dark:text-gray-100'
+            "
+            @click="setSelectionRatio(ratio.value)"
+          >
+            {{ ratio.label }}
+          </button>
+        </div>
+      </div>
+
+      <!-- 右侧：图像操作工具 -->
+      <div class="bg-purple-100/20 dark:bg-purple-900/20 p-3 rounded-lg">
+        <h3
+          class="text-sm font-medium text-purple-700 dark:text-purple-300 mb-2"
+        >
+          {{ $t("crop.operate") }}
+        </h3>
+        <div class="flex flex-wrap gap-2">
+          <button
+            class="px-2 py-1 text-sm shadow-sm rounded-md transition-all duration-150 ease-in-out bg-gray-300/60 hover:bg-purple-300 shadow-gray-500/30 text-gray-800 dark:text-gray-100"
+            :title="$t('crop.image.left-title')"
+            @click="leftRotateImage()"
+          >
+            {{ $t("crop.image.left") }}
+          </button>
+          <button
+            class="px-2 py-1 text-sm shadow-sm rounded-md transition-all duration-150 ease-in-out bg-gray-300/60 hover:bg-purple-300 shadow-gray-500/30 text-gray-800 dark:text-gray-100"
+            :title="$t('crop.image.right-title')"
+            @click="rightRotateImage()"
+          >
+            {{ $t("crop.image.right") }}
+          </button>
+          <button
+            class="px-2 py-1 text-sm shadow-sm rounded-md transition-all duration-150 ease-in-out bg-gray-300/60 hover:bg-purple-300 shadow-gray-500/30 text-gray-800 dark:text-gray-100"
+            @click="mirrorImage()"
+          >
+            {{ $t("crop.image.mirror") }}
+          </button>
+          <button
+            class="px-2 py-1 text-sm shadow-sm rounded-md transition-all duration-150 ease-in-out bg-gray-300/60 hover:bg-purple-300 shadow-gray-500/30 text-gray-800 dark:text-gray-100"
+            @click="reverseImage()"
+          >
+            {{ $t("crop.image.reverse") }}
+          </button>
+          <button
+            class="px-2 py-1 text-sm shadow-sm rounded-md transition-all duration-150 ease-in-out bg-red-300/60 hover:bg-purple-300 shadow-gray-500/30 text-gray-800 dark:text-gray-100"
+            @click="removeAll()"
+          >
+            {{ $t("crop.remove") }}
+          </button>
+          <button
+            class="px-2 py-1 text-sm shadow-sm rounded-md transition-all duration-150 ease-in-out bg-green-300/60 hover:bg-purple-300 shadow-gray-500/30 text-gray-800 dark:text-gray-100"
+            @click="resetCropper()"
+          >
+            {{ $t("crop.reset") }}
+          </button>
+        </div>
       </div>
     </div>
 
     <div
       v-if="cropperVisible"
-      class="flex justify-center items-center space-x-2 mt-2 w-full overflow-x-auto p-1"
-    >
-      <button
-        @click="removeAll()"
-        class="bg-red-500 hover:bg-red-400 text-white font-bold py-1 px-2 rounded-md focus:outline-none focus:shadow-outline transition duration-300 ease-in-out"
-      >
-        {{ $t("crop.remove") }}
-      </button>
-
-      <button
-        class="px-4 py-1 shadow-sm rounded-sm bg-gray-300/60 shadow-gray-500 hover:bg-purple-500/80 duration-150 ease-in-out text-gray-800 dark:text-gray-100"
-        :title="$t('crop.image.left-title')"
-        @click="leftRotateImage()"
-      >
-        {{ $t("crop.image.left") }}
-      </button>
-      <button
-        class="px-4 py-1 shadow-sm rounded-sm bg-gray-300/60 shadow-gray-500 hover:bg-purple-500/80 duration-150 ease-in-out text-gray-800 dark:text-gray-100"
-        :title="$t('crop.image.right-title')"
-        @click="rightRotateImage()"
-      >
-        {{ $t("crop.image.right") }}
-      </button>
-      <button
-        class="px-2 py-1 shadow-sm rounded-sm bg-gray-300/60 shadow-gray-500 hover:bg-purple-500/80 duration-150 ease-in-out text-gray-800 dark:text-gray-100"
-        @click="mirrorImage()"
-      >
-        {{ $t("crop.image.mirror") }}
-      </button>
-      <button
-        class="px-2 py-1 shadow-sm rounded-sm bg-gray-300/60 shadow-gray-500 hover:bg-purple-500/80 duration-150 ease-in-out text-gray-800 dark:text-gray-100"
-        @click="reverseImage()"
-      >
-        {{ $t("crop.image.reverse") }}
-      </button>
-      <button
-        class="bg-green-500 hover:bg-green-400 text-white font-bold py-1 px-2 rounded-md focus:outline-none focus:shadow-outline transition duration-300 ease-in-out"
-        @click="resetCropper()"
-      >
-        {{ $t("crop.reset") }}
-      </button>
-    </div>
-
-    <div
-      v-if="cropperVisible"
-      class="mt-2 md:mt-4 flex flex-col space-y-4 items-center justify-center"
+      class="mt-4 md:mt-6 flex flex-col space-y-4 items-center justify-center"
     >
       <div
-        class="cursor-pointer w-full min-h-40 md:max-w-[50%] p-2 bg-purple-300/50 dark:bg-purple-800/30 rounded-md overflow-hidden border border-purple-300 dark:border-purple-700 flex items-center justify-center"
+        class="cursor-pointer w-full min-h-40 md:max-w-[50%] p-2 bg-purple-300/30 dark:bg-purple-800/20 rounded-md overflow-hidden border border-purple-300/50 dark:border-purple-700/50 flex items-center justify-center shadow-sm hover:shadow-md transition-shadow duration-200"
         @click="previewCropping"
       >
         <cropper-viewer
           ref="cropperViewer"
-          class="bg-white/50 dark:bg-black/30"
+          class="bg-white/30 dark:bg-black/20 rounded"
           selection="#cropperSelection"
         />
       </div>
-      <div class="flex flex-row space-x-4 justify-center">
+
+      <!-- 操作按钮 -->
+      <div class="w-full flex justify-center space-x-4">
         <button
           @click="previewCropping"
-          class="bg-blue-500 hover:bg-blue-400 text-white font-bold py-3 px-6 rounded-lg focus:outline-none focus:shadow-outline transition duration-300 ease-in-out"
+          class="flex items-center px-4 py-2 bg-blue-500 hover:bg-blue-600 text-white font-medium rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-300 transition duration-200 ease-in-out shadow-sm"
         >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-5 w-5 mr-1"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M6.672 1.911a1 1 0 10-1.932.518l.259.966a1 1 0 001.932-.518l-.26-.966zM2.429 4.74a1 1 0 10-.517 1.932l.966.259a1 1 0 00.517-1.932l-.966-.26zm8.814-.569a1 1 0 00-1.415-1.414l-.707.707a1 1 0 101.415 1.415l.707-.708zm-7.071 7.072l.707-.707A1 1 0 003.465 9.12l-.708.707a1 1 0 001.415 1.415zm3.2-5.171a1 1 0 00-1.3 1.3l4 10a1 1 0 001.823.075l1.38-2.759 3.018 3.02a1 1 0 001.414-1.415l-3.019-3.02 2.76-1.379a1 1 0 00-.076-1.822l-10-4z"
+              clip-rule="evenodd"
+            />
+          </svg>
           {{ $t("crop.preview") }}
         </button>
         <button
           @click="downloadCroppedImage"
-          class="bg-green-500 hover:bg-green-400 text-white font-bold py-3 px-6 rounded-lg focus:outline-none focus:shadow-outline transition duration-300 ease-in-out"
+          class="flex items-center px-4 py-2 bg-green-500 hover:bg-green-600 text-white font-medium rounded-lg focus:outline-none focus:ring-2 focus:ring-green-300 transition duration-200 ease-in-out shadow-sm"
         >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-5 w-5 mr-1"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z"
+              clip-rule="evenodd"
+            />
+          </svg>
           {{ $t("crop.download") }}
         </button>
       </div>
     </div>
 
-    <p class="mt-2 md:mt-6 text-center text-purple-500 dark:text-purple-300">
+    <p class="mt-4 text-center text-purple-500 dark:text-purple-300">
       {{ $t("crop.tips") }}
     </p>
 

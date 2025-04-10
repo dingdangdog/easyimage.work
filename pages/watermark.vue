@@ -522,12 +522,13 @@ const handleFileSelect = async (e: Event) => {
 };
 
 // 处理拖放文件
-const handleDrop = async (e: Event) => {
+const handleDrop = async (e: DragEvent) => {
   dragOver.value = false;
-  const fileInput = e.target as HTMLInputElement;
-  const files = fileInput.files ? Array.from(fileInput.files) : [];
+  const files = e.dataTransfer?.files ? Array.from(e.dataTransfer.files) : [];
   await processFiles(files);
-  originalImages.value = files; // 存储 File 对象，而不是 URL
+  if (files && files.length > 0) {
+    originalImages.value = files; // 存储 File 对象，而不是 URL
+  }
 };
 
 // 统一处理文件
@@ -584,7 +585,7 @@ const deleteAll = () => {
   originalImages.value = [];
   // Reset file input so the same files can be selected again
   if (fileInput.value) {
-    fileInput.value.value = '';
+    fileInput.value.value = "";
   }
 };
 

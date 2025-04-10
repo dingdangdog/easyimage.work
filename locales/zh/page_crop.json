@@ -6,6 +6,7 @@
     "name": "裁剪工具",
     "tips": "选择图片，开始自由裁剪",
     "ratio": "裁剪比例",
+    "operate": "图片操作",
     "image": {
       "left": "L",
       "left-title": "逆时针旋转1度",

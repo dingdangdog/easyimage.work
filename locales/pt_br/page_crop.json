@@ -6,6 +6,7 @@
     "name": "Ferramenta de Corte",
     "tips": "Selecione uma imagem para começar a cortar",
     "ratio": "Proporção de Corte",
+    "operate": "Operação de Imagem",
     "image": {
       "left": "E",
       "left-title": "Girar no sentido anti-horário em 1 grau",

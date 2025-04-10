@@ -14,22 +14,57 @@
         class="block text-lg font-medium text-pink-400 dark:text-pink-300"
         >{{ $t("converter.target-formats") }}</label
       >
-      <div class="mt-2 flex flex-wrap gap-4">
-        <div
-          v-for="format in availableFormats"
-          :key="format"
-          class="flex items-center"
-        >
-          <input
-            type="checkbox"
-            id="format-checkbox"
-            v-model="targetFormats"
-            :value="format"
-            class="mr-2 rounded border-gray-300 text-pink-700 focus:ring-pink-500"
-          />
-          <label class="font-medium text-gray-700 dark:text-gray-300">{{
-            format.toUpperCase()
-          }}</label>
+      <div class="mt-2 grid grid-cols-1 md:grid-cols-2 gap-4">
+        <!-- 常用格式 -->
+        <div class="border border-pink-200 dark:border-pink-800 rounded-md p-3">
+          <h3 class="text-sm font-medium text-pink-600 dark:text-pink-300 mb-2">
+            {{ $t("converter.format-groups.common") }}
+          </h3>
+          <div class="flex flex-wrap gap-2">
+            <div
+              v-for="format in formatGroups.common"
+              :key="format"
+              class="flex items-center"
+            >
+              <input
+                type="checkbox"
+                :id="`format-checkbox-${format}`"
+                v-model="targetFormats"
+                :value="format"
+                class="mr-2 rounded border-gray-300 text-pink-600 focus:ring-pink-500"
+              />
+              <label
+                class="text-sm font-medium text-gray-700 dark:text-gray-300"
+                >{{ format.toUpperCase() }}</label
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- 其他格式 -->
+        <div class="border border-pink-200 dark:border-pink-800 rounded-md p-3">
+          <h3 class="text-sm font-medium text-pink-600 dark:text-pink-300 mb-2">
+            {{ $t("converter.format-groups.other") }}
+          </h3>
+          <div class="flex flex-wrap gap-2">
+            <div
+              v-for="format in formatGroups.other"
+              :key="format"
+              class="flex items-center"
+            >
+              <input
+                type="checkbox"
+                :id="`format-checkbox-${format}`"
+                v-model="targetFormats"
+                :value="format"
+                class="mr-2 rounded border-gray-300 text-pink-600 focus:ring-pink-500"
+              />
+              <label
+                class="text-sm font-medium text-gray-700 dark:text-gray-300"
+                >{{ format.toUpperCase() }}</label
+              >
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -122,7 +157,7 @@
       <h3 class="text-xl font-semibold mb-4 text-gray-800 dark:text-gray-200">
         {{ $t("converter.ready") }}
       </h3>
-      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6">
+      <div class="grid grid-cols-3 gap-4">
         <div v-for="(image, index) in processedImages" :key="index">
           <ImageCard
             :image="image"
@@ -186,10 +221,28 @@ const upload = () => {
   fileInput.value?.click();
 };
 
-const formats = ["bmp", "ico", "jfif", "jpg", "jpeg", "png", "webp"];
+// 扩展支持的格式列表
+const formats = [
+  "bmp",
+  "gif",
+  "ico",
+  "jfif",
+  "jpg",
+  "jpeg",
+  "png",
+  "tif",
+  "tiff",
+  "webp",
+];
+
+// 格式分组，用于展示
+const formatGroups = {
+  common: ["jpg", "jpeg", "png", "webp"],
+  other: ["bmp", "ico", "jfif", "tif", "tiff"],
+};
 
 const availableFormats = ref(formats); // 可选择的格式
-const targetFormats = ref<string[]>(formats); // 默认选择 jpeg 和 webp
+const targetFormats = ref<string[]>(["jpg", "jpeg", "png", "webp", "bmp", "ico", "jfif", "tif", "tiff"]); // 默认选择常用格式
 const originalImages = ref<File[]>([]);
 const processedImages = ref<ConverterImage[]>([]); //  processedImages 类型any, 因为要存储不同格式的图片
 const dragOver = ref(false);
@@ -231,10 +284,12 @@ const processImage = async (file: File): Promise<ConverterImage[]> => {
           mimeType = "image/x-icon"; // ICO 的 MIME 类型
         } else if (format === "jpg" || format === "jpeg" || format === "jfif") {
           mimeType = "image/jpeg"; //  jpg, jpeg, jfif 都使用 image/jpeg
+        } else if (format === "tif" || format === "tiff") {
+          mimeType = "image/tiff"; // tif, tiff 都使用 image/tiff
         }
+
         try {
           const convertedDataURL = canvas.toDataURL(mimeType, 0.8); // jpeg 质量 0.8
-          // results[format] = convertedDataURL; // 存储转换后的 DataURL
 
           const thumbCanvas = document.createElement("canvas");
           const thumbCtx = thumbCanvas.getContext("2d");
@@ -282,6 +337,10 @@ const processImage = async (file: File): Promise<ConverterImage[]> => {
 const handleFileSelect = async (e: Event) => {
   const fileInput = e.target as HTMLInputElement;
   const files = fileInput.files ? Array.from(fileInput.files) : [];
+  // 如果用户没有选择任何格式，自动选择常用格式
+  if (targetFormats.value.length === 0) {
+    targetFormats.value = formatGroups.common;
+  }
   await processFiles(files);
   if (files && files.length > 0) {
     originalImages.value = files;
@@ -289,12 +348,13 @@ const handleFileSelect = async (e: Event) => {
 };
 
 // 处理拖放文件 (复用水印页面的)
-const handleDrop = async (e: Event) => {
+const handleDrop = async (e: DragEvent) => {
   dragOver.value = false;
-  const fileInput = e.target as HTMLInputElement;
-  const files = fileInput.files ? Array.from(fileInput.files) : [];
+  const files = e.dataTransfer?.files ? Array.from(e.dataTransfer.files) : [];
   await processFiles(files);
-  originalImages.value = files;
+  if (files && files.length > 0) {
+    originalImages.value = files;
+  }
 };
 
 // 统一处理文件 (基本复用水印页面的 processFiles，但不需要本地存储水印文字)
