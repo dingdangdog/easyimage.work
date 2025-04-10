@@ -582,6 +582,10 @@ const removeImage = (index: number) => {
 const deleteAll = () => {
   processedImages.value = [];
   originalImages.value = [];
+  // Reset file input so the same files can be selected again
+  if (fileInput.value) {
+    fileInput.value.value = '';
+  }
 };
 
 // 全部下载
