@@ -242,7 +242,17 @@ const formatGroups = {
 };
 
 const availableFormats = ref(formats); // 可选择的格式
-const targetFormats = ref<string[]>(["jpg", "jpeg", "png", "webp", "bmp", "ico", "jfif", "tif", "tiff"]); // 默认选择常用格式
+const targetFormats = ref<string[]>([
+  "jpg",
+  "jpeg",
+  "png",
+  "webp",
+  "bmp",
+  "ico",
+  "jfif",
+  "tif",
+  "tiff",
+]); // 默认选择常用格式
 const originalImages = ref<File[]>([]);
 const processedImages = ref<ConverterImage[]>([]); //  processedImages 类型any, 因为要存储不同格式的图片
 const dragOver = ref(false);
@@ -367,7 +377,7 @@ const processFiles = async (files: File[]) => {
     if (!file.type.startsWith("image/")) return;
     try {
       const result = await processImage(file);
-      processedImages.value = result;
+      processedImages.value = [...processedImages.value, ...result];
     } catch (error) {
       console.error("图片处理失败:", error, file.name);
     } finally {
