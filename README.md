@@ -17,3 +17,11 @@ npm run dev
 # 打包
 npm run generate
 ```
+
+## docker
+
+```sh
+docker build -t easyimage:1.0.12 .
+docker save -o easyimage.1.0.12.tar easyimage:1.0.12
+docker load -i easyimage.1.0.12.tar
+```

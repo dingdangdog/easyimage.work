@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  easyimage:
+    container_name: easyimage
+    image: easyimage:1.0.12
+    ports:
+      - "13175:13175"
+    restart: unless-stopped 
