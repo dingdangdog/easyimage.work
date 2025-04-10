@@ -40,7 +40,7 @@
         :to="localePath('/blog')"
         class="text-blue-500 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 mt-4 inline-block transition-colors duration-300"
       >
-        {{ $t("common.backToList") }}
+        {{ $t("common.blogList") }}
       </router-link>
     </div>
   </div>
@@ -111,7 +111,6 @@ useHead({
   title: post.value?.title || formatSlugToTitle(slug.value),
 });
 </script>
-
 <style>
 /* Light theme styles */
 .prose img {
@@ -119,15 +118,15 @@ useHead({
 }
 
 .prose pre {
-  @apply bg-gray-100 dark:bg-gray-800 p-4 rounded-lg overflow-x-auto transition-colors duration-300;
+  @apply bg-gray-100 dark:bg-gray-800 px-2 py-1 rounded-lg overflow-x-auto transition-colors duration-300;
 }
 
 .prose pre code {
-  @apply text-sm bg-transparent px-1 py-0.5 rounded transition-colors duration-300 text-gray-700 dark:text-gray-300;
+  @apply text-sm bg-transparent dark:bg-transparent px-1 py-0.5 rounded transition-colors duration-300 text-gray-700 dark:text-gray-300;
 }
 
 .prose code {
-  @apply text-sm bg-blue-200 dark:bg-blue-900 px-1 py-0.5 rounded transition-colors duration-300 text-gray-700 dark:text-gray-300;
+  @apply text-sm mx-2 bg-blue-200 dark:bg-blue-900 px-1 py-0.5 rounded transition-colors duration-300 text-gray-700 dark:text-gray-300;
 }
 
 .prose h1 {
@@ -151,19 +150,23 @@ useHead({
 }
 
 .prose a {
-  @apply text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 transition-colors duration-300;
+  @apply mx-1 text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 transition-colors duration-300;
 }
 
 .prose strong {
   @apply text-gray-900 dark:text-gray-100;
 }
-.prose ul,
+
+.prose ul {
+  @apply my-2 ml-2 text-gray-700 dark:text-gray-300 transition-colors duration-300 bg-gray-200 dark:bg-gray-800 p-4 rounded-lg list-disc pl-5;
+}
+
 .prose ol {
-  @apply my-4 ml-6 text-gray-700 dark:text-gray-300 transition-colors duration-300 bg-gray-200 dark:bg-gray-800 p-4 rounded-lg;
+  @apply my-2 ml-2 text-gray-700 dark:text-gray-300 transition-colors duration-300 bg-gray-200 dark:bg-gray-800 p-4 rounded-lg list-decimal pl-5;
 }
 
 .prose li {
-  @apply mb-2 transition-colors duration-300 text-gray-700 dark:text-gray-300;
+  @apply mb-2 ml-4 transition-colors duration-300 text-gray-700 dark:text-gray-300;
 }
 
 .prose blockquote {
