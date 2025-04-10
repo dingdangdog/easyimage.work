@@ -9,6 +9,7 @@
     "upload-button": "选择文件",
     "upload-types": "支持的图片格式：BMP, ICO, JPG, JPEG, JFIF, PNG, WEBP",
     "download-all-button": "下载全部",
+    "remove-all-button": "移除所有",
     "origin": "原图",
     "running": "处理中...",
     "ready": "已处理图片"

@@ -22,6 +22,7 @@
     >
       <input
         type="file"
+        multiple
         accept="image/*"
         @change="handleFileSelect"
         class="hidden"
@@ -55,15 +56,28 @@
       v-if="processing"
       class="mt-6 text-center text-gray-600 dark:text-gray-300"
     >
-      {{ $t("resize.running") }}
+      {{ $t("resize.running") }}({{ nowNum }}/{{ totalNum }})
     </div>
 
     <!-- 处理结果 -->
-    <div v-if="processedImages.length > 0" class="mt-6">
+    <div v-if="processedImages.length > 0" class="mt-4">
+      <button
+        @click="downloadAll"
+        class="my-2 w-full py-3 bg-blue-500 hover:bg-blue-600 text-white font-semibold rounded-lg focus:outline-none transition duration-300 ease-in-out"
+      >
+        {{ $t("resize.download-all-button") }}
+      </button>
+      <button
+        @click="removeAll"
+        class="my-2 w-full py-3 bg-blue-500 hover:bg-blue-600 text-white font-semibold rounded-lg focus:outline-none transition duration-300 ease-in-out"
+      >
+        {{ $t("resize.remove-all-button") }}
+      </button>
+
       <h3 class="text-xl font-semibold mb-4 text-gray-800 dark:text-gray-100">
         {{ $t("resize.ready") }}
       </h3>
-      <div class="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 gap-6">
+      <div class="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 gap-4">
         <div v-for="(image, index) in processedImages" :key="index">
           <ImageCard
             :key="index"
@@ -72,18 +86,12 @@
             @remove="removeImage(index)"
             @download="downloadImage(image)"
           />
-          <p class="text-center text-gray-300 dark:text-gray-400">
+          <p class="mt-2 text-center text-gray-300 dark:text-gray-400">
             {{ image.width }}x{{ image.height
-            }}{{ index === 0 ? `(${t("resize.origin")})` : "" }}
+            }}{{ image.isOriginal ? `(${t("resize.origin")})` : "" }}
           </p>
         </div>
       </div>
-      <button
-        @click="downloadAll"
-        class="mt-4 w-full py-3 bg-blue-500 hover:bg-blue-600 text-white font-semibold rounded-lg focus:outline-none transition duration-300 ease-in-out"
-      >
-        {{ $t("resize.download-all-button") }}
-      </button>
     </div>
 
     <!-- 预览弹窗 -->
@@ -146,79 +154,113 @@ const previewImageData = ref<string>(); // 预览图片
 // 处理文件选择
 const handleFileSelect = async (e: Event) => {
   const fileInput = e.target as HTMLInputElement;
-  const file = fileInput.files ? fileInput.files[0] : null;
-  if (file) {
-    await processImage(file);
-  }
+  const files = fileInput.files ? Array.from(fileInput.files) : [];
+  await processFiles(files);
 };
 
 // 处理拖放
 const handleDrop = async (e: DragEvent) => {
   dragOver.value = false;
-  const file = e.dataTransfer?.files[0];
-  if (file) {
-    await processImage(file);
-  }
+  const files = e.dataTransfer?.files ? Array.from(e.dataTransfer.files) : [];
+  await processFiles(files);
 };
 
+const nowNum = ref(0);
+const totalNum = ref(0);
 // 处理图片
-const processImage = async (file: File) => {
+const processFiles = async (files: File[]) => {
   processing.value = true;
-  processedImages.value = [];
+  totalNum.value = files.length;
+  nowNum.value = 1;
+  for (const file of files) {
+    console.log(`Processing file: ${file.name}`);
+    const img = new Image();
+    const reader = new FileReader();
 
-  const img = new Image();
-  const reader = new FileReader();
+    await new Promise<void>((resolve) => {
+      reader.onload = (e) => {
+        img.src = String(e.target?.result);
+      };
 
-  return new Promise<void>((resolve) => {
-    reader.onload = (e) => {
-      img.src = String(e.target?.result);
-    };
+      img.onload = async () => {
+        const originalWidth = img.naturalWidth;
+        const originalHeight = img.naturalHeight;
+        const mimeType = file.type;
 
-    img.onload = async () => {
-      const originalWidth = img.naturalWidth;
-      const originalHeight = img.naturalHeight;
-      const mimeType = file.type;
+        const imageResults: ResizeImage[] = [];
 
-      // 添加原图
-      addImageToResults(
-        originalWidth,
-        originalHeight,
-        img,
-        mimeType,
-        file.name,
-        true
-      );
+        // 添加原图
+        const originalImage = addImageToResults(
+          originalWidth,
+          originalHeight,
+          img,
+          mimeType,
+          file.name,
+          true
+        );
+        if (originalImage) imageResults.push(originalImage);
 
-      // 缩小图片尺寸（以2的倍数递减，直到宽度或高度小于64）
-      let width = originalWidth;
-      let height = originalHeight;
-      let n = 1;
+        console.log(`Original image added for: ${file.name}`);
 
-      while (width / 2 >= 64 && height / 2 >= 64) {
-        width = Math.floor(originalWidth / Math.pow(2, n));
-        height = Math.floor(originalHeight / Math.pow(2, n));
-        addImageToResults(width, height, img, mimeType, file.name);
-        n++;
-      }
+        // 缩小图片尺寸（以2的倍数递减，直到宽度或高度小于64）
+        let width = originalWidth;
+        let height = originalHeight;
+        let n = 1;
 
-      // 放大图片尺寸（以2的倍数增加，直到宽度或高度达到4096）
-      width = originalWidth;
-      height = originalHeight;
-      n = 1;
+        while (width / 2 >= 64 && height / 2 >= 64) {
+          width = Math.floor(originalWidth / Math.pow(2, n));
+          height = Math.floor(originalHeight / Math.pow(2, n));
+          const resizedImage = addImageToResults(
+            width,
+            height,
+            img,
+            mimeType,
+            file.name
+          );
+          if (resizedImage) imageResults.push(resizedImage);
+          n++;
+        }
 
-      while (width * 2 <= 4096 && height * 2 <= 4096) {
-        width = Math.floor(originalWidth * Math.pow(2, n));
-        height = Math.floor(originalHeight * Math.pow(2, n));
-        addImageToResults(width, height, img, mimeType, file.name);
-        n++;
-      }
+        console.log(`Resized images added for: ${file.name}`);
 
-      processing.value = false;
-      resolve();
-    };
+        // 放大图片尺寸（以2的倍数增加，直到宽度或高度达到4096）
+        width = originalWidth;
+        height = originalHeight;
+        n = 1;
 
-    reader.readAsDataURL(file);
-  });
+        while (width * 2 <= 4096 && height * 2 <= 4096) {
+          width = Math.floor(originalWidth * Math.pow(2, n));
+          height = Math.floor(originalHeight * Math.pow(2, n));
+          const enlargedImage = addImageToResults(
+            width,
+            height,
+            img,
+            mimeType,
+            file.name
+          );
+          if (enlargedImage) imageResults.push(enlargedImage);
+          n++;
+        }
+
+        console.log(`Enlarged images added for: ${file.name}`);
+
+        // Sort results for this image only
+        imageResults.sort((a, b) => {
+          if (a.isOriginal) return -1;
+          if (b.isOriginal) return 1;
+          return b.width * b.height - a.width * a.height;
+        });
+
+        processedImages.value = [...processedImages.value, ...imageResults];
+        nowNum.value++;
+        resolve();
+      };
+
+      reader.readAsDataURL(file);
+    });
+  }
+
+  processing.value = false;
 };
 
 // 添加图片到结果数组中
@@ -229,7 +271,7 @@ const addImageToResults = (
   mimeType: string,
   fileName: string,
   isOriginal = false
-) => {
+): ResizeImage | undefined => {
   const canvas = document.createElement("canvas");
   canvas.width = width;
   canvas.height = height;
@@ -259,7 +301,7 @@ const addImageToResults = (
   thumbCanvas.height = thumbHeight;
   thumbCtx.drawImage(canvas, 0, 0, thumbWidth, thumbHeight);
 
-  processedImages.value.push({
+  const imageResult: ResizeImage = {
     width,
     height,
     original: dataUrl,
@@ -268,17 +310,16 @@ const addImageToResults = (
       .split(".")
       .pop()}`,
     isOriginal: isOriginal,
-  });
+  };
+  return imageResult;
+};
 
-  // 按尺寸排序
-  processedImages.value.sort((a, b) => {
-    // 确保原图始终在第一位
-    if (a.isOriginal) return -1;
-    if (b.isOriginal) return 1;
-
-    // 其他按面积大小排序
-    return b.width * b.height - a.width * a.height;
-  });
+// 全部删除 (复用水印页面的)
+const removeAll = () => {
+  processedImages.value = [];
+  if (fileInput.value) {
+    fileInput.value.value = "";
+  }
 };
 
 // 下载单张图片

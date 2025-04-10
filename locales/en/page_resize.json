@@ -9,6 +9,7 @@
     "upload-button": "Select File",
     "upload-types": "Supported image formats: BMP, ICO, JPG, JPEG, JFIF, PNG, WEBP",
     "download-all-button": "Download All",
+    "remove-all-button": "Remove All",
     "origin": "Origin",
     "running": "Processing...",
     "ready": "Processed Images"

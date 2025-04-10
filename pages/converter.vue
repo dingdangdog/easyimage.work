@@ -414,6 +414,9 @@ const removeImage = (index: number) => {
 const deleteAll = () => {
   processedImages.value = [];
   originalImages.value = [];
+  if (fileInput.value) {
+    fileInput.value.value = "";
+  }
 };
 
 // 全部下载 (修改下载逻辑，下载 ZIP 包含所有格式)

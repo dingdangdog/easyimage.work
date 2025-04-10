@@ -9,6 +9,7 @@
     "upload-button": "ファイルを選択",
     "upload-types": "対応画像フォーマット：BMP, ICO, JPG, JPEG, JFIF, PNG, WEBP",
     "download-all-button": "すべてダウンロード",
+    "remove-all-button": "すべて削除",
     "origin": "オリジナル",
     "running": "処理中...",
     "ready": "処理済み画像"
