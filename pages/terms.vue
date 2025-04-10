@@ -49,7 +49,7 @@
         &larr; {{ $t("common.viewAgreement") }}
       </router-link>
       <router-link
-        :to="localePath('/')'"
+        :to="localePath('/')"
         class="text-gray-500 dark:text-gray-200 hover:underline"
       >
         {{ $t("common.backToHome") }} &rarr;

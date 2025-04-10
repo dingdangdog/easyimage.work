@@ -35,7 +35,7 @@
 
     <div class="flex justify-between items-center mt-6">
       <router-link
-        :to="localePath('/')'"
+        :to="localePath('/')"
         class="text-gray-500 dark:text-gray-200 hover:underline"
       >
         &larr; {{ $t("common.backToHome") }}
