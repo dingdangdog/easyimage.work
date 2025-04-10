@@ -3,7 +3,7 @@
     "title": "Blog do EasyImage.work",
     "description": "O EasyImage.work oferece ferramentas gratuitas e seguras para edição de imagens online, sem necessidade de upload, com processamento local no navegador, rápido e conveniente. Experimente agora recursos como adicionar marca d'água, compressão, conversão de formatos e muito mais para otimizar suas imagens facilmente! Disponível como PWA para instalação offline.",
     "keywords": "edição de imagens, processamento de imagens, ferramentas de imagem online, ferramentas de imagem offline, editor de imagens gratuito, imagens com marca d'água, redimensionamento de imagens, conversão de formatos de imagem, recorte de imagens, processamento seguro de imagens, sem upload, BMP, JPG, PNG, WEBP",
-    "listNum": "2",
+    "listNum": "3",
     "postNotFound": "Desculpe, o blog não existe ou foi excluído.",
     "list": [
       {
@@ -15,6 +15,11 @@
         "title": "Como implementar o redimensionamento de imagens na web com EasyImage.work",
         "date": "2025-03-16",
         "key": "how-resize-image-on-web"
+      },
+      {
+        "title": "Como Escrever um Excelente Componente Web de Upload de Imagens com Arrastar e Soltar",
+        "date": "2025-04-10",
+        "key": "drag-and-drop-upload-on-web"
       }
     ]
   }

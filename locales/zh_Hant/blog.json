@@ -3,7 +3,7 @@
     "title": "簡單圖片的部落格 - EasyImage.work",
     "description": "簡單圖片提供免費、安全的線上圖片編輯工具，無需上傳，本地瀏覽器處理，快速便捷。立即體驗加浮水印、壓縮、格式轉換等功能，輕鬆優化圖片！PWA離線安裝。",
     "keywords": "圖像編輯、圖像處理、線上圖像工具、離線圖像工具、免費圖像編輯器、浮水印圖像、調整圖像大小、轉換圖像格式、裁剪圖片，安全圖像處理、無需上傳、BMP、JPG、PNG、WEBP",
-    "listNum": "2",
+    "listNum": "3",
     "postNotFound": "很抱歉，部落格不存在或已被刪除~",
     "list": [
       {
@@ -15,6 +15,11 @@
         "title": "Web端如何實現圖片縮放功能？EasyImage.work教你輕鬆實現！",
         "date": "2025-03-16",
         "key": "how-resize-image-on-web"
+      },
+      {
+        "title": "如何撰寫優秀的拖放式圖片上傳網頁元件",
+        "date": "2025-04-10",
+        "key": "drag-and-drop-upload-on-web"
       }
     ]
   }

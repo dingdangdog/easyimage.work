@@ -3,7 +3,7 @@
     "title": "简单图片的博客 - EasyImage.work",
     "description": "简单图片提供免费、安全的在线图片处理工具，无需上传，本地浏览器处理，快速便捷。立即体验加水印、压缩、格式转换等功能，轻松优化图片！PWA离线安装。",
     "keywords": "图像处理、图像处理、在线图像工具、离线图像工具、免费图像处理器、水印图像、调整图像大小、转换图像格式、裁剪图片，安全图像处理、无需上传、BMP、JPG、PNG、WEBP",
-    "listNum": "2",
+    "listNum": "3",
     "postNotFound": "很抱歉，博客不存在或已被删除~",
     "list": [
       {
@@ -15,6 +15,11 @@
         "title": "Web端如何实现图片缩放功能？EasyImage.work教你轻松实现！",
         "date": "2025-03-16",
         "key": "how-resize-image-on-web"
+      },
+      {
+        "title": "如何编写出色的拖放图片上传Web组件",
+        "date": "2025-04-10",
+        "key": "drag-and-drop-upload-on-web"
       }
     ]
   }
