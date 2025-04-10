@@ -32,7 +32,7 @@
         </div>
         <div class="text-right">
           <router-link
-            to="agreement"
+            :to="localePath('/agreement')"
             class="hover:underline text-blue-500 dark:text-blue-300"
             >{{ $t("common.viewAgreement") }} &rarr;
           </router-link>
@@ -69,7 +69,7 @@
         </div>
         <div class="text-right">
           <router-link
-            to="terms"
+            :to="localePath('/terms')"
             class="hover:underline text-blue-500 dark:text-blue-300"
             >{{ $t("common.viewTerms") }} &rarr;
           </router-link>
@@ -119,6 +119,7 @@
 
 <script setup lang="ts">
 const { t } = useI18n();
+const localePath = useLocalePath();
 const route = useRoute();
 
 useHead({

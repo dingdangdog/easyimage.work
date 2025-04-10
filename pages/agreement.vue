@@ -45,13 +45,13 @@
 
     <div class="flex justify-between items-center mt-6">
       <router-link
-        to="/"
+        :to="localePath('/')"
         class="text-gray-500 dark:text-gray-200 hover:underline"
       >
         &larr; {{ $t("common.backToHome") }}
       </router-link>
       <router-link
-        to="terms"
+        :to="localePath('terms')"
         class="text-gray-500 dark:text-gray-200 hover:underline"
       >
         {{ $t("common.viewTerms") }} &rarr;
@@ -62,6 +62,7 @@
 
 <script setup lang="ts">
 const { t } = useI18n();
+const localePath = useLocalePath();
 const route = useRoute();
 
 useHead({
