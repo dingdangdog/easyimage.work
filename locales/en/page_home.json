@@ -18,6 +18,10 @@
     "cropping": {
       "name": "Crop Tool",
       "description": "Easily Free Cropping your images"
+    },
+    "aiAnalysis": {
+      "name": "AI Analysis Tool",
+      "description": "Extract AI generation info from images"
     }
   }
 }

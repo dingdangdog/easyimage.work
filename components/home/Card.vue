@@ -3,6 +3,7 @@ import IconWatermark from "../icon/watermark.vue";
 import IconResize from "../icon/resize.vue";
 import IconConverter from "../icon/converter.vue";
 import IconCropping from "../icon/cropping.vue";
+import IconAiAnalysis from "../icon/ai-analysis.vue";
 
 const localePath = useLocalePath();
 
@@ -24,6 +25,8 @@ const getIcon = (icon: string) => {
       return IconConverter;
     case "cropping":
       return IconCropping;
+    case "ai-analysis":
+      return IconAiAnalysis;
     default:
       return "";
   }

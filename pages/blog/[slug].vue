@@ -81,8 +81,6 @@ const { data: post } = await useAsyncData(
   `blog-${slug.value}-${locale.value}`,
   async () => {
     try {
-      // Try to find the post in the current locale
-      // The blog files are in the root blog directory, not in content
       // We need to use the correct path format for queryContent
       const post = await queryCollection("blog")
         .path(`/blog/${locale.value}/${slug.value}`)

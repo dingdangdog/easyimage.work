@@ -1,0 +1,21 @@
+{
+  "aiAnalysis": {
+    "title": "免費AI圖片分析工具 | EasyImage.work - 提取Stable Diffusion提示詞",
+    "description": "使用簡單圖片的免費線上AI分析工具，從圖片EXIF資料中提取Stable Diffusion提示詞、負向提示詞和生成參數。",
+    "keywords": "AI分析, Stable Diffusion, 提示詞提取, EXIF分析, 圖片元數據, SD參數, 線上工具, 免費分析",
+    "name": "AI分析工具",
+    "tips": "上傳包含AI生成資訊的圖片，自動提取Stable Diffusion提示詞和參數",
+    "upload-tip": "拖放圖片到此區域或",
+    "upload-button": "選擇文件",
+    "upload-types": "支援的圖片格式：JPG, JPEG, PNG, WEBP, TIFF",
+    "remove-all-button": "刪除全部",
+    "export-button": "匯出結果",
+    "rerun": "重新分析圖片",
+    "running": "分析中...",
+    "ready": "分析結果",
+    "prompt": "正向提示詞",
+    "negativePrompt": "負向提示詞",
+    "parameters": "生成參數",
+    "no-ai-info": "未找到AI生成資訊"
+  }
+} 

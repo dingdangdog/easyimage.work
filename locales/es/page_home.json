@@ -18,6 +18,10 @@
     "cropping": {
       "name": "Recorte",
       "description": "Recorta tus imágenes libremente con facilidad"
+    },
+    "aiAnalysis": {
+      "name": "Herramienta de Análisis de IA",
+      "description": "Extrae información de generación de IA de imágenes"
     }
   }
 }

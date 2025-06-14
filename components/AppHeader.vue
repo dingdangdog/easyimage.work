@@ -122,6 +122,16 @@ const toggleTheme = () => {
           />
           {{ $t("header.cropping") }}
         </NuxtLink>
+        <NuxtLink
+          :to="localePath('/ai-analysis')"
+          class="flex items-center px-3 py-2 text-cyan-700 hover:text-cyan-600 dark:text-cyan-300 dark:hover:text-cyan-400 transition duration-300 rounded-md hover:bg-slate-100 dark:hover:bg-slate-800/60"
+        >
+          <IconAiAnalysis
+            class="w-6 h-6 mr-2"
+            color="rgb(14 116 144 / var(--tw-text-opacity, 1))"
+          />
+          {{ $t("header.aiAnalysis") }}
+        </NuxtLink>
       </nav>
 
       <!-- 右侧：主题切换、语言切换组件 & 移动端导航按钮 -->
@@ -256,6 +266,17 @@ const toggleTheme = () => {
             color="rgb(126 34 206 / var(--tw-text-opacity, 1))"
           />
           {{ $t("header.cropping") }}
+        </NuxtLink>
+        <NuxtLink
+          :to="localePath('/ai-analysis')"
+          @click="toggleMobileNav"
+          class="flex items-center px-4 py-3 text-cyan-700 hover:text-cyan-600 dark:text-cyan-300 dark:hover:text-cyan-400 transition duration-300 rounded-md hover:bg-slate-100 dark:hover:bg-slate-800/60"
+        >
+          <IconAiAnalysis
+            class="w-6 h-6 mr-2"
+            color="rgb(14 116 144 / var(--tw-text-opacity, 1))"
+          />
+          {{ $t("header.aiAnalysis") }}
         </NuxtLink>
       </nav>
     </div>

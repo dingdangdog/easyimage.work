@@ -40,13 +40,22 @@
             icon="converter"
           />
         </div>
-        <div class="md:col-span-3 flex justify-center">
+        <div class="md:col-span-3 lg:col-span-1 flex justify-center">
           <HomeCard
             :name="$t('home.cropping.name')"
             :desc="$t('home.cropping.description')"
             color="bg-purple-500/50 hover:bg-purple-500/80 dark:bg-purple-600/40 dark:hover:bg-purple-600/60"
             path="cropping"
             icon="cropping"
+          />
+        </div>
+        <div class="md:col-span-3 lg:col-span-1 flex justify-center">
+          <HomeCard
+            :name="$t('home.aiAnalysis.name')"
+            :desc="$t('home.aiAnalysis.description')"
+            color="bg-cyan-500/50 hover:bg-cyan-500/80 dark:bg-cyan-600/40 dark:hover:bg-cyan-600/60"
+            path="ai-analysis"
+            icon="ai-analysis"
           />
         </div>
       </div>

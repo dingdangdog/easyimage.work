@@ -1,0 +1,24 @@
+{
+  "aiAnalysis": {
+    "title": "Herramienta Gratuita de Análisis de IA | EasyImage.work - Extraer Prompts de Stable Diffusion",
+    "description": "Usa la herramienta gratuita de análisis de IA de EasyImage para extraer prompts de Stable Diffusion, prompts negativos y parámetros de generación de los datos EXIF de las imágenes.",
+    "keywords": "análisis de IA, Stable Diffusion, extracción de prompts, análisis EXIF, metadatos de imagen, parámetros SD, herramienta en línea, análisis gratuito",
+    "name": "Herramienta de Análisis de IA",
+    "tips": "Sube imágenes que contengan información de generación de IA para extraer automáticamente prompts y parámetros de Stable Diffusion",
+    "upload-tip": "Arrastra y suelta imágenes aquí o",
+    "upload-button": "Seleccionar Archivos",
+    "upload-types": "Formatos de imagen compatibles: JPG, JPEG, PNG, WEBP, TIFF",
+    "remove-all-button": "Eliminar Todo",
+    "export-button": "Exportar Resultados",
+    "rerun": "Reanalizar Imágenes",
+    "running": "Analizando...",
+    "ready": "Resultados del Análisis",
+    "prompt": "Prompt",
+    "negativePrompt": "Prompt Negativo",
+    "parameters": "Parámetros de Generación",
+    "keyParams": "Parámetros Clave",
+    "fullText": "Información Completa",
+    "copy": "Copiar",
+    "no-ai-info": "No se encontró información de generación de IA"
+  }
+} 

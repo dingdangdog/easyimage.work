@@ -8,6 +8,7 @@ import page_crop from "./page_crop.json";
 import page_resize from "./page_resize.json";
 import page_terms from "./page_terms.json";
 import page_watermark from "./page_watermark.json";
+import page_ai_analysis from "./page_ai_analysis.json";
 
 export default {
   ...base,
@@ -20,4 +21,5 @@ export default {
   ...page_resize,
   ...page_terms,
   ...page_watermark,
+  ...page_ai_analysis,
 };

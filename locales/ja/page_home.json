@@ -18,6 +18,10 @@
     "cropping": {
       "name": "切り抜きツール",
       "description": "画像を自由に切り抜き"
+    },
+    "aiAnalysis": {
+      "name": "AI解析ツール",
+      "description": "画像からAI生成情報を抽出"
     }
   }
 }

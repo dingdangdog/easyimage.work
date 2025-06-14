@@ -7,7 +7,8 @@
     "watermark": "Filigrana",
     "converter": "Conversor",
     "cropping": "Recorte",
-    "resize": "Redimensión"
+    "resize": "Redimensión",
+    "aiAnalysis": "Análisis AI"
   },
   "body": {
     "tip1": "Procesamiento solo en navegador, rápido y seguro",

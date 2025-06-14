@@ -1,0 +1,24 @@
+{
+  "aiAnalysis": {
+    "title": "無料AIイメージ解析ツール | EasyImage.work - Stable Diffusionプロンプト抽出",
+    "description": "EasyImageの無料オンラインAI解析ツールを使用して、画像のEXIFデータからStable Diffusionプロンプト、ネガティブプロンプト、生成パラメータを抽出します。",
+    "keywords": "AI解析, Stable Diffusion, プロンプト抽出, EXIF解析, 画像メタデータ, SDパラメータ, オンラインツール, 無料解析",
+    "name": "AI解析ツール",
+    "tips": "AI生成情報を含む画像をアップロードして、Stable Diffusionプロンプトとパラメータを自動抽出",
+    "upload-tip": "画像をここにドラッグ＆ドロップするか",
+    "upload-button": "ファイル選択",
+    "upload-types": "対応画像形式：JPG, JPEG, PNG, WEBP, TIFF",
+    "remove-all-button": "すべて削除",
+    "export-button": "結果をエクスポート",
+    "rerun": "画像を再解析",
+    "running": "解析中...",
+    "ready": "解析結果",
+    "prompt": "プロンプト",
+    "negativePrompt": "ネガティブプロンプト",
+    "parameters": "生成パラメータ",
+    "keyParams": "主要パラメータ",
+    "fullText": "完全な情報",
+    "copy": "コピー",
+    "no-ai-info": "AI生成情報が見つかりません"
+  }
+} 
