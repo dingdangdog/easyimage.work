@@ -21,7 +21,7 @@ npm run generate
 ## docker
 
 ```sh
-docker build -t easyimage:1.0.13 .
-docker save -o easyimage.1.0.13.tar easyimage:1.0.13
-docker load -i easyimage.1.0.13.tar
+docker build -t easyimage:1.1.0 .
+docker save -o easyimage.1.1.0.tar easyimage:1.1.0
+docker load -i easyimage.1.1.0.tar
 ```
