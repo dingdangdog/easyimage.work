@@ -499,7 +499,7 @@ const removeResult = (index: number) => {
 const exportResults = () => {
   const results = analysisResults.value.map((result) => ({
     fileName: result.fileName,
-    aiInfo: result.aiInfo?.rawText || "No AI information found",
+    aiInfo: result.aiInfo?.rawText || "No pix information found",
   }));
 
   const jsonString = JSON.stringify(results, null, 2);
@@ -507,7 +507,7 @@ const exportResults = () => {
   const url = URL.createObjectURL(blob);
   const link = document.createElement("a");
   link.href = url;
-  link.download = `ai_analysis_results_${
+  link.download = `pix_analysis_results_${
     new Date().toISOString().split("T")[0]
   }.json`;
   document.body.appendChild(link);
