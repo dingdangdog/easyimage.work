@@ -1,12 +1,12 @@
 <template>
   <div class="p-4 max-w-4xl mx-auto">
     <h1
-      class="text-3xl sm:text-4xl font-extrabold mb-6 text-center text-cyan-400 dark:text-cyan-300"
+      class="text-3xl sm:text-4xl font-extrabold mb-6 text-center text-green-500 dark:text-green-400"
     >
-      {{ $t("aiAnalysis.name") }}
+      {{ $t("pixAnalysis.name") }}
     </h1>
-    <p class="my-2 text-center text-cyan-300 dark:text-cyan-200">
-      {{ $t("aiAnalysis.tips") }}
+    <p class="my-2 text-center text-green-400 dark:text-green-300">
+      {{ $t("pixAnalysis.tips") }}
     </p>
 
     <!-- 上传区域 -->
@@ -15,9 +15,9 @@
       @dragleave="dragOver = false"
       @drop.prevent="handleDrop"
       @click.stop="upload()"
-      class="mt-6 border-2 border-dashed rounded-lg p-4 text-center cursor-pointer bg-gray-300/50 dark:bg-gray-100/20 hover:bg-cyan-300/50 dark:hover:bg-cyan-300/30 border-cyan-300 hover:border-cyan-500 transition duration-300 ease-in-out"
+      class="mt-6 border-2 border-dashed rounded-lg p-4 text-center cursor-pointer bg-gray-300/50 dark:bg-gray-100/20 hover:bg-green-300/50 dark:hover:bg-green-300/30 border-green-300 hover:border-green-500 transition duration-300 ease-in-out"
       :class="{
-        'border-cyan-700 bg-blue-50': dragOver,
+        'border-green-700 bg-blue-50': dragOver,
       }"
     >
       <input
@@ -36,17 +36,17 @@
         }"
       >
         <p class="text-gray-500 dark:text-gray-200">
-          {{ $t("aiAnalysis.upload-tip") }}
+          {{ $t("pixAnalysis.upload-tip") }}
           <button
             type="button"
             @click.stop="upload()"
-            class="text-cyan-800 dark:text-cyan-400 font-bold hover:text-cyan-700 dark:hover:text-cyan-300 focus:outline-none"
+            class="text-green-800 dark:text-green-400 font-bold hover:text-green-700 dark:hover:text-green-300 focus:outline-none"
           >
-            {{ $t("aiAnalysis.upload-button") }}
+            {{ $t("pixAnalysis.upload-button") }}
           </button>
         </p>
         <p class="text-sm mt-2 text-gray-500 dark:text-gray-200">
-          {{ $t("aiAnalysis.upload-types") }}
+          {{ $t("pixAnalysis.upload-types") }}
         </p>
       </div>
     </div>
@@ -56,7 +56,7 @@
       v-if="processing"
       class="mt-6 text-center text-gray-600 dark:text-gray-300"
     >
-      {{ $t("aiAnalysis.running") }} ({{ processedCount }}/{{ totalFiles }})
+      {{ $t("pixAnalysis.running") }} ({{ processedCount }}/{{ totalFiles }})
     </div>
 
     <!-- 重新分析按钮 -->
@@ -66,7 +66,7 @@
         :disabled="processing || analysisResults.length === 0"
         class="w-full py-3 bg-green-500 hover:bg-green-600 disabled:bg-gray-400 text-white font-semibold rounded-lg transition duration-300 ease-in-out"
       >
-        {{ $t("aiAnalysis.rerun") }}
+        {{ $t("pixAnalysis.rerun") }}
       </button>
     </div>
 
@@ -76,20 +76,20 @@
         @click="removeAll"
         class="w-full py-3 bg-red-500 hover:bg-red-600 text-white font-semibold rounded-lg focus:outline-none transition duration-300 ease-in-out"
       >
-        {{ $t("aiAnalysis.remove-all-button") }}
+        {{ $t("pixAnalysis.remove-all-button") }}
       </button>
       <button
         @click="exportResults"
         class="w-full py-3 bg-blue-500 hover:bg-blue-600 text-white font-semibold rounded-lg focus:outline-none transition duration-300 ease-in-out"
       >
-        {{ $t("aiAnalysis.export-button") }}
+        {{ $t("pixAnalysis.export-button") }}
       </button>
     </div>
 
     <!-- 分析结果展示 -->
     <div v-if="analysisResults.length > 0" class="mt-4">
       <h3 class="text-xl font-semibold mb-4 text-gray-800 dark:text-gray-100">
-        {{ $t("aiAnalysis.ready") }}
+        {{ $t("pixAnalysis.ready") }}
       </h3>
 
       <div class="space-y-6">
@@ -119,7 +119,7 @@
               <img
                 :src="result.thumbnail"
                 :alt="result.fileName"
-                class="object-contain max-w-full max-h-48 rounded-lg shadow-md cursor-pointer hover:shadow-lg transition-shadow duration-300"
+                class="object-contain max-w-full max-h-52 rounded-lg shadow-md cursor-pointer hover:shadow-lg transition-shadow duration-300"
                 @click="previewImage(result.original)"
               />
             </div>
@@ -134,11 +134,11 @@
                   @click="copyToClipboard(result.aiInfo.rawText)"
                   class="absolute top-2 right-4 px-2 py-1 bg-blue-500/20 hover:bg-blue-500/80 text-white text-sm font-medium rounded-lg transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-blue-300"
                 >
-                  {{ $t("aiAnalysis.copy") }}
+                  {{ $t("pixAnalysis.copy") }}
                 </button>
                 <!-- 完整信息显示 -->
                 <pre
-                  class="text-sm text-gray-800 dark:text-gray-200 whitespace-pre-wrap font-mono leading-relaxed max-h-40 overflow-y-auto"
+                  class="text-sm text-gray-800 dark:text-gray-200 whitespace-pre-wrap font-mono leading-relaxed max-h-44 overflow-y-auto"
                   >{{ result.aiInfo.rawText }}</pre
                 >
               </div>
@@ -148,7 +148,7 @@
                 class="bg-yellow-100 dark:bg-yellow-900/20 border border-yellow-300 dark:border-yellow-700 rounded-lg p-4"
               >
                 <p class="text-yellow-800 dark:text-yellow-200 text-sm">
-                  {{ $t("aiAnalysis.no-ai-info") }}
+                  {{ $t("pixAnalysis.no-pix-info") }}
                 </p>
               </div>
             </div>
@@ -174,28 +174,29 @@
 
 <script setup lang="ts">
 import { ref, onMounted } from "vue";
+import ExifReader from "exifreader";
 
 const { t } = useI18n();
 
 // 页面SEO
 useHead({
-  title: t("aiAnalysis.title"),
+  title: t("pixAnalysis.title"),
   meta: [
     {
       name: "description",
-      content: t("aiAnalysis.description"),
+      content: t("pixAnalysis.description"),
     },
     {
       name: "keywords",
-      content: t("aiAnalysis.keywords"),
+      content: t("pixAnalysis.keywords"),
     },
     {
       property: "og:title",
-      content: t("aiAnalysis.title"),
+      content: t("pixAnalysis.title"),
     },
     {
       property: "og:description",
-      content: t("aiAnalysis.description"),
+      content: t("pixAnalysis.description"),
     },
     {
       property: "og:type",
@@ -207,11 +208,11 @@ useHead({
     },
     {
       name: "twitter:title",
-      content: t("aiAnalysis.title"),
+      content: t("pixAnalysis.title"),
     },
     {
       name: "twitter:description",
-      content: t("aiAnalysis.description"),
+      content: t("pixAnalysis.description"),
     },
   ],
 });
@@ -306,7 +307,7 @@ const analyzeImage = async (file: File): Promise<AnalysisResult> => {
   const original = URL.createObjectURL(file);
 
   // 提取AI信息
-  const aiInfo = await extractAIInfoFromFile(file);
+  const aiInfo = await extractPhotoInfoFromFile(file);
 
   return {
     fileName: file.name,
@@ -354,260 +355,110 @@ const createThumbnail = (file: File): Promise<string> => {
   });
 };
 
+interface PhotoInfo {
+  rawText: string;
+  tags: any;
+}
 // 从文件提取AI信息
-const extractAIInfoFromFile = async (file: File): Promise<AIInfo | null> => {
+const extractPhotoInfoFromFile = async (
+  file: File
+): Promise<PhotoInfo | null> => {
   try {
-    const arrayBuffer = await file.arrayBuffer();
-    const uint8Array = new Uint8Array(arrayBuffer);
-    let extractedText = "";
+    const tags = await ExifReader.load(file);
 
-    // 根据文件类型使用不同的提取方法
-    if (file.type === "image/png" || file.name.toLowerCase().endsWith(".png")) {
-      extractedText = extractPNGText(uint8Array);
-    } else if (
-      file.type.startsWith("image/jpeg") ||
-      file.name.toLowerCase().match(/\.(jpg|jpeg)$/)
-    ) {
-      extractedText = extractJPEGText(uint8Array);
-    }
-
-    console.log(
-      `[DEBUG] 文件 ${file.name} 提取的文本长度:`,
-      extractedText.length
-    );
-
-    if (!extractedText.trim()) {
-      console.log(`[DEBUG] 文件 ${file.name} 没有提取到文本`);
+    if (Object.keys(tags).length === 0) {
+      console.log(`[DEBUG] 文件 ${file.name} 没有提取到任何Exif信息`);
       return null;
     }
 
-    // 检查是否包含AI关键字
-    const aiKeywords = [
-      "Steps:",
-      "Sampler:",
-      "CFG scale:",
-      "Seed:",
-      "Size:",
-      "Model:",
-      "Negative prompt:",
-      "parameters",
-      "DPM++",
-      "Euler",
-    ];
-
-    const hasAI = aiKeywords.some((keyword) => extractedText.includes(keyword));
-
-    if (!hasAI) {
-      console.log(`[DEBUG] 文件 ${file.name} 不包含AI关键字`);
-      return null;
-    }
-
-    // 清理和格式化文本
-    const cleanText = extractedText
-      .replace(/\0/g, "")
-      .replace(/\r/g, "")
-      .trim();
-
-    // 格式化AI信息
-    const formattedText = formatAIText(cleanText);
+    const formattedText = formatExifText(tags);
 
     return {
       rawText: formattedText,
+      tags: tags,
     };
   } catch (error) {
-    console.error(`分析文件 ${file.name} 时出错:`, error);
+    console.error(`提取文件 ${file.name} Exif信息时出错:`, error);
     return null;
   }
 };
 
-// 格式化AI文本
-const formatAIText = (rawText: string): string => {
-  console.log(`[DEBUG] 开始格式化文本:`, rawText.substring(0, 200));
+// 格式化Exif数据
+const formatExifText = (tags: any): string => {
+  let formattedText = "📷 重要信息：\n";
 
-  let formattedText = "";
+  const exifMap: Record<string, string> = {
+    Make: "相机品牌",
+    Model: "相机型号",
+    LensModel: "镜头型号",
+    FocalLength: "焦距",
+    FNumber: "光圈",
+    ApertureValue: "光圈值",
+    ShutterSpeedValue: "快门速度",
+    ExposureTime: "曝光时间",
+    ExposureProgram: "曝光程序",
+    ISOSpeedRatings: "ISO",
+    WhiteBalance: "白平衡",
+    Flash: "闪光灯",
+    DateTimeOriginal: "拍摄日期",
+    Software: "处理软件",
+    Artist: "摄影者",
+    Copyright: "版权信息",
+  };
 
-  // 查找parameters段
-  const paramMatch = rawText.match(/parameters[:\s]*(.*)/is);
-  if (paramMatch && paramMatch[1]) {
-    const fullContent = paramMatch[1].trim();
+  const importantKeys = new Set(Object.keys(exifMap));
+  const otherInfoLines: string[] = [];
 
-    // 分割内容：Prompt, Negative prompt, Parameters
-    const sections = fullContent.split(/(?=Negative prompt:|Steps:)/);
+  // 处理“重要信息”
+  for (const [key, displayName] of Object.entries(exifMap)) {
+    if (tags[key] && tags[key].description != null) {
+      let value = tags[key].description.toString().trim();
 
-    // 处理Prompt部分
-    if (sections[0]) {
-      const promptText = sections[0].replace(/\n+/g, " ").trim();
-
+      if (key === "ApertureValue" && !value.startsWith("f/")) {
+        value = `f/${value}`;
+      }
       if (
-        promptText &&
-        !promptText.toLowerCase().startsWith("negative prompt")
+        (key === "ShutterSpeedValue" || key === "ExposureTime") &&
+        !value.endsWith("s")
       ) {
-        formattedText += `Prompt:\n${promptText}\n\n`;
+        value = `${value}s`;
       }
-    }
 
-    // 处理Negative prompt部分
-    const negativeSection = sections.find((s) =>
-      s.trim().startsWith("Negative prompt:")
-    );
-    if (negativeSection) {
-      const negativeMatch = negativeSection.match(
-        /Negative prompt:\s*(.*?)(?=\n*Steps:|$)/s
-      );
-      if (negativeMatch && negativeMatch[1]) {
-        const negativeText = negativeMatch[1].replace(/\n+/g, " ").trim();
-        formattedText += `Negative prompt:\n${negativeText}\n\n`;
-      }
-    }
-
-    // 处理Parameters部分
-    const paramSection = sections.find((s) => s.includes("Steps:"));
-    if (paramSection) {
-      formattedText += "Parameters:\n";
-
-      // 提取参数行
-      const paramText = paramSection.replace(/^.*?(Steps:)/s, "Steps:");
-
-      // 将逗号分隔的参数转换为换行分隔
-      const params = paramText.split(/,\s*(?=[A-Za-z])/);
-
-      params.forEach((param) => {
-        const trimmedParam = param.trim();
-        if (trimmedParam) {
-          formattedText += `${trimmedParam}\n`;
-        }
-      });
-    }
-  } else {
-    // 如果没有找到parameters段，尝试其他格式
-    let prompt = "";
-    let negativePrompt = "";
-    let parameters = "";
-
-    // 查找negative prompt
-    const negativeMatch = rawText.match(
-      /Negative prompt:\s*(.*?)(?=\n(?:Steps:|$))/s
-    );
-    if (negativeMatch) {
-      negativePrompt = negativeMatch[1].trim();
-      // 提取prompt（negative prompt之前的内容）
-      const promptMatch = rawText.match(/^(.*?)(?=Negative prompt:)/s);
-      if (promptMatch) {
-        prompt = promptMatch[1].trim();
-      }
-    }
-
-    // 查找参数部分
-    const paramMatch2 = rawText.match(/(Steps:.*)/s);
-    if (paramMatch2) {
-      parameters = paramMatch2[1];
-    }
-
-    // 组装格式化文本
-    if (prompt) {
-      formattedText += `Prompt:\n${prompt}\n\n`;
-    }
-
-    if (negativePrompt) {
-      formattedText += `Negative prompt:\n${negativePrompt}\n\n`;
-    }
-
-    if (parameters) {
-      formattedText += "Parameters:\n";
-      // 将逗号分隔的参数转换为换行分隔
-      const params = parameters.split(/,\s*(?=[A-Za-z])/);
-      params.forEach((param) => {
-        const trimmedParam = param.trim();
-        if (trimmedParam) {
-          formattedText += `${trimmedParam}\n`;
-        }
-      });
+      formattedText += `- ${displayName}: ${value}\n`;
     }
   }
 
-  console.log(`[DEBUG] 格式化后的文本:`, formattedText.substring(0, 300));
+  // 图像尺寸
+  if (tags.ImageWidth && tags.ImageHeight) {
+    formattedText += `- 图像尺寸: ${tags.ImageWidth.value} x ${tags.ImageHeight.value} 像素\n`;
+  }
+
+  // GPS
+  if (tags.GPSLatitude && tags.GPSLongitude) {
+    formattedText += `- 地理位置: ${tags.GPSLatitude.description}, ${tags.GPSLongitude.description}\n`;
+  }
+
+  // 处理“其他信息”
+  for (const key in tags) {
+    if (!importantKeys.has(key)) {
+      const tag = tags[key];
+      let name = tag?.description ?? tag?.value;
+
+      if (name && typeof name !== "object") {
+        otherInfoLines.push(`- ${key}: ${name}`);
+      }
+    }
+  }
+
+  if (otherInfoLines.length > 0) {
+    formattedText += `\n📎 其他信息：\n` + otherInfoLines.join("\n");
+  }
+
+  if (formattedText.trim() === "") {
+    return "未找到常规照片参数信息。";
+  }
+
   return formattedText.trim();
-};
-
-// 提取PNG文本
-const extractPNGText = (uint8Array: Uint8Array): string => {
-  try {
-    let text = "";
-    let offset = 8; // 跳过PNG签名
-
-    while (offset < uint8Array.length - 8) {
-      const length =
-        (uint8Array[offset] << 24) |
-        (uint8Array[offset + 1] << 16) |
-        (uint8Array[offset + 2] << 8) |
-        uint8Array[offset + 3];
-      const type = String.fromCharCode(
-        uint8Array[offset + 4],
-        uint8Array[offset + 5],
-        uint8Array[offset + 6],
-        uint8Array[offset + 7]
-      );
-
-      if (type === "tEXt" || type === "iTXt") {
-        const data = uint8Array.slice(offset + 8, offset + 8 + length);
-        const chunkText = new TextDecoder("utf-8", { fatal: false }).decode(
-          data
-        );
-        text += chunkText + "\n";
-        console.log(`[DEBUG] 找到PNG ${type}段:`, chunkText.substring(0, 200));
-      }
-
-      offset += 12 + length;
-      if (type === "IEND") break;
-    }
-
-    return text;
-  } catch (error) {
-    console.error("PNG文本提取失败:", error);
-    return "";
-  }
-};
-
-// 提取JPEG文本
-const extractJPEGText = (uint8Array: Uint8Array): string => {
-  try {
-    let text = "";
-    let offset = 2; // 跳过SOI标记
-
-    while (offset < uint8Array.length - 4) {
-      const marker = (uint8Array[offset] << 8) | uint8Array[offset + 1];
-
-      if (marker === 0xffe1) {
-        // APP1段
-        const length = (uint8Array[offset + 2] << 8) | uint8Array[offset + 3];
-        const data = uint8Array.slice(offset + 4, offset + 2 + length);
-        const segmentText = new TextDecoder("utf-8", { fatal: false }).decode(
-          data
-        );
-        text += segmentText + "\n";
-        console.log(`[DEBUG] 找到JPEG APP1段:`, segmentText.substring(0, 200));
-      }
-
-      const segmentLength =
-        (uint8Array[offset + 2] << 8) | uint8Array[offset + 3];
-      offset += 2 + segmentLength;
-
-      // 到达图片数据，停止
-      if (
-        marker >= 0xffc0 &&
-        marker <= 0xffcf &&
-        marker !== 0xffc4 &&
-        marker !== 0xffc8
-      ) {
-        break;
-      }
-    }
-
-    return text;
-  } catch (error) {
-    console.error("JPEG文本提取失败:", error);
-    return "";
-  }
 };
 
 // 重新处理图片

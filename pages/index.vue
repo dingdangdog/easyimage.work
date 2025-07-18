@@ -58,6 +58,15 @@
             icon="ai-analysis"
           />
         </div>
+        <div class="md:col-span-3 lg:col-span-1 flex justify-center">
+          <HomeCard
+            :name="$t('home.pixAnalysis.name')"
+            :desc="$t('home.pixAnalysis.description')"
+            color="bg-green-500/50 hover:bg-green-500/80 dark:bg-green-600/40 dark:hover:bg-green-600/60"
+            path="pix-analysis"
+            icon="pix-analysis"
+          />
+        </div>
       </div>
     </div>
 

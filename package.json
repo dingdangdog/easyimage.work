@@ -21,6 +21,7 @@
     "@nuxtjs/sitemap": "7.2.0",
     "@nuxtjs/tailwindcss": "^6.12.2",
     "cropperjs": "^2.0.0",
+    "exifreader": "^4.31.0",
     "file-saver": "^2.0.5",
     "jszip": "^3.10.1",
     "nuxt": "^3.12.4",
