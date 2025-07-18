@@ -269,7 +269,7 @@ const processFiles = async (files: File[]) => {
   // 过滤图片文件
   const imageFiles = files.filter((file) => file.type.startsWith("image/"));
   if (imageFiles.length === 0) {
-    alert("请上传图片文件");
+    alert("Please upload image files");
     return;
   }
 
@@ -291,8 +291,8 @@ const processFiles = async (files: File[]) => {
     const results = await Promise.all(promises);
     analysisResults.value = results;
   } catch (error) {
-    console.error("处理文件时出错:", error);
-    alert("处理文件时出错，请重试");
+    console.error("Process file error:", error);
+    alert("Process file error, please try again");
   } finally {
     processing.value = false;
   }
@@ -300,7 +300,7 @@ const processFiles = async (files: File[]) => {
 
 // 分析单个图片
 const analyzeImage = async (file: File): Promise<AnalysisResult> => {
-  console.log(`[DEBUG] 开始分析文件: ${file.name}`);
+  console.log(`[DEBUG] Start analyzing file: ${file.name}`);
 
   // 创建缩略图
   const thumbnail = await createThumbnail(file);
@@ -367,7 +367,9 @@ const extractPhotoInfoFromFile = async (
     const tags = await ExifReader.load(file);
 
     if (Object.keys(tags).length === 0) {
-      console.log(`[DEBUG] 文件 ${file.name} 没有提取到任何Exif信息`);
+      console.log(
+        `[DEBUG] file ${file.name} does not contain any Exif information`
+      );
       return null;
     }
 
@@ -378,32 +380,38 @@ const extractPhotoInfoFromFile = async (
       tags: tags,
     };
   } catch (error) {
-    console.error(`提取文件 ${file.name} Exif信息时出错:`, error);
+    console.error(
+      `Error extracting Exif information from file ${file.name}:`,
+      error
+    );
     return null;
   }
 };
 
 // 格式化Exif数据
 const formatExifText = (tags: any): string => {
-  let formattedText = "📷 重要信息：\n";
+  let formattedText = `📷 ${t("pixAnalysis.params.Important")}:\n`;
 
   const exifMap: Record<string, string> = {
-    Make: "相机品牌",
-    Model: "相机型号",
-    LensModel: "镜头型号",
-    FocalLength: "焦距",
-    FNumber: "光圈",
-    ApertureValue: "光圈值",
-    ShutterSpeedValue: "快门速度",
-    ExposureTime: "曝光时间",
-    ExposureProgram: "曝光程序",
-    ISOSpeedRatings: "ISO",
-    WhiteBalance: "白平衡",
-    Flash: "闪光灯",
-    DateTimeOriginal: "拍摄日期",
-    Software: "处理软件",
-    Artist: "摄影者",
-    Copyright: "版权信息",
+    Make: t("pixAnalysis.params.Make"),
+    Model: t("pixAnalysis.params.Model"),
+    LensModel: t("pixAnalysis.params.LensModel"),
+    FocalLength: t("pixAnalysis.params.FocalLength"),
+    FNumber: t("pixAnalysis.params.FNumber"),
+    ApertureValue: t("pixAnalysis.params.ApertureValue"),
+    ShutterSpeedValue: t("pixAnalysis.params.ShutterSpeedValue"),
+    ExposureTime: t("pixAnalysis.params.ExposureTime"),
+    ExposureProgram: t("pixAnalysis.params.ExposureProgram"),
+    ISOSpeedRatings: t("pixAnalysis.params.ISOSpeedRatings"),
+    WhiteBalance: t("pixAnalysis.params.WhiteBalance"),
+    Flash: t("pixAnalysis.params.Flash"),
+    DateTimeOriginal: t("pixAnalysis.params.DateTimeOriginal"),
+    Software: t("pixAnalysis.params.Software"),
+    Artist: t("pixAnalysis.params.Artist"),
+    Copyright: t("pixAnalysis.params.Copyright"),
+    Location: t("pixAnalysis.params.Location"),
+    Size: t("pixAnalysis.params.Size"),
+    Other: t("pixAnalysis.params.Other"),
   };
 
   const importantKeys = new Set(Object.keys(exifMap));
@@ -430,12 +438,16 @@ const formatExifText = (tags: any): string => {
 
   // 图像尺寸
   if (tags.ImageWidth && tags.ImageHeight) {
-    formattedText += `- 图像尺寸: ${tags.ImageWidth.value} x ${tags.ImageHeight.value} 像素\n`;
+    formattedText += `- ${t("pixAnalysis.params.Size")}: ${
+      tags.ImageWidth.value
+    } x ${tags.ImageHeight.value} pixels\n`;
   }
 
   // GPS
   if (tags.GPSLatitude && tags.GPSLongitude) {
-    formattedText += `- 地理位置: ${tags.GPSLatitude.description}, ${tags.GPSLongitude.description}\n`;
+    formattedText += `- ${t("pixAnalysis.params.Location")}: ${
+      tags.GPSLatitude.description
+    }, ${tags.GPSLongitude.description}\n`;
   }
 
   // 处理“其他信息”
@@ -451,11 +463,12 @@ const formatExifText = (tags: any): string => {
   }
 
   if (otherInfoLines.length > 0) {
-    formattedText += `\n📎 其他信息：\n` + otherInfoLines.join("\n");
+    formattedText +=
+      `\n📎 ${t("pixAnalysis.params.Other")}:\n` + otherInfoLines.join("\n");
   }
 
   if (formattedText.trim() === "") {
-    return "未找到常规照片参数信息。";
+    return "No regular photo parameter information found.";
   }
 
   return formattedText.trim();
@@ -516,7 +529,7 @@ const copyToClipboard = async (text: string) => {
     const button = event?.target as HTMLElement;
     const originalText = button?.textContent;
     if (button) {
-      button.textContent = "已复制!";
+      button.textContent = "Copied!";
       button.classList.add("bg-green-500");
       button.classList.remove("bg-blue-500");
       setTimeout(() => {
@@ -526,7 +539,7 @@ const copyToClipboard = async (text: string) => {
       }, 2000);
     }
   } catch (err) {
-    console.error("复制失败:", err);
+    console.error("Copy failed:", err);
     // 降级方案
     const textArea = document.createElement("textarea");
     textArea.value = text;
@@ -538,10 +551,10 @@ const copyToClipboard = async (text: string) => {
     textArea.select();
     try {
       document.execCommand("copy");
-      alert("内容已复制到剪贴板");
+      alert("Content copied to clipboard");
     } catch (err) {
-      console.error("复制失败:", err);
-      alert("复制失败，请手动复制");
+      console.error("Copy failed:", err);
+      alert("Copy failed, please copy manually");
     }
     document.body.removeChild(textArea);
   }

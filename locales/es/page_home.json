@@ -22,6 +22,10 @@
     "aiAnalysis": {
       "name": "Herramienta de Análisis de IA",
       "description": "Extrae información de generación de IA de imágenes"
+    },
+    "pixAnalysis": {
+      "name": "Herramienta de Análisis de Imágenes",
+      "description": "Extrae información de imágenes"
     }
   }
 }

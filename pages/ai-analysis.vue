@@ -268,7 +268,7 @@ const processFiles = async (files: File[]) => {
   // 过滤图片文件
   const imageFiles = files.filter((file) => file.type.startsWith("image/"));
   if (imageFiles.length === 0) {
-    alert("请上传图片文件");
+    alert("Please upload image files");
     return;
   }
 
@@ -290,8 +290,8 @@ const processFiles = async (files: File[]) => {
     const results = await Promise.all(promises);
     analysisResults.value = results;
   } catch (error) {
-    console.error("处理文件时出错:", error);
-    alert("处理文件时出错，请重试");
+    console.error("Process file error:", error);
+    alert("Process file error, please try again");
   } finally {
     processing.value = false;
   }
@@ -299,7 +299,7 @@ const processFiles = async (files: File[]) => {
 
 // 分析单个图片
 const analyzeImage = async (file: File): Promise<AnalysisResult> => {
-  console.log(`[DEBUG] 开始分析文件: ${file.name}`);
+  console.log(`[DEBUG] Start analyzing file: ${file.name}`);
 
   // 创建缩略图
   const thumbnail = await createThumbnail(file);
@@ -398,7 +398,7 @@ const extractAIInfoFromFile = async (file: File): Promise<AIInfo | null> => {
     const hasAI = aiKeywords.some((keyword) => extractedText.includes(keyword));
 
     if (!hasAI) {
-      console.log(`[DEBUG] 文件 ${file.name} 不包含AI关键字`);
+      console.log(`[DEBUG] File ${file.name} does not contain AI keywords`);
       return null;
     }
 
@@ -415,14 +415,14 @@ const extractAIInfoFromFile = async (file: File): Promise<AIInfo | null> => {
       rawText: formattedText,
     };
   } catch (error) {
-    console.error(`分析文件 ${file.name} 时出错:`, error);
+    console.error(`Error analyzing file ${file.name}:`, error);
     return null;
   }
 };
 
 // 格式化AI文本
 const formatAIText = (rawText: string): string => {
-  console.log(`[DEBUG] 开始格式化文本:`, rawText.substring(0, 200));
+  console.log(`[DEBUG] Start formatting text:`, rawText.substring(0, 200));
 
   let formattedText = "";
 
@@ -525,7 +525,7 @@ const formatAIText = (rawText: string): string => {
     }
   }
 
-  console.log(`[DEBUG] 格式化后的文本:`, formattedText.substring(0, 300));
+  console.log(`[DEBUG] Formatted text:`, formattedText.substring(0, 300));
   return formattedText.trim();
 };
 
@@ -563,7 +563,7 @@ const extractPNGText = (uint8Array: Uint8Array): string => {
 
     return text;
   } catch (error) {
-    console.error("PNG文本提取失败:", error);
+    console.error("PNG text extraction failed:", error);
     return "";
   }
 };
@@ -585,7 +585,10 @@ const extractJPEGText = (uint8Array: Uint8Array): string => {
           data
         );
         text += segmentText + "\n";
-        console.log(`[DEBUG] 找到JPEG APP1段:`, segmentText.substring(0, 200));
+        console.log(
+          `[DEBUG] Found JPEG APP1 segment:`,
+          segmentText.substring(0, 200)
+        );
       }
 
       const segmentLength =
@@ -605,7 +608,7 @@ const extractJPEGText = (uint8Array: Uint8Array): string => {
 
     return text;
   } catch (error) {
-    console.error("JPEG文本提取失败:", error);
+    console.error("JPEG text extraction failed:", error);
     return "";
   }
 };
@@ -665,7 +668,7 @@ const copyToClipboard = async (text: string) => {
     const button = event?.target as HTMLElement;
     const originalText = button?.textContent;
     if (button) {
-      button.textContent = "已复制!";
+      button.textContent = "Copied!";
       button.classList.add("bg-green-500");
       button.classList.remove("bg-blue-500");
       setTimeout(() => {
@@ -675,7 +678,7 @@ const copyToClipboard = async (text: string) => {
       }, 2000);
     }
   } catch (err) {
-    console.error("复制失败:", err);
+    console.error("Copy failed:", err);
     // 降级方案
     const textArea = document.createElement("textarea");
     textArea.value = text;
@@ -687,10 +690,10 @@ const copyToClipboard = async (text: string) => {
     textArea.select();
     try {
       document.execCommand("copy");
-      alert("内容已复制到剪贴板");
+      alert("Content copied to clipboard");
     } catch (err) {
-      console.error("复制失败:", err);
-      alert("复制失败，请手动复制");
+      console.error("Copy failed:", err);
+      alert("Copy failed, please copy manually");
     }
     document.body.removeChild(textArea);
   }

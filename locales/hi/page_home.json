@@ -22,6 +22,10 @@
     "aiAnalysis": {
       "name": "AI एनालिसिस टूल",
       "description": "इमेज से AI जेनरेशन जानकारी निकालें"
+    },
+    "pixAnalysis": {
+      "name": "इमेज एनालिसिस टूल",
+      "description": "इमेज से जानकारी निकालें"
     }
   }
 }

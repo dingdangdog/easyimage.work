@@ -8,7 +8,8 @@
     "resize": "縮放工具",
     "cropping": "裁剪工具",
     "converter": "格式轉換",
-    "aiAnalysis": "AI分析"
+    "aiAnalysis": "AI分析",
+    "pixAnalysis": "圖片分析"
   },
   "body": {
     "tip1": "純瀏覽器處理，極速且安全",

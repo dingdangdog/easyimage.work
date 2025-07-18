@@ -8,7 +8,8 @@
     "converter": "変換",
     "cropping": "切り抜き",
     "resize": "リサイズ",
-    "aiAnalysis": "AI分析"
+    "aiAnalysis": "AI分析",
+    "pixAnalysis": "画像分析"
   },
   "body": {
     "tip1": "ブラウザのみの処理で高速かつ安全",

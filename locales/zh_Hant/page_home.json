@@ -22,6 +22,10 @@
     "aiAnalysis": {
       "name": "AI分析工具",
       "description": "從圖片中提取AI生成資訊"
+    },
+    "pixAnalysis": {
+      "name": "圖片分析工具",
+      "description": "從圖片中提取資訊"
     }
   }
 }

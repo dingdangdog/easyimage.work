@@ -8,7 +8,8 @@
     "converter": "Conversor",
     "cropping": "Cortar",
     "resize": "Redimensionar",
-    "aiAnalysis": "Análise AI"
+    "aiAnalysis": "Análise AI",
+    "pixAnalysis": "Análise de Imagem"
   },
   "body": {
     "tip1": "Processamento apenas no navegador, rápido e seguro",
