@@ -1,24 +1,36 @@
-# EasyImage/老狗图片处理厂
+# EasyImage
 
-- [oldmoon.top](https://oldmoon.top)
+- [easyimage.work](https://easyimage.work)
 
-A collection of some image processing tools
+A collection of some image processing tools.
 
-## 技术栈
+A pure front-end website based on Nuxtjs, including tools and blog pages.
+
+## Stack
 
 - Nuxt3
 - Vue3
 - Tailwindcss
 - Vuei18n
+- cropperjs
+- exifreader
+- file-saver
+- jszip
+- @nuxtjs/sitemap
+- @nuxt/content
+
+## Command
+
+### npm
 
 ```sh
 npm i
 npm run dev
-# 打包
+# package
 npm run generate
 ```
 
-## docker
+### docker
 
 ```sh
 docker build -t easyimage:1.1.0 .
