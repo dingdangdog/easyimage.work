@@ -74,6 +74,7 @@
           <h3 class="text-xl font-semibold mb-2 text-slate-900 dark:text-white">
             {{ $t("footer.contact.title") }}
           </h3>
+
           <div class="flex items-center space-x-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -96,6 +97,13 @@
               contact@easyimage.work
             </a>
           </div>
+          <a
+            href="https://github.com/dingdangdog/easyimage.work"
+            class="flex items-center space-x-2 text-slate-600 hover:text-blue-600 dark:text-slate-400 dark:hover:text-blue-400 transition duration-200"
+          >
+            <IconGithub class="w-6 h-6 mr-2 text-black dark:text-white" />
+            github
+          </a>
         </div>
       </div>
 

@@ -24,15 +24,6 @@
         </div>
         <div class="md:col-span-3 lg:col-span-1 flex justify-center">
           <HomeCard
-            :name="$t('home.watermark.name')"
-            :desc="$t('home.watermark.description')"
-            color="bg-indigo-500/50 hover:bg-indigo-500/80 dark:bg-indigo-600/40 dark:hover:bg-indigo-600/60"
-            path="watermark"
-            icon="watermark"
-          />
-        </div>
-        <div class="md:col-span-3 lg:col-span-1 flex justify-center">
-          <HomeCard
             :name="$t('home.converter.name')"
             :desc="$t('home.converter.description')"
             color="bg-pink-500/50 hover:bg-pink-500/80 dark:bg-pink-600/40 dark:hover:bg-pink-600/60"
@@ -65,6 +56,15 @@
             color="bg-green-500/50 hover:bg-green-500/80 dark:bg-green-600/40 dark:hover:bg-green-600/60"
             path="pix-analysis"
             icon="pix-analysis"
+          />
+        </div>
+        <div class="md:col-span-3 lg:col-span-1 flex justify-center">
+          <HomeCard
+            :name="$t('home.watermark.name')"
+            :desc="$t('home.watermark.description')"
+            color="bg-indigo-500/50 hover:bg-indigo-500/80 dark:bg-indigo-600/40 dark:hover:bg-indigo-600/60"
+            path="watermark"
+            icon="watermark"
           />
         </div>
       </div>
