@@ -22,6 +22,10 @@
     "aiAnalysis": {
       "name": "AI Analysis Tool",
       "description": "Extract AI generation info from images"
+    },
+    "pixAnalysis": {
+      "name": "Pix Analysis Tool",
+      "description": "Extract pix info from images"
     }
   }
 }
