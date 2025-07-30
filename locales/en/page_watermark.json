@@ -6,7 +6,7 @@
     "name": "Watermark Tool",
     "tips": "Set the watermark style, upload pictures, and automatically add watermarks to pictures",
     "mark-text": "Watermark Text",
-    "mark-size": "Watermark Text Size",
+    "mark-size": "Size",
     "mark-size-option": {
       "random": "Random",
       "center-center": "Center",
@@ -19,8 +19,8 @@
       "bottom-left": "Bottom Left",
       "bottom-right": "Bottom Right"
     },
-    "mark-position": "Watermark Position",
-    "mark-font": "Watermark Font",
+    "mark-position": "Position",
+    "mark-font": "Font",
     "upload-tip": "Drag and drop images here or",
     "upload-button": "Select Files",
     "upload-types": "Supported image formats: BMP, ICO, JPG, JPEG, JFIF, PNG, WEBP",

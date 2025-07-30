@@ -6,7 +6,7 @@
     "name": "أداة العلامة المائية",
     "tips": "حدد نمط العلامة المائية، وقم بتحميل الصور، وأضف العلامات المائية تلقائيًا إلى الصور",
     "mark-text": "نص العلامة المائية",
-    "mark-size": "حجم نص العلامة المائية",
+    "mark-size": "حجم",
     "mark-size-option": {
       "random": "عشوائي",
       "center-center": "الوسط",
@@ -19,8 +19,8 @@
       "bottom-left": "أسفل اليسار",
       "bottom-right": "أسفل اليمين"
     },
-    "mark-position": "موضع العلامة المائية",
-    "mark-font": "خط العلامة المائية",
+    "mark-position": "موضع",
+    "mark-font": "خط",
     "upload-tip": "اسحب وأفلت الصور هنا أو",
     "upload-button": "اختر الملفات",
     "upload-types": "تنسيقات الصور المدعومة: BMP، ICO، JPG، JPEG، JFIF، PNG، WEBP",

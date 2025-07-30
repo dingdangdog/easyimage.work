@@ -6,7 +6,7 @@
     "name": "वॉटरमार्क टूल",
     "tips": "वॉटरमार्क स्टाइल सेट करें, चित्र अपलोड करें, और स्वचालित रूप से चित्रों में वॉटरमार्क जोड़ें",
     "mark-text": "वॉटरमार्क टेक्स्ट",
-    "mark-size": "वॉटरमार्क टेक्स्ट साइज़",
+    "mark-size": "साइज़",
     "mark-size-option": {
       "random": "यादृच्छिक",
       "center-center": "बिल्कुल मध्य",
@@ -19,8 +19,8 @@
       "bottom-left": "नीचे बाएँ",
       "bottom-right": "नीचे दाएँ"
     },
-    "mark-position": "वॉटरमार्क स्थिति",
-    "mark-font": "वॉटरमार्क फॉन्ट",
+    "mark-position": "स्थिति",
+    "mark-font": "फॉन्ट",
     "upload-tip": "यहां इमेज खींचें और छोड़ें या",
     "upload-button": "फाइलें चुनें",
     "upload-types": "समर्थित इमेज फॉर्मेट: BMP, ICO, JPG, JPEG, JFIF, PNG, WEBP",

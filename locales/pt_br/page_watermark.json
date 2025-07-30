@@ -6,7 +6,7 @@
     "name": "Ferramenta de Marca d'água",
     "tips": "Defina o estilo da marca d'água, carregue imagens e adicione marcas d'água automaticamente às imagens",
     "mark-text": "Texto da Marca d'água",
-    "mark-size": "Tamanho do Texto da Marca d'água",
+    "mark-size": "Tamanho",
     "mark-size-option": {
       "random": "Aleatório",
       "center-center": "Centro",
@@ -19,8 +19,8 @@
       "bottom-left": "Inferior Esquerdo",
       "bottom-right": "Inferior Direito"
     },
-    "mark-position": "Posição da Marca d'água",
-    "mark-font": "Fonte da Marca d'água",
+    "mark-position": "Posição",
+    "mark-font": "Fonte",
     "upload-tip": "Arraste e solte imagens aqui ou",
     "upload-button": "Selecionar Arquivos",
     "upload-types": "Formatos de imagem suportados: BMP, ICO, JPG, JPEG, JFIF, PNG, WEBP",

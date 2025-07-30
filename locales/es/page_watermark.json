@@ -6,7 +6,7 @@
     "name": "Herramienta de Filigrana",
     "tips": "Establece el estilo de la Filigrana, sube imágenes y añade automáticamente marcas de agua a las imágenes",
     "mark-text": "Texto de Filigrana",
-    "mark-size": "Tamaño de Filigrana",
+    "mark-size": "Tamaño",
     "mark-size-option": {
       "random": "Aleatorio",
       "center-center": "Centro",
@@ -19,8 +19,8 @@
       "bottom-left": "Inf. Izq.",
       "bottom-right": "Inf. Der."
     },
-    "mark-position": "Posición de la Filigrana",
-    "mark-font": "Fuente de la Filigrana",
+    "mark-position": "Posición",
+    "mark-font": "Fuente",
     "upload-tip": "Arrastra y suelta imágenes aquí o",
     "upload-button": "Seleccionar Archivos",
     "upload-types": "Formatos de imagen compatibles: BMP, ICO, JPG, JPEG, JFIF, PNG, WEBP",

@@ -6,7 +6,7 @@
     "name": "水印工具",
     "tips": "设置水印样式，上传图片，自动为图片添加水印",
     "mark-text": "水印文字",
-    "mark-size": "水印文字大小",
+    "mark-size": "大小",
     "mark-size-option": {
       "random": "随机",
       "center-center": "正中",
@@ -19,8 +19,8 @@
       "bottom-left": "左下",
       "bottom-right": "右下"
     },
-    "mark-position": "水印位置",
-    "mark-font": "水印字体",
+    "mark-position": "位置",
+    "mark-font": "字体",
     "upload-tip": "拖放图片到此区域或",
     "upload-button": "选择文件",
     "upload-types": "支持的图片格式：BMP, ICO, JPG, JPEG, JFIF, PNG, WEBP",

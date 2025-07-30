@@ -6,7 +6,7 @@
     "name": "透かしツール",
     "tips": "透かしのスタイルを設定し、画像をアップロードして自動的に透かしを追加",
     "mark-text": "透かしテキスト",
-    "mark-size": "透かしテキストサイズ",
+    "mark-size": "サイズ",
     "mark-size-option": {
       "random": "ランダム",
       "center-center": "中央",
@@ -19,8 +19,8 @@
       "bottom-left": "左下",
       "bottom-right": "右下"
     },
-    "mark-position": "透かしの位置",
-    "mark-font": "透かしフォント",
+    "mark-position": "位置",
+    "mark-font": "フォント",
     "upload-tip": "画像をここにドラッグ＆ドロップするか",
     "upload-button": "ファイルを選択",
     "upload-types": "対応画像フォーマット：BMP, ICO, JPG, JPEG, JFIF, PNG, WEBP",
