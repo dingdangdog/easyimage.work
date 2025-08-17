@@ -1,17 +1,32 @@
-# 使用轻量级的 Nginx 基础镜像
-FROM nginx:alpine
+FROM node:20-alpine3.21 AS builder
 
-# 设置工作目录
-WORKDIR /usr/share/nginx/html
+WORKDIR /app
 
-# 复制构建好的静态文件到 Nginx 的默认网站目录
-COPY .output/public/ ./
+COPY . .
+RUN npm install
+RUN npm run build
+# RUN npm run prisma:build
 
-# 复制自定义的 Nginx 配置文件
-COPY nginx.conf /etc/nginx/conf.d/default.conf
+FROM node:20-alpine3.21 AS runner
 
-# 暴露端口
+LABEL author.name="月上老狗"
+LABEL author.email="dingdangdogx@outlook.com"
+LABEL project.name="easyimage.work"
+LABEL project.version="1.2.2"
+
+# 安装 fontconfig (字体配置工具)
+RUN apk add --no-cache fontconfig
+RUN apk add --no-cache font-noto
+RUN fc-cache -fv
+
+WORKDIR /app
+
+# 复制生产环境需要的文件
+COPY --from=builder /app/.output/ ./ 
+
+ENV PORT="13175"
+
 EXPOSE 13175
 
-# 启动 Nginx
-CMD ["nginx", "-g", "daemon off;"] 
+CMD ["node", "server/index.mjs"]
+# ENTRYPOINT ["/app/entrypoint.sh"]
