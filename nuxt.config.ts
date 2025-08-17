@@ -105,7 +105,7 @@ export default defineNuxtConfig({
         name: "简体中文",
       },
       {
-        code: "zh_Hant",
+        code: "zh_hant",
         name: "繁体中文",
       },
       {
