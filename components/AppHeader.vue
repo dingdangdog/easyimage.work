@@ -74,7 +74,7 @@ const toggleTheme = () => {
       <div class="flex items-center space-x-4">
         <NuxtLink
           :to="localePath('/')"
-          class="text-lg md:text-xl font-semibold transition duration-300 bg-gradient-to-r from-blue-600 to-indigo-600 dark:from-blue-500 dark:to-indigo-500 bg-clip-text text-transparent"
+          class="text-lg md:text-xl font-semibold transition duration-300 bg-gradient-to-r from-green-600 to-red-600 dark:from-green-500 dark:to-red-500 bg-clip-text text-transparent"
         >
           {{ $t("header.title") }}
         </NuxtLink>
