@@ -3,7 +3,7 @@
     "title": "Blog de EasyImage.work",
     "description": "EasyImage.work ofrece herramientas gratuitas y seguras para editar imágenes en línea, sin necesidad de cargarlas, procesándolas localmente en tu navegador de forma rápida y conveniente. ¡Experimenta funciones como añadir marcas de agua, comprimir, convertir formatos y más para optimizar tus imágenes fácilmente! Disponible como PWA para uso sin conexión.",
     "keywords": "edición de imágenes, procesamiento de imágenes, herramientas de imágenes en línea, herramientas de imágenes sin conexión, editor de imágenes gratuito, imágenes con marca de agua, redimensionar imágenes, convertir formatos de imagen, recortar imágenes, procesamiento seguro de imágenes, sin carga, BMP, JPG, PNG, WEBP",
-    "listNum": "3",
+    "listNum": "4",
     "postNotFound": "Lo sentimos, el blog no existe o ha sido eliminado.",
     "list": [
       {
@@ -20,6 +20,11 @@
         "title": "Cómo escribir un excelente componente web de carga de imágenes mediante arrastrar y soltar",
         "date": "2025-04-10",
         "key": "drag-and-drop-upload-on-web"
+      },
+      {
+        "title": "Cómo extraer prompts de imágenes generadas por IA",
+        "date": "2025-08-17",
+        "key": "how-to-get-AI-picture-prompts"
       }
     ]
   }
