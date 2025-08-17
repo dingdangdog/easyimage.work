@@ -1,0 +1,17 @@
+{
+  "resize": {
+    "title": "Công cụ thay đổi kích thước hình ảnh miễn phí | EasyImage.work - Hỗ trợ BMP, ICO, JPG, JPEG, JFIF, PNG, WEBP",
+    "description": "Sử dụng công cụ thay đổi kích thước trực tuyến miễn phí của EasyImage để dễ dàng điều chỉnh kích thước hình ảnh, hỗ trợ nhiều định dạng hình ảnh. Xử lý cục bộ, an toàn và nhanh chóng.",
+    "keywords": "thay đổi kích thước hình ảnh, thay đổi kích thước hình ảnh đơn giản, thay đổi kích thước ảnh, công cụ thay đổi kích thước trực tuyến, thay đổi kích thước hình ảnh web, công cụ thay đổi kích thước offline, trình chỉnh sửa hình ảnh miễn phí, điều chỉnh kích thước hình ảnh, xử lý hình ảnh an toàn, BMP, JPG, PNG, WEBP",
+    "name": "Công cụ Thay đổi kích thước",
+    "tips": "Tải lên hình ảnh, tự động tạo hình ảnh với pixel giảm theo bội số của 2, nhỏ nhất là 64x64.",
+    "upload-tip": "Kéo thả hình ảnh vào khu vực này hoặc",
+    "upload-button": "Chọn file",
+    "upload-types": "Định dạng hình ảnh được hỗ trợ: BMP, ICO, JPG, JPEG, JFIF, PNG, WEBP",
+    "download-all-button": "Tải xuống tất cả",
+    "remove-all-button": "Xóa tất cả",
+    "origin": "Hình gốc",
+    "running": "Đang xử lý...",
+    "ready": "Hình ảnh đã được xử lý"
+  }
+}

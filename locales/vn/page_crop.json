@@ -1,0 +1,26 @@
+{
+  "crop": {
+    "title": "Công cụ cắt hình ảnh trực tuyến miễn phí | EasyImage.work - Hỗ trợ BMP, ICO, JPG, JPEG, JFIF, PNG, WEBP",
+    "description": "EasyImage.work cung cấp công cụ cắt hình ảnh trực tuyến miễn phí, hỗ trợ nhiều định dạng như BMP, ICO, JPG, JPEG, JFIF, PNG, WEBP. Cắt, xoay, lật gương và lật ngược hình ảnh của bạn một cách nhanh chóng và an toàn mà không cần tải xuống phần mềm.",
+    "keywords": "bộ cắt hình ảnh, bộ cắt trực tuyến, bộ cắt ảnh, công cụ cắt miễn phí, bộ cắt hình ảnh miễn phí, bộ cắt hình ảnh web, xoay hình ảnh, cắt hình ảnh web, lật gương hình ảnh, lật ngược hình ảnh, cắt BMP, cắt ICO, cắt JPG, cắt JPEG, cắt JFIF, cắt PNG, cắt WEBP, xử lý hình ảnh an toàn",
+    "name": "Công cụ Cắt",
+    "tips": "Chọn hình ảnh, bắt đầu cắt tự do",
+    "ratio": "Tỷ lệ cắt",
+    "operate": "Thao tác hình ảnh",
+    "image": {
+      "left": "L",
+      "left-title": "Xoay ngược chiều kim đồng hồ 1 độ",
+      "right": "R",
+      "right-title": "Xoay theo chiều kim đồng hồ 1 độ",
+      "mirror": "Lật gương",
+      "reverse": "Lật ngược"
+    },
+    "upload-tip": "Kéo thả hình ảnh vào khu vực này hoặc",
+    "upload-button": "Chọn file",
+    "upload-types": "Định dạng hình ảnh được hỗ trợ: BMP, ICO, JPG, JPEG, JFIF, PNG, WEBP",
+    "remove": "Xóa",
+    "reset": "Đặt lại",
+    "preview": "Xem trước",
+    "download": "Tải xuống"
+  }
+}

@@ -1,5 +1,5 @@
 ---
-date: 2025-03-16
+date: 2025-08-17
 title: Como Extrair Prompts de Imagens AI de Imagens Geradas com EasyImage.work
 ---
 

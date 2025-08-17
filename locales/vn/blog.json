@@ -1,0 +1,31 @@
+{
+  "blog": {
+    "title": "Blog của EasyImage - EasyImage.work",
+    "description": "EasyImage cung cấp các công cụ xử lý hình ảnh trực tuyến miễn phí và an toàn, không cần tải lên, xử lý trên trình duyệt cục bộ, nhanh chóng và tiện lợi. Trải nghiệm ngay các tính năng thêm watermark, nén, chuyển đổi định dạng và tối ưu hóa hình ảnh một cách dễ dàng! Cài đặt PWA offline.",
+    "keywords": "xử lý hình ảnh, công cụ hình ảnh trực tuyến, công cụ hình ảnh offline, bộ xử lý hình ảnh miễn phí, hình ảnh watermark, thay đổi kích thước hình ảnh, chuyển đổi định dạng hình ảnh, cắt hình ảnh, xử lý hình ảnh an toàn, không cần tải lên, BMP, JPG, PNG, WEBP",
+    "listNum": "4",
+    "postNotFound": "Xin lỗi, blog không tồn tại hoặc đã bị xóa~",
+    "list": [
+      {
+        "title": "Cách sử dụng JavaScript để đóng gói file thành file nén (.zip)",
+        "date": "2025-03-09",
+        "key": "how-to-use-javascript-to-zip-files"
+      },
+      {
+        "title": "Làm thế nào để thực hiện tính năng thay đổi kích thước hình ảnh trên Web? EasyImage.work hướng dẫn bạn thực hiện dễ dàng!",
+        "date": "2025-03-16",
+        "key": "how-resize-image-on-web"
+      },
+      {
+        "title": "Cách viết component Web upload hình ảnh kéo thả xuất sắc",
+        "date": "2025-04-10",
+        "key": "drag-and-drop-upload-on-web"
+      },
+      {
+        "title": "Cách trích xuất prompt từ hình ảnh được tạo bởi AI",
+        "date": "2025-08-17",
+        "key": "how-to-get-AI-picture-prompts"
+      }
+    ]
+  }
+}

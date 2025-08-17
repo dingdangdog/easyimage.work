@@ -1,0 +1,22 @@
+{
+  "converter": {
+    "title": "Công cụ chuyển đổi định dạng hình ảnh miễn phí | EasyImage.work - Hỗ trợ BMP, ICO, JPG, JPEG, JFIF, PNG, WEBP",
+    "description": "Sử dụng công cụ trực tuyến miễn phí của EasyImage để nhanh chóng chuyển đổi hình ảnh sang các định dạng BMP, JPG, PNG, WEBP. Xử lý cục bộ, an toàn và đáng tin cậy.",
+    "keywords": "chuyển đổi định dạng hình ảnh, bộ chuyển đổi hình ảnh đơn giản, bộ chuyển đổi ảnh, bộ chuyển đổi hình ảnh web, bộ chuyển đổi trực tuyến, bộ chuyển đổi offline, bộ chuyển đổi hình ảnh miễn phí, chuyển đổi BMP, chuyển đổi JPG, chuyển đổi PNG, chuyển đổi WEBP, xử lý hình ảnh an toàn",
+    "name": "Chuyển đổi định dạng",
+    "tips": "Chọn định dạng đích, tải lên hình ảnh, tự động chuyển đổi định dạng hình ảnh",
+    "target-formats": "Định dạng đích",
+    "format-groups": {
+      "common": "Định dạng phổ biến",
+      "other": "Định dạng khác"
+    },
+    "upload-tip": "Kéo thả hình ảnh vào khu vực này hoặc",
+    "upload-button": "Chọn file",
+    "upload-types": "Định dạng hình ảnh được hỗ trợ: BMP, ICO, JPG, JPEG, JFIF, PNG, WEBP",
+    "rerun": "Chuyển đổi lại định dạng hình ảnh",
+    "running": "Đang chuyển đổi định dạng hình ảnh...",
+    "delete-all-button": "Xóa tất cả",
+    "download-all-button": "Tải xuống tất cả",
+    "ready": "Hình ảnh đã chuyển đổi định dạng"
+  }
+}

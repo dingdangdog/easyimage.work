@@ -108,6 +108,10 @@ export default defineNuxtConfig({
         code: "zh_Hant",
         name: "繁体中文",
       },
+      {
+        code: "vn",
+        name: "Tiếng Việt",
+      },
     ],
     vueI18n: "./i18n.config.ts",
     detectBrowserLanguage: {

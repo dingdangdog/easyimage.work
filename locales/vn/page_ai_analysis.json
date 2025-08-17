@@ -1,0 +1,24 @@
+{
+  "aiAnalysis": {
+    "title": "Công cụ phân tích hình ảnh AI miễn phí | EasyImage.work - Trích xuất prompt Stable Diffusion",
+    "description": "Sử dụng công cụ phân tích AI trực tuyến miễn phí của EasyImage để trích xuất prompt Stable Diffusion, negative prompt và tham số tạo từ dữ liệu EXIF của hình ảnh.",
+    "keywords": "phân tích AI, Stable Diffusion, trích xuất prompt, phân tích EXIF, metadata hình ảnh, tham số SD, công cụ trực tuyến, phân tích miễn phí",
+    "name": "Công cụ Phân tích AI",
+    "tips": "Tải lên hình ảnh chứa thông tin AI, tự động trích xuất prompt và tham số Stable Diffusion",
+    "upload-tip": "Kéo thả hình ảnh vào khu vực này hoặc",
+    "upload-button": "Chọn file",
+    "upload-types": "Định dạng hình ảnh được hỗ trợ: JPG, JPEG, PNG, WEBP, TIFF",
+    "remove-all-button": "Xóa tất cả",
+    "export-button": "Xuất kết quả",
+    "rerun": "Phân tích lại hình ảnh",
+    "running": "Đang phân tích...",
+    "ready": "Kết quả phân tích",
+    "prompt": "Prompt dương",
+    "negativePrompt": "Prompt âm",
+    "parameters": "Tham số tạo",
+    "keyParams": "Tham số quan trọng",
+    "fullText": "Thông tin đầy đủ",
+    "copy": "Sao chép",
+    "no-ai-info": "Không tìm thấy thông tin AI"
+  }
+} 

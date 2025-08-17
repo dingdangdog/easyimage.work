@@ -1,0 +1,33 @@
+{
+  "watermark": {
+    "title": "Công cụ thêm watermark hình ảnh miễn phí | EasyImage.work - Hỗ trợ BMP, ICO, JPG, JPEG, JFIF, PNG, WEBP",
+    "description": "Sử dụng công cụ thêm watermark trực tuyến miễn phí của EasyImage để nhanh chóng thêm watermark văn bản hoặc hình ảnh vào hình ảnh. Không cần tải lên, bảo vệ bản quyền và riêng tư hình ảnh của bạn.",
+    "keywords": "watermark đơn giản, hình ảnh watermark, watermark ảnh, công cụ watermark trực tuyến, watermark hình ảnh web, công cụ watermark offline, watermark miễn phí, thêm watermark cho hình ảnh, bảo vệ bản quyền hình ảnh, xử lý hình ảnh an toàn, không cần tải lên, BMP, JPG, PNG, WEBP",
+    "name": "Công cụ Watermark",
+    "tips": "Thiết lập kiểu watermark, tải lên hình ảnh, tự động thêm watermark cho hình ảnh",
+    "mark-text": "Văn bản watermark",
+    "mark-size": "Kích thước",
+    "mark-size-option": {
+      "random": "Ngẫu nhiên",
+      "center-center": "Giữa",
+      "center-top": "Trên giữa",
+      "center-bottom": "Dưới giữa",
+      "left-center": "Trái giữa",
+      "right-center": "Phải giữa",
+      "top-left": "Trên trái",
+      "top-right": "Trên phải",
+      "bottom-left": "Dưới trái",
+      "bottom-right": "Dưới phải"
+    },
+    "mark-position": "Vị trí",
+    "mark-font": "Font chữ",
+    "upload-tip": "Kéo thả hình ảnh vào khu vực này hoặc",
+    "upload-button": "Chọn file",
+    "upload-types": "Định dạng hình ảnh được hỗ trợ: BMP, ICO, JPG, JPEG, JFIF, PNG, WEBP",
+    "delete-all-button": "Xóa tất cả",
+    "download-all-button": "Tải xuống tất cả",
+    "running": "Đang xử lý...",
+    "rerun": "Xử lý lại hình ảnh",
+    "ready": "Hình ảnh đã được xử lý"
+  }
+}

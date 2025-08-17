@@ -1,0 +1,31 @@
+{
+  "home": {
+    "welcome": "Chào mừng đến với EasyImage",
+    "tip": "Chọn công cụ bạn cần và bắt đầu xử lý hình ảnh!",
+    "start-button": "Bắt đầu ngay",
+    "watermark": {
+      "name": "Công cụ Watermark",
+      "description": "Thêm watermark vào hình ảnh một cách dễ dàng"
+    },
+    "resize": {
+      "name": "Công cụ Thay đổi kích thước",
+      "description": "Thay đổi kích thước hình ảnh một cách dễ dàng"
+    },
+    "converter": {
+      "name": "Công cụ Chuyển đổi",
+      "description": "Chuyển đổi định dạng hình ảnh một cách dễ dàng"
+    },
+    "cropping": {
+      "name": "Công cụ Cắt",
+      "description": "Cắt hình ảnh tự do một cách dễ dàng"
+    },
+    "aiAnalysis": {
+      "name": "Công cụ Phân tích AI",
+      "description": "Trích xuất thông tin AI từ hình ảnh"
+    },
+    "pixAnalysis": {
+      "name": "Công cụ Trích xuất thông tin ảnh",
+      "description": "Trích xuất thông tin ảnh từ hình ảnh"
+    }
+  }
+}

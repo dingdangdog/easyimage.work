@@ -1,0 +1,50 @@
+{
+  "about": {
+    "title": "Về chúng tôi - EasyImage",
+    "description": "Tìm hiểu về EasyImage, chúng tôi cung cấp các công cụ xử lý hình ảnh miễn phí và hiệu quả, nhằm mang đến dịch vụ xử lý hình ảnh tiện lợi cho người dùng.",
+    "keywords": "về chúng tôi, EasyImage, xử lý hình ảnh, công cụ miễn phí",
+    "offer": {
+      "heading": "Dịch vụ chúng tôi cung cấp",
+      "contentNum": "2",
+      "content": [
+        "EasyImage cung cấp các công cụ xử lý hình ảnh trực tuyến miễn phí. Chúng tôi cung cấp nhiều tính năng khác nhau để giúp bạn chỉnh sửa và tối ưu hóa hình ảnh mà không tính phí.",
+        "Trên website của chúng tôi không có bất kỳ tính năng trả phí hoặc dịch vụ đăng ký nào."
+      ]
+    },
+    "privacy": {
+      "heading": "Riêng tư và An toàn",
+      "contentNum": "2",
+      "content": [
+        "Chúng tôi tôn trọng sự riêng tư của bạn. Website của chúng tôi không lưu trữ bất kỳ thông tin cá nhân hoặc chi tiết tài khoản nào.",
+        "Tất cả các thao tác đều được thực hiện trong trình duyệt, có nghĩa là file của người dùng không được tải lên máy chủ bên ngoài."
+      ]
+    },
+    "functionality": {
+      "heading": "Tính năng",
+      "contentNum": "2",
+      "content": [
+        "Vì các công cụ của chúng tôi dựa trên trình duyệt, hiệu suất của công cụ phụ thuộc vào khả năng máy tính của bạn.",
+        "Chúng tôi không thể đảm bảo tính khả dụng hoặc hiệu suất của công cụ vì chức năng của chúng phụ thuộc vào cấu hình website và thiết bị của bạn."
+      ]
+    },
+    "support": {
+      "heading": "Không cung cấp hỗ trợ kỹ thuật",
+      "contentNum": "1",
+      "content": [
+        "Chúng tôi không cung cấp hỗ trợ kỹ thuật cho các công cụ. Tuy nhiên, tất cả các tính năng trên website đều có thể sử dụng và hoạt động như mong đợi trong môi trường trình duyệt."
+      ]
+    },
+    "contact": {
+      "heading": "Liên hệ chúng tôi",
+      "contentNum": "1",
+      "content": ["Nếu bạn có bất kỳ câu hỏi nào hoặc cần thêm thông tin, vui lòng liên hệ với chúng tôi."]
+    },
+    "language": {
+      "heading": "Hỗ trợ đa ngôn ngữ",
+      "contentNum": "1",
+      "content": [
+        "EasyImage cung cấp phiên bản đa ngôn ngữ. Tuy nhiên, xin lưu ý rằng không phải tất cả các ngôn ngữ đều được hỗ trợ. Vui lòng tham khảo các tùy chọn ngôn ngữ được cung cấp trên website."
+      ]
+    }
+  }
+}

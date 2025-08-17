@@ -7,6 +7,7 @@ import ja from "./locales/ja";
 import pt_br from "./locales/pt_br";
 import zh from "./locales/zh";
 import zh_Hant from "./locales/zh_Hant";
+import vn from "./locales/vn";
 
 // You can use `defineI18nConfig` to get type inferences for options to pass to vue-i18n.
 export default defineI18nConfig(() => {
@@ -23,6 +24,7 @@ export default defineI18nConfig(() => {
       pt_br,
       zh,
       zh_Hant,
+      vn,
     },
   };
 });

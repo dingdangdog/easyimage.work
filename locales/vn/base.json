@@ -1,0 +1,53 @@
+{
+  "title": "EasyImage - Công cụ chỉnh sửa hình ảnh trực tuyến miễn phí - Cắt, thay đổi kích thước, watermark, chuyển đổi định dạng - Hỗ trợ sử dụng offline - EasyImage.work",
+  "description": "EasyImage cung cấp công cụ chỉnh sửa hình ảnh trực tuyến hoàn toàn miễn phí, hỗ trợ cắt, thay đổi kích thước, thêm watermark và chuyển đổi định dạng. Không cần tải lên, xử lý trên trình duyệt cục bộ, đảm bảo an toàn và riêng tư. Hỗ trợ cài đặt PWA offline, giao diện đa ngôn ngữ, xử lý nhu cầu hình ảnh của bạn mọi lúc mọi nơi!",
+  "keywords": "EasyImage, chỉnh sửa hình ảnh miễn phí, xử lý ảnh miễn phí, công cụ hình ảnh trực tuyến, công cụ hình ảnh offline, cắt hình ảnh, thay đổi kích thước hình ảnh, thêm watermark, chuyển đổi định dạng, ứng dụng PWA, website đa ngôn ngữ, không cần tải lên, xử lý cục bộ, BMP, JPG, PNG, WEBP, xử lý hình ảnh an toàn",
+  "header": {
+    "title": "EasyImage",
+    "watermark": "Công cụ Watermark",
+    "resize": "Công cụ Thay đổi kích thước",
+    "cropping": "Công cụ Cắt",
+    "converter": "Chuyển đổi định dạng",
+    "aiAnalysis": "Phân tích AI",
+    "pixAnalysis": "Phân tích ảnh"
+  },
+  "body": {
+    "tip1": "Xử lý hoàn toàn trên trình duyệt, cực nhanh và an toàn",
+    "tip2": "Tất cả tính năng miễn phí vĩnh viễn",
+    "tip3": "Cài đặt PWA, sử dụng offline mọi lúc mọi nơi"
+  },
+  "footer": {
+    "companyInfo": {
+      "title": "EasyImage",
+      "description": "Cung cấp dịch vụ xử lý hình ảnh chuyên nghiệp từ năm 2025",
+      "poweredBy": "Được cung cấp bởi",
+      "website": "easyimage.work"
+    },
+    "legal": {
+      "title": "Pháp lý",
+      "links": {
+        "userAgreement": "Thỏa thuận người dùng",
+        "termsOfService": "Điều khoản dịch vụ",
+        "aboutUs": "Về chúng tôi"
+      }
+    },
+    "contact": {
+      "title": "Liên hệ",
+      "emailLabel": "Gửi email cho chúng tôi"
+    },
+    "copyright": {
+      "text": "© 2025 EasyImage.work Bảo lưu mọi quyền.",
+      "privacyPolicy": "Chính sách bảo mật",
+      "cookies": "Cookies"
+    }
+  },
+  "common": {
+    "backToHome": "Trang chủ",
+    "contactUs": "Liên hệ ngay",
+    "viewAbout": "Về chúng tôi",
+    "viewTerms": "Điều khoản dịch vụ",
+    "viewAgreement": "Thỏa thuận người dùng",
+    "blog": "Blog",
+    "blogList": "Danh sách blog"
+  }
+}
