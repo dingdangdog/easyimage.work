@@ -12,7 +12,7 @@ FROM node:20-alpine3.21 AS runner
 LABEL author.name="月上老狗"
 LABEL author.email="dingdangdogx@outlook.com"
 LABEL project.name="easyimage.work"
-LABEL project.version="1.2.3"
+LABEL project.version="1.2.4"
 
 # 安装 fontconfig (字体配置工具)
 RUN apk add --no-cache fontconfig
