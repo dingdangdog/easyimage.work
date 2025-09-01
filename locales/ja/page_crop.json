@@ -1,11 +1,12 @@
 {
   "crop": {
-    "title": "無料オンライン画像切り抜きツール | EasyImage.work - BMP, ICO, JPG, JPEG, JFIF, PNG, WEBP対応",
-    "description": "EasyImage.workは、BMP, ICO, JPG, JPEG, JFIF, PNG, WEBPフォーマットに対応した無料オンライン画像切り抜きツールを提供します。ソフトウェアのダウンロード不要で、画像を素早く安全に切り抜き、回転、ミラー、反転できます。",
-    "keywords": "画像切り抜きツール, オンライン切り抜きツール, 写真切り抜きツール, 無料切り抜きツール, 無料画像切り抜きツール, ウェブ画像切り抜きツール, 画像回転, ウェブ画像切り抜き, 画像ミラー, 画像反転, BMP切り抜き, ICO切り抜き, JPG切り抜き, JPEG切り抜き, JFIF切り抜き, PNG切り抜き, WEBP切り抜き, 安全な画像処理",
-    "name": "切り抜きツール",
-    "tips": "画像を選択して切り抜きを開始",
-    "ratio": "切り抜き比率",
+    "title": "無料オンライン画像クロッパー | EasyImage.work - BMP, ICO, JPG, JPEG, JFIF, PNG, WEBP対応",
+    "description": "EasyImage.workは、BMP、ICO、JPG、JPEG、JFIF、PNG、WEBP形式をサポートする無料のオンライン画像クロッパーを提供します。ソフトウェアをダウンロードすることなく、画像を迅速かつ安全にクロップ、回転、ミラー、反転できます。",
+    "keywords": "画像クロッパー, オンラインクロッパー, 写真クロッパー, 無料クロップツール, 無料画像クロッパー, Web画像クロッパー, 画像回転, Web画像クロップ, 画像ミラー, 画像反転, BMPクロップ, ICOクロップ, JPGクロップ, JPEGクロップ, JFIFクロップ, PNGクロップ, WEBPクロップ, 安全な画像処理",
+    "name": "クロップツール",
+    "tips": "画像を選択してクロップを開始",
+    "ratio": "クロップ比率",
+    "fixed-sizes": "固定サイズ",
     "operate": "画像操作",
     "image": {
       "left": "L",
@@ -15,12 +16,13 @@
       "mirror": "ミラー",
       "reverse": "反転"
     },
-    "upload-tip": "画像をここにドラッグ＆ドロップするか",
+    "upload-tip": "ここに画像をドラッグ＆ドロップするか",
     "upload-button": "ファイルを選択",
-    "upload-types": "対応画像フォーマット：BMP, ICO, JPG, JPEG, JFIF, PNG, WEBP",
+    "upload-types": "対応画像形式：BMP, ICO, JPG, JPEG, JFIF, PNG, WEBP",
     "remove": "削除",
-    "reset": "リセット",
+    "reset": "復元",
     "preview": "プレビュー",
-    "download": "ダウンロード"
+    "download": "ダウンロード",
+    "custom": "カスタム"
   }
 }

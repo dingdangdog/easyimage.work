@@ -1,26 +1,28 @@
 {
   "crop": {
-    "title": "Công cụ cắt hình ảnh trực tuyến miễn phí | EasyImage.work - Hỗ trợ BMP, ICO, JPG, JPEG, JFIF, PNG, WEBP",
-    "description": "EasyImage.work cung cấp công cụ cắt hình ảnh trực tuyến miễn phí, hỗ trợ nhiều định dạng như BMP, ICO, JPG, JPEG, JFIF, PNG, WEBP. Cắt, xoay, lật gương và lật ngược hình ảnh của bạn một cách nhanh chóng và an toàn mà không cần tải xuống phần mềm.",
-    "keywords": "bộ cắt hình ảnh, bộ cắt trực tuyến, bộ cắt ảnh, công cụ cắt miễn phí, bộ cắt hình ảnh miễn phí, bộ cắt hình ảnh web, xoay hình ảnh, cắt hình ảnh web, lật gương hình ảnh, lật ngược hình ảnh, cắt BMP, cắt ICO, cắt JPG, cắt JPEG, cắt JFIF, cắt PNG, cắt WEBP, xử lý hình ảnh an toàn",
-    "name": "Công cụ Cắt",
-    "tips": "Chọn hình ảnh, bắt đầu cắt tự do",
-    "ratio": "Tỷ lệ cắt",
-    "operate": "Thao tác hình ảnh",
+    "title": "Công Cụ Cắt Ảnh Trực Tuyến Miễn Phí | EasyImage.work - Hỗ Trợ BMP, ICO, JPG, JPEG, JFIF, PNG, WEBP",
+    "description": "EasyImage.work cung cấp công cụ cắt ảnh trực tuyến miễn phí hỗ trợ các định dạng BMP, ICO, JPG, JPEG, JFIF, PNG, WEBP. Cắt, xoay, phản chiếu và lật ảnh của bạn một cách nhanh chóng và an toàn mà không cần tải xuống bất kỳ phần mềm nào.",
+    "keywords": "công cụ cắt ảnh, cắt ảnh trực tuyến, cắt ảnh, công cụ cắt miễn phí, cắt ảnh miễn phí, cắt ảnh web, xoay ảnh, cắt ảnh web, phản chiếu ảnh, lật ảnh, cắt BMP, cắt ICO, cắt JPG, cắt JPEG, cắt JFIF, cắt PNG, cắt WEBP, xử lý ảnh an toàn",
+    "name": "Công Cụ Cắt",
+    "tips": "Chọn một ảnh để bắt đầu cắt",
+    "ratio": "Tỷ Lệ Cắt",
+    "fixed-sizes": "Kích Thước Cố Định",
+    "operate": "Thao Tác Ảnh",
     "image": {
-      "left": "L",
+      "left": "T",
       "left-title": "Xoay ngược chiều kim đồng hồ 1 độ",
-      "right": "R",
+      "right": "P",
       "right-title": "Xoay theo chiều kim đồng hồ 1 độ",
-      "mirror": "Lật gương",
-      "reverse": "Lật ngược"
+      "mirror": "Phản Chiếu",
+      "reverse": "Lật"
     },
-    "upload-tip": "Kéo thả hình ảnh vào khu vực này hoặc",
-    "upload-button": "Chọn file",
-    "upload-types": "Định dạng hình ảnh được hỗ trợ: BMP, ICO, JPG, JPEG, JFIF, PNG, WEBP",
+    "upload-tip": "Kéo và thả ảnh vào đây hoặc",
+    "upload-button": "Chọn Tệp",
+    "upload-types": "Định dạng ảnh được hỗ trợ: BMP, ICO, JPG, JPEG, JFIF, PNG, WEBP",
     "remove": "Xóa",
-    "reset": "Đặt lại",
-    "preview": "Xem trước",
-    "download": "Tải xuống"
+    "reset": "Khôi Phục",
+    "preview": "Xem Trước",
+    "download": "Tải Xuống",
+    "custom": "Tùy Chỉnh"
   }
 }

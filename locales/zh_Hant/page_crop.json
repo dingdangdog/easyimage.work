@@ -1,11 +1,12 @@
 {
   "crop": {
-    "title": "免費在線圖片裁剪工具 | EasyImage.work - 支持 BMP, ICO, JPG, JPEG, JFIF, PNG, WEBP",
-    "description": "EasyImage.work 提供免費的在線圖片裁剪工具，支持 BMP, ICO, JPG, JPEG, JFIF, PNG, WEBP 等多種格式。快速、安全地裁剪、旋轉、鏡像和顛倒你的圖片，無需下載軟件。",
+    "title": "免費在線圖片裁剪工具 | EasyImage.work - 支援 BMP, ICO, JPG, JPEG, JFIF, PNG, WEBP",
+    "description": "EasyImage.work 提供免費的在線圖片裁剪工具，支援 BMP, ICO, JPG, JPEG, JFIF, PNG, WEBP 等多種格式。快速、安全地裁剪、旋轉、鏡像和顛倒你的圖片，無需下載軟件。",
     "keywords": "圖片裁剪器, 在線裁剪器, 照片裁剪器, 免費裁剪工具, 免費圖片裁剪器, 網頁圖片裁剪器, 圖片旋轉, 網頁圖片裁剪, 圖片鏡像, 圖片顛倒, BMP裁剪, ICO裁剪, JPG裁剪, JPEG裁剪, JFIF裁剪, PNG裁剪, WEBP裁剪, 安全圖片處理",
     "name": "裁剪工具",
     "tips": "選擇圖片，開始自由裁剪",
     "ratio": "裁剪比例",
+    "fixed-sizes": "固定尺寸",
     "operate": "圖片操作",
     "image": {
       "left": "L",
@@ -17,10 +18,11 @@
     },
     "upload-tip": "拖放圖片到此區域或",
     "upload-button": "選擇文件",
-    "upload-types": "支持的圖片格式：BMP, ICO, JPG, JPEG, JFIF, PNG, WEBP",
+    "upload-types": "支援的圖片格式：BMP, ICO, JPG, JPEG, JFIF, PNG, WEBP",
     "remove": "刪除",
     "reset": "重置",
     "preview": "預覽",
-    "download": "下載"
+    "download": "下載",
+    "custom": "自定義"
   }
 }

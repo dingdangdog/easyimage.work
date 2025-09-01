@@ -1,26 +1,28 @@
 {
   "crop": {
-    "title": "Recortador de Imágenes Gratuito en Línea | EasyImage.work - Compatible con BMP, ICO, JPG, JPEG, JFIF, PNG, WEBP",
-    "description": "EasyImage.work ofrece un recortador de imágenes gratuito en línea que es compatible con los formatos BMP, ICO, JPG, JPEG, JFIF, PNG, WEBP. Recorta, rota, refleja y voltea tus imágenes de forma rápida y segura sin descargar ningún software.",
-    "keywords": "recortador de imágenes, recortador en línea, herramienta de recorte gratuita, rotación de imágenes, reflejo de imágenes, volteo de imágenes, recorte BMP, recorte ICO, recorte JPG, recorte JPEG, recorte JFIF, recorte PNG, recorte WEBP, procesamiento seguro de imágenes",
+    "title": "Recortador de Imágenes Gratuito Online | EasyImage.work - Soporta BMP, ICO, JPG, JPEG, JFIF, PNG, WEBP",
+    "description": "EasyImage.work ofrece un recortador de imágenes gratuito online que soporta formatos BMP, ICO, JPG, JPEG, JFIF, PNG, WEBP. Recorta, rota, refleja y voltea tus imágenes de forma rápida y segura sin descargar ningún software.",
+    "keywords": "recortador de imágenes, recortador online, recortador de fotos, herramienta de recorte gratuita, recortador de imágenes gratuito, recortador de imágenes web, rotación de imágenes, recorte de imágenes web, espejo de imagen, volteo de imagen, recorte BMP, recorte ICO, recorte JPG, recorte JPEG, recorte JFIF, recorte PNG, recorte WEBP, procesamiento seguro de imágenes",
     "name": "Herramienta de Recorte",
     "tips": "Selecciona una imagen para comenzar a recortar",
     "ratio": "Proporción de Recorte",
+    "fixed-sizes": "Tamaños Fijos",
     "operate": "Operación de Imagen",
     "image": {
       "left": "I",
-      "left-title": "Rotar en sentido antihorario 1 grado",
+      "left-title": "Rotar en sentido contrario a las agujas del reloj 1 grado",
       "right": "D",
-      "right-title": "Rotar en sentido horario 1 grado",
+      "right-title": "Rotar en sentido de las agujas del reloj 1 grado",
       "mirror": "Espejo",
       "reverse": "Voltear"
     },
     "upload-tip": "Arrastra y suelta una imagen aquí o",
     "upload-button": "Elegir Archivo",
-    "upload-types": "Formatos de imagen compatibles: BMP, ICO, JPG, JPEG, JFIF, PNG, WEBP",
+    "upload-types": "Formatos de imagen soportados: BMP, ICO, JPG, JPEG, JFIF, PNG, WEBP",
     "remove": "Eliminar",
-    "reset": "Recuperar",
+    "reset": "Restaurar",
     "preview": "Vista Previa",
-    "download": "Descargar"
+    "download": "Descargar",
+    "custom": "Personalizado"
   }
 }

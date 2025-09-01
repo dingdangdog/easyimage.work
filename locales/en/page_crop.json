@@ -6,6 +6,7 @@
     "name": "Crop Tool",
     "tips": "Select an image to start cropping",
     "ratio": "Crop Ratio",
+    "fixed-sizes": "Fixed Sizes",
     "operate": "Image Operation",
     "image": {
       "left": "L",
@@ -21,6 +22,7 @@
     "remove": "Remove",
     "reset": "Recover",
     "preview": "Preview",
-    "download": "Download"
+    "download": "Download",
+    "custom": "Custom"
   }
 }

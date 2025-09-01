@@ -1,26 +1,28 @@
 {
   "crop": {
-    "title": "Cortador de Imagens Online Gratuito | EasyImage.work - Suporta BMP, ICO, JPG, JPEG, JFIF, PNG, WEBP",
-    "description": "EasyImage.work oferece um cortador de imagens online gratuito que suporta formatos BMP, ICO, JPG, JPEG, JFIF, PNG, WEBP. Corte, gire, espelhe e inverta suas imagens de forma rápida e segura sem baixar nenhum software.",
-    "keywords": "cortador de imagens, cortador online, ferramenta de corte gratuita, rotação de imagem, espelhamento de imagem, inversão de imagem, corte BMP, corte ICO, corte JPG, corte JPEG, corte JFIF, corte PNG, corte WEBP, processamento seguro de imagens",
-    "name": "Ferramenta de Corte",
-    "tips": "Selecione uma imagem para começar a cortar",
-    "ratio": "Proporção de Corte",
+    "title": "Recortador de Imagens Gratuito Online | EasyImage.work - Suporta BMP, ICO, JPG, JPEG, JFIF, PNG, WEBP",
+    "description": "EasyImage.work oferece um recortador de imagens gratuito online que suporta formatos BMP, ICO, JPG, JPEG, JFIF, PNG, WEBP. Recorte, rotacione, espelhe e vire suas imagens de forma rápida e segura sem baixar nenhum software.",
+    "keywords": "recortador de imagens, recortador online, recortador de fotos, ferramenta de recorte gratuita, recortador de imagens gratuito, recortador de imagens web, rotação de imagens, recorte de imagens web, espelho de imagem, virada de imagem, recorte BMP, recorte ICO, recorte JPG, recorte JPEG, recorte JFIF, recorte PNG, recorte WEBP, processamento seguro de imagens",
+    "name": "Ferramenta de Recorte",
+    "tips": "Selecione uma imagem para começar a recortar",
+    "ratio": "Proporção de Recorte",
+    "fixed-sizes": "Tamanhos Fixos",
     "operate": "Operação de Imagem",
     "image": {
       "left": "E",
-      "left-title": "Girar no sentido anti-horário em 1 grau",
+      "left-title": "Rotacionar no sentido anti-horário 1 grau",
       "right": "D",
-      "right-title": "Girar no sentido horário em 1 grau",
+      "right-title": "Rotacionar no sentido horário 1 grau",
       "mirror": "Espelhar",
-      "reverse": "Inverter"
+      "reverse": "Virar"
     },
     "upload-tip": "Arraste e solte uma imagem aqui ou",
     "upload-button": "Escolher Arquivo",
     "upload-types": "Formatos de imagem suportados: BMP, ICO, JPG, JPEG, JFIF, PNG, WEBP",
     "remove": "Remover",
-    "reset": "Recuperar",
+    "reset": "Restaurar",
     "preview": "Visualizar",
-    "download": "Baixar"
+    "download": "Baixar",
+    "custom": "Personalizado"
   }
 }

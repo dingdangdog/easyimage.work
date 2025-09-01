@@ -105,6 +105,35 @@
         </div>
       </div>
 
+      <!-- 新增：固定尺寸选择 -->
+      <div class="bg-blue-100/20 dark:bg-blue-900/20 p-3 rounded-lg">
+        <h3 class="text-sm font-medium text-blue-700 dark:text-blue-300 mb-2">
+          {{ $t("crop.fixed-sizes") }}
+        </h3>
+        <div class="flex flex-wrap gap-2">
+          <button
+            v-for="size of fixedSizeOptions"
+            :key="size.label"
+            class="px-2 py-1 text-sm shadow-sm rounded-md transition-all duration-150 ease-in-out"
+            :class="
+              selectedFixedSize?.width === size.value.width &&
+              selectedFixedSize?.height === size.value.height
+                ? 'bg-blue-500 shadow-blue-500/50 text-white'
+                : 'bg-gray-300/60 hover:bg-blue-300 shadow-gray-500/30 text-gray-800 dark:text-gray-100'
+            "
+            @click="setFixedSize(size)"
+          >
+            {{ size.label }}
+          </button>
+          <button
+            class="px-2 py-1 text-sm shadow-sm rounded-md transition-all duration-150 ease-in-out bg-gray-300/60 hover:bg-blue-300 shadow-gray-500/30 text-gray-800 dark:text-gray-100"
+            @click="clearFixedSize"
+          >
+            {{ $t("crop.custom") }}
+          </button>
+        </div>
+      </div>
+
       <!-- 右侧：图像操作工具 -->
       <div class="bg-purple-100/20 dark:bg-purple-900/20 p-3 rounded-lg">
         <h3
@@ -346,6 +375,17 @@ const selectionRatioOptions = ref([
   { label: "16:9", value: 1.78 },
 ]);
 
+// 新增：固定尺寸选项
+const fixedSizeOptions = ref([
+  { label: "128×128", value: { width: 128, height: 128 } },
+  { label: "256×256", value: { width: 256, height: 256 } },
+  { label: "512×512", value: { width: 512, height: 512 } },
+  { label: "1024×1024", value: { width: 1024, height: 1024 } },
+]);
+
+// 当前选中的固定尺寸
+const selectedFixedSize = ref<{ width: number; height: number } | null>(null);
+
 const setSelectionRatio = (ratio: number | undefined) => {
   selection.value.width = undefined;
   selection.value.height = undefined;
@@ -353,6 +393,7 @@ const setSelectionRatio = (ratio: number | undefined) => {
   selection.value.y = undefined;
   cropperSelection.value?.$clear();
   selection.value.aspectRatio = ratio;
+  selectedFixedSize.value = null; // 清除固定尺寸选择
   nextTick(() => {
     cropperSelection.value?.$center();
   });
@@ -361,6 +402,32 @@ const setSelectionRatio = (ratio: number | undefined) => {
   // cropperSelection.value?.$reset();
   // cropperSelection.value?.$render();
   // cropperSelection.value?.$center();
+};
+
+// 新增：设置固定尺寸
+const setFixedSize = (size: {
+  label: string;
+  value: { width: number; height: number };
+}) => {
+  selectedFixedSize.value = size.value;
+  // 清除比例限制，设置为1:1确保是正方形
+  selection.value.aspectRatio = 1;
+  // 重置裁剪区域
+  cropperSelection.value?.$clear();
+  nextTick(() => {
+    cropperSelection.value?.$center();
+  });
+};
+
+// 新增：清除固定尺寸
+const clearFixedSize = () => {
+  selectedFixedSize.value = null;
+  selection.value.aspectRatio = undefined;
+  // 重置裁剪区域
+  cropperSelection.value?.$clear();
+  nextTick(() => {
+    cropperSelection.value?.$center();
+  });
 };
 /**
  * Upload image trigger
@@ -469,6 +536,7 @@ const resetCropper = () => {
     cropperImage.value?.$center("contain");
   }
   selection.value = defaultSelection;
+  selectedFixedSize.value = null; // 清除固定尺寸选择
   if (cropperSelection.value) {
     // cropperSelection.value?.$render();
     cropperSelection.value?.$reset();
@@ -489,10 +557,15 @@ const removeAll = () => {
 };
 // 预览图片
 const previewCropping = async () => {
-  const canvas = await cropperViewer.value?.$selection.$toCanvas({
-    width: originSize.value.width,
-    height: originSize.value.height,
-  });
+  // 如果选择了固定尺寸，使用固定尺寸；否则使用原始尺寸
+  const canvasOptions = selectedFixedSize.value
+    ? {
+        width: selectedFixedSize.value.width,
+        height: selectedFixedSize.value.height,
+      }
+    : { width: originSize.value.width, height: originSize.value.height };
+
+  const canvas = await cropperViewer.value?.$selection.$toCanvas(canvasOptions);
   const image = canvas?.toDataURL("image/png");
   previewImageData.value = image;
 };
@@ -500,16 +573,25 @@ const previewCropping = async () => {
  * 下载裁剪后的图片
  */
 const downloadCroppedImage = async () => {
-  const canvas = await cropperViewer.value?.$selection.$toCanvas({
-    width: originSize.value.width,
-    height: originSize.value.height,
-  });
+  // 如果选择了固定尺寸，使用固定尺寸；否则使用原始尺寸
+  const canvasOptions = selectedFixedSize.value
+    ? {
+        width: selectedFixedSize.value.width,
+        height: selectedFixedSize.value.height,
+      }
+    : { width: originSize.value.width, height: originSize.value.height };
+
+  const canvas = await cropperViewer.value?.$selection.$toCanvas(canvasOptions);
   canvas?.toBlob((blob) => {
     if (!blob) return;
     const url = URL.createObjectURL(blob);
     const link = document.createElement("a");
     link.href = url;
-    link.download = `cropped_${originImage.value?.name}`;
+    // 添加尺寸信息到文件名
+    const sizeInfo = selectedFixedSize.value
+      ? `_${selectedFixedSize.value.width}x${selectedFixedSize.value.height}`
+      : "";
+    link.download = `cropped${sizeInfo}_${originImage.value?.name}`;
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
