@@ -17,7 +17,11 @@
           <HomeCard
             :name="$t('home.resize.name')"
             :desc="$t('home.resize.description')"
-            color="!text-orange-200 bg-orange-500/50 hover:bg-orange-500/80 dark:bg-orange-600/40 dark:hover:bg-orange-600/60"
+            color="bg-orange-500/50 hover:bg-orange-500/60 dark:bg-orange-600/40 dark:hover:bg-orange-600/60"
+            titleClass="text-orange-900 dark:text-orange-300 drop-shadow-sm"
+            descClass="text-orange-950/90 dark:text-orange-300/90"
+            actionClass="text-orange-600 dark:text-orange-300 hover:text-orange-700 dark:hover:text-orange-100"
+            iconClass="text-orange-500 dark:text-orange-200/90"
             path="resize"
             icon="resize"
           />
@@ -26,7 +30,11 @@
           <HomeCard
             :name="$t('home.converter.name')"
             :desc="$t('home.converter.description')"
-            color="bg-pink-500/50 hover:bg-pink-500/80 dark:bg-pink-600/40 dark:hover:bg-pink-600/60"
+            color="bg-pink-500/50 hover:bg-pink-500/70 dark:bg-pink-600/40 dark:hover:bg-pink-600/60"
+            titleClass="text-pink-900 dark:text-pink-300 drop-shadow-sm"
+            descClass="text-pink-950/90 dark:text-pink-300/90"
+            actionClass="text-pink-600 dark:text-pink-300 hover:text-pink-900 dark:hover:text-pink-100"
+            iconClass="text-pink-500 dark:text-pink-200/90"
             path="converter"
             icon="converter"
           />
@@ -35,7 +43,11 @@
           <HomeCard
             :name="$t('home.cropping.name')"
             :desc="$t('home.cropping.description')"
-            color="bg-purple-500/50 hover:bg-purple-500/80 dark:bg-purple-600/40 dark:hover:bg-purple-600/60"
+            color="bg-purple-500/50 hover:bg-purple-500/70 dark:bg-purple-600/40 dark:hover:bg-purple-600/60"
+            titleClass="text-purple-900 dark:text-purple-300 drop-shadow-sm"
+            descClass="text-purple-950/90 dark:text-purple-300/90"
+            actionClass="text-purple-600 dark:text-purple-300 hover:text-purple-900 dark:hover:text-purple-100"
+            iconClass="text-purple-500 dark:text-purple-200/90"
             path="cropping"
             icon="cropping"
           />
@@ -44,7 +56,11 @@
           <HomeCard
             :name="$t('home.aiAnalysis.name')"
             :desc="$t('home.aiAnalysis.description')"
-            color="bg-cyan-500/50 hover:bg-cyan-500/80 dark:bg-cyan-600/40 dark:hover:bg-cyan-600/60"
+            color="bg-cyan-500/50 hover:bg-cyan-500/70 dark:bg-cyan-600/40 dark:hover:bg-cyan-600/60"
+            titleClass="text-cyan-900 dark:text-cyan-300 drop-shadow-sm"
+            descClass="text-cyan-950/90 dark:text-cyan-300/90"
+            actionClass="text-cyan-600 dark:text-cyan-300 hover:text-cyan-900 dark:hover:text-cyan-100"
+            iconClass="text-cyan-500 dark:text-cyan-200/90"
             path="ai-analysis"
             icon="ai-analysis"
           />
@@ -53,7 +69,11 @@
           <HomeCard
             :name="$t('home.pixAnalysis.name')"
             :desc="$t('home.pixAnalysis.description')"
-            color="bg-green-500/50 hover:bg-green-500/80 dark:bg-green-600/40 dark:hover:bg-green-600/60"
+            color="bg-green-500/50 hover:bg-green-500/70 dark:bg-green-600/40 dark:hover:bg-green-600/60"
+            titleClass="text-green-900 dark:text-green-300 drop-shadow-sm"
+            descClass="text-green-950/90 dark:text-green-300/90"
+            actionClass="text-green-600 dark:text-green-300 hover:text-green-900 dark:hover:text-green-100"
+            iconClass="text-green-500 dark:text-green-200/90"
             path="pix-analysis"
             icon="pix-analysis"
           />
@@ -62,7 +82,11 @@
           <HomeCard
             :name="$t('home.watermark.name')"
             :desc="$t('home.watermark.description')"
-            color="bg-indigo-500/50 hover:bg-indigo-500/80 dark:bg-indigo-600/40 dark:hover:bg-indigo-600/60"
+            color="bg-indigo-500/50 hover:bg-indigo-500/70 dark:bg-indigo-600/40 dark:hover:bg-indigo-600/60"
+            titleClass="text-indigo-900 dark:text-indigo-300 drop-shadow-sm"
+            descClass="text-indigo-950/90 dark:text-indigo-300/90"
+            actionClass="text-indigo-600 dark:text-indigo-300 hover:text-indigo-900 dark:hover:text-indigo-100"
+            iconClass="text-indigo-500 dark:text-indigo-200/90"
             path="watermark"
             icon="watermark"
           />
@@ -75,7 +99,7 @@
       <div
         class="flex flex-col items-center p-8 ease-in-out duration-300 bg-gray-50 dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700 hover:shadow-md"
       >
-        <div class="p-3 rounded-full bg-blue-600 dark:bg-blue-500">
+        <div class="p-3 rounded-full text-blue-100 dark:text-blue-200 bg-blue-600 dark:bg-blue-500">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             class="h-8 w-8"
@@ -91,14 +115,16 @@
             />
           </svg>
         </div>
-        <h3 class="text-lg font-semibold mt-2 text-gray-800 dark:text-gray-200">
+        <h3 class="text-lg font-semibold mt-2 text-blue-800 dark:text-blue-200">
           {{ $t("body.tip1") }}
         </h3>
       </div>
       <div
         class="flex flex-col items-center p-8 ease-in-out duration-300 bg-gray-50 dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700 hover:shadow-md"
       >
-        <div class="p-3 rounded-full bg-green-500 dark:bg-green-600">
+        <div
+          class="p-3 rounded-full text-green-100 dark:text-green-200 bg-green-500 dark:bg-green-600"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             class="h-8 w-8"
@@ -114,14 +140,18 @@
             />
           </svg>
         </div>
-        <h3 class="text-lg font-semibold mt-2 text-gray-800 dark:text-gray-200">
+        <h3
+          class="text-lg font-semibold mt-2 text-green-800 dark:text-green-200"
+        >
           {{ $t("body.tip2") }}
         </h3>
       </div>
       <div
         class="flex flex-col items-center p-8 ease-in-out duration-300 bg-gray-50 dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700 hover:shadow-md"
       >
-        <div class="p-3 rounded-full bg-purple-500 dark:bg-purple-600">
+        <div
+          class="p-3 rounded-full text-purple-100 dark:text-purple-200 bg-purple-500 dark:bg-purple-600"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             class="h-8 w-8"
@@ -137,7 +167,9 @@
             />
           </svg>
         </div>
-        <h3 class="text-lg font-semibold mt-2 text-gray-800 dark:text-gray-200">
+        <h3
+          class="text-lg font-semibold mt-2 text-purple-800 dark:text-purple-200"
+        >
           {{ $t("body.tip3") }}
         </h3>
       </div>

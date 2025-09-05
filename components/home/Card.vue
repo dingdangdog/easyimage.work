@@ -8,12 +8,26 @@ import IconPixAnalysis from "../icon/pix-analysis.vue";
 
 const localePath = useLocalePath();
 
-const { name, path, color, icon, desc } = defineProps([
+const {
+  name,
+  path,
+  color,
+  icon,
+  desc,
+  titleClass = "",
+  descClass = "",
+  actionClass = "",
+  iconClass = "",
+} = defineProps([
   "name",
   "path",
   "color",
   "icon",
   "desc",
+  "titleClass",
+  "descClass",
+  "actionClass",
+  "iconClass",
 ]);
 
 const getIcon = (icon: string) => {
@@ -45,17 +59,20 @@ const getIcon = (icon: string) => {
     <div class="text-center">
       <div
         class="h-12 w-12 md:h-16 md:w-16 mx-auto mb-2 md:mb-4 flex items-center justify-center"
+        :class="iconClass"
       >
         <component :is="getIcon(icon)" />
       </div>
-      <h3 class="text-2xl font-semibold dark:text-white text-slate-800">
+      <h3 class="text-2xl font-semibold"
+          :class="titleClass || 'dark:text-white text-slate-800'">
         {{ name }}
       </h3>
-      <p class="dark:text-gray-200 text-gray-700 my-2 text-center">
+      <p class="my-2 text-center" :class="descClass || 'dark:text-gray-200 text-gray-700'">
         {{ desc }}
       </p>
       <p
-        class="mt-2 md:mt-4 text-lg inline-block font-semibold text-blue-600 dark:text-blue-300 hover:text-blue-700 dark:hover:text-blue-200 duration-200 ease-in-out"
+        class="mt-2 md:mt-4 text-lg inline-block font-semibold duration-200 ease-in-out"
+        :class="actionClass || 'text-blue-600 dark:text-blue-300 hover:text-blue-700 dark:hover:text-blue-200'"
       >
         {{ $t("home.start-button") }}
       </p>
