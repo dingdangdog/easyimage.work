@@ -1,0 +1,8 @@
+{
+  "error": {
+    "something_went_wrong": "Đã xảy ra lỗi",
+    "error_generic_desc": "Đã xảy ra lỗi không mong muốn. Bạn có thể quay về trang chủ hoặc thử lại.",
+    "go_home": "Về Trang Chủ",
+    "try_again": "Thử Lại"
+  }
+}

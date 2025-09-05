@@ -1,5 +1,6 @@
 import base from "./base.json";
 import blog from "./blog.json";
+import error from "./error.json";
 import page_home from "./page_home.json";
 import page_about from "./page_about.json";
 import page_agreement from "./page_agreement.json";
@@ -14,6 +15,7 @@ import page_pix_analysis from "./page_pix_analysis.json";
 export default {
   ...base,
   ...blog,
+  ...error,
   ...page_home,
   ...page_about,
   ...page_agreement,

@@ -1,0 +1,8 @@
+{
+  "error": {
+    "something_went_wrong": "出現錯誤",
+    "error_generic_desc": "發生了意外錯誤。您可以返回首頁或重試。",
+    "go_home": "返回首頁",
+    "try_again": "重試"
+  }
+}

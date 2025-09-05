@@ -1,0 +1,8 @@
+{
+  "error": {
+    "something_went_wrong": "Algo deu errado",
+    "error_generic_desc": "Ocorreu um erro inesperado. Você pode voltar ao início ou tentar novamente.",
+    "go_home": "Ir para o Início",
+    "try_again": "Tentar Novamente"
+  }
+}

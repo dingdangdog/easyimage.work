@@ -1,0 +1,8 @@
+{
+  "error": {
+    "something_went_wrong": "Something went wrong",
+    "error_generic_desc": "An unexpected error occurred. You can go back home or try again.",
+    "go_home": "Go Home",
+    "try_again": "Try Again"
+  }
+}
