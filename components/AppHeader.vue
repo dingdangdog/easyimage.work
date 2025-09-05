@@ -74,7 +74,7 @@ const toggleTheme = () => {
       <div class="flex items-center space-x-4">
         <NuxtLink
           :to="localePath('/')"
-          class="text-lg md:text-xl font-semibold transition duration-300 bg-gradient-to-r from-green-600 to-red-600 dark:from-green-500 dark:to-red-500 bg-clip-text text-transparent"
+          class="text-lg md:text-xl font-semibold transition duration-300 site-title-reflect"
         >
           {{ $t("header.title") }}
         </NuxtLink>
@@ -318,5 +318,67 @@ header {
   font-size: 1.2rem;
   vertical-align: middle;
   transition: color 0.3s ease;
+}
+
+/* 站点标题：深蓝文字 + 地面式阴影（非镜像） */
+.site-title-reflect {
+  /* 深蓝，贴合主题 */
+  color: #0f3d7a;
+  position: relative;
+  display: inline-block;
+  /* 向下的层叠阴影，模拟地面投影 */
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.18), 0 2px 2px rgba(0, 0, 0, 0.16),
+    0 4px 6px rgba(0, 0, 0, 0.14), 0 8px 12px rgba(0, 0, 0, 0.1);
+}
+
+.dark .site-title-reflect {
+  /* 暗色模式的亮深蓝，提升可读性 */
+  color: #7fb3ff;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.25), 0 2px 3px rgba(0, 0, 0, 0.28),
+    0 6px 10px rgba(0, 0, 0, 0.22), 0 12px 18px rgba(0, 0, 0, 0.18);
+}
+
+/* 地面椭圆阴影（非镜像），根据主题微调强度 */
+.site-title-reflect::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -5px;
+  width: 130%;
+  height: 12px;
+  /* 双层阴影：中间更深（本影）+ 外围更柔（半影） */
+  background: radial-gradient(
+      ellipse at center,
+      rgba(0, 0, 0, 0.3) 0%,
+      rgba(0, 0, 0, 0.2) 45%,
+      rgba(0, 0, 0, 0) 75%
+    ),
+    radial-gradient(
+      ellipse at center,
+      rgba(0, 0, 0, 0.18) 0%,
+      rgba(0, 0, 0, 0.12) 40%,
+      rgba(0, 0, 0, 0) 85%
+    );
+  filter: blur(1.2px);
+  opacity: 0.85;
+  pointer-events: none;
+}
+
+.dark .site-title-reflect::after {
+  /* 深色背景下加大对比与层次 */
+  background: radial-gradient(
+      ellipse at center,
+      rgba(255, 255, 255, 0.55) 0%,
+      rgba(255, 255, 255, 0.35) 45%,
+      rgba(255, 255, 255, 0) 75%
+    ),
+    radial-gradient(
+      ellipse at center,
+      rgba(255, 255, 255, 0.28) 0%,
+      rgba(255, 255, 255, 0.2) 40%,
+      rgba(255, 255, 255, 0) 85%
+    );
+  opacity: 0.9;
 }
 </style>
