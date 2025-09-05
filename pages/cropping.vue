@@ -245,7 +245,7 @@
     </p>
 
     <div
-      class="mt-2 md:mt-4 border-2 border-dashed rounded-lg p-4 text-center cursor-pointer bg-gray-300/50 dark:bg-gray-100/20 hover:bg-purple-300/50 dark:hover:bg-purple-300/30 border-purple-300 hover:border-purple-500 transition duration-300 ease-in-out"
+      class="mt-2 md:mt-6 border-2 border-dashed rounded-lg p-4 text-center cursor-pointer bg-gray-300/50 dark:bg-gray-100/20 hover:bg-purple-300/50 dark:hover:bg-purple-300/30 border-purple-300 hover:border-purple-500 transition duration-300 ease-in-out"
       :class="{
         'border-purple-700 bg-blue-50': dragOver,
       }"

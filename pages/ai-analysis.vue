@@ -1,5 +1,5 @@
 <template>
-  <div class="p-4 max-w-4xl mx-auto">
+  <div class="p-4 max-w-3xl mx-auto">
     <h1
       class="text-3xl sm:text-4xl font-extrabold mb-6 text-center text-cyan-400 dark:text-cyan-300"
     >
@@ -15,7 +15,7 @@
       @dragleave="dragOver = false"
       @drop.prevent="handleDrop"
       @click.stop="upload()"
-      class="mt-6 border-2 border-dashed rounded-lg p-4 text-center cursor-pointer bg-gray-300/50 dark:bg-gray-100/20 hover:bg-cyan-300/50 dark:hover:bg-cyan-300/30 border-cyan-300 hover:border-cyan-500 transition duration-300 ease-in-out"
+      class="mt-2 md:mt-6 border-2 border-dashed rounded-lg p-4 text-center cursor-pointer bg-gray-300/50 dark:bg-gray-100/20 hover:bg-cyan-300/50 dark:hover:bg-cyan-300/30 border-cyan-300 hover:border-cyan-500 transition duration-300 ease-in-out"
       :class="{
         'border-cyan-700 bg-blue-50': dragOver,
       }"
