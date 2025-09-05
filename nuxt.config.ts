@@ -14,10 +14,6 @@ export default defineNuxtConfig({
           rel: "icon",
           href: "/favicon.jpg",
         },
-        {
-          rel: "manifest",
-          href: "/manifest.json",
-        },
       ],
       script: [
         {
@@ -66,7 +62,71 @@ export default defineNuxtConfig({
     "@nuxtjs/tailwindcss",
     "@nuxtjs/sitemap",
     "@nuxt/content",
+    "@vite-pwa/nuxt",
   ],
+  pwa: {
+    registerType: "autoUpdate",
+    manifest: {
+      name: "EasyImage",
+      short_name: "EasyImage",
+      description: "EasyImage - Offline image tools",
+      start_url: "/",
+      display: "standalone",
+      background_color: "#ffffff",
+      theme_color: "#1e40af",
+      lang: "en",
+      scope: "/",
+      categories: ["utilities", "productivity"],
+      icons: [
+        { src: "/pwa/manifest-icon-192.maskable.png", sizes: "192x192", type: "image/png", purpose: "any maskable" },
+        { src: "/pwa/manifest-icon-512.maskable.png", sizes: "512x512", type: "image/png", purpose: "any maskable" },
+        { src: "/pwa/apple-icon-180.png", sizes: "180x180", type: "image/png" }
+      ]
+    },
+    workbox: {
+      navigateFallback: "/offline.html",
+      globPatterns: [
+        "**/*.{js,css,html,svg,png,jpg,jpeg,webp,woff,woff2,otf,ttf,ico,json}"
+      ],
+      runtimeCaching: [
+        {
+          urlPattern: ({ request }) => request.destination === "document",
+          handler: "NetworkFirst",
+          options: {
+            cacheName: "html-documents",
+            networkTimeoutSeconds: 3,
+          }
+        },
+        {
+          urlPattern: ({ request }) => ["style", "script", "worker"].includes(request.destination),
+          handler: "StaleWhileRevalidate",
+          options: { cacheName: "static-resources" }
+        },
+        {
+          urlPattern: ({ request }) => ["image", "font"].includes(request.destination),
+          handler: "CacheFirst",
+          options: {
+            cacheName: "assets",
+            expiration: { maxEntries: 200, maxAgeSeconds: 60 * 60 * 24 * 30 },
+          }
+        },
+        {
+          urlPattern: ({ url }) => url.origin === self.location.origin && url.pathname.startsWith("/_nuxt/"),
+          handler: "CacheFirst",
+          options: { cacheName: "nuxt-build" }
+        }
+      ]
+    },
+    client: {
+      installPrompt: true,
+      periodicSyncForUpdates: 24 * 60 * 60,
+    },
+    devOptions: {
+      enabled: true,
+      suppressWarnings: true,
+      navigateFallbackAllowlist: [/^\/?$/],
+    },
+  },
   content: {},
   i18n: {
     strategy: "prefix_except_default",

@@ -28,6 +28,8 @@
     "vue": "latest"
   },
   "devDependencies": {
-    "@types/file-saver": "^2.0.7"
+    "@types/file-saver": "^2.0.7",
+    "@vite-pwa/nuxt": "^1.0.4",
+    "workbox-window": "^7.3.0"
   }
 }
