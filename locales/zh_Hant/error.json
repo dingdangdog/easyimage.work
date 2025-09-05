@@ -1,7 +1,7 @@
 {
   "error": {
-    "something_went_wrong": "出現錯誤",
-    "error_generic_desc": "發生了意外錯誤。您可以返回首頁或重試。",
+    "page_not_found": "頁面未找到",
+    "page_not_found_desc": "您要查找的頁面不存在或已被移動。",
     "go_home": "返回首頁",
     "try_again": "重試"
   }

@@ -1,7 +1,7 @@
 {
   "error": {
-    "something_went_wrong": "Something went wrong",
-    "error_generic_desc": "An unexpected error occurred. You can go back home or try again.",
+    "page_not_found": "Page Not Found",
+    "page_not_found_desc": "The page you are looking for does not exist or has been moved.",
     "go_home": "Go Home",
     "try_again": "Try Again"
   }

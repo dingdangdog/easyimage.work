@@ -1,7 +1,7 @@
 {
   "error": {
-    "something_went_wrong": "Algo salió mal",
-    "error_generic_desc": "Ocurrió un error inesperado. Puedes volver al inicio o intentar de nuevo.",
+    "page_not_found": "Página no encontrada",
+    "page_not_found_desc": "La página que buscas no existe o ha sido movida.",
     "go_home": "Ir al Inicio",
     "try_again": "Intentar de Nuevo"
   }

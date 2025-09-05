@@ -1,7 +1,7 @@
 {
   "error": {
-    "something_went_wrong": "エラーが発生しました",
-    "error_generic_desc": "予期しないエラーが発生しました。ホームに戻るか、再試行してください。",
+    "page_not_found": "ページが見つかりません",
+    "page_not_found_desc": "お探しのページは存在しないか、移動されました。",
     "go_home": "ホームに戻る",
     "try_again": "再試行"
   }
