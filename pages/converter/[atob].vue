@@ -14,7 +14,7 @@
         class="block text-lg font-medium text-pink-400 dark:text-pink-300"
         >{{ $t("converter.target-formats") }}</label
       >
-      <div class="mt-2 grid grid-cols-1 md:grid-cols-2 gap-4">
+      <div class="mt-2 grid grid-cols-1 gap-4">
         <!-- 常用格式 -->
         <div class="border border-pink-200 dark:border-pink-800 rounded-md p-3">
           <h3 class="text-sm font-medium text-pink-600 dark:text-pink-300 mb-2">
@@ -22,33 +22,7 @@
           </h3>
           <div class="flex flex-wrap gap-2">
             <div
-              v-for="format in formatGroups.common"
-              :key="format"
-              class="flex items-center"
-            >
-              <input
-                type="checkbox"
-                :id="`format-checkbox-${format}`"
-                v-model="targetFormats"
-                :value="format"
-                class="mr-2 rounded border-gray-300 text-pink-600 focus:ring-pink-500"
-              />
-              <label
-                class="text-sm font-medium text-gray-700 dark:text-gray-300"
-                >{{ format.toUpperCase() }}</label
-              >
-            </div>
-          </div>
-        </div>
-
-        <!-- 其他格式 -->
-        <div class="border border-pink-200 dark:border-pink-800 rounded-md p-3">
-          <h3 class="text-sm font-medium text-pink-600 dark:text-pink-300 mb-2">
-            {{ $t("converter.format-groups.other") }}
-          </h3>
-          <div class="flex flex-wrap gap-2">
-            <div
-              v-for="format in formatGroups.other"
+              v-for="format in formatGroups"
               :key="format"
               class="flex items-center"
             >
@@ -82,7 +56,7 @@
       <input
         type="file"
         multiple
-        accept="image/*"
+        :accept="fileAccept"
         @change="handleFileSelect"
         class="hidden"
         ref="fileInput"
@@ -234,14 +208,33 @@ const formats = [
   "tiff",
   "webp",
 ];
+const allowedFormats = new Set(formats.map((f) => f.toLowerCase()));
+
+// SSR 级别校验：参数必须符合 a-to-b 且在允许格式内
+definePageMeta({
+  validate: (route) => {
+    const atobParam = route.params.atob as string | undefined;
+    if (!atobParam) return true;
+    const match = atobParam.match(/^([a-z0-9]+)-to-([a-z0-9]+)$/i);
+    if (!match) return false;
+    const from = match[1].toLowerCase();
+    const to = match[2].toLowerCase();
+    return allowedFormats.has(from) && allowedFormats.has(to);
+  },
+});
 
 // 格式分组，用于展示
-const formatGroups = {
-  common: ["jpg", "jpeg", "png", "webp"],
-  other: ["bmp", "ico", "jfif", "tif", "tiff"],
-};
-
-const availableFormats = ref(formats); // 可选择的格式
+const formatGroups = [
+  "bmp",
+  "ico",
+  "jfif",
+  "jpeg",
+  "jpg",
+  "png",
+  "tif",
+  "tiff",
+  "webp",
+];
 const targetFormats = ref<string[]>([
   "jpg",
   "jpeg",
@@ -252,7 +245,7 @@ const targetFormats = ref<string[]>([
   "jfif",
   "tif",
   "tiff",
-]); // 默认选择常用格式
+]); // 默认选择常用格式（如果 URL 未指定）
 const originalImages = ref<File[]>([]);
 const processedImages = ref<ConverterImage[]>([]); //  processedImages 类型any, 因为要存储不同格式的图片
 const dragOver = ref(false);
@@ -260,6 +253,38 @@ const processing = ref(false);
 const processedCount = ref(0);
 const totalFiles = ref(0);
 const previewImageData = ref();
+
+// URL 参数解析与校验（形如 a-to-b）
+const sourceFormatParam = ref<string | null>(null);
+const targetFormatParam = ref<string | null>(null);
+const fileAccept = ref<string>("image/*");
+
+const getMimeFor = (format: string): string => {
+  const f = format.toLowerCase();
+  if (f === "ico") return "image/x-icon";
+  if (f === "jpg" || f === "jpeg" || f === "jfif") return "image/jpeg";
+  if (f === "tif" || f === "tiff") return "image/tiff";
+  return `image/${f}`;
+};
+
+const initFromParams = () => {
+  const atobParam = route.params.atob as string | undefined;
+  if (!atobParam) return; // 保持默认
+  const match = atobParam.match(/^([a-z0-9]+)-to-([a-z0-9]+)$/i);
+  if (!match) return; // SSR validate 已处理
+  const from = match[1].toLowerCase();
+  const to = match[2].toLowerCase();
+  if (!allowedFormats.has(from) || !allowedFormats.has(to)) return; // SSR validate 已处理
+  sourceFormatParam.value = from;
+  targetFormatParam.value = to;
+  // 自动选中目标格式
+  targetFormats.value = [to];
+  // 限制文件选择的来源格式（尽可能提示）
+  fileAccept.value = getMimeFor(from);
+};
+
+// 立即根据参数初始化（在 SSR 与首屏渲染前生效）
+initFromParams();
 
 // 处理图片格式转换
 const processImage = async (file: File): Promise<ConverterImage[]> => {
@@ -349,7 +374,7 @@ const handleFileSelect = async (e: Event) => {
   const files = fileInput.files ? Array.from(fileInput.files) : [];
   // 如果用户没有选择任何格式，自动选择常用格式
   if (targetFormats.value.length === 0) {
-    targetFormats.value = formatGroups.common;
+    targetFormats.value = formatGroups;
   }
   await processFiles(files);
   if (files && files.length > 0) {
@@ -433,6 +458,15 @@ const previewImage = (image: ConverterImage) => {
 };
 
 onMounted(() => {
+  // 解析参数并初始化状态
+  initFromParams();
+  // 监听路由参数变化（例如用户在地址栏修改）
+  watch(
+    () => route.params.atob,
+    () => {
+      initFromParams();
+    }
+  );
   // 监听esc事件，关闭全屏图片 (复用水印页面的)
   document.addEventListener("keydown", (e) => {
     if (e.key === "Escape") {
