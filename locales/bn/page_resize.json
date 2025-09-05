@@ -12,6 +12,14 @@
     "remove-all-button": "সবগুলো মুছে ফেলুন",
     "origin": "মূল ছবি",
     "running": "প্রক্রিয়াকরণ হচ্ছে...",
-    "ready": "প্রক্রিয়াকৃত ছবি"
+    "ready": "প্রক্রিয়াকৃত ছবি",
+    "panel_title": "লক্ষ্য আকার",
+    "mode_auto": "auto",
+    "mode_options": "icons",
+    "mode_custom": "custom",
+    "options_label": "সাধারণ আইকন আকার (মাল্টি-সিলেক্ট)",
+    "custom_label": "কাস্টম আকার (যেমন: 1024x1024, 800x600)",
+    "custom_placeholder": "প্রস্থ x উচ্চতা, কমা দিয়ে আলাদা",
+    "custom_hint": "লক্ষ্য ক্যানভাসে ফিট করতে স্কেল করে এবং কেন্দ্র করে।"
   }
 } 

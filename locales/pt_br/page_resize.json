@@ -12,6 +12,14 @@
     "remove-all-button": "Remover Todos",
     "origin": "Original",
     "running": "Processando...",
-    "ready": "Imagens Processadas"
+    "ready": "Imagens processadas",
+    "panel_title": "Tamanhos alvo",
+    "mode_auto": "auto",
+    "mode_options": "icons",
+    "mode_custom": "custom",
+    "options_label": "Tamanhos de ícones comuns (multi-seleção)",
+    "custom_label": "Tamanhos personalizados (ex.: 1024x1024, 800x600)",
+    "custom_placeholder": "largura x altura, separados por vírgulas",
+    "custom_hint": "Ajusta para caber na tela de destino e centraliza."
   }
 }

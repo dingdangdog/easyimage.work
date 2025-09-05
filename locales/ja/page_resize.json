@@ -12,6 +12,14 @@
     "remove-all-button": "すべて削除",
     "origin": "オリジナル",
     "running": "処理中...",
-    "ready": "処理済み画像"
+    "ready": "処理済み画像",
+    "panel_title": "ターゲットサイズ",
+    "mode_auto": "auto",
+    "mode_options": "icons",
+    "mode_custom": "custom",
+    "options_label": "一般的なアイコンサイズ（複数選択可）",
+    "custom_label": "カスタムサイズ（例：1024x1024, 800x600）",
+    "custom_placeholder": "幅x高さ、カンマ区切り",
+    "custom_hint": "ターゲットキャンバス内に合わせてスケーリングし、中央に配置します。"
   }
 }

@@ -12,6 +12,14 @@
     "remove-all-button": "Xóa tất cả",
     "origin": "Hình gốc",
     "running": "Đang xử lý...",
-    "ready": "Hình ảnh đã được xử lý"
+    "ready": "Hình ảnh đã được xử lý",
+    "panel_title": "Kích thước mục tiêu",
+    "mode_auto": "auto",
+    "mode_options": "icons",
+    "mode_custom": "custom",
+    "options_label": "Kích thước biểu tượng phổ biến (chọn nhiều)",
+    "custom_label": "Kích thước tùy chỉnh (ví dụ: 1024x1024, 800x600)",
+    "custom_placeholder": "rộng x cao, phân tách bằng dấu phẩy",
+    "custom_hint": "Co dãn để vừa khung mục tiêu và căn giữa."
   }
 }

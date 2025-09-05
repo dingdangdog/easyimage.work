@@ -12,6 +12,14 @@
     "remove-all-button": "Eliminar Todo",
     "origin": "Original",
     "running": "Procesando...",
-    "ready": "Imágenes Procesadas"
+    "ready": "Imágenes procesadas",
+    "panel_title": "Tamaños objetivo",
+    "mode_auto": "auto",
+    "mode_options": "icons",
+    "mode_custom": "custom",
+    "options_label": "Tamaños de iconos comunes (selección múltiple)",
+    "custom_label": "Tamaños personalizados (p. ej., 1024x1024, 800x600)",
+    "custom_placeholder": "ancho x alto, separados por comas",
+    "custom_hint": "Se ajusta para encajar en el lienzo objetivo y se centra."
   }
 }

@@ -12,6 +12,14 @@
     "remove-all-button": "Remove All",
     "origin": "Origin",
     "running": "Processing...",
-    "ready": "Processed Images"
+    "ready": "Processed Images",
+    "panel_title": "Target Sizes",
+    "mode_auto": "auto",
+    "mode_options": "icons",
+    "mode_custom": "custom",
+    "options_label": "Common icon sizes (multi-select)",
+    "custom_label": "Custom sizes (e.g., 1024x1024, 800x600)",
+    "custom_placeholder": "width x height, separated by commas",
+    "custom_hint": "Scales to fit within target canvas and centers it."
   }
 }

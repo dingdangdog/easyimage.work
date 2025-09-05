@@ -12,6 +12,14 @@
     "remove-all-button": "إزالة الكل",
     "origin": "الأصل",
     "running": "جارٍ المعالجة...",
-    "ready": "الصور المعالجة"
+    "ready": "الصور المعالجة",
+    "panel_title": "الأحجام المستهدفة",
+    "mode_auto": "auto",
+    "mode_options": "icons",
+    "mode_custom": "custom",
+    "options_label": "أحجام الأيقونات الشائعة (اختيار متعدد)",
+    "custom_label": "أحجام مخصصة (مثال: 1024x1024, 800x600)",
+    "custom_placeholder": "العرض × الارتفاع، مفصولة بفواصل",
+    "custom_hint": "يتم التحجيم ليلائم لوحة الهدف ويتم توسيطه."
   }
 }

@@ -12,6 +12,14 @@
     "remove-all-button": "移除所有",
     "origin": "原圖",
     "running": "處理中...",
-    "ready": "已處理圖片"
+    "ready": "已處理圖片",
+    "panel_title": "目標尺寸",
+    "mode_auto": "auto",
+    "mode_options": "icons",
+    "mode_custom": "custom",
+    "options_label": "常見圖標尺寸（可多選）",
+    "custom_label": "自定義尺寸（例如：1024x1024, 800x600）",
+    "custom_placeholder": "寬x高，逗號分隔",
+    "custom_hint": "會按填寫的目標尺寸生成等比畫布並置中繪製。"
   }
 }

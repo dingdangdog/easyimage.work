@@ -12,6 +12,14 @@
     "remove-all-button": "सभी हटाएं",
     "origin": "मूल",
     "running": "प्रोसेसिंग...",
-    "ready": "प्रोसेस की गई इमेज"
+    "ready": "प्रोसेस की गई इमेज",
+    "panel_title": "लक्ष्य आकार",
+    "mode_auto": "auto",
+    "mode_options": "icons",
+    "mode_custom": "custom",
+    "options_label": "आम आइकन आकार (मल्टी-सेलेक्ट)",
+    "custom_label": "कस्टम आकार (जैसे: 1024x1024, 800x600)",
+    "custom_placeholder": "चौड़ाई x ऊँचाई, कॉमा से अलग",
+    "custom_hint": "लक्ष्य कैनवास में फिट करने के लिए स्केल करता है और केंद्रित करता है।"
   }
 }

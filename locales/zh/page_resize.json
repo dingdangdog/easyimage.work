@@ -12,6 +12,14 @@
     "remove-all-button": "移除所有",
     "origin": "原图",
     "running": "处理中...",
-    "ready": "已处理图片"
+    "ready": "已处理图片",
+    "panel_title": "目标尺寸",
+    "mode_auto": "auto",
+    "mode_options": "icons",
+    "mode_custom": "custom",
+    "options_label": "常见图标尺寸（可多选）",
+    "custom_label": "自定义尺寸（例如：1024x1024, 800x600）",
+    "custom_placeholder": "宽x高，逗号分隔",
+    "custom_hint": "会按填写的目标尺寸生成等比画布并居中绘制。"
   }
 }
