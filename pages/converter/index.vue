@@ -1,17 +1,17 @@
 <template>
   <div class="p-4 max-w-3xl mx-auto">
     <h1
-      class="text-3xl sm:text-4xl font-extrabold mb-6 text-center text-pink-400 dark:text-pink-300"
+      class="text-3xl sm:text-4xl font-extrabold mb-6 text-center text-pink-600 dark:text-pink-500"
     >
       {{ $t("converter.name") }}
     </h1>
-    <p class="text-pink-300 dark:text-pink-200 my-2 text-center">
+    <p class="text-pink-500 dark:text-pink-400 my-2 text-center">
       {{ $t("converter.tips") }}
     </p>
 
     <div class="mb-4">
       <label
-        class="block text-lg font-medium text-pink-400 dark:text-pink-300"
+        class="block text-lg font-medium text-pink-500 dark:text-pink-400"
         >{{ $t("converter.target-formats") }}</label
       >
       <div class="mt-2 grid grid-cols-1 gap-4">
@@ -73,7 +73,7 @@
           <button
             type="button"
             @click.stop="upload()"
-            class="text-pink-800 dark:text-pink-400 font-bold hover:text-pink-700 dark:hover:text-pink-300 focus:outline-none"
+            class="text-pink-800 dark:text-pink-500 font-bold hover:text-pink-700 dark:hover:text-pink-400 focus:outline-none"
           >
             {{ $t("converter.upload-button") }}
           </button>

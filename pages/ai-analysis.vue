@@ -1,11 +1,11 @@
 <template>
   <div class="p-4 max-w-3xl mx-auto">
     <h1
-      class="text-3xl sm:text-4xl font-extrabold mb-6 text-center text-cyan-400 dark:text-cyan-300"
+      class="text-3xl sm:text-4xl font-extrabold mb-6 text-center text-cyan-500 dark:text-cyan-400"
     >
       {{ $t("aiAnalysis.name") }}
     </h1>
-    <p class="my-2 text-center text-cyan-300 dark:text-cyan-200">
+    <p class="my-2 text-center text-cyan-500 dark:text-cyan-400">
       {{ $t("aiAnalysis.tips") }}
     </p>
 
@@ -40,7 +40,7 @@
           <button
             type="button"
             @click.stop="upload()"
-            class="text-cyan-800 dark:text-cyan-400 font-bold hover:text-cyan-700 dark:hover:text-cyan-300 focus:outline-none"
+            class="text-cyan-800 dark:text-cyan-500 font-bold hover:text-cyan-700 dark:hover:text-cyan-400 focus:outline-none"
           >
             {{ $t("aiAnalysis.upload-button") }}
           </button>

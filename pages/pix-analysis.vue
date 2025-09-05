@@ -1,11 +1,11 @@
 <template>
   <div class="p-4 max-w-3xl mx-auto">
     <h1
-      class="text-3xl sm:text-4xl font-extrabold mb-6 text-center text-green-500 dark:text-green-400"
+      class="text-3xl sm:text-4xl font-extrabold mb-6 text-center text-green-600 dark:text-green-500"
     >
       {{ $t("pixAnalysis.name") }}
     </h1>
-    <p class="my-2 text-center text-green-400 dark:text-green-300">
+    <p class="my-2 text-center text-green-500 dark:text-green-400">
       {{ $t("pixAnalysis.tips") }}
     </p>
 
@@ -40,7 +40,7 @@
           <button
             type="button"
             @click.stop="upload()"
-            class="text-green-800 dark:text-green-400 font-bold hover:text-green-700 dark:hover:text-green-300 focus:outline-none"
+            class="text-green-800 dark:text-green-500 font-bold hover:text-green-700 dark:hover:text-green-400 focus:outline-none"
           >
             {{ $t("pixAnalysis.upload-button") }}
           </button>
