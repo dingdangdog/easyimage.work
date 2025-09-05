@@ -85,6 +85,7 @@ export default defineNuxtConfig({
     },
     workbox: {
       navigateFallback: "/offline.html",
+      maximumFileSizeToCacheInBytes: 5 * 1024 * 1024, // 5MB limit
       globPatterns: [
         "**/*.{js,css,html,svg,png,jpg,jpeg,webp,woff,woff2,otf,ttf,ico,json}"
       ],
